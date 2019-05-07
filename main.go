@@ -9,6 +9,10 @@ import (
 	"github.com/gocolly/colly"
 )
 
+type TempTable struct {
+	Heading string
+	Fields  []string
+}
 type DocLink struct {
 	Name string
 	Link string
@@ -55,7 +59,7 @@ func GetDocLinks() (doclinks []DocLink) {
 		fullLink := "https://www.proffix.net/Portals/0/content/REST%20API/export/" + link
 
 		// Print link
-		if (strings.HasSuffix(link, "html")) {
+		if strings.HasSuffix(link, "html") {
 			doclinks = append(doclinks, DocLink{
 				Name: e.Text,
 				Link: fullLink,
@@ -77,50 +81,53 @@ func GetDocLinks() (doclinks []DocLink) {
 	return doclinks
 }
 
-func TableToJson(link string) (parsed [][]string) {
-	d := colly.NewCollector(
-		// Visit only domains: hackerspaces.org, wiki.hackerspaces.org
-	)
-	// On every a element which has href attribute call callback
-	d.OnHTML("tr", func(e *colly.HTMLElement) {
+func ParsedTable(input [][]string) (doc Doc) {
+	for _, val := range input {
+		if len(val) > 1 {
+			if !strings.Contains(val[0], "Referenz") {
 
-		tempMap := []string{}
-		e.ForEach("td", func(_ int, el *colly.HTMLElement) {
+			}
+			//for k, _ := range input[i] {
+			//
+			//	docfield := DocFields{
+			//		Feld:        input[i][0],
+			//		Datentyp:    input[i][1],
+			//		NamePROFFIX: input[i][2],
+			//		Besonderes:  input[i][3],
+			//		seitVersion: input[i][4],
+			//	}
+			//	log.Print(k)
+			//	log.Print(docfield)
+			//}
+		}
+	}
+
+	return doc
+
+}
+
+//TableToStrings converts PROFFIX Doc Tables to Strings
+func tableToStrings(link string) (parsed []TempTable) {
+	d := colly.NewCollector()
+
+	// On every a element which has href attribute call callback
+	d.OnHTML("#innerdiv", func(e *colly.HTMLElement) {
+
+		e.ForEach("tr", func(_ int, el *colly.HTMLElement) {
 			//log.Print(el.Text)
-			tempMap = append(tempMap,el.Text)
+			parsed[el.Index+1].Heading = "Felder"
+			el.ForEach("td", func(_ int, ef *colly.HTMLElement) {
+				parsed[el.Index+1].Fields[ef.Index+1] = el.Text
+
+			})
+
 		})
-		parsed = append(parsed,tempMap)
 	})
 
 	d.Visit(link)
 	return parsed
 }
 
-func ParsedTable(input [][]string) (doc Doc){
-	for _,val :=range input{
-		log.Print(val[0][1])
-			if (val[1] == "Feld") {
-
-				log.Print("TEST")
-				//for k, _ := range input[i] {
-				//
-				//	docfield := DocFields{
-				//		Feld:        input[i][0],
-				//		Datentyp:    input[i][1],
-				//		NamePROFFIX: input[i][2],
-				//		Besonderes:  input[i][3],
-				//		seitVersion: input[i][4],
-				//	}
-				//	log.Print(k)
-				//	log.Print(docfield)
-				//}
-			}
-		}
-
-
-return doc
-
-}
 func main() {
 	//doclinks := GetDocLinks()
 	//
@@ -128,8 +135,8 @@ func main() {
 	//	fmt.Println(y.Name)
 	//	fmt.Println(y.Link)
 
-	doc := TableToJson("https://www.proffix.net/Portals/0/content/REST%20API/export/lohnbewegung.html")
+	doc := tableToStrings("https://www.proffix.net/Portals/0/content/REST%20API/export/lohnbewegung.html")
 
-	test := ParsedTable(doc)
-	fmt.Print(test)
+	//test := ParsedTable(doc)
+	fmt.Print(doc)
 }
