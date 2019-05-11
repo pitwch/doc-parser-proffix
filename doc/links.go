@@ -29,7 +29,7 @@ func GetDocLinks() (doclinks []model.DocLink) {
 
 	// Before making a request print "Visiting ..."
 	c.OnRequest(func(r *colly.Request) {
-		log.Printf("Visiting", r.URL.String())
+		log.Printf("Visiting %v", r.URL.String())
 	})
 
 	c.Visit("https://www.proffix.net/Portals/0/content/REST%20API/export/proffix_rest_api_entwicklerhandbuch_content.html")

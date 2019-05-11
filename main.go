@@ -11,7 +11,7 @@ import (
 
 func main() {
 
-	//Hm.
+	//Hmm...
 	log.Println("Do ut des")
 
 	//Collect links
@@ -28,7 +28,7 @@ func main() {
 			if err != nil {
 				log.Fatal("Cannot encode to JSON ", err)
 			}
-			err = ioutil.WriteFile("res/"+y.Name+".json", docsJson, 0644)
+			err = ioutil.WriteFile("_result/json/"+y.Name+".json", docsJson, 0644)
 			if err != nil {
 				log.Fatal("Cannot write to File ", err)
 			}

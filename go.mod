@@ -3,6 +3,7 @@ module github.com/pitw/doc-parser-proffix
 go 1.12
 
 require (
+	github.com/ChimeraCoder/gojson v1.0.0 // indirect
 	github.com/PuerkitoBio/goquery v1.5.0 // indirect
 	github.com/antchfx/htmlquery v1.0.0 // indirect
 	github.com/antchfx/xmlquery v1.0.0 // indirect
@@ -14,4 +15,5 @@ require (
 	github.com/temoto/robotstxt v0.0.0-20180810133444-97ee4a9ee6ea // indirect
 	golang.org/x/net v0.0.0-20190503192946-f4e77d36d62c // indirect
 	google.golang.org/appengine v1.5.0 // indirect
+	gopkg.in/yaml.v2 v2.2.2 // indirect
 )

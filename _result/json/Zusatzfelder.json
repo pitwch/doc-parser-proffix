@@ -1,0 +1,1 @@
+{"Fields":[{"Feld":"Zusatzfelder","Datentyp":"Object{[key:string]: value:any}","NamePROFFIX":" ","Besonderes":"Der Key ist die Bezeichnung des Zusatzfeldes und beginnt immer mit 'Z_'.Das Value wird nicht in den entsprechenden Datentyp aufgelöst, es wird nur der unbearbeitete Wert des Zusatzfeldes zurückgegeben"}],"Methods":null,"Parameter":null}
