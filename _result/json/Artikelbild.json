@@ -1,1 +1,73 @@
-{"Fields":[{"Feld":"ArtikelbildNr","Datentyp":"Number (Int)","NamePROFFIX":"LaufNr","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Anzeigen","Datentyp":"Boolean","NamePROFFIX":"Anzeigen","Besonderes":" "},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":" "},{"Feld":"DateiNr","Datentyp":"String (∞)","NamePROFFIX":"Bild","Besonderes":"Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."},{"Feld":"Hauptbild","Datentyp":"Boolean","NamePROFFIX":"Haupt","Besonderes":" "},{"Feld":"Webshop","Datentyp":"Boolean","NamePROFFIX":"Shop","Besonderes":" "},{"Feld":"WebshopBildErstellt","Datentyp":"Boolean","NamePROFFIX":"ShopbildErstellt","Besonderes":" "},{"Feld":"Dateipfad","Datentyp":"String (∞)","NamePROFFIX":"Bild","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /LAG/Artikelbild","Rueckgabewert":"HTTP 200Array\u003cArtikelbild\u003e","Beschreibung":"Gibt alle Artikelbilder zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikelbild/{ArtikelbildNr}","Rueckgabewert":"HTTP 200Artikelbild","Beschreibung":"Gibt ein Artikelbild anhand der ArtikelbildNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "ArtikelbildNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anzeigen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Anzeigen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DateiNr",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bild",
+   "Besonderes": "Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+  },
+  {
+   "Feld": "Hauptbild",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Haupt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Webshop",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Shop",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopBildErstellt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ShopbildErstellt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dateipfad",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bild",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Artikelbild",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikelbild\u003e",
+   "Beschreibung": "Gibt alle Artikelbilder zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikelbild/{ArtikelbildNr}",
+   "Rueckgabewert": "HTTP 200Artikelbild",
+   "Beschreibung": "Gibt ein Artikelbild anhand der ArtikelbildNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

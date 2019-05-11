@@ -1,1 +1,1592 @@
-{"Fields":[{"Feld":"DokumentNr","Datentyp":"Number (Int)","NamePROFFIX":"DokumentNrAUF","Besonderes":" "},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Adresszeile1","Datentyp":"String (40)","NamePROFFIX":"Adresszeile1","Besonderes":" "},{"Feld":"Adresszeile2","Datentyp":"String (40)","NamePROFFIX":"Adresszeile2","Besonderes":" "},{"Feld":"Adresszeile3","Datentyp":"String (40)","NamePROFFIX":"Adresszeile3","Besonderes":" "},{"Feld":"Adresszeile4","Datentyp":"String (40)","NamePROFFIX":"Adresszeile4","Besonderes":" "},{"Feld":"Adresszeile5","Datentyp":"String (40)","NamePROFFIX":"Adresszeile5","Besonderes":" "},{"Feld":"Anrede","Datentyp":"String (40)","NamePROFFIX":"Anrede","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Buchung","Datentyp":"Object\u003cBuchung\u003e","NamePROFFIX":"BuchungNr","Besonderes":" "},{"Feld":"Datum","Datentyp":"String (Date)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"Dokumentstatus","Datentyp":"Object\u003cDokumentstatus\u003e","NamePROFFIX":"DokStatusAUF","Besonderes":" "},{"Feld":"Dokumenttyp","Datentyp":"Object\u003cDokumenttyp\u003e","NamePROFFIX":"DokTypAUF","Besonderes":"Der Dokumenttyp kann nach dem Anlegen nicht mehr geändert werden, eine Änderung kann nur mittels Umwandlung erfolgen (siehe Methode /umwandeln)"},{"Feld":"ESRNummer","Datentyp":"Object\u003cESRNummer\u003e","NamePROFFIX":"ESRNrAUF","Besonderes":" "},{"Feld":"Fusstext","Datentyp":"String (∞)","NamePROFFIX":"Fusstext","Besonderes":" "},{"Feld":"FusstextRTF","Datentyp":"String (∞)","NamePROFFIX":"FusstextRTF","Besonderes":" "},{"Feld":"Gedruckt","Datentyp":"Boolean","NamePROFFIX":"Gedruckt","Besonderes":" "},{"Feld":"Gesperrt","Datentyp":"Boolean","NamePROFFIX":"Gesperrt","Besonderes":" "},{"Feld":"Gueltigkeit","Datentyp":"String (50)","NamePROFFIX":"Gueltigkeit","Besonderes":" "},{"Feld":"IhrZeichen","Datentyp":"String (50)","NamePROFFIX":"IhrZ","Besonderes":" "},{"Feld":"Region","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"Kanton","Besonderes":" "},{"Feld":"Kondition","Datentyp":"Object\u003cKondition\u003e","NamePROFFIX":"KonditionPRO","Besonderes":" "},{"Feld":"Kontaktname","Datentyp":"String (80)","NamePROFFIX":"Kontakt","Besonderes":" "},{"Feld":"Kontakt","Datentyp":"Object\u003cKontakt\u003e","NamePROFFIX":"KontaktNrADR","Besonderes":" "},{"Feld":"Kurs","Datentyp":"Number (18,6)","NamePROFFIX":"Kurs","Besonderes":" "},{"Feld":"Land","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"Land","Besonderes":" "},{"Feld":"Lieferadresszeile1","Datentyp":"String (40)","NamePROFFIX":"LieferAdr1","Besonderes":" "},{"Feld":"Lieferadresszeile2","Datentyp":"String (40)","NamePROFFIX":"LieferAdr2","Besonderes":" "},{"Feld":"Lieferadresszeile3","Datentyp":"String (40)","NamePROFFIX":"LieferAdr3","Besonderes":" "},{"Feld":"Lieferadresszeile4","Datentyp":"String (40)","NamePROFFIX":"LieferAdr4","Besonderes":" "},{"Feld":"Lieferadresszeile5","Datentyp":"String (40)","NamePROFFIX":"LieferAdr5","Besonderes":" "},{"Feld":"Lieferadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"LieferAdressNr","Besonderes":" "},{"Feld":"LieferadressAnrede","Datentyp":"String (40)","NamePROFFIX":"LieferAnrede","Besonderes":" "},{"Feld":"Lieferart","Datentyp":"Object\u003cLieferart\u003e","NamePROFFIX":"LieferartPRO","Besonderes":" "},{"Feld":"LieferadressEMail","Datentyp":"String (100)","NamePROFFIX":"LieferEMail","Besonderes":" "},{"Feld":"LieferadressRegion","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"LieferKanton","Besonderes":" "},{"Feld":"LieferadressKontaktname","Datentyp":"String (80)","NamePROFFIX":"LieferKontakt","Besonderes":" "},{"Feld":"LieferadressKontakt","Datentyp":"Object\u003cKontakt\u003e","NamePROFFIX":"LieferKontaktNr","Besonderes":" "},{"Feld":"LieferadressLand","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"LieferLand","Besonderes":" "},{"Feld":"LieferadressName","Datentyp":"String (40)","NamePROFFIX":"LieferName","Besonderes":" "},{"Feld":"LieferadressOrt","Datentyp":"String (40)","NamePROFFIX":"LieferOrt","Besonderes":" "},{"Feld":"LieferadressPLZ","Datentyp":"String (10)","NamePROFFIX":"LieferPLZ","Besonderes":" "},{"Feld":"LieferadressPLZPostfach","Datentyp":"String (50)","NamePROFFIX":"LieferPLZPostfach","Besonderes":" "},{"Feld":"LieferadressPostfach","Datentyp":"String (50)","NamePROFFIX":"LieferPostfach","Besonderes":" "},{"Feld":"LieferadressStrasse","Datentyp":"String (40)","NamePROFFIX":"LieferStrasse","Besonderes":" "},{"Feld":"LieferadressTelefon","Datentyp":"String (40)","NamePROFFIX":"LieferTel","Besonderes":" "},{"Feld":"Liefertermin","Datentyp":"String (Date)","NamePROFFIX":"Liefertermin","Besonderes":" "},{"Feld":"LieferadressVorname","Datentyp":"String (40)","NamePROFFIX":"LieferVorname","Besonderes":" "},{"Feld":"Marge","Datentyp":"Number (10,2)","NamePROFFIX":"Marge","Besonderes":" "},{"Feld":"Name","Datentyp":"String (40)","NamePROFFIX":"Name","Besonderes":" "},{"Feld":"Ort","Datentyp":"String (40)","NamePROFFIX":"Ort","Besonderes":" "},{"Feld":"PLZ","Datentyp":"String (10)","NamePROFFIX":"PLZ","Besonderes":" "},{"Feld":"PLZPostfach","Datentyp":"String (50)","NamePROFFIX":"PLZPostfach","Besonderes":" "},{"Feld":"PortoErtragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"PortoErtrag","Besonderes":" "},{"Feld":"PortoFW","Datentyp":"Number (10,2)","NamePROFFIX":"PortoFW","Besonderes":" "},{"Feld":"PortoKostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"PortoKoArt","Besonderes":" "},{"Feld":"PortoKostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"PortoKst","Besonderes":" "},{"Feld":"PortoMWStFW","Datentyp":"Number (10,2)","NamePROFFIX":"PortoMWStFW","Besonderes":" "},{"Feld":"PortoMWStSW","Datentyp":"Number (10,2)","NamePROFFIX":"PortoMWStSW","Besonderes":" "},{"Feld":"PortoSteuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"PortoStCode","Besonderes":" "},{"Feld":"PortoSW","Datentyp":"Number (10,2)","NamePROFFIX":"PortoSW","Besonderes":" "},{"Feld":"Postfach","Datentyp":"String (50)","NamePROFFIX":"Postfach","Besonderes":" "},{"Feld":"Belegdatum","Datentyp":"String (Date)","NamePROFFIX":"RDatum","Besonderes":" "},{"Feld":"Rechnungsadresszeile1","Datentyp":"String (40)","NamePROFFIX":"RechAdr1","Besonderes":" "},{"Feld":"Rechnungsadresszeile2","Datentyp":"String (40)","NamePROFFIX":"RechAdr2","Besonderes":" "},{"Feld":"Rechnungsadresszeile3","Datentyp":"String (40)","NamePROFFIX":"RechAdr3","Besonderes":" "},{"Feld":"Rechnungsadresszeile4","Datentyp":"String (40)","NamePROFFIX":"RechAdr4","Besonderes":" "},{"Feld":"Rechnungsadresszeile5","Datentyp":"String (40)","NamePROFFIX":"RechAdr5","Besonderes":" "},{"Feld":"Rechnungsadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"RechAdressNr","Besonderes":" "},{"Feld":"RechnungsadressAnrede","Datentyp":"String (40)","NamePROFFIX":"RechAnrede","Besonderes":" "},{"Feld":"RechnungsadressRegion","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"RechKanton","Besonderes":" "},{"Feld":"RechnungsadressKontaktname","Datentyp":"String (80)","NamePROFFIX":"RechKontakt","Besonderes":" "},{"Feld":"RechnungsadressKontakt","Datentyp":"Object\u003cKontakt\u003e","NamePROFFIX":"RechKontaktNr","Besonderes":" "},{"Feld":"RechnungsadressLand","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"RechLand","Besonderes":" "},{"Feld":"RechnungsadressName","Datentyp":"String (40)","NamePROFFIX":"RechName","Besonderes":" "},{"Feld":"RechnungsadressOrt","Datentyp":"String (40)","NamePROFFIX":"RechOrt","Besonderes":" "},{"Feld":"RechnungsadressPLZ","Datentyp":"String (10)","NamePROFFIX":"RechPLZ","Besonderes":" "},{"Feld":"RechnungsadressPLZPostfach","Datentyp":"String (50)","NamePROFFIX":"RechPLZPostfach","Besonderes":" "},{"Feld":"RechnungsadressPostfach","Datentyp":"String (50)","NamePROFFIX":"RechPostfach","Besonderes":" "},{"Feld":"RechnungsadressStrasse","Datentyp":"String (40)","NamePROFFIX":"RechStrasse","Besonderes":" "},{"Feld":"RechnungsadressVorname","Datentyp":"String (40)","NamePROFFIX":"RechVorname","Besonderes":" "},{"Feld":"Referenztext","Datentyp":"String (150)","NamePROFFIX":"Referenztext","Besonderes":" "},{"Feld":"Sammelkonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"Sammelkonto","Besonderes":" "},{"Feld":"Stapelrechnung","Datentyp":"Object\u003cDokument\u003e","NamePROFFIX":"StapelRechAUF","Besonderes":" "},{"Feld":"SteuerFW1","Datentyp":"Number (22,8)","NamePROFFIX":"Steuer1","Besonderes":" "},{"Feld":"SteuerFW2","Datentyp":"Number (22,8)","NamePROFFIX":"Steuer2","Besonderes":" "},{"Feld":"SteuerFW3","Datentyp":"Number (22,8)","NamePROFFIX":"Steuer3","Besonderes":" "},{"Feld":"SteuerFW4","Datentyp":"Number (22,8)","NamePROFFIX":"Steuer4","Besonderes":" "},{"Feld":"SteuerFW5","Datentyp":"Number (22,8)","NamePROFFIX":"Steuer5","Besonderes":" "},{"Feld":"Steuercode1","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"SteuerCode1","Besonderes":" "},{"Feld":"Steuercode2","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"SteuerCode2","Besonderes":" "},{"Feld":"Steuercode3","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"SteuerCode3","Besonderes":" "},{"Feld":"Steuercode4","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"SteuerCode4","Besonderes":" "},{"Feld":"Steuercode5","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"SteuerCode5","Besonderes":" "},{"Feld":"SteuerInklusiv1","Datentyp":"Boolean","NamePROFFIX":"SteuerInkl1","Besonderes":" "},{"Feld":"SteuerInklusiv2","Datentyp":"Boolean","NamePROFFIX":"SteuerInkl2","Besonderes":" "},{"Feld":"SteuerInklusiv3","Datentyp":"Boolean","NamePROFFIX":"SteuerInkl3","Besonderes":" "},{"Feld":"SteuerInklusiv4","Datentyp":"Boolean","NamePROFFIX":"SteuerInkl4","Besonderes":" "},{"Feld":"SteuerInklusiv5","Datentyp":"Boolean","NamePROFFIX":"SteuerInkl5","Besonderes":" "},{"Feld":"SteuerMargen1","Datentyp":"Boolean","NamePROFFIX":"SteuerMargen1","Besonderes":" "},{"Feld":"SteuerMargen2","Datentyp":"Boolean","NamePROFFIX":"SteuerMargen2","Besonderes":" "},{"Feld":"SteuerMargen3","Datentyp":"Boolean","NamePROFFIX":"SteuerMargen3","Besonderes":" "},{"Feld":"SteuerMargen4","Datentyp":"Boolean","NamePROFFIX":"SteuerMargen4","Besonderes":" "},{"Feld":"SteuerMargen5","Datentyp":"Boolean","NamePROFFIX":"SteuerMargen5","Besonderes":" "},{"Feld":"SteuerSW1","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerSW1","Besonderes":" "},{"Feld":"SteuerSW2","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerSW2","Besonderes":" "},{"Feld":"SteuerSW3","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerSW3","Besonderes":" "},{"Feld":"SteuerSW4","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerSW4","Besonderes":" "},{"Feld":"SteuerSW5","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerSW5","Besonderes":" "},{"Feld":"Steuertext1","Datentyp":"String (40)","NamePROFFIX":"SteuerText1","Besonderes":" "},{"Feld":"Steuertext2","Datentyp":"String (40)","NamePROFFIX":"SteuerText2","Besonderes":" "},{"Feld":"Steuertext3","Datentyp":"String (40)","NamePROFFIX":"SteuerText3","Besonderes":" "},{"Feld":"Steuertext4","Datentyp":"String (40)","NamePROFFIX":"SteuerText4","Besonderes":" "},{"Feld":"Steuertext5","Datentyp":"String (40)","NamePROFFIX":"SteuerText5","Besonderes":" "},{"Feld":"SteuertotalFW1","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotal1","Besonderes":" "},{"Feld":"SteuertotalFW2","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotal2","Besonderes":" "},{"Feld":"SteuertotalFW3","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotal3","Besonderes":" "},{"Feld":"SteuertotalFW4","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotal4","Besonderes":" "},{"Feld":"SteuertotalFW5","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotal5","Besonderes":" "},{"Feld":"SteuertotalSW1","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotalSW1","Besonderes":" "},{"Feld":"SteuertotalSW2","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotalSW2","Besonderes":" "},{"Feld":"SteuertotalSW3","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotalSW3","Besonderes":" "},{"Feld":"SteuertotalSW4","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotalSW4","Besonderes":" "},{"Feld":"SteuertotalSW5","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerTotalSW5","Besonderes":" "},{"Feld":"Strasse","Datentyp":"String (40)","NamePROFFIX":"Strasse","Besonderes":" "},{"Feld":"SubtotaldifferenzFW","Datentyp":"Number (18,4)","NamePROFFIX":"SubtotalDifferenzFw","Besonderes":" "},{"Feld":"SubtotaldifferenzSW","Datentyp":"Number (18,4)","NamePROFFIX":"SubtotalDifferenzSw","Besonderes":" "},{"Feld":"TotalEinkaufspreisFW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalEPFW","Besonderes":" "},{"Feld":"TotalEinkaufspreisSW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalEPSW","Besonderes":" "},{"Feld":"TotalFW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalFW","Besonderes":" "},{"Feld":"Totalgewicht","Datentyp":"Number (18,4)","NamePROFFIX":"TotalGewicht","Besonderes":" "},{"Feld":"TotalsteuerFW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalStFW","Besonderes":" "},{"Feld":"TotalsteuerSW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalStSW","Besonderes":" "},{"Feld":"TotalSW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalSW","Besonderes":" "},{"Feld":"UnserZeichen","Datentyp":"String (50)","NamePROFFIX":"UnserZ","Besonderes":" "},{"Feld":"Vertreter","Datentyp":"Object\u003cVertreter\u003e","NamePROFFIX":"VertreterPRO","Besonderes":" "},{"Feld":"Verwaltungsadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"VerwAdressNr","Besonderes":" "},{"Feld":"Vorname","Datentyp":"String (40)","NamePROFFIX":"Vorname","Besonderes":" "},{"Feld":"Zahlungen","Datentyp":"Array\u003cZahlung\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Vorauszahlungen","Datentyp":"Array\u003cVorauszahlung\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"Zuschlag","Datentyp":"Object\u003cZuschlag\u003e","NamePROFFIX":"ZuschlagAUF","Besonderes":" "},{"Feld":"ZuschlagErtragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"ZuschlagErtrag","Besonderes":" "},{"Feld":"ZuschlagFW","Datentyp":"Number (10,2)","NamePROFFIX":"ZuschlagFW","Besonderes":" "},{"Feld":"ZuschlagKostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"ZuschlagKoArt","Besonderes":" "},{"Feld":"ZuschlagKostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"ZuschlagKst","Besonderes":" "},{"Feld":"ZuschlagMWStFW","Datentyp":"Number (10,2)","NamePROFFIX":"ZuschlagMWStFW","Besonderes":" "},{"Feld":"ZuschlagMWStSW","Datentyp":"Number (10,2)","NamePROFFIX":"ZuschlagMWStSW","Besonderes":" "},{"Feld":"ZuschlagSteuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"ZuschlagStCode","Besonderes":" "},{"Feld":"ZuschlagSW","Datentyp":"Number (10,2)","NamePROFFIX":"ZuschlagSW","Besonderes":" "},{"Feld":"Positionen","Datentyp":"Array\u003cPosition\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"PositionNr","Datentyp":"Number (Int)","NamePROFFIX":"PositionNr","Besonderes":" "},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Serviceauftrag","Datentyp":"Object\u003cServiceauftrag\u003e","NamePROFFIX":"AuftragNrSRV","Besonderes":" "},{"Feld":"Bezeichnung1","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung1","Besonderes":" "},{"Feld":"Bezeichnung2","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung2","Besonderes":" "},{"Feld":"Bezeichnung3","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung3","Besonderes":" "},{"Feld":"Bezeichnung4","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung4","Besonderes":" "},{"Feld":"Bezeichnung5","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung5","Besonderes":" "},{"Feld":"Bild","Datentyp":"String (∞)","NamePROFFIX":"Bild","Besonderes":" "},{"Feld":"Dim2","Datentyp":"Number (16,4)","NamePROFFIX":"Breite","Besonderes":" "},{"Feld":"Eingangsstempel","Datentyp":"String (250)","NamePROFFIX":"Eingangsstempel","Besonderes":" "},{"Feld":"Lagereinheit","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitPRO","Besonderes":" "},{"Feld":"Rechnungseinheit","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitRechnung","Besonderes":" "},{"Feld":"EinkaufspreisFW","Datentyp":"Number (16,4)","NamePROFFIX":"EinkaufFW","Besonderes":" "},{"Feld":"EinkaufspreisSW","Datentyp":"Number (16,4)","NamePROFFIX":"EinkaufSW","Besonderes":" "},{"Feld":"Ertragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"Ertragskonto","Besonderes":" "},{"Feld":"Gebinde","Datentyp":"Number (16,4)","NamePROFFIX":"Gebinde","Besonderes":" "},{"Feld":"Gewicht","Datentyp":"Number (16,4)","NamePROFFIX":"Gewicht","Besonderes":" "},{"Feld":"GtinStufe","Datentyp":"String (50)","NamePROFFIX":"GtinStufe","Besonderes":" "},{"Feld":"Gutschein","Datentyp":"Object\u003cGutschein\u003e","NamePROFFIX":"GutscheinNrAUF","Besonderes":" "},{"Feld":"Inhalt","Datentyp":"Number (16,4)","NamePROFFIX":"Inhalt","Besonderes":" "},{"Feld":"IstOption","Datentyp":"Boolean","NamePROFFIX":"IsOption","Besonderes":" "},{"Feld":"Kundenbestellnummer","Datentyp":"String (35)","NamePROFFIX":"KBestellNr","Besonderes":" "},{"Feld":"Kundenbestellposition","Datentyp":"String (6)","NamePROFFIX":"KBestellPos","Besonderes":" "},{"Feld":"Kostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"KoArtFIB","Besonderes":" "},{"Feld":"Kostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"KstFIB","Besonderes":" "},{"Feld":"Dim1","Datentyp":"Number (16,4)","NamePROFFIX":"Laenge","Besonderes":" "},{"Feld":"Lagerpreis","Datentyp":"Number (Int)","NamePROFFIX":"Lagerpreis","Besonderes":"optional, wird über Preisabfrage ermittelt Mögliche Werte sind:0 = manueller Preis1...5 = Verkaufspreis 1...56 = Preis über PreismodulWenn \"PreisFW\" überschrieben wird, muss 0 (manueller Preis) übergeben werden"},{"Feld":"Lieferant","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"Lieferant","Besonderes":" "},{"Feld":"Liefertermin","Datentyp":"String (Date)","NamePROFFIX":"Liefertermin","Besonderes":" "},{"Feld":"Marge","Datentyp":"Number (10,2)","NamePROFFIX":"Marge","Besonderes":" "},{"Feld":"Menge","Datentyp":"Number (16,4)","NamePROFFIX":"Menge","Besonderes":" "},{"Feld":"MengeOptional","Datentyp":"Number (16,4)","NamePROFFIX":"MengeOpt","Besonderes":" "},{"Feld":"MengeVerr","Datentyp":"Number (16,4)","NamePROFFIX":"MengeVerr","Besonderes":" "},{"Feld":"MengeVerrOptional","Datentyp":"Number (16,4)","NamePROFFIX":"MengeVerrOpt","Besonderes":" "},{"Feld":"OccasionsObjektVerkauf","Datentyp":"Object\u003cOccasionsobjekt\u003e","NamePROFFIX":"MObjektNr","Besonderes":" "},{"Feld":"OccasionsObjektAnkauf","Datentyp":"Object\u003cOccasionsobjekt\u003e","NamePROFFIX":"MObjektNrAnkauf","Besonderes":" "},{"Feld":"OccasionsObjektSerienummer","Datentyp":"String (100)","NamePROFFIX":"MObjektSerNr","Besonderes":" "},{"Feld":"NichtAnzeigen","Datentyp":"Boolean","NamePROFFIX":"NichtAnzeigen","Besonderes":" "},{"Feld":"ExterneNotizen","Datentyp":"String (∞)","NamePROFFIX":"NotizenExt","Besonderes":" "},{"Feld":"ExterneNotizenRTF","Datentyp":"String (∞)","NamePROFFIX":"NotizenExtRTF","Besonderes":" "},{"Feld":"InterneNotizen","Datentyp":"String (∞)","NamePROFFIX":"NotizenInt","Besonderes":" "},{"Feld":"InterneNotizenRTF","Datentyp":"String (∞)","NamePROFFIX":"NotizenIntRTF","Besonderes":" "},{"Feld":"Optional","Datentyp":"Boolean","NamePROFFIX":"Optional","Besonderes":" "},{"Feld":"Positionsart","Datentyp":"Object\u003cPositionsart\u003e","NamePROFFIX":"PosArtSTU","Besonderes":" "},{"Feld":"Kundeninstallationen","Datentyp":"Array\u003cInstallation\u003e","NamePROFFIX":"PositionenBasis","Besonderes":" "},{"Feld":"ServiceauftragspositionNr","Datentyp":"Number (Int)","NamePROFFIX":"PositionNrSRV","Besonderes":" "},{"Feld":"Positionstyp","Datentyp":"Number (Int)","NamePROFFIX":"Positionsart","Besonderes":"Mögliche Werte sind:1 = Artikel2 = Freie Position3 = Text4 = Gesamtrabatt5 = Subtotal6 = Subtotal (danach auf 0 setzen)7 = Seitenumbruch8 = Teilrechnung (Dokumenttyp = RG)9 = Teilrechnung (Dokumenttyp = TR)10 = Occasions-Objekt11 = Bild12 = Gutschein (Gutschein != NULL)13 = Rapport (Positionsart != NULL) "},{"Feld":"Preisdefinition","Datentyp":"String (∞)","NamePROFFIX":"PreisDef","Besonderes":" "},{"Feld":"PreisdefinitionOptional","Datentyp":"String (∞)","NamePROFFIX":"PreisDefOpt","Besonderes":" "},{"Feld":"PreisdefinitionZusatzartikel","Datentyp":"String (∞)","NamePROFFIX":"PreisDefZusatz","Besonderes":" "},{"Feld":"PreisFW","Datentyp":"Number (16,4)","NamePROFFIX":"PreisFW","Besonderes":" "},{"Feld":"PreisSW","Datentyp":"Number (16,4)","NamePROFFIX":"PreisSW","Besonderes":" "},{"Feld":"RabattSW","Datentyp":"Number (10,2)","NamePROFFIX":"Rabatt","Besonderes":" "},{"Feld":"RabattFW","Datentyp":"Number (10,2)","NamePROFFIX":"RabattFw","Besonderes":" "},{"Feld":"Rapport","Datentyp":"Object\u003cRapport\u003e","NamePROFFIX":"RapportNrSTU","Besonderes":" "},{"Feld":"AutomatischRechnenVon","Datentyp":"Number (Int)","NamePROFFIX":"RechnenTyp","Besonderes":"Mögliche Werte sind:0 = Nicht automatisch rechnen1 = Letzte Position2 = Letztes Subtotal3 = Subtotal"},{"Feld":"Rekapitulation","Datentyp":"Boolean","NamePROFFIX":"Rekap","Besonderes":" "},{"Feld":"RueckstandMenge","Datentyp":"Number (10,2)","NamePROFFIX":"Rueckstand","Besonderes":" "},{"Feld":"Steuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"StCodePRO","Besonderes":" "},{"Feld":"Leistungsverwaltungstyp","Datentyp":"Number (Int)","NamePROFFIX":"StdPosArt","Besonderes":"Mögliche Werte sind:1 = Normale Position2 = Überzeit-Position3 = Km4-13 = Spesen (siehe Spesenaufteilung in der Leistungsverwaltung)"},{"Feld":"SteuerFW","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerFW","Besonderes":" "},{"Feld":"SteuerSW","Datentyp":"Number (22,8)","NamePROFFIX":"SteuerSW","Besonderes":" "},{"Feld":"Stuecklistenkopf","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"StlKopf","Besonderes":" "},{"Feld":"Subtotalbezeichnungen","Datentyp":"Array\u003cString\u003e","NamePROFFIX":"SubtotalDef","Besonderes":" "},{"Feld":"Dim3","Datentyp":"Number (16,4)","NamePROFFIX":"Tiefe","Besonderes":" "},{"Feld":"TotalFW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalFW","Besonderes":" "},{"Feld":"TotalInklusivFW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalInklFW","Besonderes":" "},{"Feld":"TotalInklusivSW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalInklSW","Besonderes":" "},{"Feld":"TotalOptional","Datentyp":"Number (10,2)","NamePROFFIX":"TotalOpt","Besonderes":" "},{"Feld":"TotalSW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalSW","Besonderes":" "},{"Feld":"Verpackungen","Datentyp":"Number (Int)","NamePROFFIX":"Verpackungen","Besonderes":" "},{"Feld":"Vertreter","Datentyp":"Object\u003cVertreter\u003e","NamePROFFIX":"VertreterPRO","Besonderes":" "},{"Feld":"Zusatzartikelreferenz","Datentyp":"Number (Int)","NamePROFFIX":"Zusatzartikel","Besonderes":" "},{"Feld":"Rechnen","Datentyp":"Boolean","NamePROFFIX":" ","Besonderes":"GesamtrabettAutomatischRechnen / Subtotal von Anfang an rechnen"},{"Feld":"GesamtrabattVerbuchungAufteilen","Datentyp":"Boolean","NamePROFFIX":" ","Besonderes":" "},{"Feld":"BetragFW","Datentyp":"Number (10,2)","NamePROFFIX":"BetragFW","Besonderes":" "},{"Feld":"BetragDW","Datentyp":"Number (10,2)","NamePROFFIX":"BetragDW","Besonderes":" "},{"Feld":"BetragSW","Datentyp":"Number (10,2)","NamePROFFIX":"BetragSW","Besonderes":" "},{"Feld":"Buchung","Datentyp":"Object\u003cBuchung\u003e","NamePROFFIX":"BuchungNr","Besonderes":" "},{"Feld":"Buchungstext","Datentyp":"String (120)","NamePROFFIX":"BuTextPRO","Besonderes":" "},{"Feld":"Datum","Datentyp":"String (Date)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"ZahlungNr","Datentyp":"Number (Int)","NamePROFFIX":"ZahlungNr","Besonderes":" "},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"Buchungsart","Datentyp":"Object\u003cBuchungsart\u003e","NamePROFFIX":"BuArtFIB","Besonderes":" "},{"Feld":"Konto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"KontoNrFIB","Besonderes":" "},{"Feld":"Kurs","Datentyp":"Number (10,6)","NamePROFFIX":"Kurs","Besonderes":" "},{"Feld":"Gutschein","Datentyp":"Object\u003cGutschein\u003e","NamePROFFIX":"GutscheinNrAUF","Besonderes":" "},{"Feld":"BetragFW","Datentyp":"Number (10,2)","NamePROFFIX":"Betrag","Besonderes":" "},{"Feld":"BetragDW","Datentyp":"Number (10,2)","NamePROFFIX":"BetragDW","Besonderes":" "},{"Feld":"BetragSW","Datentyp":"Number (10,2)","NamePROFFIX":"BetragSW","Besonderes":" "},{"Feld":"Buchung","Datentyp":"Object\u003cBuchung\u003e","NamePROFFIX":"BuchungNr","Besonderes":" "},{"Feld":"Buchungstext","Datentyp":"String (120)","NamePROFFIX":"Buchungstext","Besonderes":" "},{"Feld":"Datum","Datentyp":"String (Date)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"Belegnummer","Datentyp":"Number (Int)","NamePROFFIX":"VZDocNo","Besonderes":" "},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"Buchungsart","Datentyp":"Object\u003cBuchungsart\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Konto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Kurs","Datentyp":"Number (10,6)","NamePROFFIX":" ","Besonderes":" "},{"Feld":"BuchungsartVorauszahlung","Datentyp":"Object\u003cBuchungsart\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"KontoVorauszahlung","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"SteuercodeVorauszahlung","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Parameter","Datentyp":"Format","NamePROFFIX":"Beschreibung","Besonderes":"Verhalten ohne Parameter"}],"Methods":[{"Endpunkt":"GET /AUF/Dokument","Rueckgabewert":"HTTP 200Array\u003cDokument\u003e","Beschreibung":"Gibt alle Dokumente zurück","BenoetigteLizenz":"AUF"},{"Endpunkt":"GET /AUF/Dokument/{DokumentNr}","Rueckgabewert":"HTTP 200Dokument","Beschreibung":"Gibt ein Dokument anhand der DokumentNr zurück","BenoetigteLizenz":"AUF"},{"Endpunkt":"POST /AUF/Dokument","Rueckgabewert":"HTTP 201","Beschreibung":"Legt ein neues Dokument an","BenoetigteLizenz":"AUF"},{"Endpunkt":"PUT /AUF/Dokument/{DokumentNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert ein Dokument anhand der DokumentNr","BenoetigteLizenz":"AUF"},{"Endpunkt":"DELETE /AUF/Dokument/{DokumentNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löscht ein Dokument anhand der DokumentNr","BenoetigteLizenz":"AUF"},{"Endpunkt":"POST /AUF/Dokument/{DokumentNr}/umwandeln","Rueckgabewert":"HTTP 201","Beschreibung":"Legt ein neues Dokument an, welches das Ergebnis einer Dokumenttypumwandlung des Dokuments mit der DokumentNr ist","BenoetigteLizenz":"AUF"},{"Endpunkt":"POST /AUF/Dokument/{DokumentNr}/teilrechnungerstellen","Rueckgabewert":"HTTP 201","Beschreibung":"Legt eine Teilrechnung (Dokument) an, welche mit dem Dokument mit der DokumentNr verknüpft ist","BenoetigteLizenz":"AUF"}],"Parameter":[{"Parameter":"aktuell","Format":"String (yes, no, any)","Beschreibung":"yes: Nur aktuelle Dokumente werden ausgegebenno: Nur nicht aktuelle Dokumente werden ausgegebenany: Alle Dokumente werden ausgegeben","VerhaltenOhneParameter":"any"},{"Parameter":"rueckstandBuchen","Format":"String (no, auto)","Beschreibung":"no: Rückstände werden nicht gebuchtauto: Rückstände werden automatisch gebucht","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "DokumentNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "DokumentNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile3",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Anrede",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchung",
+   "Datentyp": "Object\u003cBuchung\u003e",
+   "NamePROFFIX": "BuchungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumentstatus",
+   "Datentyp": "Object\u003cDokumentstatus\u003e",
+   "NamePROFFIX": "DokStatusAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumenttyp",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": "DokTypAUF",
+   "Besonderes": "Der Dokumenttyp kann nach dem Anlegen nicht mehr geändert werden, eine Änderung kann nur mittels Umwandlung erfolgen (siehe Methode /umwandeln)"
+  },
+  {
+   "Feld": "ESRNummer",
+   "Datentyp": "Object\u003cESRNummer\u003e",
+   "NamePROFFIX": "ESRNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Fusstext",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Fusstext",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "FusstextRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "FusstextRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gedruckt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Gedruckt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gesperrt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Gesperrt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gueltigkeit",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Gueltigkeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IhrZeichen",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "IhrZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Region",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "Kanton",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kondition",
+   "Datentyp": "Object\u003cKondition\u003e",
+   "NamePROFFIX": "KonditionPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontaktname",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Kontakt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "KontaktNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (18,6)",
+   "NamePROFFIX": "Kurs",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "Land",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile3",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "LieferAdressNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressAnrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAnrede",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferart",
+   "Datentyp": "Object\u003cLieferart\u003e",
+   "NamePROFFIX": "LieferartPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressEMail",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "LieferEMail",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressRegion",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "LieferKanton",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressKontaktname",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "LieferKontakt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressKontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "LieferKontaktNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressLand",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LieferLand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressName",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferName",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressOrt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferOrt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressPLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "LieferPLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressPLZPostfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "LieferPLZPostfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressPostfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "LieferPostfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressStrasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferStrasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressTelefon",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferTel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liefertermin",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Liefertermin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressVorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferVorname",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Marge",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Marge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Name",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Ort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "PLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZPostfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "PLZPostfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoErtragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "PortoErtrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "PortoFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoKostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "PortoKoArt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoKostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "PortoKst",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoMWStFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "PortoMWStFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoMWStSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "PortoMWStSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoSteuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "PortoStCode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PortoSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "PortoSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Postfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Postfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "RDatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile3",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "RechAdressNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressAnrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAnrede",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressRegion",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "RechKanton",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressKontaktname",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "RechKontakt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressKontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "RechKontaktNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressLand",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "RechLand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressName",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechName",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressOrt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechOrt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressPLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "RechPLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressPLZPostfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "RechPLZPostfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressPostfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "RechPostfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressStrasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechStrasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressVorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechVorname",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Referenztext",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "Referenztext",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sammelkonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Sammelkonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Stapelrechnung",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "StapelRechAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerFW1",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "Steuer1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerFW2",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "Steuer2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerFW3",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "Steuer3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerFW4",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "Steuer4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerFW5",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "Steuer5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode1",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "SteuerCode1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode2",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "SteuerCode2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode3",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "SteuerCode3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode4",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "SteuerCode4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode5",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "SteuerCode5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerInklusiv1",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerInkl1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerInklusiv2",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerInkl2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerInklusiv3",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerInkl3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerInklusiv4",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerInkl4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerInklusiv5",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerInkl5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerMargen1",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerMargen1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerMargen2",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerMargen2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerMargen3",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerMargen3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerMargen4",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerMargen4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerMargen5",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SteuerMargen5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerSW1",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerSW1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerSW2",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerSW2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerSW3",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerSW3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerSW4",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerSW4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerSW5",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerSW5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuertext1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "SteuerText1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuertext2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "SteuerText2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuertext3",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "SteuerText3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuertext4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "SteuerText4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuertext5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "SteuerText5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalFW1",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotal1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalFW2",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotal2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalFW3",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotal3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalFW4",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotal4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalFW5",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotal5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalSW1",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotalSW1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalSW2",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotalSW2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalSW3",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotalSW3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalSW4",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotalSW4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuertotalSW5",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerTotalSW5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Strasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Strasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SubtotaldifferenzFW",
+   "Datentyp": "Number (18,4)",
+   "NamePROFFIX": "SubtotalDifferenzFw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SubtotaldifferenzSW",
+   "Datentyp": "Number (18,4)",
+   "NamePROFFIX": "SubtotalDifferenzSw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalEinkaufspreisFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalEPFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalEinkaufspreisSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalEPSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Totalgewicht",
+   "Datentyp": "Number (18,4)",
+   "NamePROFFIX": "TotalGewicht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalsteuerFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalStFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalsteuerSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalStSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "UnserZeichen",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "UnserZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vertreter",
+   "Datentyp": "Object\u003cVertreter\u003e",
+   "NamePROFFIX": "VertreterPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verwaltungsadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "VerwAdressNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Vorname",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zahlungen",
+   "Datentyp": "Array\u003cZahlung\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorauszahlungen",
+   "Datentyp": "Array\u003cVorauszahlung\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zuschlag",
+   "Datentyp": "Object\u003cZuschlag\u003e",
+   "NamePROFFIX": "ZuschlagAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagErtragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "ZuschlagErtrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "ZuschlagFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagKostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "ZuschlagKoArt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagKostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "ZuschlagKst",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagMWStFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "ZuschlagMWStFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagMWStSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "ZuschlagMWStSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagSteuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "ZuschlagStCode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuschlagSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "ZuschlagSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionen",
+   "Datentyp": "Array\u003cPosition\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Serviceauftrag",
+   "Datentyp": "Object\u003cServiceauftrag\u003e",
+   "NamePROFFIX": "AuftragNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bild",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bild",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim2",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Breite",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Eingangsstempel",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "Eingangsstempel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagereinheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungseinheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitRechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinkaufspreisFW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "EinkaufFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinkaufspreisSW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "EinkaufSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ertragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Ertragskonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gebinde",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Gebinde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gewicht",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Gewicht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GtinStufe",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "GtinStufe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gutschein",
+   "Datentyp": "Object\u003cGutschein\u003e",
+   "NamePROFFIX": "GutscheinNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Inhalt",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Inhalt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstOption",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "IsOption",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kundenbestellnummer",
+   "Datentyp": "String (35)",
+   "NamePROFFIX": "KBestellNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kundenbestellposition",
+   "Datentyp": "String (6)",
+   "NamePROFFIX": "KBestellPos",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim1",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Laenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerpreis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Lagerpreis",
+   "Besonderes": "optional, wird über Preisabfrage ermittelt Mögliche Werte sind:0 = manueller Preis1...5 = Verkaufspreis 1...56 = Preis über PreismodulWenn \"PreisFW\" überschrieben wird, muss 0 (manueller Preis) übergeben werden"
+  },
+  {
+   "Feld": "Lieferant",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "Lieferant",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liefertermin",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Liefertermin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Marge",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Marge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeOptional",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "MengeOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeVerr",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "MengeVerr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeVerrOptional",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "MengeVerrOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OccasionsObjektVerkauf",
+   "Datentyp": "Object\u003cOccasionsobjekt\u003e",
+   "NamePROFFIX": "MObjektNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OccasionsObjektAnkauf",
+   "Datentyp": "Object\u003cOccasionsobjekt\u003e",
+   "NamePROFFIX": "MObjektNrAnkauf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OccasionsObjektSerienummer",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "MObjektSerNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NichtAnzeigen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NichtAnzeigen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ExterneNotizen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenExt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ExterneNotizenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenExtRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "InterneNotizen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenInt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "InterneNotizenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenIntRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Optional",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Optional",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionsart",
+   "Datentyp": "Object\u003cPositionsart\u003e",
+   "NamePROFFIX": "PosArtSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kundeninstallationen",
+   "Datentyp": "Array\u003cInstallation\u003e",
+   "NamePROFFIX": "PositionenBasis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ServiceauftragspositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionstyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Positionsart",
+   "Besonderes": "Mögliche Werte sind:1 = Artikel2 = Freie Position3 = Text4 = Gesamtrabatt5 = Subtotal6 = Subtotal (danach auf 0 setzen)7 = Seitenumbruch8 = Teilrechnung (Dokumenttyp = RG)9 = Teilrechnung (Dokumenttyp = TR)10 = Occasions-Objekt11 = Bild12 = Gutschein (Gutschein != NULL)13 = Rapport (Positionsart != NULL) "
+  },
+  {
+   "Feld": "Preisdefinition",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "PreisDef",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisdefinitionOptional",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "PreisDefOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisdefinitionZusatzartikel",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "PreisDefZusatz",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisFW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "PreisFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisSW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "PreisSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RabattSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Rabatt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RabattFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "RabattFw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rapport",
+   "Datentyp": "Object\u003cRapport\u003e",
+   "NamePROFFIX": "RapportNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AutomatischRechnenVon",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RechnenTyp",
+   "Besonderes": "Mögliche Werte sind:0 = Nicht automatisch rechnen1 = Letzte Position2 = Letztes Subtotal3 = Subtotal"
+  },
+  {
+   "Feld": "Rekapitulation",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Rekap",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RueckstandMenge",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Rueckstand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Leistungsverwaltungstyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "StdPosArt",
+   "Besonderes": "Mögliche Werte sind:1 = Normale Position2 = Überzeit-Position3 = Km4-13 = Spesen (siehe Spesenaufteilung in der Leistungsverwaltung)"
+  },
+  {
+   "Feld": "SteuerFW",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerSW",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Stuecklistenkopf",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "StlKopf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Subtotalbezeichnungen",
+   "Datentyp": "Array\u003cString\u003e",
+   "NamePROFFIX": "SubtotalDef",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim3",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Tiefe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalInklusivFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalInklFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalInklusivSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalInklSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalOptional",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verpackungen",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Verpackungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vertreter",
+   "Datentyp": "Object\u003cVertreter\u003e",
+   "NamePROFFIX": "VertreterPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zusatzartikelreferenz",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Zusatzartikel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": "GesamtrabettAutomatischRechnen / Subtotal von Anfang an rechnen"
+  },
+  {
+   "Feld": "GesamtrabattVerbuchungAufteilen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BetragFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragDW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BetragDW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BetragSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchung",
+   "Datentyp": "Object\u003cBuchung\u003e",
+   "NamePROFFIX": "BuchungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungstext",
+   "Datentyp": "String (120)",
+   "NamePROFFIX": "BuTextPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZahlungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "ZahlungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungsart",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": "BuArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Konto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KontoNrFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (10,6)",
+   "NamePROFFIX": "Kurs",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gutschein",
+   "Datentyp": "Object\u003cGutschein\u003e",
+   "NamePROFFIX": "GutscheinNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Betrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragDW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BetragDW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BetragSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchung",
+   "Datentyp": "Object\u003cBuchung\u003e",
+   "NamePROFFIX": "BuchungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungstext",
+   "Datentyp": "String (120)",
+   "NamePROFFIX": "Buchungstext",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegnummer",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "VZDocNo",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungsart",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Konto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (10,6)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BuchungsartVorauszahlung",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KontoVorauszahlung",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuercodeVorauszahlung",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /AUF/Dokument",
+   "Rueckgabewert": "HTTP 200Array\u003cDokument\u003e",
+   "Beschreibung": "Gibt alle Dokumente zurück",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "GET /AUF/Dokument/{DokumentNr}",
+   "Rueckgabewert": "HTTP 200Dokument",
+   "Beschreibung": "Gibt ein Dokument anhand der DokumentNr zurück",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /AUF/Dokument",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Dokument an",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "PUT /AUF/Dokument/{DokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Dokument anhand der DokumentNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "DELETE /AUF/Dokument/{DokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Dokument anhand der DokumentNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /AUF/Dokument/{DokumentNr}/umwandeln",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Dokument an, welches das Ergebnis einer Dokumenttypumwandlung des Dokuments mit der DokumentNr ist",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /AUF/Dokument/{DokumentNr}/teilrechnungerstellen",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine Teilrechnung (Dokument) an, welche mit dem Dokument mit der DokumentNr verknüpft ist",
+   "BenoetigteLizenz": "AUF"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "aktuell",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur aktuelle Dokumente werden ausgegebenno: Nur nicht aktuelle Dokumente werden ausgegebenany: Alle Dokumente werden ausgegeben",
+   "VerhaltenOhneParameter": "any"
+  },
+  {
+   "Parameter": "rueckstandBuchen",
+   "Format": "String (no, auto)",
+   "Beschreibung": "no: Rückstände werden nicht gebuchtauto: Rückstände werden automatisch gebucht",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

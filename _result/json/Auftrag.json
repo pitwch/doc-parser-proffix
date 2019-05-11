@@ -1,1 +1,103 @@
-{"Fields":[{"Feld":"AuftragNr","Datentyp":"String (25)","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (80)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Kunde","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"Kunde","Besonderes":"optional"},{"Feld":"StartDatum","Datentyp":"String (Date)","NamePROFFIX":"StartDatum","Besonderes":"optional"},{"Feld":"EndDatum","Datentyp":"String (Date)","NamePROFFIX":"EndDatum","Besonderes":"optional"},{"Feld":"Positionsart","Datentyp":"Object\u003cPositionsart\u003e","NamePROFFIX":"PosArtSTU","Besonderes":"optional"},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":"optional"},{"Feld":"Kostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"KstFIB","Besonderes":"optional"},{"Feld":"Kostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"KoArtFIB","Besonderes":"optional"},{"Feld":"Ertragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"KontoNrFIB","Besonderes":"optional"},{"Feld":"Laufend","Datentyp":"Boolean","NamePROFFIX":"Laufend","Besonderes":"optional"}],"Methods":[{"Endpunkt":"GET /PRO/Auftrag","Rueckgabewert":"HTTP 200Array\u003cAuftrag\u003e","Beschreibung":"Gibt alle Aufträge zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 200Auftrag","Beschreibung":"Gibt einen Auftrag anhand der Auftragnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"POST /PRO/Auftrag","Rueckgabewert":"HTTP 201","Beschreibung":"Legt einen neuen Auftrag an","BenoetigteLizenz":"STU, FIB, ADR, LAG oder SRV"},{"Endpunkt":"PUT /PRO/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert einen Auftrag anhand der Auftragnummer","BenoetigteLizenz":"STU, FIB, ADR, LAG oder SRV"},{"Endpunkt":"DELETE /PRO/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löscht einen Auftrag anhand der Auftragnummer","BenoetigteLizenz":"STU, FIB, ADR, LAG oder SRV"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "AuftragNr",
+   "Datentyp": "String (25)",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kunde",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "Kunde",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "StartDatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "StartDatum",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "EndDatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "EndDatum",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Positionsart",
+   "Datentyp": "Object\u003cPositionsart\u003e",
+   "NamePROFFIX": "PosArtSTU",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Ertragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KontoNrFIB",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Laufend",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Laufend",
+   "Besonderes": "optional"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Auftrag",
+   "Rueckgabewert": "HTTP 200Array\u003cAuftrag\u003e",
+   "Beschreibung": "Gibt alle Aufträge zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Auftrag",
+   "Beschreibung": "Gibt einen Auftrag anhand der Auftragnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Auftrag",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Auftrag an",
+   "BenoetigteLizenz": "STU, FIB, ADR, LAG oder SRV"
+  },
+  {
+   "Endpunkt": "PUT /PRO/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Auftrag anhand der Auftragnummer",
+   "BenoetigteLizenz": "STU, FIB, ADR, LAG oder SRV"
+  },
+  {
+   "Endpunkt": "DELETE /PRO/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Auftrag anhand der Auftragnummer",
+   "BenoetigteLizenz": "STU, FIB, ADR, LAG oder SRV"
+  }
+ ],
+ "Parameter": null
+}

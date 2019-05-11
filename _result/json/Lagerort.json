@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"LagerortNr","Datentyp":"String (10)","NamePROFFIX":"LagerortLAG","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /LAG/Lagerort","Rueckgabewert":"HTTP 200Array\u003cLagerort\u003e","Beschreibung":"Gibt alle Lagerorte zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Lagerort/{LagerortNr}","Rueckgabewert":"HTTP 200Lagerort","Beschreibung":"Gibt einen Lagerort anhand der Lagerortnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "LagerortNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Lagerort",
+   "Rueckgabewert": "HTTP 200Array\u003cLagerort\u003e",
+   "Beschreibung": "Gibt alle Lagerorte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Lagerort/{LagerortNr}",
+   "Rueckgabewert": "HTTP 200Lagerort",
+   "Beschreibung": "Gibt einen Lagerort anhand der Lagerortnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

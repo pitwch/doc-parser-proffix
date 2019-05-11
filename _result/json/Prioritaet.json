@@ -1,1 +1,115 @@
-{"Fields":[{"Feld":"PrioritaetNr","Datentyp":"Number (int)","NamePROFFIX":"PrioritaetBAS","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Feiertage","Datentyp":"Boolean","NamePROFFIX":"FeiertageJN","Besonderes":" "},{"Feld":"Loesungszeit","Datentyp":"Number (8,2)","NamePROFFIX":"LoesZeit","Besonderes":" "},{"Feld":"EskalationsmeldungAn","Datentyp":"String (255)","NamePROFFIX":"MailEskalation","Besonderes":" "},{"Feld":"NurEineWarnung","Datentyp":"Boolean","NamePROFFIX":"NurEineWarnung","Besonderes":" "},{"Feld":"Reaktionszeit","Datentyp":"Number (8,2)","NamePROFFIX":"ReakZeit","Besonderes":" "},{"Feld":"Reihenfolge","Datentyp":"Number (8,2)","NamePROFFIX":"Reihenfolge","Besonderes":" "},{"Feld":"Samstag","Datentyp":"Boolean","NamePROFFIX":"SamstagJN","Besonderes":" "},{"Feld":"Sonntag","Datentyp":"Boolean","NamePROFFIX":"SonntagJN","Besonderes":" "},{"Feld":"WarnungEskalation","Datentyp":"Number (8,2)","NamePROFFIX":"WarnungEskalation","Besonderes":" "},{"Feld":"Zeitbereich1Bis","Datentyp":"String (5)","NamePROFFIX":"Zeit1bis","Besonderes":" "},{"Feld":"Zeitbereich1Von","Datentyp":"String (5)","NamePROFFIX":"Zeit1von","Besonderes":" "},{"Feld":"Zeitbereich2Bis","Datentyp":"String (5)","NamePROFFIX":"Zeit2bis","Besonderes":" "},{"Feld":"Zeitbereich2Von","Datentyp":"String (5)","NamePROFFIX":"Zeit2von","Besonderes":" "},{"Feld":"ZeitenRechnen","Datentyp":"Number (int)","NamePROFFIX":"ZeitenRechnen","Besonderes":"Maximal 5 Stellen"}],"Methods":[{"Endpunkt":"GET /BAS/Prioritaet","Rueckgabewert":"HTTP 200Array\u003cPrioritaet\u003e","Beschreibung":"Gibt alle Prioritäten zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /BAS/Prioritaet/{Prioritaet}","Rueckgabewert":"HTTP 200Prioritaet","Beschreibung":"Gibt eine Priorität zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "PrioritaetNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "PrioritaetBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Feiertage",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FeiertageJN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Loesungszeit",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "LoesZeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EskalationsmeldungAn",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "MailEskalation",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NurEineWarnung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NurEineWarnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Reaktionszeit",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "ReakZeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Reihenfolge",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "Reihenfolge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Samstag",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SamstagJN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sonntag",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SonntagJN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WarnungEskalation",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "WarnungEskalation",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zeitbereich1Bis",
+   "Datentyp": "String (5)",
+   "NamePROFFIX": "Zeit1bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zeitbereich1Von",
+   "Datentyp": "String (5)",
+   "NamePROFFIX": "Zeit1von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zeitbereich2Bis",
+   "Datentyp": "String (5)",
+   "NamePROFFIX": "Zeit2bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zeitbereich2Von",
+   "Datentyp": "String (5)",
+   "NamePROFFIX": "Zeit2von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZeitenRechnen",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "ZeitenRechnen",
+   "Besonderes": "Maximal 5 Stellen"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /BAS/Prioritaet",
+   "Rueckgabewert": "HTTP 200Array\u003cPrioritaet\u003e",
+   "Beschreibung": "Gibt alle Prioritäten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /BAS/Prioritaet/{Prioritaet}",
+   "Rueckgabewert": "HTTP 200Prioritaet",
+   "Beschreibung": "Gibt eine Priorität zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

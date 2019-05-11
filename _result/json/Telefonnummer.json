@@ -1,1 +1,38 @@
-{"Fields":[{"Feld":"TelefonNr","Datentyp":"String (∞)","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Parameter","Datentyp":"Format","NamePROFFIX":"Beschreibung","Besonderes":"Verhalten ohne Parameter"}],"Methods":[{"Endpunkt":"POST /UTILS/Telefonnummer/formatieren","Rueckgabewert":"HTTP 200Telefonnummer","Beschreibung":"Die TelefonNr wird formatiert und im selben Modell wieder zurückgegeben","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"format","Format":"String (∞)","Beschreibung":"Die Formatvorlage mit welcher formatiert werden soll","VerhaltenOhneParameter":"Standardformatierung"},{"Parameter":"country","Format":"String (∞)","Beschreibung":"Das Land, welches für die Telefonnummer verwendet werden soll, z.B. CH, DE usw.","VerhaltenOhneParameter":"Standardland"}]}
+{
+ "Fields": [
+  {
+   "Feld": "TelefonNr",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "POST /UTILS/Telefonnummer/formatieren",
+   "Rueckgabewert": "HTTP 200Telefonnummer",
+   "Beschreibung": "Die TelefonNr wird formatiert und im selben Modell wieder zurückgegeben",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "format",
+   "Format": "String (∞)",
+   "Beschreibung": "Die Formatvorlage mit welcher formatiert werden soll",
+   "VerhaltenOhneParameter": "Standardformatierung"
+  },
+  {
+   "Parameter": "country",
+   "Format": "String (∞)",
+   "Beschreibung": "Das Land, welches für die Telefonnummer verwendet werden soll, z.B. CH, DE usw.",
+   "VerhaltenOhneParameter": "Standardland"
+  }
+ ]
+}

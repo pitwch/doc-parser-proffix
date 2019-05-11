@@ -1,1 +1,37 @@
-{"Fields":[{"Feld":"ServiceartNr","Datentyp":"String (10)","NamePROFFIX":"ServiceArtSRV","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Beschrieb","Datentyp":"String (∞)","NamePROFFIX":"Beschrieb","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /SRV/Serviceart","Rueckgabewert":"HTTP 200Array\u003cServiceart\u003e","Beschreibung":"Gibt alle Servicearten zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /SRV/Serviceart/{Serviceart}","Rueckgabewert":"HTTP 200Serviceart","Beschreibung":"Gibt eine Serviceart zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "ServiceartNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "ServiceArtSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Beschrieb",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Beschrieb",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /SRV/Serviceart",
+   "Rueckgabewert": "HTTP 200Array\u003cServiceart\u003e",
+   "Beschreibung": "Gibt alle Servicearten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /SRV/Serviceart/{Serviceart}",
+   "Rueckgabewert": "HTTP 200Serviceart",
+   "Beschreibung": "Gibt eine Serviceart zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

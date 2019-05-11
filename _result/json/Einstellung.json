@@ -1,1 +1,74 @@
-{"Fields":[{"Feld":"Modul","Datentyp":"Section","NamePROFFIX":"Datentyp der Einstellung","Besonderes":"Beschreibung"}],"Methods":[{"Endpunkt":"GET /PRO/Einstellung/{Modul}","Rueckgabewert":"HTTP 200Array\u003cEinstellung\u003e","Beschreibung":"Gibt alle Einstellungen eines Moduls zurückModul bezieht sich auf den Modulnamen in PROFFIX (z.B. pxFibu, pxLager)","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Einstellung/{Modul}/{Section}","Rueckgabewert":"HTTP 200Einstellung","Beschreibung":"Gibt eine einzelne Einstellung zurückModul bezieht sich auf den Modulnamen in PROFFIX (z.B. pxFibu, pxLager)","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"plain","Format":"String (yes, no)","Beschreibung":"Dieser Parameter wird ab Version 2.0.0 nicht mehr berücksichtigt.yes: Einstellung wird unverändert aus der PROFFIX-Datenbank als String zurückgegebenno: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt ist","VerhaltenOhneParameter":"no"},{"Parameter":"beauty","Format":"String (yes, no)","Beschreibung":"yes: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt istno: Einstellung wird unverändert aus der PROFFIX-Datenbank als String zurückgegeben","VerhaltenOhneParameter":"no"},{"Parameter":"pxLager","Format":"ZeilenDefVP","Beschreibung":"Array\u003cString\u003e","VerhaltenOhneParameter":"Bezeichnung für die Verkaufspreise 1 bis 5"},{"Parameter":"pxStunden","Format":"DefRapportMobile","Beschreibung":"Array\u003cString\u003e","VerhaltenOhneParameter":"Alle in diesem Array angegebenen Felder werden in der Rapporteingabe der PROFFIX Leistungserfassung mobile angezeigt"},{"Parameter":"pxStunden","Format":"LohnperiodePlus1","Beschreibung":"Number (int)","VerhaltenOhneParameter":"Kann 0 bis 31 sein, 0 bedeutet die Lohnperiode entspricht immer dem aktuelle Monat, 1 bis 31 beschreibt den Tag des Monats an dem die neue Lohnperiode startet"},{"Parameter":"pxZeit","Format":"StandortZwingend","Beschreibung":"Boolean","VerhaltenOhneParameter":"Wenn True muss der Standort bei /ZEI/Stempel/starten und /ZEI/Stempel/stoppen der aktuelle Standort mitgegeben werden, denn von einem mobilen Gerät gestempelt wurde"},{"Parameter":"pxStunden","Format":"Überzeit","Beschreibung":"Number (10,2)","VerhaltenOhneParameter":"Stundenpreis und Überzeitzuschlag (in ganzen Prozent z.B. \"50\" für 50% Zuschlag) abrufen"},{"Parameter":"pxStunden","Format":"KM","Beschreibung":"Number (10,2)","VerhaltenOhneParameter":"Kilometerpreis (in Einheitswährung z.B. \"0.7\" für 70 Rappen) abrufen "}]}
+{
+ "Fields": [
+  {
+   "Feld": "Modul",
+   "Datentyp": "Section",
+   "NamePROFFIX": "Datentyp der Einstellung",
+   "Besonderes": "Beschreibung"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Einstellung/{Modul}",
+   "Rueckgabewert": "HTTP 200Array\u003cEinstellung\u003e",
+   "Beschreibung": "Gibt alle Einstellungen eines Moduls zurückModul bezieht sich auf den Modulnamen in PROFFIX (z.B. pxFibu, pxLager)",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Einstellung/{Modul}/{Section}",
+   "Rueckgabewert": "HTTP 200Einstellung",
+   "Beschreibung": "Gibt eine einzelne Einstellung zurückModul bezieht sich auf den Modulnamen in PROFFIX (z.B. pxFibu, pxLager)",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "plain",
+   "Format": "String (yes, no)",
+   "Beschreibung": "Dieser Parameter wird ab Version 2.0.0 nicht mehr berücksichtigt.yes: Einstellung wird unverändert aus der PROFFIX-Datenbank als String zurückgegebenno: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt ist",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "beauty",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt istno: Einstellung wird unverändert aus der PROFFIX-Datenbank als String zurückgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "pxLager",
+   "Format": "ZeilenDefVP",
+   "Beschreibung": "Array\u003cString\u003e",
+   "VerhaltenOhneParameter": "Bezeichnung für die Verkaufspreise 1 bis 5"
+  },
+  {
+   "Parameter": "pxStunden",
+   "Format": "DefRapportMobile",
+   "Beschreibung": "Array\u003cString\u003e",
+   "VerhaltenOhneParameter": "Alle in diesem Array angegebenen Felder werden in der Rapporteingabe der PROFFIX Leistungserfassung mobile angezeigt"
+  },
+  {
+   "Parameter": "pxStunden",
+   "Format": "LohnperiodePlus1",
+   "Beschreibung": "Number (int)",
+   "VerhaltenOhneParameter": "Kann 0 bis 31 sein, 0 bedeutet die Lohnperiode entspricht immer dem aktuelle Monat, 1 bis 31 beschreibt den Tag des Monats an dem die neue Lohnperiode startet"
+  },
+  {
+   "Parameter": "pxZeit",
+   "Format": "StandortZwingend",
+   "Beschreibung": "Boolean",
+   "VerhaltenOhneParameter": "Wenn True muss der Standort bei /ZEI/Stempel/starten und /ZEI/Stempel/stoppen der aktuelle Standort mitgegeben werden, denn von einem mobilen Gerät gestempelt wurde"
+  },
+  {
+   "Parameter": "pxStunden",
+   "Format": "Überzeit",
+   "Beschreibung": "Number (10,2)",
+   "VerhaltenOhneParameter": "Stundenpreis und Überzeitzuschlag (in ganzen Prozent z.B. \"50\" für 50% Zuschlag) abrufen"
+  },
+  {
+   "Parameter": "pxStunden",
+   "Format": "KM",
+   "Beschreibung": "Number (10,2)",
+   "VerhaltenOhneParameter": "Kilometerpreis (in Einheitswährung z.B. \"0.7\" für 70 Rappen) abrufen "
+  }
+ ]
+}

@@ -1,1 +1,776 @@
-{"Fields":[{"Feld":"BestellungNr","Datentyp":"Number (Int)","NamePROFFIX":"BestellNrEIN","Besonderes":" "},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Adresszeile1","Datentyp":"String (40)","NamePROFFIX":"Adresszeile1","Besonderes":" "},{"Feld":"Adresszeile2","Datentyp":"String (40)","NamePROFFIX":"Adresszeile2","Besonderes":" "},{"Feld":"Adresszeile3","Datentyp":"String (50)","NamePROFFIX":"Adresszeile3","Besonderes":" "},{"Feld":"Adresszeile4","Datentyp":"String (40)","NamePROFFIX":"Adresszeile4","Besonderes":" "},{"Feld":"Adresszeile5","Datentyp":"String (40)","NamePROFFIX":"Adresszeile5","Besonderes":" "},{"Feld":"Anrede","Datentyp":"String (40)","NamePROFFIX":"Anrede","Besonderes":" "},{"Feld":"Aufgabe","Datentyp":"Object\u003cAufgabe\u003e","NamePROFFIX":"AufgabenNrCRM","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Bestelltyp","Datentyp":"Object\u003cBestelltyp\u003e","NamePROFFIX":"BestellTypEIN","Besonderes":" "},{"Feld":"BestellungEnde","Datentyp":"Boolean","NamePROFFIX":"BestellungEnde","Besonderes":" "},{"Feld":"Datum","Datentyp":"String (Date)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"DokumentLieferant","Datentyp":"String (50)","NamePROFFIX":"DokumentLieferant","Besonderes":" "},{"Feld":"Gedruckt","Datentyp":"Boolean","NamePROFFIX":"Gedruckt","Besonderes":" "},{"Feld":"IhrZeichen","Datentyp":"String (50)","NamePROFFIX":"IhrZ","Besonderes":" "},{"Feld":"Region","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"KantonPRO","Besonderes":" "},{"Feld":"Kontaktname","Datentyp":"String (80)","NamePROFFIX":"Kontakt","Besonderes":" "},{"Feld":"Kontakt","Datentyp":"Object\u003cKontakt\u003e","NamePROFFIX":"KontaktNrADR","Besonderes":" "},{"Feld":"Land","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"LandPRO","Besonderes":" "},{"Feld":"Lieferadresszeile1","Datentyp":"String (40)","NamePROFFIX":"LieferAdr1","Besonderes":" "},{"Feld":"Lieferadresszeile2","Datentyp":"String (40)","NamePROFFIX":"LieferAdr2","Besonderes":" "},{"Feld":"Lieferadresszeile3","Datentyp":"String (50)","NamePROFFIX":"LieferAdr3","Besonderes":" "},{"Feld":"Lieferadresszeile4","Datentyp":"String (40)","NamePROFFIX":"LieferAdr4","Besonderes":" "},{"Feld":"Lieferadresszeile5","Datentyp":"String (40)","NamePROFFIX":"LieferAdr5","Besonderes":" "},{"Feld":"Lieferadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"LieferAdress","Besonderes":" "},{"Feld":"LieferadressAnrede","Datentyp":"String (40)","NamePROFFIX":"LieferAnrede","Besonderes":" "},{"Feld":"Lieferart","Datentyp":"Object\u003cLieferart\u003e","NamePROFFIX":"LieferartPRO","Besonderes":" "},{"Feld":"LieferadressRegion","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"LieferKanton","Besonderes":" "},{"Feld":"LieferadressKontaktname","Datentyp":"String (80)","NamePROFFIX":"LieferKontakt","Besonderes":" "},{"Feld":"LieferadressKontakt","Datentyp":"Object\u003cKontakt\u003e","NamePROFFIX":"LieferKontaktNr","Besonderes":" "},{"Feld":"LieferadressLand","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"LieferLand","Besonderes":" "},{"Feld":"LieferadressName","Datentyp":"String (40)","NamePROFFIX":"LieferName","Besonderes":" "},{"Feld":"LieferadressOrt","Datentyp":"String (40)","NamePROFFIX":"LieferOrt","Besonderes":" "},{"Feld":"LieferadressPLZ","Datentyp":"String (10)","NamePROFFIX":"LieferPLZ","Besonderes":" "},{"Feld":"LieferadressStrasse","Datentyp":"String (40)","NamePROFFIX":"LieferStrasse","Besonderes":" "},{"Feld":"LieferadressVorname","Datentyp":"String (40)","NamePROFFIX":"LieferVorname","Besonderes":" "},{"Feld":"Name","Datentyp":"String (40)","NamePROFFIX":"Name","Besonderes":" "},{"Feld":"Notizen","Datentyp":"String (∞)","NamePROFFIX":"Notizen","Besonderes":" "},{"Feld":"NotizenRTF","Datentyp":"String (∞)","NamePROFFIX":"NotizenRTF","Besonderes":" "},{"Feld":"Ort","Datentyp":"String (40)","NamePROFFIX":"OrtPRO","Besonderes":" "},{"Feld":"PLZ","Datentyp":"String (10)","NamePROFFIX":"PLZPRO","Besonderes":" "},{"Feld":"Rechnungsadresszeile1","Datentyp":"String (40)","NamePROFFIX":"RechAdr1","Besonderes":" "},{"Feld":"Rechnungsadresszeile2","Datentyp":"String (40)","NamePROFFIX":"RechAdr2","Besonderes":" "},{"Feld":"Rechnungsadresszeile3","Datentyp":"String (50)","NamePROFFIX":"RechAdr3","Besonderes":" "},{"Feld":"Rechnungsadresszeile4","Datentyp":"String (40)","NamePROFFIX":"RechAdr4","Besonderes":" "},{"Feld":"Rechnungsadresszeile5","Datentyp":"String (40)","NamePROFFIX":"RechAdr5","Besonderes":" "},{"Feld":"Rechnungsadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"RechAdress","Besonderes":" "},{"Feld":"RechnungsadressAnrede","Datentyp":"String (40)","NamePROFFIX":"RechAnrede","Besonderes":" "},{"Feld":"RechnungsadressRegion","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"RechKanton","Besonderes":" "},{"Feld":"RechnungsadressKontaktname","Datentyp":"String (80)","NamePROFFIX":"RechKontakt","Besonderes":" "},{"Feld":"RechnungsadressKontakt","Datentyp":"Object\u003cKontakt\u003e","NamePROFFIX":"RechKontaktNr","Besonderes":" "},{"Feld":"RechnungsadressLand","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"RechLand","Besonderes":" "},{"Feld":"RechnungsadressName","Datentyp":"String (40)","NamePROFFIX":"RechName","Besonderes":" "},{"Feld":"RechnungsadressOrt","Datentyp":"String (40)","NamePROFFIX":"RechOrt","Besonderes":" "},{"Feld":"RechnungsadressPLZ","Datentyp":"String (10)","NamePROFFIX":"RechPLZ","Besonderes":" "},{"Feld":"RechnungsadressStrasse","Datentyp":"String (40)","NamePROFFIX":"RechStrasse","Besonderes":" "},{"Feld":"RechnungsadressVorname","Datentyp":"String (40)","NamePROFFIX":"RechVorname","Besonderes":" "},{"Feld":"Referenztext","Datentyp":"String (150)","NamePROFFIX":"Referenztext","Besonderes":" "},{"Feld":"Sprache","Datentyp":"Object\u003cSprache\u003e","NamePROFFIX":"SprachePRO","Besonderes":" "},{"Feld":"Strasse","Datentyp":"String (40)","NamePROFFIX":"Strasse","Besonderes":" "},{"Feld":"Termin","Datentyp":"String (Date)","NamePROFFIX":"Termin","Besonderes":" "},{"Feld":"TerminWoche","Datentyp":"String (8)","NamePROFFIX":"TerminWo","Besonderes":" "},{"Feld":"UnserZeichen","Datentyp":"String (50)","NamePROFFIX":"UnserZ","Besonderes":" "},{"Feld":"Vorname","Datentyp":"String (40)","NamePROFFIX":"Vorname","Besonderes":" "},{"Feld":"Positionen","Datentyp":"Array\u003cPosition\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Aktuell","Datentyp":"Boolean","NamePROFFIX":" ","Besonderes":" "},{"Feld":"BestellpositionNr","Datentyp":"Number (Int)","NamePROFFIX":"LaufNr","Besonderes":" "},{"Feld":"PositionNr","Datentyp":"Number (Int)","NamePROFFIX":"PositionNr","Besonderes":" "},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":" "},{"Feld":"ArtikelLieferant","Datentyp":"String (30)","NamePROFFIX":"ArtikelNrLief","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Menge","Datentyp":"Number (8,4)","NamePROFFIX":"Bestellt","Besonderes":" "},{"Feld":"Bestelltyp","Datentyp":"Object\u003cBestelltyp\u003e","NamePROFFIX":"BestellTypEIN","Besonderes":" "},{"Feld":"Bezeichnung1","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung1","Besonderes":" "},{"Feld":"Bezeichnung2","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung2","Besonderes":" "},{"Feld":"Bezeichnung3","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung3","Besonderes":" "},{"Feld":"Bezeichnung4","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung4","Besonderes":" "},{"Feld":"Bezeichnung5","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung5","Besonderes":" "},{"Feld":"Dim2","Datentyp":"Number (10,4)","NamePROFFIX":"Breite","Besonderes":" "},{"Feld":"Dokument","Datentyp":"Object\u003cDokument\u003e","NamePROFFIX":"DokumentNrAUF","Besonderes":" "},{"Feld":"EinheitLager","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitPRO","Besonderes":" "},{"Feld":"EinheitRechnung","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitRechnung","Besonderes":" "},{"Feld":"EtikettenDruckmenge","Datentyp":"Number (8,4)","NamePROFFIX":"EtiMenge","Besonderes":" "},{"Feld":"MengeGeliefert","Datentyp":"Number (8,4)","NamePROFFIX":"Geliefert","Besonderes":" "},{"Feld":"Gewicht","Datentyp":"Number (8,4)","NamePROFFIX":"Gewicht","Besonderes":" "},{"Feld":"GtinStufe","Datentyp":"String (50)","NamePROFFIX":"GtinStufe","Besonderes":" "},{"Feld":"Kurs","Datentyp":"Number (10,6)","NamePROFFIX":"Kurs","Besonderes":" "},{"Feld":"Dim1","Datentyp":"Number (10,4)","NamePROFFIX":"Laenge","Besonderes":" "},{"Feld":"MengeVerr","Datentyp":"Number (8,4)","NamePROFFIX":"Menge","Besonderes":" "},{"Feld":"NotizenExtern","Datentyp":"String (∞)","NamePROFFIX":"NotizenExt","Besonderes":" "},{"Feld":"NotizenExternRTF","Datentyp":"String (∞)","NamePROFFIX":"NotizenExtRTF","Besonderes":" "},{"Feld":"NotizenIntern","Datentyp":"String (∞)","NamePROFFIX":"NotizenInt","Besonderes":" "},{"Feld":"NotizenInternRTF","Datentyp":"String (∞)","NamePROFFIX":"NotizenIntRTF","Besonderes":" "},{"Feld":"PositionEnde","Datentyp":"Boolean","NamePROFFIX":"PositionEnde","Besonderes":" "},{"Feld":"Positionstyp","Datentyp":"Number (Int)","NamePROFFIX":"PositionsArt","Besonderes":"Mögliche Werte sind:1 = Artikel2 = Freie Position3 = Text"},{"Feld":"Preisdefinition","Datentyp":"String (∞)","NamePROFFIX":"PreisDef","Besonderes":" "},{"Feld":"PreisFW","Datentyp":"Number (10,4)","NamePROFFIX":"PreisFw","Besonderes":" "},{"Feld":"PreisSW","Datentyp":"Number (10,4)","NamePROFFIX":"PreisSw","Besonderes":" "},{"Feld":"Rabatt1","Datentyp":"Number (12,2)","NamePROFFIX":"Rabatt","Besonderes":" "},{"Feld":"Rabatt2","Datentyp":"Number (12,2)","NamePROFFIX":"Rabatt2","Besonderes":" "},{"Feld":"RestErledigt","Datentyp":"Boolean","NamePROFFIX":"RestErledigt","Besonderes":" "},{"Feld":"RueckstandsNr","Datentyp":"Number (Int)","NamePROFFIX":"RNummer","Besonderes":" "},{"Feld":"Vertragsanzahl","Datentyp":"Number (8,4)","NamePROFFIX":"RVAnzahl","Besonderes":" "},{"Feld":"Rahmenvertrag","Datentyp":"Object\u003cRahmenvertrag\u003e","NamePROFFIX":"RVertragNrPRO","Besonderes":" "},{"Feld":"RahmenvertragPositionNr","Datentyp":"Number (Int)","NamePROFFIX":"RVLaufNr","Besonderes":" "},{"Feld":"Sprache","Datentyp":"Object\u003cSprache\u003e","NamePROFFIX":"SprachePRO","Besonderes":" "},{"Feld":"Stuecklistenkopf","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"StlKopf","Besonderes":" "},{"Feld":"Tara","Datentyp":"Number (8,4)","NamePROFFIX":"Tara","Besonderes":" "},{"Feld":"Termin","Datentyp":"String (Date)","NamePROFFIX":"Termin","Besonderes":" "},{"Feld":"TerminBestaetigt","Datentyp":"String (Date)","NamePROFFIX":"TerminLief","Besonderes":" "},{"Feld":"TerminWoche","Datentyp":"String (8)","NamePROFFIX":"TerminWo","Besonderes":" "},{"Feld":"Dim3","Datentyp":"Number (10,4)","NamePROFFIX":"Tiefe","Besonderes":" "},{"Feld":"TotalFW","Datentyp":"Number (10,4)","NamePROFFIX":"TotalPreisFw","Besonderes":" "},{"Feld":"TotalSW","Datentyp":"Number (10,4)","NamePROFFIX":"TotalPreisSw","Besonderes":" "},{"Feld":"Verhaeltnis","Datentyp":"Number (Int)","NamePROFFIX":"Verhaeltnis","Besonderes":" "},{"Feld":"Verpackungen","Datentyp":"Number (Int)","NamePROFFIX":"Verpackungen","Besonderes":" "},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"WareneingangslisteLieferung","Datentyp":"Number (8,4)","NamePROFFIX":"WelLieferung","Besonderes":" "},{"Feld":"Wareneingangsliste","Datentyp":"Object\u003cWareneingangsliste\u003e","NamePROFFIX":"WelNameEIN","Besonderes":" "},{"Feld":"WareneingangslisteRestErledigt","Datentyp":"Boolean","NamePROFFIX":"WelRestErledigt","Besonderes":" "},{"Feld":"TerminWocheBestaetigt","Datentyp":"String (8)","NamePROFFIX":"WocheLief","Besonderes":" "},{"Feld":"Parameter","Datentyp":"Format","NamePROFFIX":"Beschreibung","Besonderes":"Verhalten ohne Parameter"}],"Methods":[{"Endpunkt":"GET /EIN/Bestellung","Rueckgabewert":"HTTP 200Array\u003cBestellung\u003e","Beschreibung":"Gibt alle Bestellungen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /EIN/Bestellung/{BestellungNr}","Rueckgabewert":"HTTP 200Bestellung","Beschreibung":"Gibt eine Bestellung anhand der BestellungNr zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /EIN/Bestellung/{BestellungNr}/Position/{BestellpositionNr}/Status","Rueckgabewert":"HTTP 200Status","Beschreibung":"Gibt den Status einer Bestellung zurück, siehe Status","BenoetigteLizenz":"keine"},{"Endpunkt":"PUT /EIN/Bestellung/{BestellungNr}/Position/{BestellpositionNr}/Status","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert den Status einer Bestellung, siehe Status","BenoetigteLizenz":"EIN"}],"Parameter":[{"Parameter":"aktuell","Format":"String (yes, no, any)","Beschreibung":"yes: Nur aktuelle Bestellungen werden ausgegebenno: Nur nicht aktuelle Bestellungen werden ausgegebenany: Alle Bestellungen werden ausgegeben","VerhaltenOhneParameter":"yes"}]}
+{
+ "Fields": [
+  {
+   "Feld": "BestellungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "BestellNrEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile3",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Adresszeile3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Anrede",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Aufgabe",
+   "Datentyp": "Object\u003cAufgabe\u003e",
+   "NamePROFFIX": "AufgabenNrCRM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestelltyp",
+   "Datentyp": "Object\u003cBestelltyp\u003e",
+   "NamePROFFIX": "BestellTypEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BestellungEnde",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "BestellungEnde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentLieferant",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "DokumentLieferant",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gedruckt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Gedruckt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IhrZeichen",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "IhrZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Region",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "KantonPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontaktname",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Kontakt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "KontaktNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LandPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile3",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "LieferAdr3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresszeile5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAdr5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "LieferAdress",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressAnrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferAnrede",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferart",
+   "Datentyp": "Object\u003cLieferart\u003e",
+   "NamePROFFIX": "LieferartPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressRegion",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "LieferKanton",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressKontaktname",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "LieferKontakt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressKontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "LieferKontaktNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressLand",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LieferLand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressName",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferName",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressOrt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferOrt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressPLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "LieferPLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressStrasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferStrasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LieferadressVorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "LieferVorname",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Name",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Notizen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Notizen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NotizenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "OrtPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "PLZPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile3",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "RechAdr3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresszeile5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAdr5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "RechAdress",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressAnrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechAnrede",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressRegion",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "RechKanton",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressKontaktname",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "RechKontakt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressKontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "RechKontaktNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressLand",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "RechLand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressName",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechName",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressOrt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechOrt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressPLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "RechPLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressStrasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechStrasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressVorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "RechVorname",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Referenztext",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "Referenztext",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Strasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Strasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Termin",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Termin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TerminWoche",
+   "Datentyp": "String (8)",
+   "NamePROFFIX": "TerminWo",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "UnserZeichen",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "UnserZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Vorname",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionen",
+   "Datentyp": "Array\u003cPosition\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Aktuell",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BestellpositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ArtikelLieferant",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "ArtikelNrLief",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Bestellt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestelltyp",
+   "Datentyp": "Object\u003cBestelltyp\u003e",
+   "NamePROFFIX": "BestellTypEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim2",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Breite",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokument",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokumentNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitLager",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitRechnung",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitRechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EtikettenDruckmenge",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "EtiMenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeGeliefert",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Geliefert",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gewicht",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Gewicht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GtinStufe",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "GtinStufe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (10,6)",
+   "NamePROFFIX": "Kurs",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim1",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Laenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeVerr",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NotizenExtern",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenExt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NotizenExternRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenExtRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NotizenIntern",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenInt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NotizenInternRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenIntRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PositionEnde",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "PositionEnde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionstyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionsArt",
+   "Besonderes": "Mögliche Werte sind:1 = Artikel2 = Freie Position3 = Text"
+  },
+  {
+   "Feld": "Preisdefinition",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "PreisDef",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisFW",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "PreisFw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisSW",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "PreisSw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rabatt1",
+   "Datentyp": "Number (12,2)",
+   "NamePROFFIX": "Rabatt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rabatt2",
+   "Datentyp": "Number (12,2)",
+   "NamePROFFIX": "Rabatt2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RestErledigt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "RestErledigt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RueckstandsNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RNummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vertragsanzahl",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "RVAnzahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rahmenvertrag",
+   "Datentyp": "Object\u003cRahmenvertrag\u003e",
+   "NamePROFFIX": "RVertragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RahmenvertragPositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RVLaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Stuecklistenkopf",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "StlKopf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Tara",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Tara",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Termin",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Termin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TerminBestaetigt",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "TerminLief",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TerminWoche",
+   "Datentyp": "String (8)",
+   "NamePROFFIX": "TerminWo",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim3",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Tiefe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalFW",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "TotalPreisFw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalSW",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "TotalPreisSw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verhaeltnis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Verhaeltnis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verpackungen",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Verpackungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WareneingangslisteLieferung",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "WelLieferung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Wareneingangsliste",
+   "Datentyp": "Object\u003cWareneingangsliste\u003e",
+   "NamePROFFIX": "WelNameEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WareneingangslisteRestErledigt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "WelRestErledigt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TerminWocheBestaetigt",
+   "Datentyp": "String (8)",
+   "NamePROFFIX": "WocheLief",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /EIN/Bestellung",
+   "Rueckgabewert": "HTTP 200Array\u003cBestellung\u003e",
+   "Beschreibung": "Gibt alle Bestellungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /EIN/Bestellung/{BestellungNr}",
+   "Rueckgabewert": "HTTP 200Bestellung",
+   "Beschreibung": "Gibt eine Bestellung anhand der BestellungNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /EIN/Bestellung/{BestellungNr}/Position/{BestellpositionNr}/Status",
+   "Rueckgabewert": "HTTP 200Status",
+   "Beschreibung": "Gibt den Status einer Bestellung zurück, siehe Status",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PUT /EIN/Bestellung/{BestellungNr}/Position/{BestellpositionNr}/Status",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert den Status einer Bestellung, siehe Status",
+   "BenoetigteLizenz": "EIN"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "aktuell",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur aktuelle Bestellungen werden ausgegebenno: Nur nicht aktuelle Bestellungen werden ausgegebenany: Alle Bestellungen werden ausgegeben",
+   "VerhaltenOhneParameter": "yes"
+  }
+ ]
+}

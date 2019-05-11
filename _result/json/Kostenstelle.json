@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"KostenstelleNr","Datentyp":"String (25)","NamePROFFIX":"KstFIB","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (80)","NamePROFFIX":"Bezeichnung","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /FIB/Kostenstelle","Rueckgabewert":"HTTP 200Array\u003cKostenstelle\u003e","Beschreibung":"Gibt alle Kostenstellen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /FIB/Kostenstelle/{KostenstelleNr}","Rueckgabewert":"HTTP 200Kostenstelle","Beschreibung":"Gibt ein Kostenstelle anhand der Kostenstellennummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "KostenstelleNr",
+   "Datentyp": "String (25)",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/Kostenstelle",
+   "Rueckgabewert": "HTTP 200Array\u003cKostenstelle\u003e",
+   "Beschreibung": "Gibt alle Kostenstellen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /FIB/Kostenstelle/{KostenstelleNr}",
+   "Rueckgabewert": "HTTP 200Kostenstelle",
+   "Beschreibung": "Gibt ein Kostenstelle anhand der Kostenstellennummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

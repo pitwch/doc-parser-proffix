@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"AufgabeNr","Datentyp":"Number (Int)","NamePROFFIX":"AufgabenNrCRM","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /CRM/Aufgabe","Rueckgabewert":"HTTP 200Array\u003cAufgabe\u003e","Beschreibung":"Gibt alle Aufgaben zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /CRM/Aufgabe/{AufgabeNr}","Rueckgabewert":"HTTP 200Aufgabe","Beschreibung":"Gibt eine Aufgabe anhand der AufgabeNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "AufgabeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "AufgabenNrCRM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /CRM/Aufgabe",
+   "Rueckgabewert": "HTTP 200Array\u003cAufgabe\u003e",
+   "Beschreibung": "Gibt alle Aufgaben zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /CRM/Aufgabe/{AufgabeNr}",
+   "Rueckgabewert": "HTTP 200Aufgabe",
+   "Beschreibung": "Gibt eine Aufgabe anhand der AufgabeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

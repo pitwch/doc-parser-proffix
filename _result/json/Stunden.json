@@ -1,1 +1,218 @@
-{"Fields":[{"Feld":"StundenNr","Datentyp":"Number (int)","NamePROFFIX":"StundenNrZEI","Besonderes":" "},{"Feld":"Mitarbeiter","Datentyp":"Object\u003cMitarbeiter\u003e","NamePROFFIX":"MitNrPRO","Besonderes":" "},{"Feld":"Stundenart","Datentyp":"Object\u003cStundenart\u003e","NamePROFFIX":"StundenartZEI","Besonderes":"optional, wenn leer wird Stundenart vom Mitarbeiter übernommen"},{"Feld":"Datum","Datentyp":"String (Date)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"StartZeit","Datentyp":"String (Time)","NamePROFFIX":"StartZeit","Besonderes":"Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"},{"Feld":"EndZeit","Datentyp":"String (Time)","NamePROFFIX":"EndZeit","Besonderes":"Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"},{"Feld":"Stunden","Datentyp":"Number (10,2)","NamePROFFIX":"Stunden","Besonderes":"Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"},{"Feld":"Pause","Datentyp":"Number (10,2)","NamePROFFIX":"Pause","Besonderes":"optional, in Minutennur wenn \"ZeitErfassen\" in der Stundenart aktiviert ist"},{"Feld":"KaWo","Datentyp":"String (2)","NamePROFFIX":"KaWo","Besonderes":"optional, wird beim Speichern automatisch jedesmal überschrieben"},{"Feld":"Quelle","Datentyp":"String (50)","NamePROFFIX":"Quelle","Besonderes":"optional, gibt die Quelle des Zeitstempels während des Einstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"},{"Feld":"QuelleStop","Datentyp":"String (50)","NamePROFFIX":"QuelleStop","Besonderes":"optional, gibt die Quelle des Zeitstempels während des Ausstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"},{"Feld":"Bemerkungen","Datentyp":"String (∞)","NamePROFFIX":"Bemerkungen","Besonderes":"Optional"},{"Feld":"Longitude","Datentyp":"Number (10,2)","NamePROFFIX":"Longitude","Besonderes":"optional, gibt den Längengrad beim Einstempeln an"},{"Feld":"Latitude","Datentyp":"Number (10,2)","NamePROFFIX":"Latitude","Besonderes":"optional, gibt den Breitengrad"},{"Feld":"Accuracy","Datentyp":"Number (10,2)","NamePROFFIX":"Accuracy","Besonderes":"optional, gibt die Genauigkeit der Positionsbestimmung in Metern beim Einstempeln an"},{"Feld":"LongitudeStop","Datentyp":"Number (10,2)","NamePROFFIX":"LongitudeStop","Besonderes":"optional, gibt den Längengrad beim Ausstempeln an"},{"Feld":"LatitudeStop","Datentyp":"Number (10,2)","NamePROFFIX":"LatitudeStop","Besonderes":"optional, gibt den Breitengrad beim Ausstemplen an"},{"Feld":"AccuracyStop","Datentyp":"Number (10,2)","NamePROFFIX":"AccuracyStop","Besonderes":"optional, gibt die Genauigkeit der Positionsbestimmung in Metern beim Ausstemplen an"},{"Feld":"Kuerzung","Datentyp":"Boolean","NamePROFFIX":"Kuerzung","Besonderes":"Datensatz wurde von einer Stunden-Kürzungsregel angelegt und kann nicht geändert werden"},{"Feld":"KuerzungMonat","Datentyp":"Boolean","NamePROFFIX":"KuerzungMonat","Besonderes":"Datensatz wurde von einer Stunden-Kürzungsregel angelegt und kann nicht geändert werden"},{"Feld":"Gesperrt","Datentyp":"Boolean","NamePROFFIX":" ","Besonderes":"Datensatz ist gesperrt (also jünger als das Sperrdatum), nach diesem Feld kann nicht gefiltert werden"}],"Methods":[{"Endpunkt":"GET /ZEI/Stunden","Rueckgabewert":"HTTP 200Array\u003cStunden\u003e","Beschreibung":"Gibt alle Stunden zurück","BenoetigteLizenz":"ZEI"},{"Endpunkt":"GET /ZEI/Stunden/{StundenNr}","Rueckgabewert":"HTTP 200Stunden","Beschreibung":"Gibt ein Stundeneintrag anhand der Stundennummer zurück","BenoetigteLizenz":"ZEI"},{"Endpunkt":"POST /ZEI/Stunden","Rueckgabewert":"HTTP 201","Beschreibung":"Legt einen neuen Stundeneintrag an","BenoetigteLizenz":"ZEI"},{"Endpunkt":"PUT /ZEI/Stunden/{StundenNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert einen Stundeneintrag anhand der Stundennummer","BenoetigteLizenz":"ZEI"},{"Endpunkt":"DELETE /ZEI/Stunden/{StundenNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löschen einen Stundeneintrag anhand der Stundennummer","BenoetigteLizenz":"ZEI"},{"Endpunkt":"POST /ZEI/Stunden/zeitraumerfassen","Rueckgabewert":"HTTP 204","Beschreibung":"Legt mehrere Stundeneinträge an (siehe URL-Parameter)","BenoetigteLizenz":"ZEI"}],"Parameter":[{"Parameter":"gekuerzt","Format":"String (yes, no, any)","Beschreibung":"yes: Nur Stunden ausgegeben bei denen Kuerzung oder KuerzungMonat auf true sindno: Nur Stunden ausgegeben bei denen Kuerzung oder KuerzungMonat auf false sindany: Alle Stunden werden ausgegeben","VerhaltenOhneParameter":"no"},{"Parameter":"gesperrt","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gesperrte Stunden werden ausgegebenno: Nur nicht gesperrte Stunden werden ausgegebenany: Alle Stunden werden ausgegeben","VerhaltenOhneParameter":"no"},{"Parameter":"startdatum","Format":"String (Date)","Beschreibung":"Gibt das Startdatum für eine Zeitraumerfassung an","VerhaltenOhneParameter":" "},{"Parameter":"enddatum","Format":"String (Date)","Beschreibung":"Gibt das Enddatum für eine Zeitraumerfassung an","VerhaltenOhneParameter":" "},{"Parameter":"mitarbeiter","Format":"Number (int)","Beschreibung":"Gibt den Mitarbeiter für eine Zeitraumerfassung an","VerhaltenOhneParameter":"Eingeloggter Mitarbeiter"},{"Parameter":"stundenart","Format":"String (10)","Beschreibung":"Gibt die Stundenart für eine Zeitraumerfassung an; nur solche mit \"ZeitErfassen\" == false sind erlaubt","VerhaltenOhneParameter":" "},{"Parameter":"stunden","Format":"Number (10,2)","Beschreibung":"Gibt die Stunden für eine Zeitraumerfassung an; wird auf die Sollstunden gekürzt","VerhaltenOhneParameter":" "},{"Parameter":"bemerkungen","Format":"String (∞)","Beschreibung":"Gibt Bemerkungen für eine Zeitraumerfassung mit","VerhaltenOhneParameter":" "}]}
+{
+ "Fields": [
+  {
+   "Feld": "StundenNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "StundenNrZEI",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Stundenart",
+   "Datentyp": "Object\u003cStundenart\u003e",
+   "NamePROFFIX": "StundenartZEI",
+   "Besonderes": "optional, wenn leer wird Stundenart vom Mitarbeiter übernommen"
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StartZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "StartZeit",
+   "Besonderes": "Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"
+  },
+  {
+   "Feld": "EndZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "EndZeit",
+   "Besonderes": "Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"
+  },
+  {
+   "Feld": "Stunden",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Stunden",
+   "Besonderes": "Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"
+  },
+  {
+   "Feld": "Pause",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Pause",
+   "Besonderes": "optional, in Minutennur wenn \"ZeitErfassen\" in der Stundenart aktiviert ist"
+  },
+  {
+   "Feld": "KaWo",
+   "Datentyp": "String (2)",
+   "NamePROFFIX": "KaWo",
+   "Besonderes": "optional, wird beim Speichern automatisch jedesmal überschrieben"
+  },
+  {
+   "Feld": "Quelle",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Quelle",
+   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Einstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
+  },
+  {
+   "Feld": "QuelleStop",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "QuelleStop",
+   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Ausstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": "Optional"
+  },
+  {
+   "Feld": "Longitude",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Longitude",
+   "Besonderes": "optional, gibt den Längengrad beim Einstempeln an"
+  },
+  {
+   "Feld": "Latitude",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Latitude",
+   "Besonderes": "optional, gibt den Breitengrad"
+  },
+  {
+   "Feld": "Accuracy",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Accuracy",
+   "Besonderes": "optional, gibt die Genauigkeit der Positionsbestimmung in Metern beim Einstempeln an"
+  },
+  {
+   "Feld": "LongitudeStop",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "LongitudeStop",
+   "Besonderes": "optional, gibt den Längengrad beim Ausstempeln an"
+  },
+  {
+   "Feld": "LatitudeStop",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "LatitudeStop",
+   "Besonderes": "optional, gibt den Breitengrad beim Ausstemplen an"
+  },
+  {
+   "Feld": "AccuracyStop",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "AccuracyStop",
+   "Besonderes": "optional, gibt die Genauigkeit der Positionsbestimmung in Metern beim Ausstemplen an"
+  },
+  {
+   "Feld": "Kuerzung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Kuerzung",
+   "Besonderes": "Datensatz wurde von einer Stunden-Kürzungsregel angelegt und kann nicht geändert werden"
+  },
+  {
+   "Feld": "KuerzungMonat",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KuerzungMonat",
+   "Besonderes": "Datensatz wurde von einer Stunden-Kürzungsregel angelegt und kann nicht geändert werden"
+  },
+  {
+   "Feld": "Gesperrt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": "Datensatz ist gesperrt (also jünger als das Sperrdatum), nach diesem Feld kann nicht gefiltert werden"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /ZEI/Stunden",
+   "Rueckgabewert": "HTTP 200Array\u003cStunden\u003e",
+   "Beschreibung": "Gibt alle Stunden zurück",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
+   "Endpunkt": "GET /ZEI/Stunden/{StundenNr}",
+   "Rueckgabewert": "HTTP 200Stunden",
+   "Beschreibung": "Gibt ein Stundeneintrag anhand der Stundennummer zurück",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
+   "Endpunkt": "POST /ZEI/Stunden",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Stundeneintrag an",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
+   "Endpunkt": "PUT /ZEI/Stunden/{StundenNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Stundeneintrag anhand der Stundennummer",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
+   "Endpunkt": "DELETE /ZEI/Stunden/{StundenNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löschen einen Stundeneintrag anhand der Stundennummer",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
+   "Endpunkt": "POST /ZEI/Stunden/zeitraumerfassen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Legt mehrere Stundeneinträge an (siehe URL-Parameter)",
+   "BenoetigteLizenz": "ZEI"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "gekuerzt",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur Stunden ausgegeben bei denen Kuerzung oder KuerzungMonat auf true sindno: Nur Stunden ausgegeben bei denen Kuerzung oder KuerzungMonat auf false sindany: Alle Stunden werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "gesperrt",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gesperrte Stunden werden ausgegebenno: Nur nicht gesperrte Stunden werden ausgegebenany: Alle Stunden werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "startdatum",
+   "Format": "String (Date)",
+   "Beschreibung": "Gibt das Startdatum für eine Zeitraumerfassung an",
+   "VerhaltenOhneParameter": " "
+  },
+  {
+   "Parameter": "enddatum",
+   "Format": "String (Date)",
+   "Beschreibung": "Gibt das Enddatum für eine Zeitraumerfassung an",
+   "VerhaltenOhneParameter": " "
+  },
+  {
+   "Parameter": "mitarbeiter",
+   "Format": "Number (int)",
+   "Beschreibung": "Gibt den Mitarbeiter für eine Zeitraumerfassung an",
+   "VerhaltenOhneParameter": "Eingeloggter Mitarbeiter"
+  },
+  {
+   "Parameter": "stundenart",
+   "Format": "String (10)",
+   "Beschreibung": "Gibt die Stundenart für eine Zeitraumerfassung an; nur solche mit \"ZeitErfassen\" == false sind erlaubt",
+   "VerhaltenOhneParameter": " "
+  },
+  {
+   "Parameter": "stunden",
+   "Format": "Number (10,2)",
+   "Beschreibung": "Gibt die Stunden für eine Zeitraumerfassung an; wird auf die Sollstunden gekürzt",
+   "VerhaltenOhneParameter": " "
+  },
+  {
+   "Parameter": "bemerkungen",
+   "Format": "String (∞)",
+   "Beschreibung": "Gibt Bemerkungen für eine Zeitraumerfassung mit",
+   "VerhaltenOhneParameter": " "
+  }
+ ]
+}

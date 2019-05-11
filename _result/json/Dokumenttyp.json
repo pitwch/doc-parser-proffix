@@ -1,1 +1,50 @@
-{"Fields":[{"Feld":"DokumenttypNr","Datentyp":"String (10)","NamePROFFIX":"DokTypAUF","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Inaktiv","Datentyp":"Boolean","NamePROFFIX":"Inaktiv","Besonderes":" "},{"Feld":"Parameter","Datentyp":"Format","NamePROFFIX":"Beschreibung","Besonderes":"Verhalten ohne Parameter"}],"Methods":[{"Endpunkt":"GET /AUF/Dokumenttyp","Rueckgabewert":"HTTP 200Array\u003cDokumenttyp\u003e","Beschreibung":"Gibt alle Dokumenttypen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /AUF/Dokumenttyp/{DokumenttypNr}","Rueckgabewert":"HTTP 200Dokumenttyp","Beschreibung":"Gibt einen Dokumenttyp anhand der DokumenttypNr zurück","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"inaktiv","Format":"String (yes, no, any)","Beschreibung":"yes: Nur inaktive Dokumenttypen werden ausgegebenno: Nur aktive Dokumenttypen werden ausgegebenany: Alle Dokumenttypen werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "DokumenttypNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "DokTypAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Inaktiv",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Inaktiv",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /AUF/Dokumenttyp",
+   "Rueckgabewert": "HTTP 200Array\u003cDokumenttyp\u003e",
+   "Beschreibung": "Gibt alle Dokumenttypen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /AUF/Dokumenttyp/{DokumenttypNr}",
+   "Rueckgabewert": "HTTP 200Dokumenttyp",
+   "Beschreibung": "Gibt einen Dokumenttyp anhand der DokumenttypNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "inaktiv",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur inaktive Dokumenttypen werden ausgegebenno: Nur aktive Dokumenttypen werden ausgegebenany: Alle Dokumenttypen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

@@ -1,1 +1,85 @@
-{"Fields":[{"Feld":"Anschrift","Datentyp":"String (40)","NamePROFFIX":"Anschrift","Besonderes":" "},{"Feld":"Berechtigung","Datentyp":"Number (Int)","NamePROFFIX":"Berechtigung","Besonderes":" "},{"Feld":"EMail","Datentyp":"String (50)","NamePROFFIX":"EMail","Besonderes":" "},{"Feld":"Fax","Datentyp":"String (20)","NamePROFFIX":"Fax","Besonderes":" "},{"Feld":"Firma","Datentyp":"String (100)","NamePROFFIX":"Firma","Besonderes":" "},{"Feld":"Homepage","Datentyp":"String (100)","NamePROFFIX":"Homepage","Besonderes":" "},{"Feld":"NoAutoLogin","Datentyp":"Boolean","NamePROFFIX":"NoAutoLogin","Besonderes":" "},{"Feld":"Ort","Datentyp":"String (40)","NamePROFFIX":"Ort","Besonderes":" "},{"Feld":"PLZ","Datentyp":"String (20)","NamePROFFIX":"PLZ","Besonderes":" "},{"Feld":"Sprache","Datentyp":"Number (Int)","NamePROFFIX":"Sprache","Besonderes":" "},{"Feld":"Strasse","Datentyp":"String (40)","NamePROFFIX":"Strasse","Besonderes":" "},{"Feld":"Telefon","Datentyp":"String (20)","NamePROFFIX":"Telefon","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /PRO/Stammdaten","Rueckgabewert":"HTTP 200Stammdaten","Beschreibung":"Gibt die Stammdaten zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "Anschrift",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Anschrift",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Berechtigung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Berechtigung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EMail",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "EMail",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Fax",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Fax",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Firma",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Firma",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Homepage",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Homepage",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NoAutoLogin",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NoAutoLogin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Ort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "PLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Sprache",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Strasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Strasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Telefon",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Telefon",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Stammdaten",
+   "Rueckgabewert": "HTTP 200Stammdaten",
+   "Beschreibung": "Gibt die Stammdaten zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

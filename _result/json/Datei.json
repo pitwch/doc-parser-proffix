@@ -1,1 +1,49 @@
-{"Fields":null,"Methods":[{"Endpunkt":"GET /PRO/Datei/{DateiNr}","Rueckgabewert":"HTTP 200Datei","Beschreibung":"Gibt eine Datei anhand der DateiNr im entsprechenden Format zurück. Bei allen Endpunkten, bei denen Dateien involviert sind, wird eine DateiNr generiert, die nur in der jeweiligen Session gültig ist.","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"filename","Format":"String","Beschreibung":"Übergebener Dateiname wird verwendet","VerhaltenOhneParameter":"Je nach Konfiguration"},{"Parameter":"download","Format":"String (yes, no)","Beschreibung":"yes: Setzt die HTTP-Header damit Datei wird als Anhang heruntergeladen wirdno: Setzt die HTTP-Header damit die Datei wird wenn möglich im Browser angezeigt wird","VerhaltenOhneParameter":"no"},{"Parameter":"imgmaxwidth","Format":"Number (Int)","Beschreibung":"Das Bild wird so skaliert, dass die Breite kleiner oder gleich der Maximalbreite entspricht, mit dem Ziel möglichst breit zu sein","VerhaltenOhneParameter":"Automatisch"},{"Parameter":"imgmaxheight","Format":"Number (Int)","Beschreibung":"Das Bild wird so skaliert, dass die Höhe kleiner oder gleich der Maximalhöhe entspricht, mit dem Ziel möglichst hoh zu sein","VerhaltenOhneParameter":"Automatisch"},{"Parameter":"imgformat","Format":"String (jpg, png, gif, bmp, tiff)","Beschreibung":"Übergebenes Bildformat wird verwendet","VerhaltenOhneParameter":"Automatisch"},{"Parameter":"imgjpgquality","Format":"Number (Int, 0-100)","Beschreibung":"Wenn das Bild ein jpg-Bild ist, kann die Qualität angegeben werden","VerhaltenOhneParameter":"Automatisch"}]}
+{
+ "Fields": null,
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Datei/{DateiNr}",
+   "Rueckgabewert": "HTTP 200Datei",
+   "Beschreibung": "Gibt eine Datei anhand der DateiNr im entsprechenden Format zurück. Bei allen Endpunkten, bei denen Dateien involviert sind, wird eine DateiNr generiert, die nur in der jeweiligen Session gültig ist.",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "filename",
+   "Format": "String",
+   "Beschreibung": "Übergebener Dateiname wird verwendet",
+   "VerhaltenOhneParameter": "Je nach Konfiguration"
+  },
+  {
+   "Parameter": "download",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Setzt die HTTP-Header damit Datei wird als Anhang heruntergeladen wirdno: Setzt die HTTP-Header damit die Datei wird wenn möglich im Browser angezeigt wird",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "imgmaxwidth",
+   "Format": "Number (Int)",
+   "Beschreibung": "Das Bild wird so skaliert, dass die Breite kleiner oder gleich der Maximalbreite entspricht, mit dem Ziel möglichst breit zu sein",
+   "VerhaltenOhneParameter": "Automatisch"
+  },
+  {
+   "Parameter": "imgmaxheight",
+   "Format": "Number (Int)",
+   "Beschreibung": "Das Bild wird so skaliert, dass die Höhe kleiner oder gleich der Maximalhöhe entspricht, mit dem Ziel möglichst hoh zu sein",
+   "VerhaltenOhneParameter": "Automatisch"
+  },
+  {
+   "Parameter": "imgformat",
+   "Format": "String (jpg, png, gif, bmp, tiff)",
+   "Beschreibung": "Übergebenes Bildformat wird verwendet",
+   "VerhaltenOhneParameter": "Automatisch"
+  },
+  {
+   "Parameter": "imgjpgquality",
+   "Format": "Number (Int, 0-100)",
+   "Beschreibung": "Wenn das Bild ein jpg-Bild ist, kann die Qualität angegeben werden",
+   "VerhaltenOhneParameter": "Automatisch"
+  }
+ ]
+}

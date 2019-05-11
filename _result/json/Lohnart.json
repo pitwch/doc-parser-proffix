@@ -1,1 +1,37 @@
-{"Fields":[{"Feld":"LohnartNr","Datentyp":"Number (9,3)","NamePROFFIX":"LohnartLOH","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Deaktiviert","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /LOH/Lohnart","Rueckgabewert":"HTTP 200Array\u003cLohnart\u003e","Beschreibung":"Gibt alle Lohnarten zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LOH/Lohnart/{LohnartNr}","Rueckgabewert":"HTTP 200Lohnart","Beschreibung":"Gibt eine Lohnart anhand der Lohnart-Nr. zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "LohnartNr",
+   "Datentyp": "Number (9,3)",
+   "NamePROFFIX": "LohnartLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Deaktiviert",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Lohnart",
+   "Rueckgabewert": "HTTP 200Array\u003cLohnart\u003e",
+   "Beschreibung": "Gibt alle Lohnarten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Lohnart/{LohnartNr}",
+   "Rueckgabewert": "HTTP 200Lohnart",
+   "Beschreibung": "Gibt eine Lohnart anhand der Lohnart-Nr. zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

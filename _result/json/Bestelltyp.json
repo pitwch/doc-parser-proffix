@@ -1,1 +1,109 @@
-{"Fields":[{"Feld":"BestelltypNr","Datentyp":"String (10)","NamePROFFIX":"BestellTypEIN","Besonderes":" "},{"Feld":"ArtikelDokumenteDrucken","Datentyp":"Boolean","NamePROFFIX":"ArtikelDok","Besonderes":" "},{"Feld":"Aufgabe","Datentyp":"Object\u003cAufgabe\u003e","NamePROFFIX":"AufgabenNrCRM","Besonderes":" "},{"Feld":"Belegart","Datentyp":"Object\u003cBelegart\u003e","NamePROFFIX":"BelegArtPRO","Besonderes":" "},{"Feld":"Bestellofferte","Datentyp":"Boolean","NamePROFFIX":"BestellOfferte","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"HauptBestellung","Datentyp":"Boolean","NamePROFFIX":"HauptBest","Besonderes":" "},{"Feld":"Bestellformular1","Datentyp":"String (50)","NamePROFFIX":"Liste1","Besonderes":" "},{"Feld":"Bestellformular2","Datentyp":"String (50)","NamePROFFIX":"Liste2","Besonderes":" "},{"Feld":"Bestellformular3","Datentyp":"String (50)","NamePROFFIX":"Liste3","Besonderes":" "},{"Feld":"Reihenfolge","Datentyp":"Number (Int)","NamePROFFIX":"Reihenfolge","Besonderes":" "},{"Feld":"StatusLagereingang","Datentyp":"Boolean","NamePROFFIX":"StatusLager","Besonderes":" "},{"Feld":"StatusOffen","Datentyp":"Boolean","NamePROFFIX":"StatusOffen","Besonderes":" "},{"Feld":"StatusPreiskorrektur","Datentyp":"Boolean","NamePROFFIX":"StatusPreis","Besonderes":" "},{"Feld":"Titel","Datentyp":"String (40)","NamePROFFIX":"Titel","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /EIN/Bestelltyp","Rueckgabewert":"HTTP 200Array\u003cBestelltyp\u003e","Beschreibung":"Gibt alle Bestelltypen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /EIN/Bestelltyp/{BestelltypNr}","Rueckgabewert":"HTTP 200Bestelltyp","Beschreibung":"Gibt einen Bestelltyp anhand der BestelltypNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "BestelltypNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "BestellTypEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ArtikelDokumenteDrucken",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ArtikelDok",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Aufgabe",
+   "Datentyp": "Object\u003cAufgabe\u003e",
+   "NamePROFFIX": "AufgabenNrCRM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegart",
+   "Datentyp": "Object\u003cBelegart\u003e",
+   "NamePROFFIX": "BelegArtPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellofferte",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "BestellOfferte",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "HauptBestellung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "HauptBest",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellformular1",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellformular2",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellformular3",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Reihenfolge",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Reihenfolge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StatusLagereingang",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StatusLager",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StatusOffen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StatusOffen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StatusPreiskorrektur",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StatusPreis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Titel",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Titel",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /EIN/Bestelltyp",
+   "Rueckgabewert": "HTTP 200Array\u003cBestelltyp\u003e",
+   "Beschreibung": "Gibt alle Bestelltypen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /EIN/Bestelltyp/{BestelltypNr}",
+   "Rueckgabewert": "HTTP 200Bestelltyp",
+   "Beschreibung": "Gibt einen Bestelltyp anhand der BestelltypNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

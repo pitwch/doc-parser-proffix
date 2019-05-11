@@ -1,1 +1,50 @@
-{"Fields":[{"Feld":"VertreterNr","Datentyp":"String (10)","NamePROFFIX":"VertreterPRO","Besonderes":"Entspricht dem Kurzzeichen des Mitarbeiters"},{"Feld":"Name","Datentyp":"String (200)","NamePROFFIX":"Name","Besonderes":" "},{"Feld":"Mitarbeiter","Datentyp":"Object\u003cMitarbeiter\u003e","NamePROFFIX":"MitNrPRO","Besonderes":" "},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"}],"Methods":[{"Endpunkt":"GET /PRO/Vertreter","Rueckgabewert":"HTTP 200Array\u003cVertreter\u003e","Beschreibung":"Gibt alle Vertreter zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Vertreter/{VertreterNr}","Rueckgabewert":"HTTP 200Vertreter","Beschreibung":"Gibt einen Vertreter anhand der Vertreternummer zurück","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Vertreter werden ausgegebenno: Nur nicht gelöschte Vertreter werden ausgegebenany: Alle Vertreter werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "VertreterNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "VertreterPRO",
+   "Besonderes": "Entspricht dem Kurzzeichen des Mitarbeiters"
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (200)",
+   "NamePROFFIX": "Name",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Vertreter",
+   "Rueckgabewert": "HTTP 200Array\u003cVertreter\u003e",
+   "Beschreibung": "Gibt alle Vertreter zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Vertreter/{VertreterNr}",
+   "Rueckgabewert": "HTTP 200Vertreter",
+   "Beschreibung": "Gibt einen Vertreter anhand der Vertreternummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Vertreter werden ausgegebenno: Nur nicht gelöschte Vertreter werden ausgegebenany: Alle Vertreter werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

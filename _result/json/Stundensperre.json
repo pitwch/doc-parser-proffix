@@ -1,1 +1,12 @@
-{"Fields":null,"Methods":[{"Endpunkt":"GET /ZEI/Stundensperre","Rueckgabewert":"HTTP 200Stundensperre","Beschreibung":"Gibt das aktuelle Sperrdatum zurück","BenoetigteLizenz":"ZEI"}],"Parameter":null}
+{
+ "Fields": null,
+ "Methods": [
+  {
+   "Endpunkt": "GET /ZEI/Stundensperre",
+   "Rueckgabewert": "HTTP 200Stundensperre",
+   "Beschreibung": "Gibt das aktuelle Sperrdatum zurück",
+   "BenoetigteLizenz": "ZEI"
+  }
+ ],
+ "Parameter": null
+}

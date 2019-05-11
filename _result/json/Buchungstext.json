@@ -1,1 +1,19 @@
-{"Fields":[{"Feld":"Bezeichnung","Datentyp":"String (120)","NamePROFFIX":"Bezeichnung","Besonderes":"Kein Primärschlüssel, ermöglicht nur den Zugriff auf die in PROFFIX für das Autocomplete zwischengespeicherten Buchungstexte"}],"Methods":[{"Endpunkt":"GET /PRO/Buchungstext","Rueckgabewert":"HTTP 200Array\u003cBuchungstext\u003e","Beschreibung":"Gibt alle Buchungstexte zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (120)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Kein Primärschlüssel, ermöglicht nur den Zugriff auf die in PROFFIX für das Autocomplete zwischengespeicherten Buchungstexte"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Buchungstext",
+   "Rueckgabewert": "HTTP 200Array\u003cBuchungstext\u003e",
+   "Beschreibung": "Gibt alle Buchungstexte zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

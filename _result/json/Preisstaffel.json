@@ -1,1 +1,19 @@
-{"Fields":[{"Feld":"PreisstaffelNr","Datentyp":"String","NamePROFFIX":"StaffelCode","Besonderes":" "}],"Methods":null,"Parameter":[{"Parameter":"noch keine Methoden vorhanden","Format":" ","Beschreibung":" ","VerhaltenOhneParameter":" "}]}
+{
+ "Fields": [
+  {
+   "Feld": "PreisstaffelNr",
+   "Datentyp": "String",
+   "NamePROFFIX": "StaffelCode",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": null,
+ "Parameter": [
+  {
+   "Parameter": "noch keine Methoden vorhanden",
+   "Format": " ",
+   "Beschreibung": " ",
+   "VerhaltenOhneParameter": " "
+  }
+ ]
+}

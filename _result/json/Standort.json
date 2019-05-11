@@ -1,1 +1,86 @@
-{"Fields":[{"Feld":"StandortNr","Datentyp":"Number (int)","NamePROFFIX":"StandortNrBAS","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (150)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Hauptstandort","Datentyp":"Boolean","NamePROFFIX":"Hauptstandort","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Intern","Datentyp":"Boolean","NamePROFFIX":"Intern","Besonderes":" "},{"Feld":"Kunde","Datentyp":"Object\u003cKunde\u003e","NamePROFFIX":"KundeNrBAS","Besonderes":" "},{"Feld":"Prioritaet","Datentyp":"Object\u003cPrioritaet\u003e","NamePROFFIX":"PrioritaetBAS","Besonderes":" "},{"Feld":"Vertragstyp","Datentyp":"Object\u003cVertragstyp\u003e","NamePROFFIX":"VertragsTypBAS","Besonderes":" "},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Inaktiv","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"},{"Feld":"Parameter","Datentyp":"Format","NamePROFFIX":"Beschreibung","Besonderes":"Verhalten ohne Parameter"}],"Methods":[{"Endpunkt":"GET /BAS/Standort","Rueckgabewert":"HTTP 200Array\u003cStandorte\u003e","Beschreibung":"Gibt alle Standorte zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /BAS/Standort/{StandortNr}","Rueckgabewert":"HTTP 200Standort","Beschreibung":"Gibt einen Standort anhand der StandortNr zurück","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Standorte werden ausgegebenno: Nur nicht gelöschte Standorte werden ausgegebenany: Alle Standorte werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "StandortNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "StandortNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Hauptstandort",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Hauptstandort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Intern",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Intern",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kunde",
+   "Datentyp": "Object\u003cKunde\u003e",
+   "NamePROFFIX": "KundeNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Prioritaet",
+   "Datentyp": "Object\u003cPrioritaet\u003e",
+   "NamePROFFIX": "PrioritaetBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vertragstyp",
+   "Datentyp": "Object\u003cVertragstyp\u003e",
+   "NamePROFFIX": "VertragsTypBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Inaktiv",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /BAS/Standort",
+   "Rueckgabewert": "HTTP 200Array\u003cStandorte\u003e",
+   "Beschreibung": "Gibt alle Standorte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /BAS/Standort/{StandortNr}",
+   "Rueckgabewert": "HTTP 200Standort",
+   "Beschreibung": "Gibt einen Standort anhand der StandortNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Standorte werden ausgegebenno: Nur nicht gelöschte Standorte werden ausgegebenany: Alle Standorte werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

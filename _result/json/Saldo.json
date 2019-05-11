@@ -1,1 +1,32 @@
-{"Fields":[{"Feld":"SaldoSW","Datentyp":"Number (8,4)","NamePROFFIX":"KtoSaldoSW","Besonderes":" "},{"Feld":"SaldoFW","Datentyp":"Number (8,4)","NamePROFFIX":"KtoSaldoFW","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /FIB/Konto/{KontoNr}/Saldo","Rueckgabewert":"HTTP 200Saldo","Beschreibung":"Gibt den Saldo eines Kontos zurück","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"datum","Format":"String (Date)","Beschreibung":"Das Datum an dem der Saldo gilt","VerhaltenOhneParameter":"Heute oder Zukunft"}]}
+{
+ "Fields": [
+  {
+   "Feld": "SaldoSW",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "KtoSaldoSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SaldoFW",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "KtoSaldoFW",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/Konto/{KontoNr}/Saldo",
+   "Rueckgabewert": "HTTP 200Saldo",
+   "Beschreibung": "Gibt den Saldo eines Kontos zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "datum",
+   "Format": "String (Date)",
+   "Beschreibung": "Das Datum an dem der Saldo gilt",
+   "VerhaltenOhneParameter": "Heute oder Zukunft"
+  }
+ ]
+}

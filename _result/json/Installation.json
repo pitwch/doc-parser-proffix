@@ -1,1 +1,224 @@
-{"Fields":[{"Feld":"InstallationNr","Datentyp":"Number (int)","NamePROFFIX":"PositionNrBAS","Besonderes":" "},{"Feld":"Standort","Datentyp":"Object\u003cStandort\u003e","NamePROFFIX":"StandortNrBAS","Besonderes":" "},{"Feld":"Betreueradresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"BetreuerNrBAS","Besonderes":" "},{"Feld":"Externadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"ExterneNrBAS","Besonderes":" "},{"Feld":"Prioritaet","Datentyp":"Object\u003cPrioritaet\u003e","NamePROFFIX":"PrioritaetBAS","Besonderes":" "},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":" "},{"Feld":"Bezeichnung1","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung1","Besonderes":" "},{"Feld":"Bezeichnung2","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung2","Besonderes":" "},{"Feld":"Bezeichnung3","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung3","Besonderes":" "},{"Feld":"Bezeichnung4","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung4","Besonderes":" "},{"Feld":"Bezeichnung5","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung5","Besonderes":" "},{"Feld":"Gewicht","Datentyp":"Number (8,4)","NamePROFFIX":"Gewicht","Besonderes":" "},{"Feld":"Seriennummer","Datentyp":"String (50)","NamePROFFIX":"Seriennummer","Besonderes":" "},{"Feld":"KonfigurationsID","Datentyp":"String (100)","NamePROFFIX":"KonfigID","Besonderes":" "},{"Feld":"ProduktNr","Datentyp":"String (100)","NamePROFFIX":"ProduktNr","Besonderes":" "},{"Feld":"Installationstermin","Datentyp":"String (DateTime)","NamePROFFIX":"InstTermin","Besonderes":" "},{"Feld":"Garantieende","Datentyp":"String (DateTime)","NamePROFFIX":"GarantieEnde","Besonderes":" "},{"Feld":"Garantiezusatz","Datentyp":"Object\u003cGarantiezusatz\u003e","NamePROFFIX":"GarantieBAS","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Vertragstyp","Datentyp":"Object\u003cVertragstyp\u003e","NamePROFFIX":"VertragsTypBAS","Besonderes":" "},{"Feld":"Herstellervertrag","Datentyp":"String (100)","NamePROFFIX":"HerstVertragNr","Besonderes":" "},{"Feld":"Suchfeld","Datentyp":"String (∞)","NamePROFFIX":"SuchIndex","Besonderes":" "},{"Feld":"Artikelklasse","Datentyp":"Object\u003cArtikelklasse\u003e","NamePROFFIX":"KlasseLAG","Besonderes":" "},{"Feld":"Artikelgruppe","Datentyp":"Object\u003cArtikelgruppe\u003e","NamePROFFIX":"GruppeLAG","Besonderes":" "},{"Feld":"Artikeluntergruppe","Datentyp":"Object\u003cArtikeluntergruppe\u003e","NamePROFFIX":"UGruppeLAG","Besonderes":" "},{"Feld":"Menge","Datentyp":"Dezimal (12)","NamePROFFIX":"Menge","Besonderes":" "},{"Feld":"Anlage","Datentyp":"Object\u003cAnlage\u003e","NamePROFFIX":"AnlageNrBAS","Besonderes":" "},{"Feld":"Inhaber","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"Inhaber","Besonderes":" "},{"Feld":"IstLagerinstallation","Datentyp":"Boolean","NamePROFFIX":"IstLager","Besonderes":" "},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"},{"Feld":"Global","Datentyp":"Boolean","NamePROFFIX":"GlobaleInst","Besonderes":" "},{"Feld":"Standard","Datentyp":"Boolean","NamePROFFIX":"StandardInst","Besonderes":" "},{"Feld":"Parameter","Datentyp":"Format","NamePROFFIX":"Beschreibung","Besonderes":"Verhalten ohne Parameter"}],"Methods":[{"Endpunkt":"GET /BAS/Installation","Rueckgabewert":"HTTP 200Array\u003cInstallation\u003e","Beschreibung":"Gibt alle Installationen zurück","BenoetigteLizenz":"BAS"},{"Endpunkt":"GET /BAS/Installation/{InstallationNr}","Rueckgabewert":"HTTP 200Installation","Beschreibung":"Gibt eine Installation anhand der InstallationNr zurück","BenoetigteLizenz":"BAS"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Installationen werden ausgegebenno: Nur nicht gelöschte Installationen werden ausgegebenany: Alle Installationen werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "InstallationNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "PositionNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Standort",
+   "Datentyp": "Object\u003cStandort\u003e",
+   "NamePROFFIX": "StandortNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Betreueradresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "BetreuerNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Externadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "ExterneNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Prioritaet",
+   "Datentyp": "Object\u003cPrioritaet\u003e",
+   "NamePROFFIX": "PrioritaetBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gewicht",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Gewicht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Seriennummer",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Seriennummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KonfigurationsID",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "KonfigID",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ProduktNr",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "ProduktNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Installationstermin",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "InstTermin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Garantieende",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "GarantieEnde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Garantiezusatz",
+   "Datentyp": "Object\u003cGarantiezusatz\u003e",
+   "NamePROFFIX": "GarantieBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vertragstyp",
+   "Datentyp": "Object\u003cVertragstyp\u003e",
+   "NamePROFFIX": "VertragsTypBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Herstellervertrag",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "HerstVertragNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Suchfeld",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "SuchIndex",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelklasse",
+   "Datentyp": "Object\u003cArtikelklasse\u003e",
+   "NamePROFFIX": "KlasseLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelgruppe",
+   "Datentyp": "Object\u003cArtikelgruppe\u003e",
+   "NamePROFFIX": "GruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikeluntergruppe",
+   "Datentyp": "Object\u003cArtikeluntergruppe\u003e",
+   "NamePROFFIX": "UGruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Dezimal (12)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anlage",
+   "Datentyp": "Object\u003cAnlage\u003e",
+   "NamePROFFIX": "AnlageNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Inhaber",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "Inhaber",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstLagerinstallation",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "IstLager",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Global",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "GlobaleInst",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Standard",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StandardInst",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /BAS/Installation",
+   "Rueckgabewert": "HTTP 200Array\u003cInstallation\u003e",
+   "Beschreibung": "Gibt alle Installationen zurück",
+   "BenoetigteLizenz": "BAS"
+  },
+  {
+   "Endpunkt": "GET /BAS/Installation/{InstallationNr}",
+   "Rueckgabewert": "HTTP 200Installation",
+   "Beschreibung": "Gibt eine Installation anhand der InstallationNr zurück",
+   "BenoetigteLizenz": "BAS"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Installationen werden ausgegebenno: Nur nicht gelöschte Installationen werden ausgegebenany: Alle Installationen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

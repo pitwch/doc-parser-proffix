@@ -1,1 +1,37 @@
-{"Fields":[{"Feld":"RegionNr","Datentyp":"String (5)","NamePROFFIX":"KantonPRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Land","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"LandPRO","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /PRO/Region","Rueckgabewert":"HTTP 200Array\u003cRegion\u003e","Beschreibung":"Gibt alle Regionen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Region/{RegionNr}","Rueckgabewert":"HTTP 200Region","Beschreibung":"Gibt einen Region anhand der Regionnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "RegionNr",
+   "Datentyp": "String (5)",
+   "NamePROFFIX": "KantonPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LandPRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Region",
+   "Rueckgabewert": "HTTP 200Array\u003cRegion\u003e",
+   "Beschreibung": "Gibt alle Regionen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Region/{RegionNr}",
+   "Rueckgabewert": "HTTP 200Region",
+   "Beschreibung": "Gibt einen Region anhand der Regionnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,1 +1,92 @@
-{"Fields":[{"Feld":"KonditionNr","Datentyp":"Number (Int)","NamePROFFIX":"KonditionPRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Inaktiv","Datentyp":"Boolean","NamePROFFIX":"Inaktiv","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"},{"Feld":"EndeJahr","Datentyp":"Boolean","NamePROFFIX":"EndeJahr","Besonderes":"Berechnung der Fälligkeit auf Ende Jahr"},{"Feld":"EndeMonat","Datentyp":"Boolean","NamePROFFIX":"EndeMonat","Besonderes":"Berechnung der Fälligkeit auf Ende Monat"},{"Feld":"EndeQuartal","Datentyp":"Boolean","NamePROFFIX":"EndeQuartal","Besonderes":"Berechnung der Fälligkeit auf Ende Quartal"},{"Feld":"NettoTage","Datentyp":"Number (Int)","NamePROFFIX":"Netto","Besonderes":"Anzahl Tage bis Zerfall"},{"Feld":"Skonto1Tage","Datentyp":"Number (Int)","NamePROFFIX":"Tage1","Besonderes":"Anzahl Tage bis Skonto-Abzug 1"},{"Feld":"Skonto1Prozent","Datentyp":"Number (10,2)","NamePROFFIX":"Prozent1","Besonderes":"Skonto-Abzug 1, wenn bezahlt in Anzahl Tagen wie im Feld Skonto1Tage angegeben"},{"Feld":"Skonto2Tage","Datentyp":"Number (Int)","NamePROFFIX":"Tage2","Besonderes":"Anzahl Tage bis Skonto-Abzug 2"},{"Feld":"Skonto2Prozent","Datentyp":"Number (10,2)","NamePROFFIX":"Prozent2","Besonderes":"Skonto-Abzug 1, wenn bezahlt in Anzahl Tagen wie im Feld Skonto1Tage angegeben"}],"Methods":[{"Endpunkt":"GET /PRO/Kondition","Rueckgabewert":"HTTP 200Array\u003cKondition\u003e","Beschreibung":"Gibt alle Konditionen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Kondition/{KonditionNr}","Rueckgabewert":"HTTP 200Kondition","Beschreibung":"Gibt eine Kondition anhand der Konditionsnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"inaktiv","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Konditionen werden ausgegebenno: Nur nicht gelöschte Konditionen werden ausgegebenany: Alle Konditionen werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "KonditionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "KonditionPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Inaktiv",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Inaktiv",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "EndeJahr",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "EndeJahr",
+   "Besonderes": "Berechnung der Fälligkeit auf Ende Jahr"
+  },
+  {
+   "Feld": "EndeMonat",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "EndeMonat",
+   "Besonderes": "Berechnung der Fälligkeit auf Ende Monat"
+  },
+  {
+   "Feld": "EndeQuartal",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "EndeQuartal",
+   "Besonderes": "Berechnung der Fälligkeit auf Ende Quartal"
+  },
+  {
+   "Feld": "NettoTage",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Netto",
+   "Besonderes": "Anzahl Tage bis Zerfall"
+  },
+  {
+   "Feld": "Skonto1Tage",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Tage1",
+   "Besonderes": "Anzahl Tage bis Skonto-Abzug 1"
+  },
+  {
+   "Feld": "Skonto1Prozent",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Prozent1",
+   "Besonderes": "Skonto-Abzug 1, wenn bezahlt in Anzahl Tagen wie im Feld Skonto1Tage angegeben"
+  },
+  {
+   "Feld": "Skonto2Tage",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Tage2",
+   "Besonderes": "Anzahl Tage bis Skonto-Abzug 2"
+  },
+  {
+   "Feld": "Skonto2Prozent",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Prozent2",
+   "Besonderes": "Skonto-Abzug 1, wenn bezahlt in Anzahl Tagen wie im Feld Skonto1Tage angegeben"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Kondition",
+   "Rueckgabewert": "HTTP 200Array\u003cKondition\u003e",
+   "Beschreibung": "Gibt alle Konditionen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Kondition/{KonditionNr}",
+   "Rueckgabewert": "HTTP 200Kondition",
+   "Beschreibung": "Gibt eine Kondition anhand der Konditionsnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "inaktiv",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Konditionen werden ausgegebenno: Nur nicht gelöschte Konditionen werden ausgegebenany: Alle Konditionen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

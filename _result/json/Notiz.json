@@ -1,1 +1,115 @@
-{"Fields":[{"Feld":"NotizNr","Datentyp":"Number (Int)","NamePROFFIX":"LaufNr","Besonderes":" "},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":" "},{"Feld":"Mitarbeiter","Datentyp":"Object\u003cMitarbeiter\u003e","NamePROFFIX":"MitNrPRO","Besonderes":"optional"},{"Feld":"Notizart","Datentyp":"Object\u003cNotizart\u003e","NamePROFFIX":"NotizartLAG","Besonderes":"optional"},{"Feld":"Datum","Datentyp":"String (DateTime)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"Termin","Datentyp":"String (DateTime)","NamePROFFIX":"Termin","Besonderes":"optional"},{"Feld":"Notiz","Datentyp":"String (∞)","NamePROFFIX":"Notiz","Besonderes":"das Feld \"NotizRTF\" darf nur die RTF-Version dieses Felds enthalten oder muss leer sein"},{"Feld":"NotizRTF","Datentyp":"String (∞)","NamePROFFIX":"NotizRTF","Besonderes":"optional, wenn RTF übergeben wird, muss im Feld \"Notiz\" der Inhalt als Plain-Text stehen und darf nicht leer übergeben werden"},{"Feld":"AlarmDatumVon","Datentyp":"String (Date)","NamePROFFIX":"AlarmDatumVon","Besonderes":" "},{"Feld":"AlarmDatumBis","Datentyp":"String (Date)","NamePROFFIX":"AlarmDatumBis","Besonderes":" "},{"Feld":"Kundeninstallation","Datentyp":"Boolean","NamePROFFIX":"Basis","Besonderes":" "},{"Feld":"Auftragsbearbeitung","Datentyp":"Boolean","NamePROFFIX":"Ausdrucken","Besonderes":" "},{"Feld":"Einkauf","Datentyp":"Boolean","NamePROFFIX":"Einkauf","Besonderes":" "},{"Feld":"Intern","Datentyp":"Boolean","NamePROFFIX":"Intern","Besonderes":" "},{"Feld":"Webshop","Datentyp":"Boolean","NamePROFFIX":"WebShop","Besonderes":" "},{"Feld":"Sprache","Datentyp":"Object\u003cSprache\u003e","NamePROFFIX":"SprachePRO","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /LAG/Notiz","Rueckgabewert":"HTTP 200Array\u003cNotiz\u003e","Beschreibung":"Gibt alle Notizen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Notiz/{NotizNr}","Rueckgabewert":"HTTP 200Notiz","Beschreibung":"Gibt eine Notiz anhand der Notiznummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "NotizNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Notizart",
+   "Datentyp": "Object\u003cNotizart\u003e",
+   "NamePROFFIX": "NotizartLAG",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Termin",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Termin",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Notiz",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Notiz",
+   "Besonderes": "das Feld \"NotizRTF\" darf nur die RTF-Version dieses Felds enthalten oder muss leer sein"
+  },
+  {
+   "Feld": "NotizRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizRTF",
+   "Besonderes": "optional, wenn RTF übergeben wird, muss im Feld \"Notiz\" der Inhalt als Plain-Text stehen und darf nicht leer übergeben werden"
+  },
+  {
+   "Feld": "AlarmDatumVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "AlarmDatumVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlarmDatumBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "AlarmDatumBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kundeninstallation",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Basis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftragsbearbeitung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Ausdrucken",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Einkauf",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Einkauf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Intern",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Intern",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Webshop",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "WebShop",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Notiz",
+   "Rueckgabewert": "HTTP 200Array\u003cNotiz\u003e",
+   "Beschreibung": "Gibt alle Notizen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Notiz/{NotizNr}",
+   "Rueckgabewert": "HTTP 200Notiz",
+   "Beschreibung": "Gibt eine Notiz anhand der Notiznummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

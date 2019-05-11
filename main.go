@@ -24,7 +24,8 @@ func main() {
 			mod := table.TableToStrings(y.Link)
 			//doc := table.TableToStrings("https://www.proffix.net/Portals/0/content/REST%20API/export/lohnbewegung.html")
 
-			docsJson, err := json.Marshal(mod)
+			docsJson, err := json.MarshalIndent(mod, "", " ")
+
 			if err != nil {
 				log.Fatal("Cannot encode to JSON ", err)
 			}

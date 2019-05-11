@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"ArtikeluntergruppeNr","Datentyp":"String (10)","NamePROFFIX":"UGruppeLAG","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":"Darf nicht leer sein"}],"Methods":[{"Endpunkt":"GET /LAG/Artikeluntergruppe","Rueckgabewert":"HTTP 200Array\u003cArtikeluntergruppe\u003e","Beschreibung":"Gibt alle Artikeluntergruppen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikeluntergruppe/{ArtikeluntergruppeNr}","Rueckgabewert":"HTTP 200Artikelgruppe","Beschreibung":"Gibt eine Artikeluntergruppe anhand der ArtikeluntergruppeNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "ArtikeluntergruppeNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "UGruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Darf nicht leer sein"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Artikeluntergruppe",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikeluntergruppe\u003e",
+   "Beschreibung": "Gibt alle Artikeluntergruppen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikeluntergruppe/{ArtikeluntergruppeNr}",
+   "Rueckgabewert": "HTTP 200Artikelgruppe",
+   "Beschreibung": "Gibt eine Artikeluntergruppe anhand der ArtikeluntergruppeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

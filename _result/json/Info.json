@@ -1,1 +1,12 @@
-{"Fields":null,"Methods":[{"Endpunkt":"GET /PRO/Info","Rueckgabewert":"HTTP 200Info","Beschreibung":"Gibt das Info-Objekt zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": null,
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Info",
+   "Rueckgabewert": "HTTP 200Info",
+   "Beschreibung": "Gibt das Info-Objekt zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

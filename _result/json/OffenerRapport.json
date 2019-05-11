@@ -1,1 +1,200 @@
-{"Fields":[{"Feld":"OffenerRapportNr","Datentyp":"Number (Int)","NamePROFFIX":"RapportNrOffenSTU","Besonderes":" "},{"Feld":"Mitarbeiter","Datentyp":"Object\u003cMitarbeiter\u003e","NamePROFFIX":"MitNrPRO","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Positionsart","Datentyp":"Object\u003cPositionsart\u003e","NamePROFFIX":"PosArtSTU","Besonderes":" "},{"Feld":"Bemerkungen","Datentyp":"String (∞)","NamePROFFIX":"Notizen","Besonderes":" "},{"Feld":"BemerkungenRTF","Datentyp":"String (∞)","NamePROFFIX":"NotizenRTF","Besonderes":" "},{"Feld":"Serviceauftrag","Datentyp":"Object\u003cServiceauftrag\u003e","NamePROFFIX":"AuftragNrSRV","Besonderes":" "},{"Feld":"ServiceauftragspositionNr","Datentyp":"Number (Int)","NamePROFFIX":"PositionNrSRV","Besonderes":" "},{"Feld":"DauerTotal","Datentyp":"Number (Int)","NamePROFFIX":"Dauer","Besonderes":" "},{"Feld":"Kontaktname","Datentyp":"String (100)","NamePROFFIX":"Kontakt","Besonderes":" "},{"Feld":"Kontakt","Datentyp":"Object\u003cKontakt\u003e","NamePROFFIX":"KontaktNrADR","Besonderes":" "},{"Feld":"Rapport","Datentyp":"Object\u003cRapport\u003e","NamePROFFIX":"RapportNrSTU","Besonderes":" "},{"Feld":"Pausiert","Datentyp":"Boolean","NamePROFFIX":"Pausiert","Besonderes":" "},{"Feld":"Abgeschlossen","Datentyp":"Boolean","NamePROFFIX":"Abgeschlossen","Besonderes":" "},{"Feld":"Zeiten","Datentyp":"Array\u003cZeiteintrag\u003e","NamePROFFIX":" ","Besonderes":" "},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"StartDatum","Datentyp":"String (Date)","NamePROFFIX":"Start","Besonderes":" "},{"Feld":"StartZeit","Datentyp":"String (Time)","NamePROFFIX":"Startzeit","Besonderes":" "},{"Feld":"EndDatum","Datentyp":"String (Date)","NamePROFFIX":"Ende","Besonderes":" "},{"Feld":"EndZeit","Datentyp":"String (Time)","NamePROFFIX":"EndZeit","Besonderes":" "},{"Feld":"Dauer","Datentyp":"Number (Int)","NamePROFFIX":"Dauer","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /STU/OffenerRapport","Rueckgabewert":"HTTP 200Array\u003cOffenerRapport\u003e","Beschreibung":"Gibt alle offenen Rapporte zurück","BenoetigteLizenz":"STU"},{"Endpunkt":"GET /STU/OffenerRapport/{OffenerRapportNr}","Rueckgabewert":"HTTP 200OffenerRapport","Beschreibung":"Gibt einen offenen Rapport anhand der OffenerRapportNr zurück","BenoetigteLizenz":"STU"},{"Endpunkt":"POST /STU/OffenerRapport","Rueckgabewert":"HTTP 201","Beschreibung":"Legt einen neuen offenen Rapport an","BenoetigteLizenz":"STU"},{"Endpunkt":"PUT /STU/OffenerRapport/{OffenerRapportNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert einen offenen Rapport anhand der OffenerRapportNr","BenoetigteLizenz":"STU"},{"Endpunkt":"DELETE /STU/OffenerRapport/{OffenerRapportNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löscht einen offenen Rapport anhand der OffenerRapportNr","BenoetigteLizenz":"STU"},{"Endpunkt":"POST /STU/OffenerRapport/{OffenerRapportNr}/starten","Rueckgabewert":"HTTP 204","Beschreibung":"Legt einen Zeiteintrag im offenen Rapport an","BenoetigteLizenz":"STU"},{"Endpunkt":"POST /STU/OffenerRapport/{OffenerRapportNr}/stoppen","Rueckgabewert":"HTTP 204","Beschreibung":"Schliesst einen Zeiteintrag im offenen Rapport ab","BenoetigteLizenz":"STU"},{"Endpunkt":"POST /STU/OffenerRapport/{OffenerRapportNr}/abschliessen","Rueckgabewert":"HTTP 204","Beschreibung":"Schliesst den offenen Rapport ab und legt einen Rapport an","BenoetigteLizenz":"STU"}],"Parameter":[{"Parameter":"abgeschlossen","Format":"String (yes, no, any)","Beschreibung":"yes: Nur abgeschlossene offene Rapporte werden ausgegebenno: Nur nicht abgeschlossene offene Rapporte werden ausgegebenany: Alle offenen Rapporte werden ausgegeben","VerhaltenOhneParameter":"no"},{"Parameter":"datumZeit","Format":"String (DateTime)","Beschreibung":"Zeitpunkt welcher beim Starten oder Stoppen verwendet werden soll","VerhaltenOhneParameter":"Es wird die aktuelle Serverzeit verwendet"}]}
+{
+ "Fields": [
+  {
+   "Feld": "OffenerRapportNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RapportNrOffenSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionsart",
+   "Datentyp": "Object\u003cPositionsart\u003e",
+   "NamePROFFIX": "PosArtSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Notizen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BemerkungenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Serviceauftrag",
+   "Datentyp": "Object\u003cServiceauftrag\u003e",
+   "NamePROFFIX": "AuftragNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ServiceauftragspositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DauerTotal",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Dauer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontaktname",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Kontakt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "KontaktNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rapport",
+   "Datentyp": "Object\u003cRapport\u003e",
+   "NamePROFFIX": "RapportNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Pausiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Pausiert",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Abgeschlossen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Abgeschlossen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zeiten",
+   "Datentyp": "Array\u003cZeiteintrag\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StartDatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Start",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StartZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "Startzeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EndDatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Ende",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EndZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "EndZeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dauer",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Dauer",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/OffenerRapport",
+   "Rueckgabewert": "HTTP 200Array\u003cOffenerRapport\u003e",
+   "Beschreibung": "Gibt alle offenen Rapporte zurück",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "GET /STU/OffenerRapport/{OffenerRapportNr}",
+   "Rueckgabewert": "HTTP 200OffenerRapport",
+   "Beschreibung": "Gibt einen offenen Rapport anhand der OffenerRapportNr zurück",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/OffenerRapport",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen offenen Rapport an",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "PUT /STU/OffenerRapport/{OffenerRapportNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen offenen Rapport anhand der OffenerRapportNr",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "DELETE /STU/OffenerRapport/{OffenerRapportNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen offenen Rapport anhand der OffenerRapportNr",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/OffenerRapport/{OffenerRapportNr}/starten",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Legt einen Zeiteintrag im offenen Rapport an",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/OffenerRapport/{OffenerRapportNr}/stoppen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Schliesst einen Zeiteintrag im offenen Rapport ab",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/OffenerRapport/{OffenerRapportNr}/abschliessen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Schliesst den offenen Rapport ab und legt einen Rapport an",
+   "BenoetigteLizenz": "STU"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "abgeschlossen",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur abgeschlossene offene Rapporte werden ausgegebenno: Nur nicht abgeschlossene offene Rapporte werden ausgegebenany: Alle offenen Rapporte werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "datumZeit",
+   "Format": "String (DateTime)",
+   "Beschreibung": "Zeitpunkt welcher beim Starten oder Stoppen verwendet werden soll",
+   "VerhaltenOhneParameter": "Es wird die aktuelle Serverzeit verwendet"
+  }
+ ]
+}

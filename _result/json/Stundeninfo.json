@@ -1,1 +1,25 @@
-{"Fields":null,"Methods":[{"Endpunkt":"GET /ZEI/Stundeninfo","Rueckgabewert":"HTTP 200Stundeninfo","Beschreibung":"Gibt die Stundeninfo zurück","BenoetigteLizenz":"ZEI"}],"Parameter":[{"Parameter":"datum","Format":"String (DateTime)","Beschreibung":"Gibt die Stundeninfo für ein bestimmtes Datum zurück","VerhaltenOhneParameter":"Stundeninfo wird per heute zurückgegeben"},{"Parameter":"mitarbeiter","Format":"Number (int)","Beschreibung":"MitarbeiterNr des Mitarbeiters für den die Stundeninfo zurückgegeben werden soll","VerhaltenOhneParameter":"Der aktuell eingeloggte Mitarbeiter wird verwendet"}]}
+{
+ "Fields": null,
+ "Methods": [
+  {
+   "Endpunkt": "GET /ZEI/Stundeninfo",
+   "Rueckgabewert": "HTTP 200Stundeninfo",
+   "Beschreibung": "Gibt die Stundeninfo zurück",
+   "BenoetigteLizenz": "ZEI"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "datum",
+   "Format": "String (DateTime)",
+   "Beschreibung": "Gibt die Stundeninfo für ein bestimmtes Datum zurück",
+   "VerhaltenOhneParameter": "Stundeninfo wird per heute zurückgegeben"
+  },
+  {
+   "Parameter": "mitarbeiter",
+   "Format": "Number (int)",
+   "Beschreibung": "MitarbeiterNr des Mitarbeiters für den die Stundeninfo zurückgegeben werden soll",
+   "VerhaltenOhneParameter": "Der aktuell eingeloggte Mitarbeiter wird verwendet"
+  }
+ ]
+}

@@ -1,1 +1,104 @@
-{"Fields":[{"Feld":"BankNr","Datentyp":"Number (int)","NamePROFFIX":"BankNrPRO","Besonderes":" "},{"Feld":"Name","Datentyp":"String (50)","NamePROFFIX":"Name","Besonderes":" "},{"Feld":"Strasse","Datentyp":"String (50)","NamePROFFIX":"Strasse","Besonderes":" "},{"Feld":"PLZ","Datentyp":"String (10)","NamePROFFIX":"PLZ","Besonderes":" "},{"Feld":"Ort","Datentyp":"String (40)","NamePROFFIX":"Ort","Besonderes":" "},{"Feld":"Land","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"LandPRO","Besonderes":" "},{"Feld":"Telefon","Datentyp":"String (20)","NamePROFFIX":"Telefon","Besonderes":" "},{"Feld":"Fax","Datentyp":"String (20)","NamePROFFIX":"Fax","Besonderes":" "},{"Feld":"ClearingNummer","Datentyp":"Number (int)","NamePROFFIX":"ClearingNr","Besonderes":" "},{"Feld":"PostcheckNummer","Datentyp":"String (11)","NamePROFFIX":"PostcheckNr","Besonderes":" "},{"Feld":"SwiftNummer","Datentyp":"String (24)","NamePROFFIX":"SwiftNr","Besonderes":" "},{"Feld":"ServerTyp","Datentyp":"Number (int)","NamePROFFIX":"ServerTyp","Besonderes":"Servertyp für e-Banking:5 = PostFinance6 = mammut 69 = Crealogix11 = Finnova12 = CS Direct Net13 = ZKB DataLink14 = Cyber-IBIS15 = mammut 516 = UBS (OFX 2.1.1)17 = ComfortLink18 = ComfortLink 1.219 = Avaloq"},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"}],"Methods":[{"Endpunkt":"GET /PRO/Bank","Rueckgabewert":"HTTP 200Array\u003cBank\u003e","Beschreibung":"Gibt alle Banken zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Bank/{BankNr}","Rueckgabewert":"HTTP 200Bank","Beschreibung":"Gibt eine Bank anhand der Banknummer zurück","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Banken werden ausgegebenno: Nur nicht gelöschte Banken werden ausgegebenany: Alle Banken werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "BankNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "BankNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Name",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Strasse",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Strasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "PLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Ort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LandPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Telefon",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Telefon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Fax",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Fax",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ClearingNummer",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "ClearingNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PostcheckNummer",
+   "Datentyp": "String (11)",
+   "NamePROFFIX": "PostcheckNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SwiftNummer",
+   "Datentyp": "String (24)",
+   "NamePROFFIX": "SwiftNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ServerTyp",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "ServerTyp",
+   "Besonderes": "Servertyp für e-Banking:5 = PostFinance6 = mammut 69 = Crealogix11 = Finnova12 = CS Direct Net13 = ZKB DataLink14 = Cyber-IBIS15 = mammut 516 = UBS (OFX 2.1.1)17 = ComfortLink18 = ComfortLink 1.219 = Avaloq"
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Bank",
+   "Rueckgabewert": "HTTP 200Array\u003cBank\u003e",
+   "Beschreibung": "Gibt alle Banken zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Bank/{BankNr}",
+   "Rueckgabewert": "HTTP 200Bank",
+   "Beschreibung": "Gibt eine Bank anhand der Banknummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Banken werden ausgegebenno: Nur nicht gelöschte Banken werden ausgegebenany: Alle Banken werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

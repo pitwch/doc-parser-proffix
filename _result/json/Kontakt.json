@@ -1,1 +1,224 @@
-{"Fields":[{"Feld":"KontaktNr","Datentyp":"Number (int)","NamePROFFIX":"KontaktNrADR","Besonderes":" "},{"Feld":"Kontakttyp","Datentyp":"Object\u003cKontakttyp\u003e","NamePROFFIX":"KontaktTypADR","Besonderes":" "},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Titel","Datentyp":"String (40)","NamePROFFIX":"Titel","Besonderes":"optional"},{"Feld":"Name","Datentyp":"String (40)","NamePROFFIX":"Name","Besonderes":" "},{"Feld":"Vorname","Datentyp":"String (40)","NamePROFFIX":"Vorname","Besonderes":"optional"},{"Feld":"Strasse","Datentyp":"String (40)","NamePROFFIX":"Strasse","Besonderes":"optional"},{"Feld":"PLZ","Datentyp":"String (10)","NamePROFFIX":"PLZ","Besonderes":" "},{"Feld":"Ort","Datentyp":"String (40)","NamePROFFIX":"Ort","Besonderes":" "},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"},{"Feld":"Anrede","Datentyp":"String (40)","NamePROFFIX":"Anrede","Besonderes":"optional"},{"Feld":"Bemerkungen","Datentyp":"String (∞)","NamePROFFIX":"Bemerkungen","Besonderes":"optional"},{"Feld":"EMail","Datentyp":"String (100)","NamePROFFIX":"EMail","Besonderes":"optional"},{"Feld":"TelDirekt","Datentyp":"String (40)","NamePROFFIX":"TelDirekt","Besonderes":"optional"},{"Feld":"TelZentrale","Datentyp":"String (40)","NamePROFFIX":"TelZentrale","Besonderes":"optional"},{"Feld":"TelPrivat","Datentyp":"String (40)","NamePROFFIX":"TelPrivat","Besonderes":"optional"},{"Feld":"Fax","Datentyp":"String (40)","NamePROFFIX":"Fax","Besonderes":"optional"},{"Feld":"Mobiltelefon","Datentyp":"String (40)","NamePROFFIX":"Natel","Besonderes":"optional"},{"Feld":"Homepage","Datentyp":"String (100)","NamePROFFIX":"Homepage","Besonderes":"optional"},{"Feld":"Region","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"KantonPRO","Besonderes":"optional"},{"Feld":"Land","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"LandPRO","Besonderes":"optional"},{"Feld":"Hauptadresse","Datentyp":"Boolean","NamePROFFIX":"Haupt","Besonderes":" "},{"Feld":"AdresseGleichHauptadresse","Datentyp":"Boolean","NamePROFFIX":"GleichAdr","Besonderes":" "},{"Feld":"Adresszeile1","Datentyp":"String (40)","NamePROFFIX":"Adresszeile1","Besonderes":" "},{"Feld":"Adresszeile2","Datentyp":"String (40)","NamePROFFIX":"Adresszeile2","Besonderes":" "},{"Feld":"WebshopBenutzer","Datentyp":"String (30)","NamePROFFIX":"ShopBenutzer","Besonderes":" "},{"Feld":"WebshopEMail","Datentyp":"String (100)","NamePROFFIX":"ShopEMail","Besonderes":" "},{"Feld":"WebshopPasswort","Datentyp":"String (20)","NamePROFFIX":"ShopPasswort","Besonderes":" "},{"Feld":"WebshopPasswortAlt","Datentyp":"String (40)","NamePROFFIX":"ShopPasswortAlt","Besonderes":" "},{"Feld":"WebshopKonditionen","Datentyp":"Array\u003cKondition\u003e","NamePROFFIX":"ShopZahlart","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /ADR/Kontakt","Rueckgabewert":"HTTP 200Array\u003cKontakt\u003e","Beschreibung":"Gibt alle Kontakte zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /ADR/Kontakt/{KontaktNr}","Rueckgabewert":"HTTP 200Kontakt","Beschreibung":"Gibt einen Kontakt anhand der Kontaktnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"POST /ADR/Kontakt","Rueckgabewert":"HTTP 201","Beschreibung":"Legt eine neuen Kontakt an","BenoetigteLizenz":"ADR"},{"Endpunkt":"PUT /ADR/Kontakt/{KontaktNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert einen Kontakt anhand der Kontaktnummer","BenoetigteLizenz":"ADR"},{"Endpunkt":"DELETE /ADR/Kontakt/{KontaktNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löschen einen Kontakt anhand der Kontaktnummer","BenoetigteLizenz":"ADR"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Kontakte werden ausgegebenno: Nur nicht gelöschte Kontakte werden ausgegebenany: Alle Kontakte werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "KontaktNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "KontaktNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontakttyp",
+   "Datentyp": "Object\u003cKontakttyp\u003e",
+   "NamePROFFIX": "KontaktTypADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Titel",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Titel",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Name",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Vorname",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Strasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Strasse",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "PLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Ort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Anrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Anrede",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "EMail",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "EMail",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "TelDirekt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "TelDirekt",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "TelZentrale",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "TelZentrale",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "TelPrivat",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "TelPrivat",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Fax",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Fax",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Mobiltelefon",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Natel",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Homepage",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Homepage",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Region",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "KantonPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LandPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Hauptadresse",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Haupt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AdresseGleichHauptadresse",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "GleichAdr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopBenutzer",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "ShopBenutzer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopEMail",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "ShopEMail",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopPasswort",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "ShopPasswort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopPasswortAlt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "ShopPasswortAlt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopKonditionen",
+   "Datentyp": "Array\u003cKondition\u003e",
+   "NamePROFFIX": "ShopZahlart",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /ADR/Kontakt",
+   "Rueckgabewert": "HTTP 200Array\u003cKontakt\u003e",
+   "Beschreibung": "Gibt alle Kontakte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /ADR/Kontakt/{KontaktNr}",
+   "Rueckgabewert": "HTTP 200Kontakt",
+   "Beschreibung": "Gibt einen Kontakt anhand der Kontaktnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /ADR/Kontakt",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neuen Kontakt an",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PUT /ADR/Kontakt/{KontaktNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Kontakt anhand der Kontaktnummer",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "DELETE /ADR/Kontakt/{KontaktNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löschen einen Kontakt anhand der Kontaktnummer",
+   "BenoetigteLizenz": "ADR"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Kontakte werden ausgegebenno: Nur nicht gelöschte Kontakte werden ausgegebenany: Alle Kontakte werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

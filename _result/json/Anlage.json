@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"AnlageNr","Datentyp":"String (25)","NamePROFFIX":"AnlageNrBAS","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /BAS/Anlage","Rueckgabewert":"HTTP 200Array\u003cAnlage\u003e","Beschreibung":"Gibt alle Anlagen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /BAS/Anlage/{AnlageNr}","Rueckgabewert":"HTTP 200Anlage","Beschreibung":"Gibt einen Anlage anhand des AnlageNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "AnlageNr",
+   "Datentyp": "String (25)",
+   "NamePROFFIX": "AnlageNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /BAS/Anlage",
+   "Rueckgabewert": "HTTP 200Array\u003cAnlage\u003e",
+   "Beschreibung": "Gibt alle Anlagen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /BAS/Anlage/{AnlageNr}",
+   "Rueckgabewert": "HTTP 200Anlage",
+   "Beschreibung": "Gibt einen Anlage anhand des AnlageNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,1 +1,61 @@
-{"Fields":[{"Feld":"TeilleistungNr","Datentyp":"Number (Int)","NamePROFFIX":"TeilLNrSTU","Besonderes":"Optional"},{"Feld":"Anteil","Datentyp":"Number (6,2)","NamePROFFIX":"Anteil","Besonderes":"Optional"},{"Feld":"Bezeichnung","Datentyp":"String (80)","NamePROFFIX":"Bezeichnung","Besonderes":"Zwingend"},{"Feld":"Gliederung","Datentyp":"String (8)","NamePROFFIX":"GlNr","Besonderes":"Zwingend"},{"Feld":"Teilleistungsgruppe","Datentyp":"Object\u003cTeilleistungsgruppe\u003e","NamePROFFIX":"TeilGrpNrSTU","Besonderes":"Zwingend"},{"Feld":"Teilleistungstyp","Datentyp":"Object\u003cTeilleistungstyp\u003e","NamePROFFIX":"TeilTNrSTU","Besonderes":"Zwingend"},{"Feld":"Teilleistungsuntergruppe","Datentyp":"Object\u003cTeilleistungsuntergruppe\u003e","NamePROFFIX":"TeilUGrpNrSTU","Besonderes":"Optional"}],"Methods":[{"Endpunkt":"GET /STU/Teilleistung","Rueckgabewert":"HTTP 200Array\u003cTeilleistung\u003e","Beschreibung":"Gibt alle Teilleistungen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Teilleistung/{TeilleistungNr}","Rueckgabewert":"HTTP 200Teilleistung","Beschreibung":"Gibt eine Teilleistung anhand der TeilleistungNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "TeilleistungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "TeilLNrSTU",
+   "Besonderes": "Optional"
+  },
+  {
+   "Feld": "Anteil",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Anteil",
+   "Besonderes": "Optional"
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Gliederung",
+   "Datentyp": "String (8)",
+   "NamePROFFIX": "GlNr",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Teilleistungsgruppe",
+   "Datentyp": "Object\u003cTeilleistungsgruppe\u003e",
+   "NamePROFFIX": "TeilGrpNrSTU",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Teilleistungstyp",
+   "Datentyp": "Object\u003cTeilleistungstyp\u003e",
+   "NamePROFFIX": "TeilTNrSTU",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Teilleistungsuntergruppe",
+   "Datentyp": "Object\u003cTeilleistungsuntergruppe\u003e",
+   "NamePROFFIX": "TeilUGrpNrSTU",
+   "Besonderes": "Optional"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Teilleistung",
+   "Rueckgabewert": "HTTP 200Array\u003cTeilleistung\u003e",
+   "Beschreibung": "Gibt alle Teilleistungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Teilleistung/{TeilleistungNr}",
+   "Rueckgabewert": "HTTP 200Teilleistung",
+   "Beschreibung": "Gibt eine Teilleistung anhand der TeilleistungNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

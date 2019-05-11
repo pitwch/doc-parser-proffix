@@ -1,1 +1,704 @@
-{"Fields":[{"Feld":"ArtikelNr","Datentyp":"String (25)","NamePROFFIX":"ArtikelNrLAG","Besonderes":" "},{"Feld":"Bezeichnung1","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung1","Besonderes":" "},{"Feld":"Bezeichnung2","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung2","Besonderes":" "},{"Feld":"Bezeichnung3","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung3","Besonderes":" "},{"Feld":"Bezeichnung4","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung4","Besonderes":" "},{"Feld":"Bezeichnung5","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung5","Besonderes":" "},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"EinheitLager","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitPRO","Besonderes":" "},{"Feld":"EinheitRechnung","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitRechnung","Besonderes":" "},{"Feld":"Dim1","Datentyp":"Number (8,4)","NamePROFFIX":"Laenge","Besonderes":" "},{"Feld":"Dim2","Datentyp":"Number (8,4)","NamePROFFIX":"Breite","Besonderes":" "},{"Feld":"Dim3","Datentyp":"Number (8,4)","NamePROFFIX":"Tiefe","Besonderes":" "},{"Feld":"Verkaufspreis1","Datentyp":"Number (8,4)","NamePROFFIX":"Verkauf1","Besonderes":"Wenn Basispreis1 == 0:   Verkaufspreis1 = beliebigSonst:   Verkaufspreis1 = Faktor1 * in Basispreis1 hinterlegter Preis Wird je nach Einstellung gerundet"},{"Feld":"Verkaufspreis2","Datentyp":"Number (8,4)","NamePROFFIX":"Verkauf2","Besonderes":"analog Verkaufspreis1"},{"Feld":"Verkaufspreis3","Datentyp":"Number (8,4)","NamePROFFIX":"Verkauf3","Besonderes":"analog Verkaufspreis1"},{"Feld":"Verkaufspreis4","Datentyp":"Number (8,4)","NamePROFFIX":"Verkauf4","Besonderes":"analog Verkaufspreis1"},{"Feld":"Verkaufspreis5","Datentyp":"Number (8,4)","NamePROFFIX":"Verkauf5","Besonderes":"analog Verkaufspreis1"},{"Feld":"Steuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"Steuercode","Besonderes":"Steuercode Verkauf"},{"Feld":"Ertragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"ErtragsKonto","Besonderes":" "},{"Feld":"Kostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"Kostenstelle","Besonderes":" "},{"Feld":"Kostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"Kostenart","Besonderes":" "},{"Feld":"KeinRabatt","Datentyp":"Boolean","NamePROFFIX":"KeinRabatt","Besonderes":" "},{"Feld":"Barcode","Datentyp":"String (30)","NamePROFFIX":"Barcode","Besonderes":" "},{"Feld":"Lagerort","Datentyp":"Object\u003cLagerort\u003e","NamePROFFIX":"LagerortLAG","Besonderes":" "},{"Feld":"Lagerplatz","Datentyp":"Object\u003cLagerplatz\u003e","NamePROFFIX":"LagerplatzLAG","Besonderes":" "},{"Feld":"SerieNrVerwenden","Datentyp":"Boolean","NamePROFFIX":"SerieNr","Besonderes":" "},{"Feld":"ChargeVerwenden","Datentyp":"Boolean","NamePROFFIX":"Charge","Besonderes":" "},{"Feld":"Steuercode1","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"Steuercode1","Besonderes":"Steuercode für Verkaufspreis1"},{"Feld":"Steuercode2","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"Steuercode2","Besonderes":"Steuercode für Verkaufspreis2"},{"Feld":"Steuercode3","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"Steuercode3","Besonderes":"Steuercode für Verkaufspreis3"},{"Feld":"Steuercode4","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"Steuercode4","Besonderes":"Steuercode für Verkaufspreis4"},{"Feld":"Steuercode5","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"Steuercode5","Besonderes":"Steuercode für Verkaufspreis5"},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Aufwandskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"AufwandKonto","Besonderes":" "},{"Feld":"BasisInstallieren","Datentyp":"Boolean","NamePROFFIX":"BasisInstall","Besonderes":" "},{"Feld":"BasisNurEinmalInstallieren","Datentyp":"Boolean","NamePROFFIX":"BasisInstall1","Besonderes":" "},{"Feld":"Bestandeskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"BestandesKonto","Besonderes":" "},{"Feld":"Bestellpunkt","Datentyp":"Number (8,4)","NamePROFFIX":"Bestellpunkt","Besonderes":" "},{"Feld":"Bestellrhythmus","Datentyp":"Number (8,4)","NamePROFFIX":"Bestellrhythmus","Besonderes":" "},{"Feld":"Bestellvorschlag","Datentyp":"Number (Int)","NamePROFFIX":"Bestellvorschlag","Besonderes":"-1 = Keiner1 = Bedarf2 = Verbrauch Bestellrhythmus3 = Menge4 = Verbrauch Bestellpunkt5 = Immer bestellen"},{"Feld":"BasispreisProzentsatzBewertung","Datentyp":"Number (Int)","NamePROFFIX":"BewBasis","Besonderes":"0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis5"},{"Feld":"Bewertungspreis","Datentyp":"Number (8,4)","NamePROFFIX":"Bewertung","Besonderes":"analog Verkaufspreis1"},{"Feld":"ProzentsatzBewertung","Datentyp":"Number (8,4)","NamePROFFIX":"BewertungProz","Besonderes":" "},{"Feld":"GTIN","Datentyp":"String (30)","NamePROFFIX":"EAN","Besonderes":" "},{"Feld":"GueltigVonEinkauf","Datentyp":"String (Date)","NamePROFFIX":"EinGueltigVon","Besonderes":" "},{"Feld":"GueltigBisEinkauf","Datentyp":"String (Date)","NamePROFFIX":"EinGueltigBis","Besonderes":" "},{"Feld":"Einkaufspreis","Datentyp":"Number (8,4)","NamePROFFIX":"Einkauf","Besonderes":"Wird je nach Einstellung gerundet"},{"Feld":"SteuercodeEinkauf","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"EinkStCode","Besonderes":" "},{"Feld":"Einstandspreis","Datentyp":"Number (8,4)","NamePROFFIX":"Einstand","Besonderes":"Wird je nach Einstellung gerundet"},{"Feld":"Ersatzartikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"Ersatzartikel","Besonderes":" "},{"Feld":"Faktor1","Datentyp":"Number (8,4)","NamePROFFIX":"Faktor","Besonderes":" "},{"Feld":"Faktor2","Datentyp":"Number (8,4)","NamePROFFIX":"Faktor2","Besonderes":" "},{"Feld":"Faktor3","Datentyp":"Number (8,4)","NamePROFFIX":"Faktor3","Besonderes":" "},{"Feld":"Faktor4","Datentyp":"Number (8,4)","NamePROFFIX":"Faktor4","Besonderes":" "},{"Feld":"Faktor5","Datentyp":"Number (8,4)","NamePROFFIX":"Faktor5","Besonderes":" "},{"Feld":"FaktorBewertung","Datentyp":"Number (8,4)","NamePROFFIX":"FaktorBew","Besonderes":" "},{"Feld":"Faktor1Fixiert","Datentyp":"Boolean","NamePROFFIX":"FaktorFix","Besonderes":" "},{"Feld":"Faktor2Fixiert","Datentyp":"Boolean","NamePROFFIX":"FaktorFix2","Besonderes":" "},{"Feld":"Faktor3Fixiert","Datentyp":"Boolean","NamePROFFIX":"FaktorFix3","Besonderes":" "},{"Feld":"Faktor4Fixiert","Datentyp":"Boolean","NamePROFFIX":"FaktorFix4","Besonderes":" "},{"Feld":"Faktor5Fixiert","Datentyp":"Boolean","NamePROFFIX":"FaktorFix5","Besonderes":" "},{"Feld":"FaktorBewertungFixiert","Datentyp":"Boolean","NamePROFFIX":"FaktorFixBew","Besonderes":" "},{"Feld":"Garantie","Datentyp":"Number (Int)","NamePROFFIX":"Garantie","Besonderes":" "},{"Feld":"Gebindeeinheit","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"Gebindeeinheit","Besonderes":" "},{"Feld":"Gewicht","Datentyp":"Number (8,4)","NamePROFFIX":"Gewicht","Besonderes":" "},{"Feld":"Artikelgruppe","Datentyp":"Object\u003cArtikelgruppe\u003e","NamePROFFIX":"GruppeLAG","Besonderes":" "},{"Feld":"Hersteller","Datentyp":"Object\u003cHersteller\u003e","NamePROFFIX":"HerstellerLAG","Besonderes":" "},{"Feld":"KeinBestand","Datentyp":"Boolean","NamePROFFIX":"KeinBestand","Besonderes":" "},{"Feld":"KeinKassenverkauf","Datentyp":"Boolean","NamePROFFIX":"KeinKassenverkauf","Besonderes":" "},{"Feld":"Artikelklasse","Datentyp":"Object\u003cArtikelklasse\u003e","NamePROFFIX":"KlasseLAG","Besonderes":" "},{"Feld":"Lagerartikel","Datentyp":"Boolean","NamePROFFIX":"Lagerartikel","Besonderes":" "},{"Feld":"LetzterEinkaufspreis","Datentyp":"Number (8,4)","NamePROFFIX":"LetzterEP","Besonderes":" "},{"Feld":"Minimalbestand","Datentyp":"Number (8,4)","NamePROFFIX":"Minimum","Besonderes":" "},{"Feld":"Maximalbestand","Datentyp":"Number (8,4)","NamePROFFIX":"Maximum","Besonderes":" "},{"Feld":"Mindestbestellmenge","Datentyp":"Number (8,4)","NamePROFFIX":"MinBestellmenge","Besonderes":" "},{"Feld":"Negativbestand","Datentyp":"Boolean","NamePROFFIX":"Negativbestand","Besonderes":" "},{"Feld":"Optimalbestellmenge","Datentyp":"Number (8,4)","NamePROFFIX":"OptBestellmenge","Besonderes":" "},{"Feld":"Packungseinheit","Datentyp":"Number (8,4)","NamePROFFIX":"PackEinheit","Besonderes":" "},{"Feld":"MitPackungseinheitRechnen","Datentyp":"Boolean","NamePROFFIX":"PackEinheitRech","Besonderes":" "},{"Feld":"PreisAufAnfrageWebshop","Datentyp":"Boolean","NamePROFFIX":"PreisAufAnfrage","Besonderes":" "},{"Feld":"Sammelartikel","Datentyp":"Object\u003cSammelartikel\u003e","NamePROFFIX":"SammelartikelLAG","Besonderes":" "},{"Feld":"Webshop","Datentyp":"Boolean","NamePROFFIX":"Shop","Besonderes":" "},{"Feld":"AktionWebshop","Datentyp":"Boolean","NamePROFFIX":"ShopAktion","Besonderes":" "},{"Feld":"WebshopbildErstellt","Datentyp":"Boolean","NamePROFFIX":"ShopbildErstellt","Besonderes":" "},{"Feld":"Sicherheitstage","Datentyp":"Number (Int)","NamePROFFIX":"Sicherheitstage","Besonderes":" "},{"Feld":"StuecklisteAufloesen","Datentyp":"Boolean","NamePROFFIX":"StlAufloesen","Besonderes":" "},{"Feld":"StuecklisteBuendeln","Datentyp":"Boolean","NamePROFFIX":"StlBundle","Besonderes":" "},{"Feld":"IstStuecklistenkopf","Datentyp":"Boolean","NamePROFFIX":"StlKopf","Besonderes":" "},{"Feld":"StuecklistenpreiseBerechnen","Datentyp":"Boolean","NamePROFFIX":"StlPreiseBerechnen","Besonderes":" "},{"Feld":"Tara","Datentyp":"Number (8,4)","NamePROFFIX":"Tara","Besonderes":" "},{"Feld":"Artikeluntergruppe","Datentyp":"Object\u003cArtikeluntergruppe\u003e","NamePROFFIX":"UntergruppeLAG","Besonderes":" "},{"Feld":"GueltigVonVerkauf","Datentyp":"String (Date)","NamePROFFIX":"VerGueltigVon","Besonderes":" "},{"Feld":"GueltigBisVerkauf","Datentyp":"String (Date)","NamePROFFIX":"VerGueltigBis","Besonderes":" "},{"Feld":"Verpackung","Datentyp":"Object\u003cVerpackung\u003e","NamePROFFIX":"VerpackungLAG","Besonderes":" "},{"Feld":"Basispreis1","Datentyp":"Number (Int)","NamePROFFIX":"VkBasis1","Besonderes":"-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis3 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"},{"Feld":"Basispreis2","Datentyp":"Number (Int)","NamePROFFIX":"VkBasis2","Besonderes":"-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis14 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"},{"Feld":"Basispreis3","Datentyp":"Number (Int)","NamePROFFIX":"VkBasis3","Besonderes":"-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis25 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"},{"Feld":"Basispreis4","Datentyp":"Number (Int)","NamePROFFIX":"VkBasis4","Besonderes":"-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis36 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"},{"Feld":"Basispreis5","Datentyp":"Number (Int)","NamePROFFIX":"VkBasis5","Besonderes":"-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis47 = EinkaufspreisFW8 = EinstandspreisFW"},{"Feld":"BasispreisBewertung","Datentyp":"Number (Int)","NamePROFFIX":"VkBasisBew","Besonderes":"-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"},{"Feld":"Wiederbeschaffung","Datentyp":"Number (Int)","NamePROFFIX":"Wiederbeschaffung","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /LAG/Artikel","Rueckgabewert":"HTTP 200Array\u003cArtikel\u003e","Beschreibung":"Gibt alle Artikel zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikel/{ArtikelNr}","Rueckgabewert":"HTTP 200Artikel","Beschreibung":"Gibt einen Artikel anhand der Artikelnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikel/{ArtikelNr}/Preis/Verkauf/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Verkaufspreis anhand einer Auftragsnummer zurück, siehe Preis","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikel/{ArtikelNr}/Preis/Verkauf/Adresse/{AdresseNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Verkaufspreis anhand einer Adressnummer zurück, siehe Preis","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikel/{ArtikelNr}/Preis/Einkauf/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Einkaufspreis anhand einer Auftragsnummer zurück, siehe Preis","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikel/{ArtikelNr}/Preis/Einkauf/Adresse/{AdresseNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Einkaufspreis anhand einer Adressnummer zurück, siehe Preis","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Artikel/{ArtikelNr}/Bestand","Rueckgabewert":"HTTP 200Array\u003cBestand\u003e","Beschreibung":"Gibt den Bestand eines Artikels zurück, siehe Bestand","BenoetigteLizenz":"keine"},{"Endpunkt":"POST /LAG/Artikel","Rueckgabewert":"HTTP 201","Beschreibung":"Legt einen neuen Artikel an","BenoetigteLizenz":"LAG"},{"Endpunkt":"PUT /LAG/Artikel/{ArtikelNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert einen Artikel anhand der Artikelnummer","BenoetigteLizenz":"LAG"},{"Endpunkt":"DELETE /LAG/Artikel/{ArtikelNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löscht einen Artikel anhand der Artikelnummer","BenoetigteLizenz":"LAG"},{"Endpunkt":"POST /LAG/Artikel/{ArtikelNr}/inventurbuchen","Rueckgabewert":"HTTP 204","Beschreibung":"Korrigiert die Lagerbestände, siehe Lagerbewegungen","BenoetigteLizenz":"LAG"},{"Endpunkt":"POST /LAG/Artikel/{ArtikelNr}/eingangbuchen","Rueckgabewert":"HTTP 204","Beschreibung":"Bucht einen Lagereingang, siehe Lagerbewegungen","BenoetigteLizenz":"LAG"},{"Endpunkt":"POST /LAG/Artikel/{ArtikelNr}/ausgangbuchen","Rueckgabewert":"HTTP 204","Beschreibung":"Bucht einen Lagerausgang, siehe Lagerbewegungen","BenoetigteLizenz":"LAG"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Artikel werden ausgegebenno: Nur nicht gelöschte Artikel werden ausgegebenany: Alle Artikel werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "ArtikelNr",
+   "Datentyp": "String (25)",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitLager",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitRechnung",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitRechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim1",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Laenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim2",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Breite",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim3",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Tiefe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis1",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf1",
+   "Besonderes": "Wenn Basispreis1 == 0:   Verkaufspreis1 = beliebigSonst:   Verkaufspreis1 = Faktor1 * in Basispreis1 hinterlegter Preis Wird je nach Einstellung gerundet"
+  },
+  {
+   "Feld": "Verkaufspreis2",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf2",
+   "Besonderes": "analog Verkaufspreis1"
+  },
+  {
+   "Feld": "Verkaufspreis3",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf3",
+   "Besonderes": "analog Verkaufspreis1"
+  },
+  {
+   "Feld": "Verkaufspreis4",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf4",
+   "Besonderes": "analog Verkaufspreis1"
+  },
+  {
+   "Feld": "Verkaufspreis5",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf5",
+   "Besonderes": "analog Verkaufspreis1"
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "Steuercode",
+   "Besonderes": "Steuercode Verkauf"
+  },
+  {
+   "Feld": "Ertragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "ErtragsKonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "Kostenstelle",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "Kostenart",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KeinRabatt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeinRabatt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Barcode",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "Barcode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerplatz",
+   "Datentyp": "Object\u003cLagerplatz\u003e",
+   "NamePROFFIX": "LagerplatzLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SerieNrVerwenden",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SerieNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ChargeVerwenden",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Charge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode1",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "Steuercode1",
+   "Besonderes": "Steuercode für Verkaufspreis1"
+  },
+  {
+   "Feld": "Steuercode2",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "Steuercode2",
+   "Besonderes": "Steuercode für Verkaufspreis2"
+  },
+  {
+   "Feld": "Steuercode3",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "Steuercode3",
+   "Besonderes": "Steuercode für Verkaufspreis3"
+  },
+  {
+   "Feld": "Steuercode4",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "Steuercode4",
+   "Besonderes": "Steuercode für Verkaufspreis4"
+  },
+  {
+   "Feld": "Steuercode5",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "Steuercode5",
+   "Besonderes": "Steuercode für Verkaufspreis5"
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Aufwandskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "AufwandKonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BasisInstallieren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "BasisInstall",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BasisNurEinmalInstallieren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "BasisInstall1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestandeskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "BestandesKonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellpunkt",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Bestellpunkt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellrhythmus",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Bestellrhythmus",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellvorschlag",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Bestellvorschlag",
+   "Besonderes": "-1 = Keiner1 = Bedarf2 = Verbrauch Bestellrhythmus3 = Menge4 = Verbrauch Bestellpunkt5 = Immer bestellen"
+  },
+  {
+   "Feld": "BasispreisProzentsatzBewertung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "BewBasis",
+   "Besonderes": "0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis5"
+  },
+  {
+   "Feld": "Bewertungspreis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Bewertung",
+   "Besonderes": "analog Verkaufspreis1"
+  },
+  {
+   "Feld": "ProzentsatzBewertung",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "BewertungProz",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GTIN",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "EAN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigVonEinkauf",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "EinGueltigVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigBisEinkauf",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "EinGueltigBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Einkaufspreis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Einkauf",
+   "Besonderes": "Wird je nach Einstellung gerundet"
+  },
+  {
+   "Feld": "SteuercodeEinkauf",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "EinkStCode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Einstandspreis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Einstand",
+   "Besonderes": "Wird je nach Einstellung gerundet"
+  },
+  {
+   "Feld": "Ersatzartikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "Ersatzartikel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor1",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Faktor",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor2",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Faktor2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor3",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Faktor3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor4",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Faktor4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor5",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Faktor5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "FaktorBewertung",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "FaktorBew",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor1Fixiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FaktorFix",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor2Fixiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FaktorFix2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor3Fixiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FaktorFix3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor4Fixiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FaktorFix4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor5Fixiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FaktorFix5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "FaktorBewertungFixiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FaktorFixBew",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Garantie",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Garantie",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gebindeeinheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "Gebindeeinheit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gewicht",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Gewicht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelgruppe",
+   "Datentyp": "Object\u003cArtikelgruppe\u003e",
+   "NamePROFFIX": "GruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Hersteller",
+   "Datentyp": "Object\u003cHersteller\u003e",
+   "NamePROFFIX": "HerstellerLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KeinBestand",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeinBestand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KeinKassenverkauf",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeinKassenverkauf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelklasse",
+   "Datentyp": "Object\u003cArtikelklasse\u003e",
+   "NamePROFFIX": "KlasseLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerartikel",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Lagerartikel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LetzterEinkaufspreis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "LetzterEP",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Minimalbestand",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Minimum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Maximalbestand",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Maximum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mindestbestellmenge",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "MinBestellmenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Negativbestand",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Negativbestand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Optimalbestellmenge",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "OptBestellmenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Packungseinheit",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "PackEinheit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MitPackungseinheitRechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "PackEinheitRech",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisAufAnfrageWebshop",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "PreisAufAnfrage",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sammelartikel",
+   "Datentyp": "Object\u003cSammelartikel\u003e",
+   "NamePROFFIX": "SammelartikelLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Webshop",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Shop",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AktionWebshop",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ShopAktion",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopbildErstellt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ShopbildErstellt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sicherheitstage",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Sicherheitstage",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StuecklisteAufloesen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StlAufloesen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StuecklisteBuendeln",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StlBundle",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstStuecklistenkopf",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StlKopf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StuecklistenpreiseBerechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StlPreiseBerechnen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Tara",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Tara",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikeluntergruppe",
+   "Datentyp": "Object\u003cArtikeluntergruppe\u003e",
+   "NamePROFFIX": "UntergruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigVonVerkauf",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "VerGueltigVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigBisVerkauf",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "VerGueltigBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verpackung",
+   "Datentyp": "Object\u003cVerpackung\u003e",
+   "NamePROFFIX": "VerpackungLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Basispreis1",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "VkBasis1",
+   "Besonderes": "-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis3 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"
+  },
+  {
+   "Feld": "Basispreis2",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "VkBasis2",
+   "Besonderes": "-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis14 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"
+  },
+  {
+   "Feld": "Basispreis3",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "VkBasis3",
+   "Besonderes": "-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis25 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"
+  },
+  {
+   "Feld": "Basispreis4",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "VkBasis4",
+   "Besonderes": "-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis36 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"
+  },
+  {
+   "Feld": "Basispreis5",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "VkBasis5",
+   "Besonderes": "-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis47 = EinkaufspreisFW8 = EinstandspreisFW"
+  },
+  {
+   "Feld": "BasispreisBewertung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "VkBasisBew",
+   "Besonderes": "-1 = Benutzerdefiniert0 = Einkaufspreis1 = Einstandspreis2 = Verkaufspreis13 = Verkaufspreis24 = Verkaufspreis35 = Verkaufspreis46 = Verkaufspreis57 = EinkaufspreisFW8 = EinstandspreisFW"
+  },
+  {
+   "Feld": "Wiederbeschaffung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Wiederbeschaffung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Artikel",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikel\u003e",
+   "Beschreibung": "Gibt alle Artikel zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}",
+   "Rueckgabewert": "HTTP 200Artikel",
+   "Beschreibung": "Gibt einen Artikel anhand der Artikelnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Preis/Verkauf/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Verkaufspreis anhand einer Auftragsnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Preis/Verkauf/Adresse/{AdresseNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Verkaufspreis anhand einer Adressnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Preis/Einkauf/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Einkaufspreis anhand einer Auftragsnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Preis/Einkauf/Adresse/{AdresseNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Einkaufspreis anhand einer Adressnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Bestand",
+   "Rueckgabewert": "HTTP 200Array\u003cBestand\u003e",
+   "Beschreibung": "Gibt den Bestand eines Artikels zurück, siehe Bestand",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Artikel an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Artikel/{ArtikelNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Artikel anhand der Artikelnummer",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Artikel/{ArtikelNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Artikel anhand der Artikelnummer",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/inventurbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Korrigiert die Lagerbestände, siehe Lagerbewegungen",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/eingangbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Bucht einen Lagereingang, siehe Lagerbewegungen",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/ausgangbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Bucht einen Lagerausgang, siehe Lagerbewegungen",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Artikel werden ausgegebenno: Nur nicht gelöschte Artikel werden ausgegebenany: Alle Artikel werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

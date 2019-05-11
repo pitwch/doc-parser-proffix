@@ -1,1 +1,115 @@
-{"Fields":[{"Feld":"PositionsartNr","Datentyp":"Number (int)","NamePROFFIX":"PosArtSTU","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Vorgabezeit","Datentyp":"Number (10,2)","NamePROFFIX":"Vorgabezeit","Besonderes":"Vorgabewert beim Erfassen eines neuen Rapports, in Stunden, optional"},{"Feld":"LohnperiodePlus","Datentyp":"Boolean","NamePROFFIX":"LohnperiodePlus","Besonderes":"Wenn True wird im Rapport zur Lohnperiode ein Monat dazu addiert, optional"},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":"Vorgabewert beim Erfassen eines neuen Rapports, optional"},{"Feld":"Steuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"StCodePRO","Besonderes":"Vorgabewert beim Erfassen eines neuen Rapports, optional"},{"Feld":"Ertragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"Ertragskonto","Besonderes":"Vorgabewert beim Erfassen eines neuen Rapports, optional"},{"Feld":"Kostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"KstFIB","Besonderes":"Vorgabewert beim Erfassen eines neuen Rapports, optional"},{"Feld":"Kostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"KoArtFIB","Besonderes":"Vorgabewert beim Erfassen eines neuen Rapports, optional"},{"Feld":"KeinRabatt","Datentyp":"Boolean","NamePROFFIX":"KeinRabatt","Besonderes":"Wenn True darf der Rabatt von der Adresse in diesem Rapport nicht verwendet werden, optional"},{"Feld":"Ferien","Datentyp":"Boolean","NamePROFFIX":"Ferien","Besonderes":"Es können nur Stunden (keine Aufträge, Projekte, Überzeit, Spesen, usw.) im Rapport erfasst werden, diese Stunden werden als Ferien verarbeitet"},{"Feld":"StdPreis","Datentyp":"Number (5,2)","NamePROFFIX":"StdPreis","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /STU/Positionsart","Rueckgabewert":"HTTP 200Array\u003cPositionsart\u003e","Beschreibung":"Gibt alle Positionsarten zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}","Rueckgabewert":"HTTP 200Positionsart","Beschreibung":"Gibt eine Positionsart anhand der Positionsartnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Verkaufspreis anhand einer Auftragsnummer zurück, siehe Preis","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Adresse/{AdresseNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Verkaufspreis anhand einer Adressnummer zurück, siehe Preis","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Einkaufspreis anhand einer Auftragsnummer zurück, siehe Preis","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Adresse/{AdresseNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Einkaufspreis anhand einer Adressnummer zurück, siehe Preis","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "PositionsartNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "PosArtSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorgabezeit",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Vorgabezeit",
+   "Besonderes": "Vorgabewert beim Erfassen eines neuen Rapports, in Stunden, optional"
+  },
+  {
+   "Feld": "LohnperiodePlus",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "LohnperiodePlus",
+   "Besonderes": "Wenn True wird im Rapport zur Lohnperiode ein Monat dazu addiert, optional"
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": "Vorgabewert beim Erfassen eines neuen Rapports, optional"
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": "Vorgabewert beim Erfassen eines neuen Rapports, optional"
+  },
+  {
+   "Feld": "Ertragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Ertragskonto",
+   "Besonderes": "Vorgabewert beim Erfassen eines neuen Rapports, optional"
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": "Vorgabewert beim Erfassen eines neuen Rapports, optional"
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": "Vorgabewert beim Erfassen eines neuen Rapports, optional"
+  },
+  {
+   "Feld": "KeinRabatt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeinRabatt",
+   "Besonderes": "Wenn True darf der Rabatt von der Adresse in diesem Rapport nicht verwendet werden, optional"
+  },
+  {
+   "Feld": "Ferien",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Ferien",
+   "Besonderes": "Es können nur Stunden (keine Aufträge, Projekte, Überzeit, Spesen, usw.) im Rapport erfasst werden, diese Stunden werden als Ferien verarbeitet"
+  },
+  {
+   "Feld": "StdPreis",
+   "Datentyp": "Number (5,2)",
+   "NamePROFFIX": "StdPreis",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Positionsart",
+   "Rueckgabewert": "HTTP 200Array\u003cPositionsart\u003e",
+   "Beschreibung": "Gibt alle Positionsarten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}",
+   "Rueckgabewert": "HTTP 200Positionsart",
+   "Beschreibung": "Gibt eine Positionsart anhand der Positionsartnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Verkaufspreis anhand einer Auftragsnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Adresse/{AdresseNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Verkaufspreis anhand einer Adressnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Einkaufspreis anhand einer Auftragsnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Adresse/{AdresseNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Einkaufspreis anhand einer Adressnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

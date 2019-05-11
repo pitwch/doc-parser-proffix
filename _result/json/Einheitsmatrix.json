@@ -1,1 +1,97 @@
-{"Fields":[{"Feld":"EinheitLager","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitLager","Besonderes":" "},{"Feld":"EinheitRechnung","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitRechnung","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"EinheitDim1","Datentyp":"String (20)","NamePROFFIX":"EinheitDim1","Besonderes":" "},{"Feld":"EinheitDim2","Datentyp":"String (20)","NamePROFFIX":"EinheitDim2","Besonderes":" "},{"Feld":"EinheitDim3","Datentyp":"String (20)","NamePROFFIX":"EinheitDim3","Besonderes":" "},{"Feld":"RechnenDim1","Datentyp":"Boolean","NamePROFFIX":"RechnenDim1","Besonderes":" "},{"Feld":"RechnenDim2","Datentyp":"Boolean","NamePROFFIX":"RechnenDim2","Besonderes":" "},{"Feld":"RechnenDim3","Datentyp":"Boolean","NamePROFFIX":"RechnenDim3","Besonderes":" "},{"Feld":"Divisor","Datentyp":"Number (7,4)","NamePROFFIX":"Divisor","Besonderes":" "},{"Feld":"Multiplikator","Datentyp":"Number (7,4)","NamePROFFIX":"Multiplikator","Besonderes":" "},{"Feld":"Rundung","Datentyp":"Number (int)","NamePROFFIX":"RundenEinh","Besonderes":"Gibt an ob die Einheit gerundet wird, kann folgende Werte beinhalten:0 = Runden auf 0.011 = Runden auf 0.052 = Runden auf 0.13 = Runden auf 14 = Runden auf 0.0015 = Runden auf 0.00018 = Kein Runden"}],"Methods":[{"Endpunkt":"GET /PRO/Einheitsmatrix","Rueckgabewert":"HTTP 200Array\u003cEinheitsmatrix\u003e","Beschreibung":"Gibt alle Einheitsmatrizen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Einheitsmatrix/{EinheitLager}","Rueckgabewert":"HTTP 200Array\u003cEinheitsmatrix\u003e","Beschreibung":"Gibt alle Einheitsmatrizen anhand EinheitLager zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Einheitsmatrix/{EinheitLager}/{EinheitRechnung}","Rueckgabewert":"HTTP 200Einheitsmatrix","Beschreibung":"Gibt eine Einheitsmatrix anhand EinheitLager und EinheitRechnung zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "EinheitLager",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitLager",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitRechnung",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitRechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitDim1",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "EinheitDim1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitDim2",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "EinheitDim2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitDim3",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "EinheitDim3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnenDim1",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "RechnenDim1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnenDim2",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "RechnenDim2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnenDim3",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "RechnenDim3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Divisor",
+   "Datentyp": "Number (7,4)",
+   "NamePROFFIX": "Divisor",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Multiplikator",
+   "Datentyp": "Number (7,4)",
+   "NamePROFFIX": "Multiplikator",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rundung",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "RundenEinh",
+   "Besonderes": "Gibt an ob die Einheit gerundet wird, kann folgende Werte beinhalten:0 = Runden auf 0.011 = Runden auf 0.052 = Runden auf 0.13 = Runden auf 14 = Runden auf 0.0015 = Runden auf 0.00018 = Kein Runden"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Einheitsmatrix",
+   "Rueckgabewert": "HTTP 200Array\u003cEinheitsmatrix\u003e",
+   "Beschreibung": "Gibt alle Einheitsmatrizen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Einheitsmatrix/{EinheitLager}",
+   "Rueckgabewert": "HTTP 200Array\u003cEinheitsmatrix\u003e",
+   "Beschreibung": "Gibt alle Einheitsmatrizen anhand EinheitLager zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Einheitsmatrix/{EinheitLager}/{EinheitRechnung}",
+   "Rueckgabewert": "HTTP 200Einheitsmatrix",
+   "Beschreibung": "Gibt eine Einheitsmatrix anhand EinheitLager und EinheitRechnung zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

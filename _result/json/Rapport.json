@@ -1,1 +1,362 @@
-{"Fields":[{"Feld":"RapportNr","Datentyp":"Number (int)","NamePROFFIX":"RapportNr","Besonderes":" "},{"Feld":"Mitarbeiter","Datentyp":"Object\u003cMitarbeiter\u003e","NamePROFFIX":"MitNrPRO","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":"Feld \"Auftrag\" oder Feld \"Projekt\" muss angegeben werden, ausser wenn bei Positionsart \"Ferien\" aktiviert ist"},{"Feld":"Projekt","Datentyp":"Object\u003cProjekt\u003e","NamePROFFIX":"ProjektNrSTU","Besonderes":"siehe Feld \"Auftrag\""},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikleNrLAG","Besonderes":"Feld \"Artikel\" oder Feld \"Positionsart\" muss angegeben werden,der Artikel aus dem Auftrag sollte vorgeschlagen werden"},{"Feld":"Bezeichnung1","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung1","Besonderes":"muss angegeben werden, wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Bezeichnung2","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung2","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Bezeichnung3","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung3","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Bezeichnung4","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung4","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Bezeichnung5","Datentyp":"String (100)","NamePROFFIX":"Bezeichnung5","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"EinheitLager","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitPRO","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"EinheitRechnung","Datentyp":"Object\u003cEinheit\u003e","NamePROFFIX":"EinheitRechnung","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Menge","Datentyp":"Number (10,4)","NamePROFFIX":"Menge","Besonderes":"nur wenn Artikel ausgewählt ist,wenn leer wird 0 eingesetzt"},{"Feld":"MengeVerr","Datentyp":"Number (10,4)","NamePROFFIX":"MengeVerr","Besonderes":"wird automatisch von der API berechnet, sollte nicht angegeben werden"},{"Feld":"Dim1","Datentyp":"Number (10,4)","NamePROFFIX":"Dim1","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Dim2","Datentyp":"Number (10,4)","NamePROFFIX":"Dim2","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Dim3","Datentyp":"Number (10,4)","NamePROFFIX":"Dim3","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"Lagerpreis","Datentyp":"Number (int)","NamePROFFIX":"Lagerpreis","Besonderes":"optional, wird über Preisabfrage ermittelt Mögliche Werte sind:0 = manueller Preis1...5 = Verkaufspreis 1...56 = Preis über PreismodulWenn \"PreisFW\" überschrieben wird, muss 0 (manueller Preis) übergeben werden"},{"Feld":"Datum","Datentyp":"String (Date)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"Positionsart","Datentyp":"Object\u003cPositionsart\u003e","NamePROFFIX":"PosArtSTU","Besonderes":"muss leer sein wenn Artikel angegeben wurde,ohne Artikel wird die Positionsart des Auftrags übernommen,ohne Artikel und Auftrag wird die Positionsart des Mitarbeiters übernommen"},{"Feld":"KaWo","Datentyp":"String (6)","NamePROFFIX":"KaWo","Besonderes":"optional, wird beim Speichern automatisch ermittelt,allfälliger Wert wird überschrieben,im Format JJJJKK"},{"Feld":"StartZeit","Datentyp":"String (Time)","NamePROFFIX":"StartZeit","Besonderes":"optional"},{"Feld":"EndZeit","Datentyp":"String (Time)","NamePROFFIX":"EndZeit","Besonderes":"optional, wird beim Speichern aus StartZeit, Stunden und Pause berechnet (falls angegeben)"},{"Feld":"Stunden","Datentyp":"Number (10,2)","NamePROFFIX":"Stunden","Besonderes":"in Stunden"},{"Feld":"StundenVerr","Datentyp":"Number (10,2)","NamePROFFIX":"StundenVerr","Besonderes":"optional, in Stunden, wenn leer werden Stunden übernommen"},{"Feld":"Pause","Datentyp":"Number (int)","NamePROFFIX":"Pause","Besonderes":"optional, in Minuten"},{"Feld":"Bemerkungen","Datentyp":"String (∞)","NamePROFFIX":"Bemerkungen","Besonderes":"optional, das Feld \"BemerkungenRTF\" darf nur die RTF-Version dieses Felds enthalten oder muss leer sein"},{"Feld":"BemerkungenRTF","Datentyp":"String (∞)","NamePROFFIX":"BemerkungenRTF","Besonderes":"optional, wenn RTF übergeben wird, muss im Feld \"Bemerkungen\" der Inhalt als Plain-Text stehen und darf nicht leer übergeben werden"},{"Feld":"Selbstkosten","Datentyp":"Number (10,2)","NamePROFFIX":"Selbstkosten","Besonderes":"optional, wird normalerweise leer gelassen (dann wird die Selbstkosten von der Positionsart verwendet), wird etwas angegeben, werden diese übersteuert"},{"Feld":"Ueberzeit","Datentyp":"Number (10,2)","NamePROFFIX":"Ueberzeit","Besonderes":"optional, in Stunden"},{"Feld":"StdPreis","Datentyp":"Number (10,2)","NamePROFFIX":"StdPreis","Besonderes":"optional, wenn leer oder 0 dann wird der Preis automatisch berechnet,"},{"Feld":"Km","Datentyp":"Number (10,2)","NamePROFFIX":"Km","Besonderes":"optional"},{"Feld":"PeriodeLohn","Datentyp":"String (6)","NamePROFFIX":"PeriodeLohn","Besonderes":"optional, im Format JJJJMM, normalerweise wird die Lohnperiode leer übergeben und von der API ermittelt"},{"Feld":"PreisFW","Datentyp":"Number (10,2)","NamePROFFIX":"PreisFW","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werdenwenn Preis überschrieben wird, muss \"Lagerpreis\" auf 0 (manueller Preis) gesetzt werden"},{"Feld":"TotalFW","Datentyp":"Number (10,2)","NamePROFFIX":"TotalFW","Besonderes":"nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"},{"Feld":"SteuerFW","Datentyp":"Number (10,2)","NamePROFFIX":"SteuerFW","Besonderes":"optional, wird bei jedem Speichern automatisch berechnet und muss nicht angegeben werden"},{"Feld":"Rabatt","Datentyp":"Number (10,2)","NamePROFFIX":"Rabatt","Besonderes":"optional, in Prozentsollte von der Adresse übernommen werden, ausser auf Positionsart/Artikel ist die Option \"KeinRabatt\" gesetzt"},{"Feld":"RabattFW","Datentyp":"Number (10,2)","NamePROFFIX":"RabattFW","Besonderes":"optional, Betrag in Währung pro Menge/Stunden"},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":"optional, wenn leer wird Währung ab der Adresse verwendet, wenn bei der Adresse keine Währung hinterlegt ist, wird die Standardwährung verwendet,sollte Währung von Adresse (oder wenn dort leer von Auftrag/Positionsart) verwenden"},{"Feld":"Kurs","Datentyp":"Number (10,6)","NamePROFFIX":"Kurs","Besonderes":"optional, wenn leer oder 0 wird der Kurs automatisch ermittelt"},{"Feld":"Ertragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"Ertragskonto","Besonderes":"optional, wenn leer wird Erktragskonto vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenErtragskonto\" der Adresse verwendet (nur wenn \"DebitorenErtragskontoVerwenden\" aktiv ist)"},{"Feld":"Vertreter","Datentyp":"Object\u003cVertreter\u003e","NamePROFFIX":"VertreterPRO","Besonderes":"optional, wenn leer wird der Vertreter der Adresse verwendet"},{"Feld":"Kostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"KoArtFIB","Besonderes":"optional, wenn leer wird Kostenart vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenKostenart\" der Adresse verwendet (nur wenn \"DebitorenKostenartVerwenden\" aktiv ist)"},{"Feld":"Kostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"KstFIB","Besonderes":"optional, wenn leer wird Kostenstelle vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenKostenstelle\" der Adresse verwendet (nur wenn \"DebitorenKostenstelleVerwenden\" aktiv ist)"},{"Feld":"EmpfaengerAdr","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"EmpfaengerAdr","Besonderes":"optional, muss angegeben werden, wenn Artikel und Projekt ausgewählt wurde"},{"Feld":"Verrechnen","Datentyp":"Boolean","NamePROFFIX":"Verrechnen","Besonderes":"sollte auf True gesetzt sein, es sei denn der Rapport darf explizit nicht verrechnet werden"},{"Feld":"Steuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"StCodePRO","Besonderes":"optional, wenn leer wird Steuercode vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenSteuercode\" der Adresse verwendet (nur wenn \"DebitorenSteuercodeVerwenden\" aktiv ist),dieses Feld darf nur abgefüllt werden, wenn auf dem Ertragskonto ebenfalls ein Steuercode definiert ist"},{"Feld":"Verrechnet","Datentyp":"Boolean","NamePROFFIX":" ","Besonderes":"dieses Feld kann nicht gefiltert werden, URL-Parameter verwendenverrechnete Rapporte sind immer auch gesperrt"},{"Feld":"Gesperrt","Datentyp":"Boolean","NamePROFFIX":" ","Besonderes":"dieses Feld kann nicht gefiltert werden, URL-Parameter verwenden,ein Rapport gilt als gesperrt wenn:- das Sperrdatum jünger- verrechnet wurde- Lohnbewegung auf Spesen oder Stunden definitiv abgerechnet wurden- durch Mitarbeiterberechtigungen auf \"nur-lesen\" eingeschränkt"},{"Feld":"Serviceauftrag","Datentyp":"Object\u003cServiceauftrag\u003e","NamePROFFIX":"AuftragNrSRV","Besonderes":" "},{"Feld":"ServiceauftragspositionNr","Datentyp":"Number (int)","NamePROFFIX":"PositionNrSRV","Besonderes":" "},{"Feld":"Teilleistung","Datentyp":"Object\u003cTeilleistung\u003e","NamePROFFIX":"TeilLNrSTU","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /STU/Rapport","Rueckgabewert":"HTTP 200Array\u003cRapport\u003e","Beschreibung":"Gibt alle Rapporte zurück","BenoetigteLizenz":"STU"},{"Endpunkt":"GET /STU/Rapport/{RapportNr}","Rueckgabewert":"HTTP 200Rapport","Beschreibung":"Gibt ein Rapport anhand der Rapportnummer zurück","BenoetigteLizenz":"STU"},{"Endpunkt":"POST /STU/Rapport","Rueckgabewert":"HTTP 201","Beschreibung":"Legt einen neuen Rapport an","BenoetigteLizenz":"STU"},{"Endpunkt":"PUT /STU/Rapport/{RapportNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert einen Rapport anhand der Rapportnummer","BenoetigteLizenz":"STU"},{"Endpunkt":"DELETE /STU/Rapport/{RapportNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löscht einen Rapport anhand der Rapportnummer","BenoetigteLizenz":"STU"}],"Parameter":[{"Parameter":"verrechnet","Format":"String (yes, no, any)","Beschreibung":"yes: Nur verrechneten Rapporte werden ausgegebenno: Nur nicht verrechneten Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben","VerhaltenOhneParameter":"no"},{"Parameter":"gesperrt","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gesperrte Rapporte werden ausgegebenno: Nur nicht gesperrte Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben Bei der Filterung wird nur das Sperrdatum berücksichtigt, aber beim Feld \"Gesperrt\" werden alle Kriterien berücksichtigt","VerhaltenOhneParameter":"no (ausser wenn URL-Parameter \"verrechnet\" auf yes, dann ist dieser Parameter auch yes)"}]}
+{
+ "Fields": [
+  {
+   "Feld": "RapportNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "RapportNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": "Feld \"Auftrag\" oder Feld \"Projekt\" muss angegeben werden, ausser wenn bei Positionsart \"Ferien\" aktiviert ist"
+  },
+  {
+   "Feld": "Projekt",
+   "Datentyp": "Object\u003cProjekt\u003e",
+   "NamePROFFIX": "ProjektNrSTU",
+   "Besonderes": "siehe Feld \"Auftrag\""
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikleNrLAG",
+   "Besonderes": "Feld \"Artikel\" oder Feld \"Positionsart\" muss angegeben werden,der Artikel aus dem Auftrag sollte vorgeschlagen werden"
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": "muss angegeben werden, wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "EinheitLager",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "EinheitRechnung",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitRechnung",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,wenn leer wird 0 eingesetzt"
+  },
+  {
+   "Feld": "MengeVerr",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "MengeVerr",
+   "Besonderes": "wird automatisch von der API berechnet, sollte nicht angegeben werden"
+  },
+  {
+   "Feld": "Dim1",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Dim1",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Dim2",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Dim2",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Dim3",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Dim3",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "Lagerpreis",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Lagerpreis",
+   "Besonderes": "optional, wird über Preisabfrage ermittelt Mögliche Werte sind:0 = manueller Preis1...5 = Verkaufspreis 1...56 = Preis über PreismodulWenn \"PreisFW\" überschrieben wird, muss 0 (manueller Preis) übergeben werden"
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionsart",
+   "Datentyp": "Object\u003cPositionsart\u003e",
+   "NamePROFFIX": "PosArtSTU",
+   "Besonderes": "muss leer sein wenn Artikel angegeben wurde,ohne Artikel wird die Positionsart des Auftrags übernommen,ohne Artikel und Auftrag wird die Positionsart des Mitarbeiters übernommen"
+  },
+  {
+   "Feld": "KaWo",
+   "Datentyp": "String (6)",
+   "NamePROFFIX": "KaWo",
+   "Besonderes": "optional, wird beim Speichern automatisch ermittelt,allfälliger Wert wird überschrieben,im Format JJJJKK"
+  },
+  {
+   "Feld": "StartZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "StartZeit",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "EndZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "EndZeit",
+   "Besonderes": "optional, wird beim Speichern aus StartZeit, Stunden und Pause berechnet (falls angegeben)"
+  },
+  {
+   "Feld": "Stunden",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Stunden",
+   "Besonderes": "in Stunden"
+  },
+  {
+   "Feld": "StundenVerr",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StundenVerr",
+   "Besonderes": "optional, in Stunden, wenn leer werden Stunden übernommen"
+  },
+  {
+   "Feld": "Pause",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Pause",
+   "Besonderes": "optional, in Minuten"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": "optional, das Feld \"BemerkungenRTF\" darf nur die RTF-Version dieses Felds enthalten oder muss leer sein"
+  },
+  {
+   "Feld": "BemerkungenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "BemerkungenRTF",
+   "Besonderes": "optional, wenn RTF übergeben wird, muss im Feld \"Bemerkungen\" der Inhalt als Plain-Text stehen und darf nicht leer übergeben werden"
+  },
+  {
+   "Feld": "Selbstkosten",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Selbstkosten",
+   "Besonderes": "optional, wird normalerweise leer gelassen (dann wird die Selbstkosten von der Positionsart verwendet), wird etwas angegeben, werden diese übersteuert"
+  },
+  {
+   "Feld": "Ueberzeit",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Ueberzeit",
+   "Besonderes": "optional, in Stunden"
+  },
+  {
+   "Feld": "StdPreis",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StdPreis",
+   "Besonderes": "optional, wenn leer oder 0 dann wird der Preis automatisch berechnet,"
+  },
+  {
+   "Feld": "Km",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Km",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "PeriodeLohn",
+   "Datentyp": "String (6)",
+   "NamePROFFIX": "PeriodeLohn",
+   "Besonderes": "optional, im Format JJJJMM, normalerweise wird die Lohnperiode leer übergeben und von der API ermittelt"
+  },
+  {
+   "Feld": "PreisFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "PreisFW",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werdenwenn Preis überschrieben wird, muss \"Lagerpreis\" auf 0 (manueller Preis) gesetzt werden"
+  },
+  {
+   "Feld": "TotalFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalFW",
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werden"
+  },
+  {
+   "Feld": "SteuerFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "SteuerFW",
+   "Besonderes": "optional, wird bei jedem Speichern automatisch berechnet und muss nicht angegeben werden"
+  },
+  {
+   "Feld": "Rabatt",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Rabatt",
+   "Besonderes": "optional, in Prozentsollte von der Adresse übernommen werden, ausser auf Positionsart/Artikel ist die Option \"KeinRabatt\" gesetzt"
+  },
+  {
+   "Feld": "RabattFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "RabattFW",
+   "Besonderes": "optional, Betrag in Währung pro Menge/Stunden"
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": "optional, wenn leer wird Währung ab der Adresse verwendet, wenn bei der Adresse keine Währung hinterlegt ist, wird die Standardwährung verwendet,sollte Währung von Adresse (oder wenn dort leer von Auftrag/Positionsart) verwenden"
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (10,6)",
+   "NamePROFFIX": "Kurs",
+   "Besonderes": "optional, wenn leer oder 0 wird der Kurs automatisch ermittelt"
+  },
+  {
+   "Feld": "Ertragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Ertragskonto",
+   "Besonderes": "optional, wenn leer wird Erktragskonto vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenErtragskonto\" der Adresse verwendet (nur wenn \"DebitorenErtragskontoVerwenden\" aktiv ist)"
+  },
+  {
+   "Feld": "Vertreter",
+   "Datentyp": "Object\u003cVertreter\u003e",
+   "NamePROFFIX": "VertreterPRO",
+   "Besonderes": "optional, wenn leer wird der Vertreter der Adresse verwendet"
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": "optional, wenn leer wird Kostenart vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenKostenart\" der Adresse verwendet (nur wenn \"DebitorenKostenartVerwenden\" aktiv ist)"
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": "optional, wenn leer wird Kostenstelle vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenKostenstelle\" der Adresse verwendet (nur wenn \"DebitorenKostenstelleVerwenden\" aktiv ist)"
+  },
+  {
+   "Feld": "EmpfaengerAdr",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "EmpfaengerAdr",
+   "Besonderes": "optional, muss angegeben werden, wenn Artikel und Projekt ausgewählt wurde"
+  },
+  {
+   "Feld": "Verrechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Verrechnen",
+   "Besonderes": "sollte auf True gesetzt sein, es sei denn der Rapport darf explizit nicht verrechnet werden"
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": "optional, wenn leer wird Steuercode vom Auftrag übernommen, wenn dort leer dann wird \"DebitorenSteuercode\" der Adresse verwendet (nur wenn \"DebitorenSteuercodeVerwenden\" aktiv ist),dieses Feld darf nur abgefüllt werden, wenn auf dem Ertragskonto ebenfalls ein Steuercode definiert ist"
+  },
+  {
+   "Feld": "Verrechnet",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": "dieses Feld kann nicht gefiltert werden, URL-Parameter verwendenverrechnete Rapporte sind immer auch gesperrt"
+  },
+  {
+   "Feld": "Gesperrt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": "dieses Feld kann nicht gefiltert werden, URL-Parameter verwenden,ein Rapport gilt als gesperrt wenn:- das Sperrdatum jünger- verrechnet wurde- Lohnbewegung auf Spesen oder Stunden definitiv abgerechnet wurden- durch Mitarbeiterberechtigungen auf \"nur-lesen\" eingeschränkt"
+  },
+  {
+   "Feld": "Serviceauftrag",
+   "Datentyp": "Object\u003cServiceauftrag\u003e",
+   "NamePROFFIX": "AuftragNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ServiceauftragspositionNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Teilleistung",
+   "Datentyp": "Object\u003cTeilleistung\u003e",
+   "NamePROFFIX": "TeilLNrSTU",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Rapport",
+   "Rueckgabewert": "HTTP 200Array\u003cRapport\u003e",
+   "Beschreibung": "Gibt alle Rapporte zurück",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "GET /STU/Rapport/{RapportNr}",
+   "Rueckgabewert": "HTTP 200Rapport",
+   "Beschreibung": "Gibt ein Rapport anhand der Rapportnummer zurück",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/Rapport",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Rapport an",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "PUT /STU/Rapport/{RapportNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Rapport anhand der Rapportnummer",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "DELETE /STU/Rapport/{RapportNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Rapport anhand der Rapportnummer",
+   "BenoetigteLizenz": "STU"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "verrechnet",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur verrechneten Rapporte werden ausgegebenno: Nur nicht verrechneten Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "gesperrt",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gesperrte Rapporte werden ausgegebenno: Nur nicht gesperrte Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben Bei der Filterung wird nur das Sperrdatum berücksichtigt, aber beim Feld \"Gesperrt\" werden alle Kriterien berücksichtigt",
+   "VerhaltenOhneParameter": "no (ausser wenn URL-Parameter \"verrechnet\" auf yes, dann ist dieser Parameter auch yes)"
+  }
+ ]
+}

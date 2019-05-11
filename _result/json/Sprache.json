@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"SpracheNr","Datentyp":"String (4)","NamePROFFIX":"SprachePRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /PRO/Sprache","Rueckgabewert":"HTTP 200Array\u003cSprache\u003e","Beschreibung":"Gibt alle Sprachen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Sprache/{SpracheNr}","Rueckgabewert":"HTTP 200Sprache","Beschreibung":"Gibt eine Sprache anhand der Sprachennummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "SpracheNr",
+   "Datentyp": "String (4)",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Sprache",
+   "Rueckgabewert": "HTTP 200Array\u003cSprache\u003e",
+   "Beschreibung": "Gibt alle Sprachen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Sprache/{SpracheNr}",
+   "Rueckgabewert": "HTTP 200Sprache",
+   "Beschreibung": "Gibt eine Sprache anhand der Sprachennummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

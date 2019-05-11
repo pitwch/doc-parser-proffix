@@ -1,1 +1,43 @@
-{"Fields":[{"Feld":"GeschaeftsjahrVon","Datentyp":"String (Date)","NamePROFFIX":" ","Besonderes":"Einstellung(\"pxFibu\", \"GeschVon\")"},{"Feld":"GeschaeftsjahrBis","Datentyp":"String (Date)","NamePROFFIX":" ","Besonderes":"Einstellung(\"pxFibu\", \"GeschBis\")"},{"Feld":"BuchungsperiodeVon","Datentyp":"String (Date)","NamePROFFIX":" ","Besonderes":"Einstellung(\"pxFibu\", \"BuchPVon\")"},{"Feld":"BuchungsperiodeBis","Datentyp":"String (Date)","NamePROFFIX":" ","Besonderes":"Einstellung(\"pxFibu\", \"BuchPBis\")"},{"Feld":"MonatsabschlussPer","Datentyp":"String (Date)","NamePROFFIX":" ","Besonderes":"Einstellung(\"pxFibu\", \"MAbschluss\")"}],"Methods":[{"Endpunkt":"GET /FIB/FibuStammdaten","Rueckgabewert":"HTTP 200FibuStammdaten","Beschreibung":"Gibt die FibuStammdaten zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "GeschaeftsjahrVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": "Einstellung(\"pxFibu\", \"GeschVon\")"
+  },
+  {
+   "Feld": "GeschaeftsjahrBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": "Einstellung(\"pxFibu\", \"GeschBis\")"
+  },
+  {
+   "Feld": "BuchungsperiodeVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": "Einstellung(\"pxFibu\", \"BuchPVon\")"
+  },
+  {
+   "Feld": "BuchungsperiodeBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": "Einstellung(\"pxFibu\", \"BuchPBis\")"
+  },
+  {
+   "Feld": "MonatsabschlussPer",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": "Einstellung(\"pxFibu\", \"MAbschluss\")"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/FibuStammdaten",
+   "Rueckgabewert": "HTTP 200FibuStammdaten",
+   "Beschreibung": "Gibt die FibuStammdaten zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

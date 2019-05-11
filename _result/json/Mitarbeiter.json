@@ -1,1 +1,146 @@
-{"Fields":[{"Feld":"MitarbeiterNr","Datentyp":"Number (int)","NamePROFFIX":"MitNrPRO","Besonderes":" "},{"Feld":"Name","Datentyp":"String (200)","NamePROFFIX":"Name","Besonderes":"optional"},{"Feld":"Kurzzeichen","Datentyp":"String (20)","NamePROFFIX":"Kurzzeichen","Besonderes":" "},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Positionsart","Datentyp":"Object\u003cPositionsart\u003e","NamePROFFIX":"PosArtSTU","Besonderes":"optional,aus der Tabelle STU_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"},{"Feld":"Stundenart","Datentyp":"Object\u003cStundenart\u003e","NamePROFFIX":"StundenartZEI","Besonderes":"optional,aus der Tabelle ZEI_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"},{"Feld":"Feriensaldo","Datentyp":"Number (10,2)","NamePROFFIX":"Feriensaldo","Besonderes":"in Stunden,siehe Anmerkungen unten,nach diesem Feld kann nicht gefiltert werden"},{"Feld":"BadgeID","Datentyp":"String (50)","NamePROFFIX":"BadgeID","Besonderes":"optional,aus der Tabelle ZEI_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden, URL Parameter verwenden"},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"},{"Feld":"Benutzergruppe","Datentyp":"Object\u003cBenutzergruppe\u003e","NamePROFFIX":"GruppeUSE","Besonderes":"aus der Tabelle PRO_Benutzer,ist nicht schreibbar"},{"Feld":"Bemerkungen","Datentyp":"String (∞)","NamePROFFIX":"Bemerkungen","Besonderes":" "},{"Feld":"BemerkungenLeistungsverwaltung","Datentyp":"String (∞)","NamePROFFIX":"BemerkungenLeistungsverwaltung","Besonderes":"optional,aus der Tabelle STU_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"},{"Feld":"BemerkungenZeitverwaltung","Datentyp":"String (∞)","NamePROFFIX":"BemerkungenZeitverwaltung","Besonderes":"optional,aus der Tabelle ZEI_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"},{"Feld":"Austrittsdatum","Datentyp":"String (Date)","NamePROFFIX":"Austrittsdatum","Besonderes":"optional"},{"Feld":"Eintrittsdatum","Datentyp":"String (Date)","NamePROFFIX":"Eintrittsdatum","Besonderes":"optional"},{"Feld":"Funktion","Datentyp":"Object\u003cFunktion\u003e","NamePROFFIX":"FunktionNrPRO","Besonderes":"optional"}],"Methods":[{"Endpunkt":"GET /PRO/Mitarbeiter","Rueckgabewert":"HTTP 200Array\u003cMitarbeiter\u003e","Beschreibung":"Gibt alle Mitarbeiter zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Mitarbeiter/{MitarbeiterNr}","Rueckgabewert":"HTTP 200Mitarbeiter","Beschreibung":"Gibt einen Mitarbeiter anhand seiner Mitarbeiternummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"POST /PRO/Mitarbeiter","Rueckgabewert":"HTTP 201","Beschreibung":"Legt einen neuen Mitarbeiter an","BenoetigteLizenz":"keine, STU oder ZEI"},{"Endpunkt":"PUT /PRO/Mitarbeiter/{MitarbeiterNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert einen Mitarbeiter anhand der Mitarbeiternummer","BenoetigteLizenz":"keine, STU oder ZEI"},{"Endpunkt":"DELETE /PRO/Mitarbeiter/{MitarbeiterNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löscht einen Mitarbeiter anhand der Mitarbeiternummer","BenoetigteLizenz":"keine, STU oder ZEI"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Mitarbeiter werden ausgegebenno: Nur nicht gelöschte Mitarbeiter werden ausgegebenany: Alle Mitarbeiter werden ausgegeben","VerhaltenOhneParameter":"no"},{"Parameter":"badgeid","Format":"String (50)","Beschreibung":"Es werden nur die Mitarbeiter mit der entsprechenden BadgeID zurückgegeben","VerhaltenOhneParameter":"Alle Mitarbeiter werden zurückgegeben"}]}
+{
+ "Fields": [
+  {
+   "Feld": "MitarbeiterNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (200)",
+   "NamePROFFIX": "Name",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Kurzzeichen",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Kurzzeichen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionsart",
+   "Datentyp": "Object\u003cPositionsart\u003e",
+   "NamePROFFIX": "PosArtSTU",
+   "Besonderes": "optional,aus der Tabelle STU_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "Stundenart",
+   "Datentyp": "Object\u003cStundenart\u003e",
+   "NamePROFFIX": "StundenartZEI",
+   "Besonderes": "optional,aus der Tabelle ZEI_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "Feriensaldo",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Feriensaldo",
+   "Besonderes": "in Stunden,siehe Anmerkungen unten,nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "BadgeID",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "BadgeID",
+   "Besonderes": "optional,aus der Tabelle ZEI_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden, URL Parameter verwenden"
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Benutzergruppe",
+   "Datentyp": "Object\u003cBenutzergruppe\u003e",
+   "NamePROFFIX": "GruppeUSE",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BemerkungenLeistungsverwaltung",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "BemerkungenLeistungsverwaltung",
+   "Besonderes": "optional,aus der Tabelle STU_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "BemerkungenZeitverwaltung",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "BemerkungenZeitverwaltung",
+   "Besonderes": "optional,aus der Tabelle ZEI_Mitarbeiter,nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "Austrittsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Austrittsdatum",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Eintrittsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Eintrittsdatum",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Funktion",
+   "Datentyp": "Object\u003cFunktion\u003e",
+   "NamePROFFIX": "FunktionNrPRO",
+   "Besonderes": "optional"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Mitarbeiter",
+   "Rueckgabewert": "HTTP 200Array\u003cMitarbeiter\u003e",
+   "Beschreibung": "Gibt alle Mitarbeiter zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Mitarbeiter/{MitarbeiterNr}",
+   "Rueckgabewert": "HTTP 200Mitarbeiter",
+   "Beschreibung": "Gibt einen Mitarbeiter anhand seiner Mitarbeiternummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Mitarbeiter",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Mitarbeiter an",
+   "BenoetigteLizenz": "keine, STU oder ZEI"
+  },
+  {
+   "Endpunkt": "PUT /PRO/Mitarbeiter/{MitarbeiterNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Mitarbeiter anhand der Mitarbeiternummer",
+   "BenoetigteLizenz": "keine, STU oder ZEI"
+  },
+  {
+   "Endpunkt": "DELETE /PRO/Mitarbeiter/{MitarbeiterNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Mitarbeiter anhand der Mitarbeiternummer",
+   "BenoetigteLizenz": "keine, STU oder ZEI"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Mitarbeiter werden ausgegebenno: Nur nicht gelöschte Mitarbeiter werden ausgegebenany: Alle Mitarbeiter werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "badgeid",
+   "Format": "String (50)",
+   "Beschreibung": "Es werden nur die Mitarbeiter mit der entsprechenden BadgeID zurückgegeben",
+   "VerhaltenOhneParameter": "Alle Mitarbeiter werden zurückgegeben"
+  }
+ ]
+}

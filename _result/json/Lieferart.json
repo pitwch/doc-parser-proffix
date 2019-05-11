@@ -1,1 +1,67 @@
-{"Fields":[{"Feld":"LieferartNr","Datentyp":"String (10)","NamePROFFIX":"LieferartPRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Betrag","Datentyp":"Number (6,2)","NamePROFFIX":"Betrag","Besonderes":" "},{"Feld":"Steuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"StCodePRO","Besonderes":" "},{"Feld":"Konto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"KontoNrFIB","Besonderes":" "},{"Feld":"Kostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"KSTFIB","Besonderes":" "},{"Feld":"Kostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"KoArtFIB","Besonderes":" "},{"Feld":"Inaktiv","Datentyp":"Boolean","NamePROFFIX":"Inaktiv","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /PRO/Lieferart","Rueckgabewert":"HTTP 200Array\u003cLieferart\u003e","Beschreibung":"Gibt alle Lieferarten zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Lieferart/{LieferartNr}","Rueckgabewert":"HTTP 200Lieferart","Beschreibung":"Gibt eine Lieferart anhand der Lieferartnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "LieferartNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "LieferartPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Betrag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Betrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Konto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KontoNrFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KSTFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Inaktiv",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Inaktiv",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Lieferart",
+   "Rueckgabewert": "HTTP 200Array\u003cLieferart\u003e",
+   "Beschreibung": "Gibt alle Lieferarten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Lieferart/{LieferartNr}",
+   "Rueckgabewert": "HTTP 200Lieferart",
+   "Beschreibung": "Gibt eine Lieferart anhand der Lieferartnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

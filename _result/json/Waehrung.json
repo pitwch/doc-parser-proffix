@@ -1,1 +1,68 @@
-{"Fields":[{"Feld":"WaehrungNr","Datentyp":"String (4)","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Kurs","Datentyp":"Number (10,6)","NamePROFFIX":"Kurs","Besonderes":"mit URL-Parameter \"datum\" kann der Kurs eines anderen Datums abgerufen werden (aus der Datenbanktabelle PRO_Kurse),siehe Anmerkung zur Währungsumrechnung unten"},{"Feld":"Verhaeltnis","Datentyp":"Number (int)","NamePROFFIX":"Verhaeltnis","Besonderes":"Verhältnis für Währungsumrechnung (1, 10, 100, usw.),siehe Anmerkung zur Währungsumrechnung unten"},{"Feld":"Rundung","Datentyp":"Number (int)","NamePROFFIX":"RundenKurs","Besonderes":"Gibt an wie die Währung gerundet wird, kann einer der folgenden Werte beinhalten:0 = Runden auf 0.011 = Runden auf 0.052 = Runden auf 0.13 = Runden auf 1 (ganze Einheit)"}],"Methods":[{"Endpunkt":"GET /PRO/Waehrung","Rueckgabewert":"HTTP 200Array\u003cWaehrung\u003e","Beschreibung":"Gibt alle Währungen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Waehrung/{WaehrungNr}","Rueckgabewert":"HTTP 200Waehrung","Beschreibung":"Gibt einen Währung anhand der Währungnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Waehrung/Standard","Rueckgabewert":"HTTP 200Waehrung","Beschreibung":"Gibt die Standardwährung zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"POST /PRO/Waehrung/kurseaktualisieren","Rueckgabewert":"HTTP 204 ","Beschreibung":"Aktualisiert die Kurse","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"datum","Format":"String (Date)","Beschreibung":"Gibt den Kurs für ein bestimmtes Datum zurück, bspw: datum=2016-01-01","VerhaltenOhneParameter":"Kurs wird per heute zurückgegeben"}]}
+{
+ "Fields": [
+  {
+   "Feld": "WaehrungNr",
+   "Datentyp": "String (4)",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (10,6)",
+   "NamePROFFIX": "Kurs",
+   "Besonderes": "mit URL-Parameter \"datum\" kann der Kurs eines anderen Datums abgerufen werden (aus der Datenbanktabelle PRO_Kurse),siehe Anmerkung zur Währungsumrechnung unten"
+  },
+  {
+   "Feld": "Verhaeltnis",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Verhaeltnis",
+   "Besonderes": "Verhältnis für Währungsumrechnung (1, 10, 100, usw.),siehe Anmerkung zur Währungsumrechnung unten"
+  },
+  {
+   "Feld": "Rundung",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "RundenKurs",
+   "Besonderes": "Gibt an wie die Währung gerundet wird, kann einer der folgenden Werte beinhalten:0 = Runden auf 0.011 = Runden auf 0.052 = Runden auf 0.13 = Runden auf 1 (ganze Einheit)"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Waehrung",
+   "Rueckgabewert": "HTTP 200Array\u003cWaehrung\u003e",
+   "Beschreibung": "Gibt alle Währungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Waehrung/{WaehrungNr}",
+   "Rueckgabewert": "HTTP 200Waehrung",
+   "Beschreibung": "Gibt einen Währung anhand der Währungnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Waehrung/Standard",
+   "Rueckgabewert": "HTTP 200Waehrung",
+   "Beschreibung": "Gibt die Standardwährung zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Waehrung/kurseaktualisieren",
+   "Rueckgabewert": "HTTP 204 ",
+   "Beschreibung": "Aktualisiert die Kurse",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "datum",
+   "Format": "String (Date)",
+   "Beschreibung": "Gibt den Kurs für ein bestimmtes Datum zurück, bspw: datum=2016-01-01",
+   "VerhaltenOhneParameter": "Kurs wird per heute zurückgegeben"
+  }
+ ]
+}

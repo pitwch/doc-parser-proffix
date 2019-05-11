@@ -1,1 +1,37 @@
-{"Fields":[{"Feld":"EinheitNr","Datentyp":"String (25)","NamePROFFIX":"EinheitPRO","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (80)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Abkuerzung","Datentyp":"String (20)","NamePROFFIX":"Lagereinheit","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /PRO/Einheit","Rueckgabewert":"HTTP 200Array\u003cEinheit\u003e","Beschreibung":"Gibt alle Einheiten zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Einheit/{EinheitNr}","Rueckgabewert":"HTTP 200Einheit","Beschreibung":"Gibt einen Einheit anhand der Einheitnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "EinheitNr",
+   "Datentyp": "String (25)",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Abkuerzung",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Lagereinheit",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Einheit",
+   "Rueckgabewert": "HTTP 200Array\u003cEinheit\u003e",
+   "Beschreibung": "Gibt alle Einheiten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Einheit/{EinheitNr}",
+   "Rueckgabewert": "HTTP 200Einheit",
+   "Beschreibung": "Gibt einen Einheit anhand der Einheitnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

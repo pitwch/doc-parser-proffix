@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"TeilleistungstypNr","Datentyp":"Number (Int)","NamePROFFIX":"TeilTNrSTU","Besonderes":"Optional"},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":"Optional"}],"Methods":[{"Endpunkt":"GET /STU/Teilleistungstyp","Rueckgabewert":"HTTP 200Array\u003cTeilleistungstyp\u003e","Beschreibung":"Gibt alle Teilleistungstypen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Teilleistungstyp/{TeilleistungstypNr}","Rueckgabewert":"HTTP 200Teilleistungstyp","Beschreibung":"Gibt einen Teilleistungstyp anhand der TeilleistungstypNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "TeilleistungstypNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "TeilTNrSTU",
+   "Besonderes": "Optional"
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Optional"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Teilleistungstyp",
+   "Rueckgabewert": "HTTP 200Array\u003cTeilleistungstyp\u003e",
+   "Beschreibung": "Gibt alle Teilleistungstypen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Teilleistungstyp/{TeilleistungstypNr}",
+   "Rueckgabewert": "HTTP 200Teilleistungstyp",
+   "Beschreibung": "Gibt einen Teilleistungstyp anhand der TeilleistungstypNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

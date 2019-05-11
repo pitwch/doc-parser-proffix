@@ -1,1 +1,253 @@
-{"Fields":[{"Feld":"BuchungNr","Datentyp":"Number (Int)","NamePROFFIX":"BuchungNr","Besonderes":" "},{"Feld":"BuchungszeileNr","Datentyp":"Number (Int)","NamePROFFIX":"LaufNr","Besonderes":"Wird automatisch generiert und kann nicht manuell gesetzt werden"},{"Feld":"Buchungsdatum","Datentyp":"String (Date)","NamePROFFIX":"BDatum","Besonderes":" "},{"Feld":"Belegdatum","Datentyp":"String (Date)","NamePROFFIX":"RDatum","Besonderes":" "},{"Feld":"Belegnummer","Datentyp":"Number (Int)","NamePROFFIX":"Beleg","Besonderes":" "},{"Feld":"Kondition","Datentyp":"Object\u003cKondition\u003e","NamePROFFIX":"KonditionPRO","Besonderes":" "},{"Feld":"Buchungsart","Datentyp":"Object\u003cBuchungsart\u003e","NamePROFFIX":"BuArtFIB","Besonderes":" "},{"Feld":"EinzahlungMitteilung","Datentyp":"String (105)","NamePROFFIX":"EzMitteilung","Besonderes":" "},{"Feld":"Verfalldatum","Datentyp":"String (Date)","NamePROFFIX":"VerfallDatum","Besonderes":"Verfall berechnet aus der Kondition"},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Zahlungsart","Datentyp":"Object\u003cZahlungsart\u003e","NamePROFFIX":"ZahlungsNrADR","Besonderes":" "},{"Feld":"EsrKodierzeile","Datentyp":"String (40)","NamePROFFIX":"Kodierzeile","Besonderes":" "},{"Feld":"EsrPruefziffer","Datentyp":"String (2)","NamePROFFIX":"PZiffer","Besonderes":" "},{"Feld":"Herkunft","Datentyp":"Number (Int)","NamePROFFIX":" ","Besonderes":"Wird aus mehreren Feldern in der PROFFIX Datenbank ermittelt (IstAuftrag, IstLagerbuchung, IstLohn, IstProvision)0 = FIBU1 = Auftrag2 = Lager3 = Lohn4 = Provision"},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Belegart","Datentyp":"Object\u003cBelegart\u003e","NamePROFFIX":"BelegArtPRO","Besonderes":" "},{"Feld":"EsrNummer","Datentyp":"Number (Int)","NamePROFFIX":"EsrNr","Besonderes":" "},{"Feld":"EinzahlungName","Datentyp":"String (40)","NamePROFFIX":"EzName","Besonderes":" "},{"Feld":"HabenKonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"GegKontoNr","Besonderes":" "},{"Feld":"SollKonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"KontoNrFIB","Besonderes":" "},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"Kurs","Datentyp":"Number (10,6)","NamePROFFIX":"Kurs","Besonderes":" "},{"Feld":"MahnCode","Datentyp":"Number (Int)","NamePROFFIX":"MahnCode","Besonderes":"Zähler für bereits ausgelöste Mahnungen"},{"Feld":"MahnDatum","Datentyp":"String (Date)","NamePROFFIX":"MahnDatum","Besonderes":"Datum der letzten Mahnung"},{"Feld":"Steuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"StCodePRO","Besonderes":" "},{"Feld":"SteuerbetragFW","Datentyp":"Number (10,2)","NamePROFFIX":"StBetragFw","Besonderes":"Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"},{"Feld":"SteuerbetragSW","Datentyp":"Number (10,2)","NamePROFFIX":"StBetragSw","Besonderes":"Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"},{"Feld":"SteuerbuchungFW","Datentyp":"Number (10,2)","NamePROFFIX":"StBuchFw","Besonderes":"Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"},{"Feld":"SteuerbuchungSW","Datentyp":"Number (10,2)","NamePROFFIX":"StBuchSw","Besonderes":"Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"},{"Feld":"SteuerbetragSaldobesteuerungFW","Datentyp":"Number (10,2)","NamePROFFIX":"StSaldoFw","Besonderes":"Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"},{"Feld":"SteuerbetragSaldobesteuerungSW","Datentyp":"Number (10,2)","NamePROFFIX":"StSaldoSw","Besonderes":"Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"},{"Feld":"Zahlungsdatum","Datentyp":"String (Date)","NamePROFFIX":"DatumAus","Besonderes":" "},{"Feld":"IstSteuerbuchung","Datentyp":"Boolean","NamePROFFIX":"StJn","Besonderes":" "},{"Feld":"IstErfassteBuchung","Datentyp":"Boolean","NamePROFFIX":" ","Besonderes":" "},{"Feld":"BetragFW","Datentyp":"Number (10,2)","NamePROFFIX":"BetragFw","Besonderes":""},{"Feld":"BetragSW","Datentyp":"Number (10,2)","NamePROFFIX":"BetragSw","Besonderes":""},{"Feld":"Buchungstext","Datentyp":"String (120)","NamePROFFIX":"BuTextPRO","Besonderes":""},{"Feld":"Kostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"KoArtFIB","Besonderes":""},{"Feld":"Kostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"KstFIB","Besonderes":""}],"Methods":[{"Endpunkt":"GET /KRE/Buchung/Flat","Rueckgabewert":"HTTP 200Array\u003cBuchung-Flat\u003e","Beschreibung":"Gibt alle Kreditorenbuchungen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /KRE/Buchung/{BuchungNr}/Flat","Rueckgabewert":"HTTP 200Buchung-Flat","Beschreibung":"Gibt eine Kreditorenbuchung anhand der Kreditorenbuchungsnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "BuchungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "BuchungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BuchungszeileNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": "Wird automatisch generiert und kann nicht manuell gesetzt werden"
+  },
+  {
+   "Feld": "Buchungsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "BDatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "RDatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegnummer",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Beleg",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kondition",
+   "Datentyp": "Object\u003cKondition\u003e",
+   "NamePROFFIX": "KonditionPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungsart",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": "BuArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinzahlungMitteilung",
+   "Datentyp": "String (105)",
+   "NamePROFFIX": "EzMitteilung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verfalldatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "VerfallDatum",
+   "Besonderes": "Verfall berechnet aus der Kondition"
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zahlungsart",
+   "Datentyp": "Object\u003cZahlungsart\u003e",
+   "NamePROFFIX": "ZahlungsNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EsrKodierzeile",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Kodierzeile",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EsrPruefziffer",
+   "Datentyp": "String (2)",
+   "NamePROFFIX": "PZiffer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Herkunft",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": " ",
+   "Besonderes": "Wird aus mehreren Feldern in der PROFFIX Datenbank ermittelt (IstAuftrag, IstLagerbuchung, IstLohn, IstProvision)0 = FIBU1 = Auftrag2 = Lager3 = Lohn4 = Provision"
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegart",
+   "Datentyp": "Object\u003cBelegart\u003e",
+   "NamePROFFIX": "BelegArtPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EsrNummer",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "EsrNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinzahlungName",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "EzName",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "HabenKonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "GegKontoNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SollKonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KontoNrFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (10,6)",
+   "NamePROFFIX": "Kurs",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MahnCode",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "MahnCode",
+   "Besonderes": "Zähler für bereits ausgelöste Mahnungen"
+  },
+  {
+   "Feld": "MahnDatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "MahnDatum",
+   "Besonderes": "Datum der letzten Mahnung"
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerbetragFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StBetragFw",
+   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+  },
+  {
+   "Feld": "SteuerbetragSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StBetragSw",
+   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+  },
+  {
+   "Feld": "SteuerbuchungFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StBuchFw",
+   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+  },
+  {
+   "Feld": "SteuerbuchungSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StBuchSw",
+   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+  },
+  {
+   "Feld": "SteuerbetragSaldobesteuerungFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StSaldoFw",
+   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+  },
+  {
+   "Feld": "SteuerbetragSaldobesteuerungSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "StSaldoSw",
+   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+  },
+  {
+   "Feld": "Zahlungsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "DatumAus",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstSteuerbuchung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StJn",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstErfassteBuchung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BetragFw",
+   "Besonderes": ""
+  },
+  {
+   "Feld": "BetragSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BetragSw",
+   "Besonderes": ""
+  },
+  {
+   "Feld": "Buchungstext",
+   "Datentyp": "String (120)",
+   "NamePROFFIX": "BuTextPRO",
+   "Besonderes": ""
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": ""
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": ""
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /KRE/Buchung/Flat",
+   "Rueckgabewert": "HTTP 200Array\u003cBuchung-Flat\u003e",
+   "Beschreibung": "Gibt alle Kreditorenbuchungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /KRE/Buchung/{BuchungNr}/Flat",
+   "Rueckgabewert": "HTTP 200Buchung-Flat",
+   "Beschreibung": "Gibt eine Kreditorenbuchung anhand der Kreditorenbuchungsnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

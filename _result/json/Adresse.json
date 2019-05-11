@@ -1,1 +1,344 @@
-{"Fields":[{"Feld":"AdressNr","Datentyp":"Number (int)","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Name","Datentyp":"String (40)","NamePROFFIX":"Name","Besonderes":"Beinhaltet Firmenname bei Firmenadressen"},{"Feld":"Vorname","Datentyp":"String (40)","NamePROFFIX":"Vorname","Besonderes":"optional"},{"Feld":"Strasse","Datentyp":"String (40)","NamePROFFIX":"Strasse","Besonderes":"optional"},{"Feld":"PLZ","Datentyp":"String (10)","NamePROFFIX":"PLZ","Besonderes":" "},{"Feld":"Ort","Datentyp":"String (40)","NamePROFFIX":"Ort","Besonderes":" "},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":"Kann nicht gefiltert werden, URL-Parameter verwenden"},{"Feld":"Adressgruppen","Datentyp":"Array\u003cAdressgruppe\u003e","NamePROFFIX":"Adressgruppen","Besonderes":"dieses Feld kann nicht gefiltert oder sortiert werden"},{"Feld":"Anrede","Datentyp":"String (40)","NamePROFFIX":"Anrede","Besonderes":"optional"},{"Feld":"Bemerkungen","Datentyp":"String (∞)","NamePROFFIX":"Bemerkungen","Besonderes":"optional"},{"Feld":"EMail","Datentyp":"String (100)","NamePROFFIX":"EMail","Besonderes":"optional"},{"Feld":"TelDirekt","Datentyp":"String (40)","NamePROFFIX":"TelDir","Besonderes":"optional"},{"Feld":"TelZentrale","Datentyp":"String (40)","NamePROFFIX":"TelZentrale","Besonderes":"optional"},{"Feld":"TelPrivat","Datentyp":"String (40)","NamePROFFIX":"TelPrivat","Besonderes":"optional"},{"Feld":"Fax","Datentyp":"String (40)","NamePROFFIX":"Fax","Besonderes":"optional"},{"Feld":"Mobiltelefon","Datentyp":"String (40)","NamePROFFIX":"Natel","Besonderes":"optional"},{"Feld":"Homepage","Datentyp":"String (100)","NamePROFFIX":"Homepage","Besonderes":"optional"},{"Feld":"PLZPostfach","Datentyp":"String (50)","NamePROFFIX":"PLZPostfach","Besonderes":"optional"},{"Feld":"Postfach","Datentyp":"String (50)","NamePROFFIX":"Postfach","Besonderes":"optional"},{"Feld":"Region","Datentyp":"Object\u003cRegion\u003e","NamePROFFIX":"KantonPRO","Besonderes":"optional"},{"Feld":"Land","Datentyp":"Object\u003cLand\u003e","NamePROFFIX":"LandPRO","Besonderes":"optional"},{"Feld":"Longitude","Datentyp":"Number (7,8)","NamePROFFIX":"Longitude","Besonderes":"optional"},{"Feld":"Latitude","Datentyp":"Number (7,8)","NamePROFFIX":"Latitude","Besonderes":"optional"},{"Feld":"DebitorenSteuercode","Datentyp":"Object\u003cSteuercode\u003e","NamePROFFIX":"DStCode","Besonderes":"optional"},{"Feld":"DebitorenSteuercodeVerwenden","Datentyp":"Boolean","NamePROFFIX":"AuftStCode","Besonderes":"Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"},{"Feld":"DebitorenErtragskonto","Datentyp":"Object\u003cKonto\u003e","NamePROFFIX":"DErtragsKto","Besonderes":"optional"},{"Feld":"DebitorenErtragskontoVerwenden","Datentyp":"Boolean","NamePROFFIX":"AuftErtrag","Besonderes":"Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"},{"Feld":"DebitorenKostenstelle","Datentyp":"Object\u003cKostenstelle\u003e","NamePROFFIX":"DKST","Besonderes":"optional"},{"Feld":"DebitorenKostenstelleVerwenden","Datentyp":"Boolean","NamePROFFIX":"AuftKst","Besonderes":"Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"},{"Feld":"DebitorenKostenart","Datentyp":"Object\u003cKostenart\u003e","NamePROFFIX":"DKoArt","Besonderes":"optional"},{"Feld":"DebitorenKostenartVerwenden","Datentyp":"Boolean","NamePROFFIX":"AuftKoArt","Besonderes":"Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"},{"Feld":"DebitorenRabatt","Datentyp":"Number (10,2)","NamePROFFIX":"DRabatt","Besonderes":"optional"},{"Feld":"Vertreter","Datentyp":"Object\u003cVertreter\u003e","NamePROFFIX":"VertreterPRO","Besonderes":"optional"},{"Feld":"DebitorenWaehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"DWaehrung","Besonderes":"optional"},{"Feld":"Lagerpreis","Datentyp":"Number (int)","NamePROFFIX":"PreisCodeLAG","Besonderes":"optional"},{"Feld":"Geburtsdatum","Datentyp":"String (Date)","NamePROFFIX":"GeburtsDatum","Besonderes":"optional"},{"Feld":"Adresszeile1","Datentyp":"String (40)","NamePROFFIX":"Adresszeile1","Besonderes":" "},{"Feld":"Adresszeile2","Datentyp":"String (40)","NamePROFFIX":"Adresszeile2","Besonderes":" "},{"Feld":"Adresszeile3","Datentyp":"String (40)","NamePROFFIX":"Adresszeile3","Besonderes":" "},{"Feld":"Adresszeile4","Datentyp":"String (40)","NamePROFFIX":"Adresszeile4","Besonderes":" "},{"Feld":"Adresszeile5","Datentyp":"String (40)","NamePROFFIX":"Adresszeile5","Besonderes":" "},{"Feld":"WebshopBenutzer","Datentyp":"String (30)","NamePROFFIX":"ShopBenutzer","Besonderes":" "},{"Feld":"WebshopEMail","Datentyp":"String (100)","NamePROFFIX":"ShopEMail","Besonderes":" "},{"Feld":"WebshopPasswort","Datentyp":"String (20)","NamePROFFIX":"ShopPasswort","Besonderes":" "},{"Feld":"WebshopPasswortAlt","Datentyp":"String (40)","NamePROFFIX":"ShopPasswortAlt","Besonderes":" "},{"Feld":"WebshopKonditionen","Datentyp":"Array\u003cKondition\u003e","NamePROFFIX":"ShopZahlart","Besonderes":" "},{"Feld":"Lieferadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"LiefAdr","Besonderes":" "},{"Feld":"Rechnungsadresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"RechAdr","Besonderes":" "},{"Feld":"Sprache","Datentyp":"Object\u003cSprache\u003e","NamePROFFIX":"SprachePRO","Besonderes":" "},{"Feld":"Parameter","Datentyp":"Format","NamePROFFIX":"Beschreibung","Besonderes":"Verhalten ohne Parameter"}],"Methods":[{"Endpunkt":"GET /ADR/Adresse","Rueckgabewert":"HTTP 200Array\u003cAdresse\u003e","Beschreibung":"Gibt alle Adressen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /ADR/Adresse/{AdressNr}","Rueckgabewert":"HTTP 200Adresse","Beschreibung":"Gibt eine Adresse anhand der Adressnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"POST /ADR/Adresse","Rueckgabewert":"HTTP 201","Beschreibung":"Legt eine neue Adresse an","BenoetigteLizenz":"ADR"},{"Endpunkt":"PUT /ADR/Adresse/{AdressNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert eine Adresse anhand der Adressnummer","BenoetigteLizenz":"ADR"},{"Endpunkt":"DELETE /ADR/Adresse/{AdressNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löschen eine Adresse anhand der Adressnummer","BenoetigteLizenz":"ADR"}],"Parameter":[{"Parameter":"geloescht","Format":"String (yes, no, any)","Beschreibung":"yes: Nur gelöschte Adressen werden ausgegebenno: Nur nicht gelöschte Adressen werden ausgegebenany: Alle Adressen werden ausgegeben","VerhaltenOhneParameter":"no"}]}
+{
+ "Fields": [
+  {
+   "Feld": "AdressNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Name",
+   "Besonderes": "Beinhaltet Firmenname bei Firmenadressen"
+  },
+  {
+   "Feld": "Vorname",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Vorname",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Strasse",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Strasse",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "PLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Ort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Adressgruppen",
+   "Datentyp": "Array\u003cAdressgruppe\u003e",
+   "NamePROFFIX": "Adressgruppen",
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden"
+  },
+  {
+   "Feld": "Anrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Anrede",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "EMail",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "EMail",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "TelDirekt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "TelDir",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "TelZentrale",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "TelZentrale",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "TelPrivat",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "TelPrivat",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Fax",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Fax",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Mobiltelefon",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Natel",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Homepage",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Homepage",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "PLZPostfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "PLZPostfach",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Postfach",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Postfach",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Region",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "KantonPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LandPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Longitude",
+   "Datentyp": "Number (7,8)",
+   "NamePROFFIX": "Longitude",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Latitude",
+   "Datentyp": "Number (7,8)",
+   "NamePROFFIX": "Latitude",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "DebitorenSteuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "DStCode",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "DebitorenSteuercodeVerwenden",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AuftStCode",
+   "Besonderes": "Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"
+  },
+  {
+   "Feld": "DebitorenErtragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "DErtragsKto",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "DebitorenErtragskontoVerwenden",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AuftErtrag",
+   "Besonderes": "Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"
+  },
+  {
+   "Feld": "DebitorenKostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "DKST",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "DebitorenKostenstelleVerwenden",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AuftKst",
+   "Besonderes": "Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"
+  },
+  {
+   "Feld": "DebitorenKostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "DKoArt",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "DebitorenKostenartVerwenden",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AuftKoArt",
+   "Besonderes": "Bei True wird der Steuercode der Adresse verwendet und übersteuert andere Steuercodes, optional"
+  },
+  {
+   "Feld": "DebitorenRabatt",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "DRabatt",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Vertreter",
+   "Datentyp": "Object\u003cVertreter\u003e",
+   "NamePROFFIX": "VertreterPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "DebitorenWaehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "DWaehrung",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Lagerpreis",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "PreisCodeLAG",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Geburtsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GeburtsDatum",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Adresszeile1",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile2",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile3",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile4",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile5",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Adresszeile5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopBenutzer",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "ShopBenutzer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopEMail",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "ShopEMail",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopPasswort",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "ShopPasswort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopPasswortAlt",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "ShopPasswortAlt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WebshopKonditionen",
+   "Datentyp": "Array\u003cKondition\u003e",
+   "NamePROFFIX": "ShopZahlart",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "LiefAdr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "RechAdr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /ADR/Adresse",
+   "Rueckgabewert": "HTTP 200Array\u003cAdresse\u003e",
+   "Beschreibung": "Gibt alle Adressen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /ADR/Adresse/{AdressNr}",
+   "Rueckgabewert": "HTTP 200Adresse",
+   "Beschreibung": "Gibt eine Adresse anhand der Adressnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /ADR/Adresse",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Adresse an",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PUT /ADR/Adresse/{AdressNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Adresse anhand der Adressnummer",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "DELETE /ADR/Adresse/{AdressNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löschen eine Adresse anhand der Adressnummer",
+   "BenoetigteLizenz": "ADR"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Adressen werden ausgegebenno: Nur nicht gelöschte Adressen werden ausgegebenany: Alle Adressen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

@@ -1,1 +1,110 @@
-{"Fields":[{"Feld":"Bezeichnung","Datentyp":"String","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"Preisstaffel","Datentyp":"Object\u003cPreisstaffel\u003e","NamePROFFIX":"Staffelcode","Besonderes":" "},{"Feld":"Preiscode","Datentyp":"Number (Int)","NamePROFFIX":"Preiscode","Besonderes":" "},{"Feld":"StaffelVon","Datentyp":"Number (8,4)","NamePROFFIX":"Von","Besonderes":" "},{"Feld":"StaffelBis","Datentyp":"Number (8,4)","NamePROFFIX":"Bis","Besonderes":" "},{"Feld":"Wert","Datentyp":"Number (8,4)","NamePROFFIX":"Wert","Besonderes":" "},{"Feld":"InProzent","Datentyp":"Boolean","NamePROFFIX":"InProzent","Besonderes":" "},{"Feld":"IstRabatt","Datentyp":"Boolean","NamePROFFIX":"IstRabatt","Besonderes":" "},{"Feld":"Preis","Datentyp":"Number (8,4)","NamePROFFIX":"Preis","Besonderes":" "},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"Zusatzartikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"Zusatzartikel","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Verkaufspreis anhand einer Auftragsnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Adresse/{AdresseNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Verkaufspreis anhand einer Adressnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Auftrag/{AuftragNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Einkaufspreis anhand einer Auftragsnummer zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Adresse/{AdresseNr}","Rueckgabewert":"HTTP 200Array\u003cPreis\u003e","Beschreibung":"Gibt den Einkaufspreis anhand einer Adressnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":[{"Parameter":"datum","Format":"String (Date)","Beschreibung":"Das Datum an dem der Preis gilt","VerhaltenOhneParameter":"Heute oder Zukunft"},{"Parameter":"stunden","Format":"Number","Beschreibung":"Der Preis für diese Stunden","VerhaltenOhneParameter":"Die Stunden haben keinen Einfluss"}]}
+{
+ "Fields": [
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisstaffel",
+   "Datentyp": "Object\u003cPreisstaffel\u003e",
+   "NamePROFFIX": "Staffelcode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preiscode",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Preiscode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StaffelVon",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StaffelBis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Wert",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Wert",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "InProzent",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "InProzent",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstRabatt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "IstRabatt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Preis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zusatzartikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "Zusatzartikel",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Verkaufspreis anhand einer Auftragsnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Verkauf/Adresse/{AdresseNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Verkaufspreis anhand einer Adressnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Einkaufspreis anhand einer Auftragsnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Positionsart/{PositionsartNr}/Preis/Einkauf/Adresse/{AdresseNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Einkaufspreis anhand einer Adressnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "datum",
+   "Format": "String (Date)",
+   "Beschreibung": "Das Datum an dem der Preis gilt",
+   "VerhaltenOhneParameter": "Heute oder Zukunft"
+  },
+  {
+   "Parameter": "stunden",
+   "Format": "Number",
+   "Beschreibung": "Der Preis für diese Stunden",
+   "VerhaltenOhneParameter": "Die Stunden haben keinen Einfluss"
+  }
+ ]
+}

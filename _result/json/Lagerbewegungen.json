@@ -1,1 +1,85 @@
-{"Fields":[{"Feld":"Datum","Datentyp":"String (Date)","NamePROFFIX":"Datum","Besonderes":" "},{"Feld":"Preis","Datentyp":"Number (10,4)","NamePROFFIX":"Preis","Besonderes":" "},{"Feld":"PreisSchreiben","Datentyp":"Boolean","NamePROFFIX":"PreisSchreiben","Besonderes":" "},{"Feld":"Waehrung","Datentyp":"Object\u003cWaehrung\u003e","NamePROFFIX":"WaehrungPRO","Besonderes":" "},{"Feld":"Kurs","Datentyp":"Number (10,6)","NamePROFFIX":"Kurs","Besonderes":" "},{"Feld":"Beleg","Datentyp":"String (100)","NamePROFFIX":"Beleg","Besonderes":" "},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Auftrag","Datentyp":"Object\u003cAuftrag\u003e","NamePROFFIX":"AuftragNrPRO","Besonderes":" "},{"Feld":"Bemerkungen","Datentyp":"String (∞)","NamePROFFIX":"Bemerkungen","Besonderes":" "},{"Feld":"LagerOrtPlatzAbArtikel","Datentyp":"Boolean","NamePROFFIX":"LagerOrtPlatzAbArtikel","Besonderes":" "}],"Methods":[{"Endpunkt":"POST /LAG/Artikel/{ArtikelNr}/inventurbuchen","Rueckgabewert":"HTTP 204","Beschreibung":"Korrigiert die Lagerbestände","BenoetigteLizenz":"LAG"},{"Endpunkt":"POST /LAG/Artikel/{ArtikelNr}/eingangbuchen","Rueckgabewert":"HTTP 204","Beschreibung":"Bucht einen Lagereingang","BenoetigteLizenz":"LAG"},{"Endpunkt":"POST /LAG/Artikel/{ArtikelNr}/ausgangbuchen","Rueckgabewert":"HTTP 204","Beschreibung":"Bucht einen Lagerausgang","BenoetigteLizenz":"LAG"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preis",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Preis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisSchreiben",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "PreisSchreiben",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kurs",
+   "Datentyp": "Number (10,6)",
+   "NamePROFFIX": "Kurs",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Beleg",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Beleg",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LagerOrtPlatzAbArtikel",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "LagerOrtPlatzAbArtikel",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/inventurbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Korrigiert die Lagerbestände",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/eingangbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Bucht einen Lagereingang",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/ausgangbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Bucht einen Lagerausgang",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": null
+}

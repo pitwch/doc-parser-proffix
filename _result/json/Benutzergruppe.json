@@ -1,1 +1,43 @@
-{"Fields":[{"Feld":"BenutzergruppeNr","Datentyp":"String (10)","NamePROFFIX":"GruppeUSE","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (50)","NamePROFFIX":"Bezeichnung","Besonderes":" "},{"Feld":"IstAdmin","Datentyp":"Boolean","NamePROFFIX":"Admin","Besonderes":" "},{"Feld":"ADGruppe","Datentyp":"String (150)","NamePROFFIX":"ADGroup","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /PRO/Benutzergruppe","Rueckgabewert":"HTTP 200Array\u003cBenutzergruppe\u003e","Beschreibung":"Gibt alle Benutzergruppen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /PRO/Benutzergruppe/{BenutzergruppeNr}","Rueckgabewert":"HTTP 200Benutzergruppe","Beschreibung":"Gibt eine Benutzergruppe anhand der Benutzergruppennummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "BenutzergruppeNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "GruppeUSE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstAdmin",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Admin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ADGruppe",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "ADGroup",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Benutzergruppe",
+   "Rueckgabewert": "HTTP 200Array\u003cBenutzergruppe\u003e",
+   "Beschreibung": "Gibt alle Benutzergruppen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Benutzergruppe/{BenutzergruppeNr}",
+   "Rueckgabewert": "HTTP 200Benutzergruppe",
+   "Beschreibung": "Gibt eine Benutzergruppe anhand der Benutzergruppennummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

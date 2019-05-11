@@ -1,1 +1,85 @@
-{"Fields":[{"Feld":"WareneingangslisteNr","Datentyp":"String (50)","NamePROFFIX":"WelNameEIN","Besonderes":" "},{"Feld":"Adresse","Datentyp":"Object\u003cAdresse\u003e","NamePROFFIX":"AdressNrADR","Besonderes":" "},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":" "},{"Feld":"Bestellung","Datentyp":"Object\u003cBestellung\u003e","NamePROFFIX":"BestellNrEIN","Besonderes":" "},{"Feld":"DatumBis","Datentyp":"String (Date)","NamePROFFIX":"DatumBis","Besonderes":" "},{"Feld":"DatumVon","Datentyp":"String (Date)","NamePROFFIX":"DatumVon","Besonderes":" "},{"Feld":"Eingangsdatum","Datentyp":"String (Date)","NamePROFFIX":"Eingangsdatum","Besonderes":" "},{"Feld":"Lagerort","Datentyp":"Object\u003cLagerort\u003e","NamePROFFIX":"LagerortLAG","Besonderes":" "},{"Feld":"Lagerplatz","Datentyp":"Object\u003cLagerplatz\u003e","NamePROFFIX":"LagerplatzLAG","Besonderes":" "},{"Feld":"Total","Datentyp":"Number (12,2)","NamePROFFIX":"Total","Besonderes":" "},{"Feld":"Verarbeitet","Datentyp":"Boolean","NamePROFFIX":"Verarbeitet","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /EIN/Wareneingangsliste","Rueckgabewert":"HTTP 200Array\u003cWareneingangsliste\u003e","Beschreibung":"Gibt alle Wareneingangslisten zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /EIN/Wareneingangsliste/{WareneingangslisteNr}","Rueckgabewert":"HTTP 200Wareneingangsliste","Beschreibung":"Gibt eine Wareneingangsliste anhand der WareneingangslisteNr zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "WareneingangslisteNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "WelNameEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellung",
+   "Datentyp": "Object\u003cBestellung\u003e",
+   "NamePROFFIX": "BestellNrEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DatumBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "DatumBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DatumVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "DatumVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Eingangsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Eingangsdatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerplatz",
+   "Datentyp": "Object\u003cLagerplatz\u003e",
+   "NamePROFFIX": "LagerplatzLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Total",
+   "Datentyp": "Number (12,2)",
+   "NamePROFFIX": "Total",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verarbeitet",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Verarbeitet",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /EIN/Wareneingangsliste",
+   "Rueckgabewert": "HTTP 200Array\u003cWareneingangsliste\u003e",
+   "Beschreibung": "Gibt alle Wareneingangslisten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /EIN/Wareneingangsliste/{WareneingangslisteNr}",
+   "Rueckgabewert": "HTTP 200Wareneingangsliste",
+   "Beschreibung": "Gibt eine Wareneingangsliste anhand der WareneingangslisteNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

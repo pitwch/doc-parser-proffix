@@ -1,1 +1,97 @@
-{"Fields":[{"Feld":"VerpackungszuweisungNr","Datentyp":"Number (Int)","NamePROFFIX":"LaufNr","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (250)","NamePROFFIX":"Bezeichung","Besonderes":" "},{"Feld":"Artikel","Datentyp":"Object\u003cArtikel\u003e","NamePROFFIX":"ArtikelNrLAG","Besonderes":"Zwingend"},{"Feld":"Geloescht","Datentyp":"Boolean","NamePROFFIX":"Geloescht","Besonderes":" "},{"Feld":"Gtin","Datentyp":"String (50)","NamePROFFIX":"Gtin","Besonderes":"Zwingend"},{"Feld":"GtinStufe","Datentyp":"String (50)","NamePROFFIX":"GtinStufe","Besonderes":"Zwingend"},{"Feld":"Haupt","Datentyp":"Boolean","NamePROFFIX":"Haupt","Besonderes":" "},{"Feld":"Menge","Datentyp":"Number (12,4)","NamePROFFIX":"Menge","Besonderes":"Zwingend"},{"Feld":"Verpackung","Datentyp":"Object\u003cVerpackung\u003e","NamePROFFIX":"VerpackungLAG","Besonderes":"Zwingend"},{"Feld":"Verpackungsstufe","Datentyp":"Object\u003cVerpackungsstufe\u003e","NamePROFFIX":"VerpackungsstufeLAG","Besonderes":"Zwingend"}],"Methods":[{"Endpunkt":"GET /LAG/Verpackungszuweisung","Rueckgabewert":"HTTP 200Array\u003cVerpackungszuweisung\u003e","Beschreibung":"Gibt alle Verpackungszuweisungen zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}","Rueckgabewert":"HTTP 200Verpackungszuweisung","Beschreibung":"Gibt eine Verpackungszuweisung anhand der VerpackungszuweisungNr zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"POST /LAG/Verpackungszuweisung","Rueckgabewert":"HTTP 201","Beschreibung":"Legt eine neue Verpackungszuweisung an","BenoetigteLizenz":"LAG"},{"Endpunkt":"PUT /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Aktualisiert eine Verpackungszuweisung anhand der VerpackungszuweisungNr","BenoetigteLizenz":"LAG"},{"Endpunkt":"DELETE /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}","Rueckgabewert":"HTTP 204","Beschreibung":"Löscht eine Verpackungszuweisung anhand der VerpackungszuweisungNr","BenoetigteLizenz":"LAG"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "VerpackungszuweisungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "Bezeichung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gtin",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Gtin",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "GtinStufe",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "GtinStufe",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Haupt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Haupt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (12,4)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Verpackung",
+   "Datentyp": "Object\u003cVerpackung\u003e",
+   "NamePROFFIX": "VerpackungLAG",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Verpackungsstufe",
+   "Datentyp": "Object\u003cVerpackungsstufe\u003e",
+   "NamePROFFIX": "VerpackungsstufeLAG",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Verpackungszuweisung",
+   "Rueckgabewert": "HTTP 200Array\u003cVerpackungszuweisung\u003e",
+   "Beschreibung": "Gibt alle Verpackungszuweisungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}",
+   "Rueckgabewert": "HTTP 200Verpackungszuweisung",
+   "Beschreibung": "Gibt eine Verpackungszuweisung anhand der VerpackungszuweisungNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Verpackungszuweisung",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Verpackungszuweisung an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Verpackungszuweisung anhand der VerpackungszuweisungNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Verpackungszuweisung anhand der VerpackungszuweisungNr",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": null
+}

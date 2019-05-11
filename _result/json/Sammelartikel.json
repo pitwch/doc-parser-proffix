@@ -1,1 +1,31 @@
-{"Fields":[{"Feld":"SammelartikelNr","Datentyp":"String (10)","NamePROFFIX":"SammelartikelLAG","Besonderes":" "},{"Feld":"Bezeichnung","Datentyp":"String (40)","NamePROFFIX":"Bezeichnung","Besonderes":" "}],"Methods":[{"Endpunkt":"GET /LAG/Sammelartikel","Rueckgabewert":"HTTP 200Array\u003cSammelartikel\u003e","Beschreibung":"Gibt alle Sammelartikel zurück","BenoetigteLizenz":"keine"},{"Endpunkt":"GET /LAG/Sammelartikel/{SammelartikelNr}","Rueckgabewert":"HTTP 200Sammelartikel","Beschreibung":"Gibt einen Sammelartikel anhand der Sammelartikelnummer zurück","BenoetigteLizenz":"keine"}],"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "SammelartikelNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "SammelartikelLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Sammelartikel",
+   "Rueckgabewert": "HTTP 200Array\u003cSammelartikel\u003e",
+   "Beschreibung": "Gibt alle Sammelartikel zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Sammelartikel/{SammelartikelNr}",
+   "Rueckgabewert": "HTTP 200Sammelartikel",
+   "Beschreibung": "Gibt einen Sammelartikel anhand der Sammelartikelnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

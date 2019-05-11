@@ -1,1 +1,30 @@
-{"Fields":[{"Feld":"ErstelltAm","Datentyp":"Datetime","NamePROFFIX":"ErstelltAm","Besonderes":"Zeitstempel der Erstellung des Datensatzes"},{"Feld":"ErstelltVon","Datentyp":"String","NamePROFFIX":"ErstelltVon","Besonderes":"Benutzername"},{"Feld":"GeaendertAm","Datentyp":"Datetime","NamePROFFIX":"GeaendertAm","Besonderes":"Zeitstempel der letzten Bearbeitung des Datensatzes"},{"Feld":"GeaendertVon","Datentyp":"String","NamePROFFIX":"GeaendertVon","Besonderes":"Benutzername"}],"Methods":null,"Parameter":null}
+{
+ "Fields": [
+  {
+   "Feld": "ErstelltAm",
+   "Datentyp": "Datetime",
+   "NamePROFFIX": "ErstelltAm",
+   "Besonderes": "Zeitstempel der Erstellung des Datensatzes"
+  },
+  {
+   "Feld": "ErstelltVon",
+   "Datentyp": "String",
+   "NamePROFFIX": "ErstelltVon",
+   "Besonderes": "Benutzername"
+  },
+  {
+   "Feld": "GeaendertAm",
+   "Datentyp": "Datetime",
+   "NamePROFFIX": "GeaendertAm",
+   "Besonderes": "Zeitstempel der letzten Bearbeitung des Datensatzes"
+  },
+  {
+   "Feld": "GeaendertVon",
+   "Datentyp": "String",
+   "NamePROFFIX": "GeaendertVon",
+   "Besonderes": "Benutzername"
+  }
+ ],
+ "Methods": null,
+ "Parameter": null
+}
