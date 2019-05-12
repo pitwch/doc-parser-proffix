@@ -1,12 +1,19 @@
 # Doc Parser für die PROFFIX REST-API
 
 
-Do ut des...
-
+**Do ut des...** \
+(q.e.d)
 
 ## Zweck
 Das Tool parst sämtliche Tabellen der PROFFIX REST-API Dokumentation und macht daraus standardisierte JSON - Files / Modelle.
 
-Fixfertig:
+Darauf aufbauend lassen sich komplette Modelle für entsprechende Sprachen erstellen.
 
-- [JSON](https://github.com/pitw/doc-parser-proffix/tree/master/_result/json)
+## Nutzung
+
+Folgende Modelle sind fixfertig (und immer "aktuell"):
+
+- [JSON (Base Model)](https://github.com/pitw/doc-parser-proffix/tree/master/_result/json_base)
+- [Golang / Go](https://github.com/pitw/doc-parser-proffix/tree/master/_result/golang)
+
+

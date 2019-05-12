@@ -3,17 +3,36 @@ package main
 import (
 	"encoding/json"
 	"github.com/pitw/doc-parser-proffix/doc"
+	"github.com/pitw/doc-parser-proffix/generator"
 	"github.com/pitw/doc-parser-proffix/table"
 	"io/ioutil"
 	"log"
 	"strconv"
 )
 
+var basePath = "_result/json_base/"
+
 func main() {
 
 	//Hmm...
 	log.Println("Do ut des")
 
+	//Build base model / parse the tricky tables from PROFFIX in the hope they do a lot of copy & paste...
+	createBaseJson()
+
+	//Build our models from base model
+	createModels()
+
+}
+
+func createModels() {
+
+	//Create Models for Golang
+	generator.CreateGoStruct(basePath)
+
+}
+
+func createBaseJson() {
 	//Collect links
 	doclinks := doc.GetDocLinks()
 	for _, y := range doclinks {
@@ -29,11 +48,15 @@ func main() {
 			if err != nil {
 				log.Fatal("Cannot encode to JSON ", err)
 			}
-			err = ioutil.WriteFile("_result/json/"+y.Name+".json", docsJson, 0644)
-			if err != nil {
-				log.Fatal("Cannot write to File ", err)
+
+			//Check if it makes sense to parse...
+			if len(mod.Fields) > 0 {
+
+				err = ioutil.WriteFile(basePath+y.Name+".json", docsJson, 0644)
+				if err != nil {
+					log.Fatal("Cannot write to File ", err)
+				}
 			}
 		}
 	}
-
 }
