@@ -21,6 +21,6 @@ Folgende Modelle sind fixfertig (und immer "aktuell"):
 ## Fragen / Hilfe
 
 ## Ergänzungen
-Deine Sprache fehlt? [Create an Issue!](https://github.com/pitw/doc-parser-proffix/issues) oder 
+Deine Sprache / Model fehlt? [Create an Issue!](https://github.com/pitw/doc-parser-proffix/issues) :exclamation:
 
 **Fragen und Hilfestellung** bei der Anwendung oder Installation entweder per Github oder direkt über die [Pedrett IT + Web AG](https://www.pitw.ch)
