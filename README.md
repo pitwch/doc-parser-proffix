@@ -9,7 +9,6 @@
 Das Tool parst sämtliche Tabellen der PROFFIX REST-API Dokumentation und macht daraus standardisierte JSON - Files / Modelle.
 
 Darauf aufbauend lassen sich komplette Modelle für entsprechende Sprachen erstellen.
-(Deine Sprache fehlt? [Create an Issue!](https://github.com/pitw/doc-parser-proffix/issues))
 
 ## Nutzung
 
@@ -19,3 +18,9 @@ Folgende Modelle sind fixfertig (und immer "aktuell"):
 - [Golang / Go](https://github.com/pitw/doc-parser-proffix/tree/master/_result/golang)
 
 
+## Fragen / Hilfe
+
+## Ergänzungen
+Deine Sprache fehlt? [Create an Issue!](https://github.com/pitw/doc-parser-proffix/issues) oder 
+
+**Fragen und Hilfestellung** bei der Anwendung oder Installation entweder per Github oder direkt über die [Pedrett IT + Web AG](https://www.pitw.ch)
