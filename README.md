@@ -18,9 +18,10 @@ Folgende Modelle sind fixfertig (und immer "aktuell"):
 - [Golang / Go](https://github.com/pitw/doc-parser-proffix/tree/master/_result/golang)
 
 
-## Fragen / Hilfe
+## FAQ
 
-## Ergänzungen
+### Ergänzungen
 Deine Sprache / Model fehlt? [Create an Issue!](https://github.com/pitw/doc-parser-proffix/issues) :exclamation:
 
-**Fragen und Hilfestellung** bei der Anwendung oder Installation entweder per Github oder direkt über die [Pedrett IT + Web AG](https://www.pitw.ch)
+### Fragen 
+Fragen zur Anwendung oder Installation entweder per Github oder direkt über die [Pedrett IT + Web AG](https://www.pitw.ch)
