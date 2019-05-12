@@ -1,7 +1,8 @@
 # Doc Parser für die PROFFIX REST-API
 
 
-:bulb:  **Do ut des...** \ 
+:bulb:  **Do ut des...**
+
 (q.e.d)
 
 ## Zweck
