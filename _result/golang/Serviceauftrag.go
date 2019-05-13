@@ -1,7 +1,7 @@
 package golang
 
 type Serviceauftrag struct {
-	ServiceauftragNr      float64        `json:ServiceauftragNr`
+	ServiceauftragNr      int            `json:ServiceauftragNr`
 	Kunde                 Kunde          `json:Kunde`
 	Prioritaet            Prioritaet     `json:Prioritaet`
 	Serviceart            Serviceart     `json:Serviceart`
@@ -14,8 +14,8 @@ type Serviceauftrag struct {
 	Datum                 string         `json:Datum`
 	Kontakt               Kontakt        `json:Kontakt`
 	Positionen            string         `json:Positionen`
-	PositionNr            float64        `json:PositionNr`
-	OriginalRapportNr     float64        `json:OriginalRapportNr`
+	PositionNr            int            `json:PositionNr`
+	OriginalRapportNr     int            `json:OriginalRapportNr`
 	Installation          Position       `json:Installation`
 	Prioritaet            Prioritaet     `json:Prioritaet`
 	Betreueradresse       Adresse        `json:Betreueradresse`

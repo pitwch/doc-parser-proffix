@@ -1,7 +1,7 @@
 package golang
 
 type Notiz struct {
-	NotizNr             float64     `json:NotizNr`
+	NotizNr             int         `json:NotizNr`
 	Artikel             Artikel     `json:Artikel`
 	Mitarbeiter         Mitarbeiter `json:Mitarbeiter`
 	Notizart            Notizart    `json:Notizart`

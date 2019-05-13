@@ -1,7 +1,7 @@
 package golang
 
 type Artikelbild struct {
-	ArtikelbildNr       float64 `json:ArtikelbildNr`
+	ArtikelbildNr       int     `json:ArtikelbildNr`
 	Bezeichnung         string  `json:Bezeichnung`
 	Anzeigen            bool    `json:Anzeigen`
 	Artikel             Artikel `json:Artikel`

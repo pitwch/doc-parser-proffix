@@ -41,8 +41,8 @@ type Artikel struct {
 	Bestandeskonto                 Konto              `json:Bestandeskonto`
 	Bestellpunkt                   float64            `json:Bestellpunkt`
 	Bestellrhythmus                float64            `json:Bestellrhythmus`
-	Bestellvorschlag               float64            `json:Bestellvorschlag`
-	BasispreisProzentsatzBewertung float64            `json:BasispreisProzentsatzBewertung`
+	Bestellvorschlag               int                `json:Bestellvorschlag`
+	BasispreisProzentsatzBewertung int                `json:BasispreisProzentsatzBewertung`
 	Bewertungspreis                float64            `json:Bewertungspreis`
 	ProzentsatzBewertung           float64            `json:ProzentsatzBewertung`
 	GTIN                           string             `json:GTIN`
@@ -64,7 +64,7 @@ type Artikel struct {
 	Faktor4Fixiert                 bool               `json:Faktor4Fixiert`
 	Faktor5Fixiert                 bool               `json:Faktor5Fixiert`
 	FaktorBewertungFixiert         bool               `json:FaktorBewertungFixiert`
-	Garantie                       float64            `json:Garantie`
+	Garantie                       int                `json:Garantie`
 	Gebindeeinheit                 Einheit            `json:Gebindeeinheit`
 	Gewicht                        float64            `json:Gewicht`
 	Artikelgruppe                  Artikelgruppe      `json:Artikelgruppe`
@@ -86,7 +86,7 @@ type Artikel struct {
 	Webshop                        bool               `json:Webshop`
 	AktionWebshop                  bool               `json:AktionWebshop`
 	WebshopbildErstellt            bool               `json:WebshopbildErstellt`
-	Sicherheitstage                float64            `json:Sicherheitstage`
+	Sicherheitstage                int                `json:Sicherheitstage`
 	StuecklisteAufloesen           bool               `json:StuecklisteAufloesen`
 	StuecklisteBuendeln            bool               `json:StuecklisteBuendeln`
 	IstStuecklistenkopf            bool               `json:IstStuecklistenkopf`
@@ -96,11 +96,11 @@ type Artikel struct {
 	GueltigVonVerkauf              string             `json:GueltigVonVerkauf`
 	GueltigBisVerkauf              string             `json:GueltigBisVerkauf`
 	Verpackung                     Verpackung         `json:Verpackung`
-	Basispreis1                    float64            `json:Basispreis1`
-	Basispreis2                    float64            `json:Basispreis2`
-	Basispreis3                    float64            `json:Basispreis3`
-	Basispreis4                    float64            `json:Basispreis4`
-	Basispreis5                    float64            `json:Basispreis5`
-	BasispreisBewertung            float64            `json:BasispreisBewertung`
-	Wiederbeschaffung              float64            `json:Wiederbeschaffung`
+	Basispreis1                    int                `json:Basispreis1`
+	Basispreis2                    int                `json:Basispreis2`
+	Basispreis3                    int                `json:Basispreis3`
+	Basispreis4                    int                `json:Basispreis4`
+	Basispreis5                    int                `json:Basispreis5`
+	BasispreisBewertung            int                `json:BasispreisBewertung`
+	Wiederbeschaffung              int                `json:Wiederbeschaffung`
 }

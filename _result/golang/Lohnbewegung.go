@@ -1,11 +1,11 @@
 package golang
 
 type Lohnbewegung struct {
-	LohnbewegungNr float64     `json:LohnbewegungNr`
+	LohnbewegungNr int         `json:LohnbewegungNr`
 	Mitarbeiter    Mitarbeiter `json:Mitarbeiter`
 	Lohnart        Lohnart     `json:Lohnart`
-	VonPeriode     float64     `json:VonPeriode`
-	BisPeriode     float64     `json:BisPeriode`
+	VonPeriode     int         `json:VonPeriode`
+	BisPeriode     int         `json:BisPeriode`
 	Verrechnet     bool        `json:Verrechnet`
 	Ansatz         float64     `json:Ansatz`
 	Auftrag        Auftrag     `json:Auftrag`

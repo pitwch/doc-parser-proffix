@@ -1,7 +1,7 @@
 package golang
 
 type Bestellung struct {
-	BestellungNr                   float64            `json:BestellungNr`
+	BestellungNr                   int                `json:BestellungNr`
 	Adresse                        Adresse            `json:Adresse`
 	Adresszeile1                   string             `json:Adresszeile1`
 	Adresszeile2                   string             `json:Adresszeile2`
@@ -68,8 +68,8 @@ type Bestellung struct {
 	Vorname                        string             `json:Vorname`
 	Positionen                     string             `json:Positionen`
 	Aktuell                        bool               `json:Aktuell`
-	BestellpositionNr              float64            `json:BestellpositionNr`
-	PositionNr                     float64            `json:PositionNr`
+	BestellpositionNr              int                `json:BestellpositionNr`
+	PositionNr                     int                `json:PositionNr`
 	Artikel                        Artikel            `json:Artikel`
 	ArtikelLieferant               string             `json:ArtikelLieferant`
 	Auftrag                        Auftrag            `json:Auftrag`
@@ -96,17 +96,17 @@ type Bestellung struct {
 	NotizenIntern                  string             `json:NotizenIntern`
 	NotizenInternRTF               string             `json:NotizenInternRTF`
 	PositionEnde                   bool               `json:PositionEnde`
-	Positionstyp                   float64            `json:Positionstyp`
+	Positionstyp                   int                `json:Positionstyp`
 	Preisdefinition                string             `json:Preisdefinition`
 	PreisFW                        float64            `json:PreisFW`
 	PreisSW                        float64            `json:PreisSW`
 	Rabatt1                        float64            `json:Rabatt1`
 	Rabatt2                        float64            `json:Rabatt2`
 	RestErledigt                   bool               `json:RestErledigt`
-	RueckstandsNr                  float64            `json:RueckstandsNr`
+	RueckstandsNr                  int                `json:RueckstandsNr`
 	Vertragsanzahl                 float64            `json:Vertragsanzahl`
 	Rahmenvertrag                  Rahmenvertrag      `json:Rahmenvertrag`
-	RahmenvertragPositionNr        float64            `json:RahmenvertragPositionNr`
+	RahmenvertragPositionNr        int                `json:RahmenvertragPositionNr`
 	Sprache                        Sprache            `json:Sprache`
 	Stuecklistenkopf               Artikel            `json:Stuecklistenkopf`
 	Tara                           float64            `json:Tara`
@@ -116,8 +116,8 @@ type Bestellung struct {
 	Dim3                           float64            `json:Dim3`
 	TotalFW                        float64            `json:TotalFW`
 	TotalSW                        float64            `json:TotalSW`
-	Verhaeltnis                    float64            `json:Verhaeltnis`
-	Verpackungen                   float64            `json:Verpackungen`
+	Verhaeltnis                    int                `json:Verhaeltnis`
+	Verpackungen                   int                `json:Verpackungen`
 	Waehrung                       Waehrung           `json:Waehrung`
 	WareneingangslisteLieferung    float64            `json:WareneingangslisteLieferung`
 	Wareneingangsliste             Wareneingangsliste `json:Wareneingangsliste`

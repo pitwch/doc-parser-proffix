@@ -1,7 +1,7 @@
 package golang
 
 type SerieNummer struct {
-	SerieNummerNr float64    `json:SerieNummerNr`
+	SerieNummerNr int        `json:SerieNummerNr`
 	SerieNr       string     `json:SerieNr`
 	Artikel       Artikel    `json:Artikel`
 	Lagerort      Lagerort   `json:Lagerort`

@@ -1,7 +1,7 @@
 package golang
 
 type Teilleistung struct {
-	TeilleistungNr           float64                  `json:TeilleistungNr`
+	TeilleistungNr           int                      `json:TeilleistungNr`
 	Anteil                   float64                  `json:Anteil`
 	Bezeichnung              string                   `json:Bezeichnung`
 	Gliederung               string                   `json:Gliederung`

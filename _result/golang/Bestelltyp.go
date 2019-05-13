@@ -11,7 +11,7 @@ type Bestelltyp struct {
 	Bestellformular1        string   `json:Bestellformular1`
 	Bestellformular2        string   `json:Bestellformular2`
 	Bestellformular3        string   `json:Bestellformular3`
-	Reihenfolge             float64  `json:Reihenfolge`
+	Reihenfolge             int      `json:Reihenfolge`
 	StatusLagereingang      bool     `json:StatusLagereingang`
 	StatusOffen             bool     `json:StatusOffen`
 	StatusPreiskorrektur    bool     `json:StatusPreiskorrektur`

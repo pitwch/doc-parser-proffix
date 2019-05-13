@@ -1,7 +1,7 @@
 package golang
 
 type Dokument struct {
-	DokumentNr                      float64         `json:DokumentNr`
+	DokumentNr                      int             `json:DokumentNr`
 	Adresse                         Adresse         `json:Adresse`
 	Adresszeile1                    string          `json:Adresszeile1`
 	Adresszeile2                    string          `json:Adresszeile2`
@@ -152,7 +152,7 @@ type Dokument struct {
 	ZuschlagSteuercode              Steuercode      `json:ZuschlagSteuercode`
 	ZuschlagSW                      float64         `json:ZuschlagSW`
 	Positionen                      string          `json:Positionen`
-	PositionNr                      float64         `json:PositionNr`
+	PositionNr                      int             `json:PositionNr`
 	Artikel                         Artikel         `json:Artikel`
 	Auftrag                         Auftrag         `json:Auftrag`
 	Serviceauftrag                  Serviceauftrag  `json:Serviceauftrag`
@@ -180,7 +180,7 @@ type Dokument struct {
 	Kostenart                       Kostenart       `json:Kostenart`
 	Kostenstelle                    Kostenstelle    `json:Kostenstelle`
 	Dim1                            float64         `json:Dim1`
-	Lagerpreis                      float64         `json:Lagerpreis`
+	Lagerpreis                      int             `json:Lagerpreis`
 	Lieferant                       Adresse         `json:Lieferant`
 	Liefertermin                    string          `json:Liefertermin`
 	Marge                           float64         `json:Marge`
@@ -199,8 +199,8 @@ type Dokument struct {
 	Optional                        bool            `json:Optional`
 	Positionsart                    Positionsart    `json:Positionsart`
 	Kundeninstallationen            string          `json:Kundeninstallationen`
-	ServiceauftragspositionNr       float64         `json:ServiceauftragspositionNr`
-	Positionstyp                    float64         `json:Positionstyp`
+	ServiceauftragspositionNr       int             `json:ServiceauftragspositionNr`
+	Positionstyp                    int             `json:Positionstyp`
 	Preisdefinition                 string          `json:Preisdefinition`
 	PreisdefinitionOptional         string          `json:PreisdefinitionOptional`
 	PreisdefinitionZusatzartikel    string          `json:PreisdefinitionZusatzartikel`
@@ -209,11 +209,11 @@ type Dokument struct {
 	RabattSW                        float64         `json:RabattSW`
 	RabattFW                        float64         `json:RabattFW`
 	Rapport                         Rapport         `json:Rapport`
-	AutomatischRechnenVon           float64         `json:AutomatischRechnenVon`
+	AutomatischRechnenVon           int             `json:AutomatischRechnenVon`
 	Rekapitulation                  bool            `json:Rekapitulation`
 	RueckstandMenge                 float64         `json:RueckstandMenge`
 	Steuercode                      Steuercode      `json:Steuercode`
-	Leistungsverwaltungstyp         float64         `json:Leistungsverwaltungstyp`
+	Leistungsverwaltungstyp         int             `json:Leistungsverwaltungstyp`
 	SteuerFW                        float64         `json:SteuerFW`
 	SteuerSW                        float64         `json:SteuerSW`
 	Stuecklistenkopf                Artikel         `json:Stuecklistenkopf`
@@ -224,9 +224,9 @@ type Dokument struct {
 	TotalInklusivSW                 float64         `json:TotalInklusivSW`
 	TotalOptional                   float64         `json:TotalOptional`
 	TotalSW                         float64         `json:TotalSW`
-	Verpackungen                    float64         `json:Verpackungen`
+	Verpackungen                    int             `json:Verpackungen`
 	Vertreter                       Vertreter       `json:Vertreter`
-	Zusatzartikelreferenz           float64         `json:Zusatzartikelreferenz`
+	Zusatzartikelreferenz           int             `json:Zusatzartikelreferenz`
 	Rechnen                         bool            `json:Rechnen`
 	GesamtrabattVerbuchungAufteilen bool            `json:GesamtrabattVerbuchungAufteilen`
 	BetragFW                        float64         `json:BetragFW`
@@ -235,7 +235,7 @@ type Dokument struct {
 	Buchung                         Buchung         `json:Buchung`
 	Buchungstext                    string          `json:Buchungstext`
 	Datum                           string          `json:Datum`
-	ZahlungNr                       float64         `json:ZahlungNr`
+	ZahlungNr                       int             `json:ZahlungNr`
 	Waehrung                        Waehrung        `json:Waehrung`
 	Buchungsart                     Buchungsart     `json:Buchungsart`
 	Konto                           Konto           `json:Konto`
@@ -247,7 +247,7 @@ type Dokument struct {
 	Buchung                         Buchung         `json:Buchung`
 	Buchungstext                    string          `json:Buchungstext`
 	Datum                           string          `json:Datum`
-	Belegnummer                     float64         `json:Belegnummer`
+	Belegnummer                     int             `json:Belegnummer`
 	Waehrung                        Waehrung        `json:Waehrung`
 	Buchungsart                     Buchungsart     `json:Buchungsart`
 	Konto                           Konto           `json:Konto`

@@ -1,7 +1,7 @@
 package golang
 
 type Verpackungszuweisung struct {
-	VerpackungszuweisungNr float64          `json:VerpackungszuweisungNr`
+	VerpackungszuweisungNr int              `json:VerpackungszuweisungNr`
 	Bezeichnung            string           `json:Bezeichnung`
 	Artikel                Artikel          `json:Artikel`
 	Geloescht              bool             `json:Geloescht`

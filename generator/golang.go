@@ -61,7 +61,7 @@ func fixDatatype(dt string) (fixed string) {
 		return "string"
 	}
 
-	if strings.Contains(dt, "int") {
+	if strings.Contains(strings.ToLower(dt), "int") {
 		return "int"
 	}
 

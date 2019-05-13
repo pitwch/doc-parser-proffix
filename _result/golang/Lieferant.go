@@ -1,7 +1,7 @@
 package golang
 
 type Lieferant struct {
-	LieferantNr       float64   `json:LieferantNr`
+	LieferantNr       int       `json:LieferantNr`
 	Adresse           Adresse   `json:Adresse`
 	Artikel           Artikel   `json:Artikel`
 	ArtikelLieferant  string    `json:ArtikelLieferant`
@@ -19,5 +19,5 @@ type Lieferant struct {
 	Rabatt1           float64   `json:Rabatt1`
 	Rabatt2           float64   `json:Rabatt2`
 	Waehrung          Waehrung  `json:Waehrung`
-	Wiederbeschaffung float64   `json:Wiederbeschaffung`
+	Wiederbeschaffung int       `json:Wiederbeschaffung`
 }
