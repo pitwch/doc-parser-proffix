@@ -28,7 +28,16 @@ func main() {
 func createModels() {
 
 	//Create Models for Golang
-	generator.CreateGoStruct(basePath)
+	err := generator.CreateGoStruct(basePath)
+
+	if err != nil {
+		log.Printf("Error on create Go struct: %v", err)
+	}
+	//Create CSV
+	err = generator.CreateCSV(basePath)
+	if err != nil {
+		log.Printf("Error on create CSV: %v", err)
+	}
 
 }
 
