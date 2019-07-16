@@ -77,8 +77,32 @@
   {
    "Endpunkt": "GET /LAG/Hersteller/{HerstellerNr}",
    "Rueckgabewert": "HTTP 200Hersteller",
-   "Beschreibung": "Gibt einen Hersteller anhand der Herstellernummer zurück",
+   "Beschreibung": "Gibt einen Hersteller anhand der HerstellerNr zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Hersteller",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Hersteller an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Hersteller/{HerstellerNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Hersteller anhand der HerstellerNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Hersteller/{HerstellerNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Hersteller anhand der HerstellerNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Hersteller/{HerstellerNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Hersteller anhand der HerstellerNr",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": null

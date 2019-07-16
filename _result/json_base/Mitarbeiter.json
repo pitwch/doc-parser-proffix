@@ -95,6 +95,18 @@
    "Datentyp": "Object\u003cFunktion\u003e",
    "NamePROFFIX": "FunktionNrPRO",
    "Besonderes": "optional"
+  },
+  {
+   "Feld": "Sollstundenplan",
+   "Datentyp": "Object\u003cSollstundenplan\u003e",
+   "NamePROFFIX": "StdPlanPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "ADUser",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "ADUser",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
   }
  ],
  "Methods": [
@@ -118,6 +130,12 @@
   },
   {
    "Endpunkt": "PUT /PRO/Mitarbeiter/{MitarbeiterNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Mitarbeiter anhand der Mitarbeiternummer",
+   "BenoetigteLizenz": "keine, STU oder ZEI"
+  },
+  {
+   "Endpunkt": "PATCH /PRO/Mitarbeiter/{MitarbeiterNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Aktualisiert einen Mitarbeiter anhand der Mitarbeiternummer",
    "BenoetigteLizenz": "keine, STU oder ZEI"

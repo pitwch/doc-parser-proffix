@@ -87,6 +87,12 @@
    "BenoetigteLizenz": "LAG"
   },
   {
+   "Endpunkt": "PATCH /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Verpackungszuweisung anhand der VerpackungszuweisungNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
    "Endpunkt": "DELETE /LAG/Verpackungszuweisung/{VerpackungszuweisungNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht eine Verpackungszuweisung anhand der VerpackungszuweisungNr",

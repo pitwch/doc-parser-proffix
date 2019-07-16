@@ -1,0 +1,91 @@
+{
+ "Fields": [
+  {
+   "Feld": "LohnabrechnungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LohnabrechnungLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Periode",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Periode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SubNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "SubNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "BuDatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Titel",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Titel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionen",
+   "Datentyp": "Array\u003cPosition\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LohnbewegungPositionNr",
+   "Datentyp": "Number ()",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lohnart",
+   "Datentyp": "Object\u003cLohnart\u003e",
+   "NamePROFFIX": "LohnartLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ansatz",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Ansatz",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Betrag",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Betrag",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Lohnabrechnung",
+   "Rueckgabewert": "HTTP 200Array\u003cLohnabrechnung\u003e",
+   "Beschreibung": "Gibt alle Lohnabrechnungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Lohnabrechnung/{LohnabrechnungNr}",
+   "Rueckgabewert": "HTTP 200Lohnabrechnung",
+   "Beschreibung": "Gibt eine Lohnabrechnung anhand der Lohnabrechnung-Nr. zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

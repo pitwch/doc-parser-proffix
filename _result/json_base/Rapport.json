@@ -311,6 +311,12 @@
    "Datentyp": "Object\u003cTeilleistung\u003e",
    "NamePROFFIX": "TeilLNrSTU",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Stundendifferenz",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StdDiff",
+   "Besonderes": "Readonly"
   }
  ],
  "Methods": [
@@ -339,9 +345,27 @@
    "BenoetigteLizenz": "STU"
   },
   {
+   "Endpunkt": "PATCH /STU/Rapport/{RapportNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Rapport anhand der Rapportnummer",
+   "BenoetigteLizenz": "STU"
+  },
+  {
    "Endpunkt": "DELETE /STU/Rapport/{RapportNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht einen Rapport anhand der Rapportnummer",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/Rapport/abschliessen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Schliesst einen nicht verrechenbaren Rapport ab, siehe Rapporte",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/Rapport/freigeben",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Gibt einen nicht verrechenbaren Rapport frei, siehe Rapporte",
    "BenoetigteLizenz": "STU"
   }
  ],
@@ -349,13 +373,13 @@
   {
    "Parameter": "verrechnet",
    "Format": "String (yes, no, any)",
-   "Beschreibung": "yes: Nur verrechneten Rapporte werden ausgegebenno: Nur nicht verrechneten Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben",
+   "Beschreibung": "yes: Nur verrechneten Rapporte werden ausgegebenno: Nur nicht verrechneten Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben Bitte Parameter-Kombination mit verrechnet und gesperrt beachten! Falls alle Rapporte zurückgegeben werden sollen, müssen sowohl verrechnet=any wie auch gesperrt=any mitgeschickt werden!",
    "VerhaltenOhneParameter": "no"
   },
   {
    "Parameter": "gesperrt",
    "Format": "String (yes, no, any)",
-   "Beschreibung": "yes: Nur gesperrte Rapporte werden ausgegebenno: Nur nicht gesperrte Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben Bei der Filterung wird nur das Sperrdatum berücksichtigt, aber beim Feld \"Gesperrt\" werden alle Kriterien berücksichtigt",
+   "Beschreibung": "yes: Nur gesperrte Rapporte werden ausgegebenno: Nur nicht gesperrte Rapporte werden ausgegebenany: Alle Rapporte werden ausgegeben Bei der Filterung wird nur das Sperrdatum berücksichtigt, aber beim Feld \"Gesperrt\" werden alle Kriterien berücksichtigt Bitte Parameter-Kombination mit verrechnet und gesperrt beachten! Falls alle Rapporte zurückgegeben werden sollen, müssen sowohl verrechnet=any wie auch gesperrt=any mitgeschickt werden! Ausser wenn der URL Parameter verrechnet=yes, dann ist der auch der Parameter gesperrt=yes.",
    "VerhaltenOhneParameter": "no (ausser wenn URL-Parameter \"verrechnet\" auf yes, dann ist dieser Parameter auch yes)"
   }
  ]

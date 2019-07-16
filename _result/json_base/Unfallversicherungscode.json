@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "UnfallversicherungscodeNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "UVGCodeLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Unfallversicherungscode",
+   "Rueckgabewert": "HTTP 200Array\u003cUnfallversicherungscode\u003e",
+   "Beschreibung": "Gibt alle Unfallversicherungscodes zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Unfallversicherungscode/{UnfallversicherungscodeNr}",
+   "Rueckgabewert": "HTTP 200Unfallversicherungscode",
+   "Beschreibung": "Gibt einen Unfallversicherungscode anhand der UnfallversicherungscodeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

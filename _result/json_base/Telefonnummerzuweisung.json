@@ -63,6 +63,12 @@
    "BenoetigteLizenz": "CRM"
   },
   {
+   "Endpunkt": "PATCH /CRM/Telefonnummerzuweisung/{TelefonNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Telefonnummerzuweisung anhand der Telefonnummer",
+   "BenoetigteLizenz": "CRM"
+  },
+  {
    "Endpunkt": "DELETE /CRM/Telefonnummerzuweisung/{TelefonNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht eine Telefonnummerzuweisung anhand der Telefonnummer",

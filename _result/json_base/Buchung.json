@@ -237,6 +237,12 @@
    "BenoetigteLizenz": "KRE"
   },
   {
+   "Endpunkt": "PATCH /KRE/Buchung/{BuchungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Kreditorenbuchung anhand der Buchungsnummer",
+   "BenoetigteLizenz": "KRE"
+  },
+  {
    "Endpunkt": "DELETE /KRE/Buchung/{BuchungNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht eine Kreditorenbuchung anhand der Buchungsnummer",

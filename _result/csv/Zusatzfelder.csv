@@ -1,0 +1,2 @@
+Zusatzfelder,Object{[key:string]: value:any}," ","Der Key ist die Bezeichnung des Zusatzfeldes und beginnt immer mit 'Z_'.Das Value wird nicht in den entsprechenden Datentyp aufgelöst, es wird nur der unbearbeitete Wert des Zusatzfeldes zurückgegeben","
+"

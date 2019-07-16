@@ -8,4 +8,7 @@ type Bestand struct {
 	Lagerplatz        Lagerplatz `json:Lagerplatz`
 	Charge            Charge     `json:Charge`
 	BestandVerfuegbar float64    `json:BestandVerfuegbar`
+	Reserviert        float64    `json:Reserviert`
+	Rueckstand        float64    `json:Rueckstand`
+	Bestellt          float64    `json:Bestellt`
 }

@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "KrankentaggeldversicherungscodeNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "KTGCodeLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Krankentaggeldversicherungscode",
+   "Rueckgabewert": "HTTP 200Array\u003cKrankentaggeldversicherungscode\u003e",
+   "Beschreibung": "Gibt alle Krankentaggeldversicherungscodes zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Krankentaggeldversicherungscode/{KrankentaggeldversicherungscodeNr}",
+   "Rueckgabewert": "HTTP 200Krankentaggeldversicherungscode",
+   "Beschreibung": "Gibt einen Krankentaggeldversicherungscode anhand der KrankentaggeldversicherungscodeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

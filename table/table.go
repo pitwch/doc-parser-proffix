@@ -39,6 +39,7 @@ func TableToStrings(link string) (parsed model.Doc) {
 				//If first cell begins with Method -> docMethod
 				if strings.HasPrefix(firstField, "PUT") ||
 					strings.HasPrefix(firstField, "DELETE") ||
+					strings.HasPrefix(firstField, "PATCH") ||
 					strings.HasPrefix(firstField, "POST") ||
 					strings.HasPrefix(firstField, "GET") {
 

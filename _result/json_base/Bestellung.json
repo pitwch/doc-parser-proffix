@@ -763,6 +763,12 @@
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Aktualisiert den Status einer Bestellung, siehe Status",
    "BenoetigteLizenz": "EIN"
+  },
+  {
+   "Endpunkt": "PATCH /EIN/Bestellung/{BestellungNr}/Position/{BestellpositionNr}/Status",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert den Status einer Bestellung, siehe Status",
+   "BenoetigteLizenz": "EIN"
   }
  ],
  "Parameter": [

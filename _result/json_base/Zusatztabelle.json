@@ -39,6 +39,12 @@
    "BenoetigteLizenz": "keine"
   },
   {
+   "Endpunkt": "PATCH /PRO/Zusatztabelle/{Zusatztabellenname}/{Schlüssel}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Zusatztabellenzeile anhand des Schlüssels",
+   "BenoetigteLizenz": "keine"
+  },
+  {
    "Endpunkt": "DELETE /PRO/Zusatztabelle/{Zusatztabellenname}/{Schlüssel}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht eine Zusatztabellenzeile anhand des Schlüssels",

@@ -163,6 +163,30 @@
    "Rueckgabewert": "HTTP 200Saldo",
    "Beschreibung": "Gibt den Saldo eines Kontos zurück, siehe Saldo",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /FIB/Konto",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Konto an",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "PUT /FIB/Konto/{KontoNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Konto anhand der KontoNr",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "PATCH /FIB/Konto/{KontoNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Konto anhand der KontoNr",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "DELETE /FIB/Konto/{KontoNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Konto anhand der KontoNr",
+   "BenoetigteLizenz": "FIB"
   }
  ],
  "Parameter": [

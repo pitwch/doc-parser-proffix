@@ -179,6 +179,12 @@
    "Datentyp": "Array\u003cKondition\u003e",
    "NamePROFFIX": "ShopZahlart",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Briefanrede",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Briefanrede",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -202,6 +208,12 @@
   },
   {
    "Endpunkt": "PUT /ADR/Kontakt/{KontaktNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Kontakt anhand der Kontaktnummer",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PATCH /ADR/Kontakt/{KontaktNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Aktualisiert einen Kontakt anhand der Kontaktnummer",
    "BenoetigteLizenz": "ADR"

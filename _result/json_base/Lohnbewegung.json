@@ -99,6 +99,12 @@
    "BenoetigteLizenz": "LOH"
   },
   {
+   "Endpunkt": "PATCH /LOH/Lohnbewegung/{LohnbewegungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Lohnbewegung anhand der LohnbewegungNr",
+   "BenoetigteLizenz": "LOH"
+  },
+  {
    "Endpunkt": "DELETE /LOH/Lohnbewegung/{LohnbewegungNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht eine Lohnbewegung anhand der LohnbewegungNr",

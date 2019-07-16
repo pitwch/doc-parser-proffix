@@ -53,4 +53,5 @@ type Rapport struct {
 	Serviceauftrag            Serviceauftrag `json:Serviceauftrag`
 	ServiceauftragspositionNr int            `json:ServiceauftragspositionNr`
 	Teilleistung              Teilleistung   `json:Teilleistung`
+	Stundendifferenz          bool           `json:Stundendifferenz`
 }

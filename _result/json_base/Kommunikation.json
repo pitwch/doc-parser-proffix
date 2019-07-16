@@ -1,0 +1,67 @@
+{
+ "Fields": [
+  {
+   "Feld": "KommunikationNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "TelefonBez",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Kommunikationsangabe",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "TelefonNr",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /ADR/Kommunikation",
+   "Rueckgabewert": "HTTP 200Array\u003cKommunikation\u003e",
+   "Beschreibung": "Gibt alle Kommunikationen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /ADR/Kommunikation/{KommunikationNr}",
+   "Rueckgabewert": "HTTP 200Kommunikation",
+   "Beschreibung": "Gibt eine Kommunikation anhand der KommunikationNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /ADR/Kommunikation",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Kommunikation an",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PUT /ADR/Kommunikation/{KommunikationNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Kommunikation anhand der KommunikationNr",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PATCH /ADR/Kommunikation/{KommunikationNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Kommunikation anhand der KommunikationNr",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "DELETE /ADR/Kommunikation/{KommunikationNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Kommunikation anhand der KommunikationNr",
+   "BenoetigteLizenz": "ADR"
+  }
+ ],
+ "Parameter": null
+}

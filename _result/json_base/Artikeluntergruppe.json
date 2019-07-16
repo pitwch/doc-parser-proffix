@@ -11,6 +11,12 @@
    "Datentyp": "String (40)",
    "NamePROFFIX": "Bezeichnung",
    "Besonderes": "Darf nicht leer sein"
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -27,5 +33,12 @@
    "BenoetigteLizenz": "keine"
   }
  ],
- "Parameter": null
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Artikeluntergruppen werden ausgegebenno: Nur nicht gelöschte Artikeluntergruppen werden ausgegebenany: Alle Artikeluntergruppen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
 }

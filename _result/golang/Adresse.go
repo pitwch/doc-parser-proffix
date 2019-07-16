@@ -50,5 +50,9 @@ type Adresse struct {
 	Lieferadresse                  Adresse      `json:Lieferadresse`
 	Rechnungsadresse               Adresse      `json:Rechnungsadresse`
 	Sprache                        Sprache      `json:Sprache`
+	Suchfeld                       string       `json:Suchfeld`
+	DebitorenSammelkonto           Konto        `json:DebitorenSammelkonto`
+	KreditorenSammelkonto          Konto        `json:KreditorenSammelkonto`
+	Briefanrede                    string       `json:Briefanrede`
 	Parameter                      string       `json:Parameter`
 }

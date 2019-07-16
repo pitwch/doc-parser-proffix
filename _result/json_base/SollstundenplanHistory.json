@@ -1,0 +1,49 @@
+{
+ "Fields": [
+  {
+   "Feld": "SollstundenplanHistoryNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DatumVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "DatumVon",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "DatumBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "DatumBis",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Sollstundenplan",
+   "Datentyp": "Object\u003cSollstundenplan\u003e",
+   "NamePROFFIX": "StdPlanPRO",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/SollstundenplanHistory",
+   "Rueckgabewert": "HTTP 200Array\u003cSollstundenplanHistory\u003e",
+   "Beschreibung": "Gibt die gesamte SollstundenplanHistory zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/SollstundenplanHistory/{SollstundenplanHistoryNr}",
+   "Rueckgabewert": "HTTP 200SollstundenplanHistory",
+   "Beschreibung": "Gibt einen SollstundenplanHistory-Eintrag anhand der SollstundenplanHistoryNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

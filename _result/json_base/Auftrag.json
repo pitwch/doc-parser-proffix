@@ -93,6 +93,12 @@
    "BenoetigteLizenz": "STU, FIB, ADR, LAG oder SRV"
   },
   {
+   "Endpunkt": "PATCH /PRO/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Auftrag anhand der Auftragnummer",
+   "BenoetigteLizenz": "STU, FIB, ADR, LAG oder SRV"
+  },
+  {
    "Endpunkt": "DELETE /PRO/Auftrag/{AuftragNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht einen Auftrag anhand der Auftragnummer",

@@ -129,6 +129,12 @@
    "BenoetigteLizenz": "AUF"
   },
   {
+   "Endpunkt": "PATCH /AUF/Gutschein/{GutscheinNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Gutschein anhand der GutscheinNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
    "Endpunkt": "DELETE /AUF/Gutschein/{GutscheinNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht einen Gutschein anhand der GutscheinNr",

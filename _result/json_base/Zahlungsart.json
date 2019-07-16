@@ -141,6 +141,12 @@
    "BenoetigteLizenz": "ADR"
   },
   {
+   "Endpunkt": "PATCH /ADR/Zahlungsart/{ZahlungsartNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Zahlungsart anhand der ZahlungsartNr",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
    "Endpunkt": "DELETE /ADR/Zahlungsart/{ZahlungsartNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht eine Zahlungsart anhand der ZahlungsartNr",

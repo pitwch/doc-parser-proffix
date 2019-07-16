@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "BriefanredeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Briefanrede",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Briefanrede",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Briefanrede",
+   "Rueckgabewert": "HTTP 200Array\u003cBriefanrede\u003e",
+   "Beschreibung": "Gibt alle Briefanreden zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Briefanrede/{BriefanredeNr}",
+   "Rueckgabewert": "HTTP 200Briefanrede",
+   "Beschreibung": "Gibt eine Briefanrede anhand der BriefanredeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

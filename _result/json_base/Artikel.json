@@ -669,6 +669,12 @@
    "BenoetigteLizenz": "LAG"
   },
   {
+   "Endpunkt": "PATCH /LAG/Artikel/{ArtikelNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Artikel anhand der Artikelnummer",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
    "Endpunkt": "DELETE /LAG/Artikel/{ArtikelNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht einen Artikel anhand der Artikelnummer",
@@ -690,6 +696,12 @@
    "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/ausgangbuchen",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Bucht einen Lagerausgang, siehe Lagerbewegungen",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/verschiebungbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Bucht eine Lagerverschiebung, siehe Lagerbewegungen",
    "BenoetigteLizenz": "LAG"
   }
  ],

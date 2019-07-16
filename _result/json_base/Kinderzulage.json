@@ -1,0 +1,133 @@
+{
+ "Fields": [
+  {
+   "Feld": "KinderzulageNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage1Betrag",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "Ausbildung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage1AlterVon",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Ausbildung1Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage1AlterBis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Ausbildung1Bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage2Betrag",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "Ausbildung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage2AlterVon",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Ausbildung2Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage2AlterBis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Ausbildung2Bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Beitragssatz",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "Beitragssatz",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Region",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "KantonPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MitgliedNr",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "MitgliedNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Nummer",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Nummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Subnummer",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Subnummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage1Betrag",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "Zulage1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage1AlterVon",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Zulage1Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage1AlterBis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Zulage1Bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage2Betrag",
+   "Datentyp": "Number (8,2)",
+   "NamePROFFIX": "Zulage2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage2AlterVon",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Zulage2Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage2AlterBis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Zulage2Bis",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Kinderzulage",
+   "Rueckgabewert": "HTTP 200Array\u003cKinderzulage\u003e",
+   "Beschreibung": "Gibt alle Kinderzulagen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Kinderzulage/{KinderzulageNr}",
+   "Rueckgabewert": "HTTP 200Kinderzulage",
+   "Beschreibung": "Gibt eine Kinderzulage anhand der KinderzulageNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

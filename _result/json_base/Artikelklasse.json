@@ -17,6 +17,12 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": "Gs1Lebensmittel",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -33,5 +39,12 @@
    "BenoetigteLizenz": "keine"
   }
  ],
- "Parameter": null
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Artikelklassen werden ausgegebenno: Nur nicht gelöschte Artikelklassen werden ausgegebenany: Alle Artikelklassen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
 }

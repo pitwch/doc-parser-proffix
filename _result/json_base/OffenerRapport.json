@@ -159,6 +159,12 @@
    "BenoetigteLizenz": "STU"
   },
   {
+   "Endpunkt": "PATCH /STU/OffenerRapport/{OffenerRapportNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen offenen Rapport anhand der OffenerRapportNr",
+   "BenoetigteLizenz": "STU"
+  },
+  {
    "Endpunkt": "DELETE /STU/OffenerRapport/{OffenerRapportNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht einen offenen Rapport anhand der OffenerRapportNr",

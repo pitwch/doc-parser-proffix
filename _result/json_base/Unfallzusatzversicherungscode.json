@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "UnfallzusatzversicherungscodeNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "UVGZCodeLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Unfallzusatzversicherungscode",
+   "Rueckgabewert": "HTTP 200Array\u003cUnfallzusatzversicherungscode\u003e",
+   "Beschreibung": "Gibt alle Unfallzusatzversicherungscodes zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Unfallzusatzversicherungscode/{UnfallzusatzversicherungscodeNr}",
+   "Rueckgabewert": "HTTP 200Unfallzusatzversicherungscode",
+   "Beschreibung": "Gibt einen Unfallzusatzversicherungscode anhand der UnfallzusatzversicherungscodeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

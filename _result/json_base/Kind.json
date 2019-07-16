@@ -1,0 +1,121 @@
+{
+ "Fields": [
+  {
+   "Feld": "KindNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage1Von",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "AusbildungVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage1Bis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "AusbildungBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage2Von",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Ausbildung2Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ausbildungszulage2Bis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Ausbildung2Bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Familienstatus",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Familienstatus",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geburtsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Geburtsdatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geschlecht",
+   "Datentyp": "String (1)",
+   "NamePROFFIX": "Geschlecht",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Name",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Sozialversicherungsnummer",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "SozialVersNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorname",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Vorname",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Kinderzulage1Von",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Zulage1Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage1Bis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Zulage1Bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage2Von",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Zulage2Von",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kinderzulage2Bis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Zulage2Bis",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Kind",
+   "Rueckgabewert": "HTTP 200Array\u003cKind\u003e",
+   "Beschreibung": "Gibt alle Kinder zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Kind/{KindNr}",
+   "Rueckgabewert": "HTTP 200Kind",
+   "Beschreibung": "Gibt ein Kind anhand der KindNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -345,6 +345,12 @@
    "BenoetigteLizenz": "SRV"
   },
   {
+   "Endpunkt": "PATCH /SRV/Serviceauftrag/{ServiceauftragNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Serviceauftrag anhand der ServiceauftragNr",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
    "Endpunkt": "DELETE /SRV/Serviceauftrag/{ServiceauftragNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht einen Serviceauftrag anhand der ServiceauftragNr",

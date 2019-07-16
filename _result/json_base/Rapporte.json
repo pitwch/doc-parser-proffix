@@ -1,0 +1,25 @@
+{
+ "Fields": [
+  {
+   "Feld": "Rapporte",
+   "Datentyp": "Array\u003cRapport\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "POST /STU/Rapport/abschliessen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Schliesst einen nicht verrechenbaren Rapport ab",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /STU/Rapport/freigeben",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Gibt einen nicht verrechenbaren Rapport frei",
+   "BenoetigteLizenz": "STU"
+  }
+ ],
+ "Parameter": null
+}

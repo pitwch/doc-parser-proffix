@@ -79,6 +79,12 @@
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Bucht einen Lagerausgang",
    "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikel/{ArtikelNr}/verschiebungbuchen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Bucht eine Lagerverschiebung",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": null

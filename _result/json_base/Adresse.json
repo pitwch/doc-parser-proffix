@@ -295,6 +295,30 @@
    "Besonderes": " "
   },
   {
+   "Feld": "Suchfeld",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "SuchIndex",
+   "Besonderes": "kann nicht beschrieben werden"
+  },
+  {
+   "Feld": "DebitorenSammelkonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "DSammelKto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenSammelkonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KSammelKto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Briefanrede",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Briefanrede",
+   "Besonderes": " "
+  },
+  {
    "Feld": "Parameter",
    "Datentyp": "Format",
    "NamePROFFIX": "Beschreibung",
@@ -327,9 +351,15 @@
    "BenoetigteLizenz": "ADR"
   },
   {
+   "Endpunkt": "PATCH /ADR/Adresse/{AdressNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Adresse anhand der Adressnummer",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
    "Endpunkt": "DELETE /ADR/Adresse/{AdressNr}",
    "Rueckgabewert": "HTTP 204",
-   "Beschreibung": "Löschen eine Adresse anhand der Adressnummer",
+   "Beschreibung": "Löscht eine Adresse anhand der Adressnummer",
    "BenoetigteLizenz": "ADR"
   }
  ],

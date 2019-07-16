@@ -41,6 +41,78 @@
    "Datentyp": "String (Date)",
    "NamePROFFIX": "GueltigBis",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Ersatzsteuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "ErsatzStCode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ankauf",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Ankauf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezugsteuerkonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "BezugsteuerKontoNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Investition",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Investition",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DienstleistungAusland",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "LeistungAusland",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NichtSkontoberechtigt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NichtSkontoberechtigt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Saldosteuersatz",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "SaldoSatz",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Margenbesteuerung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StMargen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Subventionen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Subventionen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Umsatzsteuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "UstStCode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorsteuer",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Vorsteuer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZahlProzent",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "ZahlProzent",
+   "Besonderes": " "
   }
  ],
  "Methods": [

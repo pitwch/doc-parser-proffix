@@ -1,0 +1,61 @@
+{
+ "Fields": [
+  {
+   "Feld": "ArtikeloptionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anzahl",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Anzahl",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BemerkungenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "BemerkungRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Option",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "OptionNrLAG",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Artikeloption",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikeloption\u003e",
+   "Beschreibung": "Gibt alle Artikeloptionen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikeloption/{ArtikeloptionNr}",
+   "Rueckgabewert": "HTTP 200Artikeloption",
+   "Beschreibung": "Gibt eine Artikeloption anhand der ArtikeloptionNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

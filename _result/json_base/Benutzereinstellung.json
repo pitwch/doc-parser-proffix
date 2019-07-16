@@ -39,6 +39,12 @@
    "BenoetigteLizenz": "keine"
   },
   {
+   "Endpunkt": "PATCH /PRO/Benutzereinstellung/{Schluessel}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Benutzereinstellung anhand des Schlüssels oder legt eine an",
+   "BenoetigteLizenz": "keine"
+  },
+  {
    "Endpunkt": "DELETE /PRO/Benutzereinstellung/{Schluessel}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht eine Benutzereinstellung anhand des Schlüssels",

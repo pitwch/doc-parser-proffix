@@ -1,0 +1,73 @@
+{
+ "Fields": [
+  {
+   "Feld": "QuellensteuerNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "QuellenSteuerLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "JahrGueltigVon",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "GueltigVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "JahrGueltigBis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "GueltigBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Importdateiname",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "ImportDatei",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KeineUebermittlung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeinELM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionen",
+   "Datentyp": "Array\u003cPosition\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "Der Datentyp \"Position\" wird weiter unten beschrieben"
+  },
+  {
+   "Feld": "AbBetrag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "AbBetrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Prozent",
+   "Datentyp": "Number (4,2)",
+   "NamePROFFIX": "Prozent",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/Quellensteuer",
+   "Rueckgabewert": "HTTP 200Array\u003cQuellensteuer\u003e",
+   "Beschreibung": "Gibt alle Quellensteuern zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/Quellensteuer/{QuellensteuerNr}",
+   "Rueckgabewert": "HTTP 200Quellensteuer",
+   "Beschreibung": "Gibt eine Quellensteuer anhand der QuellensteuerNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

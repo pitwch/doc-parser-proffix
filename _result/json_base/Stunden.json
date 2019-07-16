@@ -153,6 +153,12 @@
    "BenoetigteLizenz": "ZEI"
   },
   {
+   "Endpunkt": "PATCH /ZEI/Stunden/{StundenNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Stundeneintrag anhand der Stundennummer",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
    "Endpunkt": "DELETE /ZEI/Stunden/{StundenNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löschen einen Stundeneintrag anhand der Stundennummer",

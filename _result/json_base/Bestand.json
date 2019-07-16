@@ -41,6 +41,24 @@
    "Datentyp": "Number (8,4)",
    "NamePROFFIX": "VBestand",
    "Besonderes": "Nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "Reserviert",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Reserviert",
+   "Besonderes": "Nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "Rueckstand",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Rueckstand",
+   "Besonderes": "Nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "Bestellt",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Bestellt",
+   "Besonderes": "Nach diesem Feld kann nicht gefiltert werden"
   }
  ],
  "Methods": [

@@ -31,4 +31,5 @@ type Kontakt struct {
 	WebshopPasswort           string     `json:WebshopPasswort`
 	WebshopPasswortAlt        string     `json:WebshopPasswortAlt`
 	WebshopKonditionen        string     `json:WebshopKonditionen`
+	Briefanrede               string     `json:Briefanrede`
 }

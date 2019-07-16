@@ -1,0 +1,79 @@
+{
+ "Fields": [
+  {
+   "Feld": "SollstundenplanNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "StdPlanPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "StundenMontag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Montag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StundenDienstag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Dienstag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StundenMittwoch",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Mittwoch",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StundenDonnerstag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Donnerstag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StundenFreitag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Freitag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StundenSamstag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Samstag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StundenSonntag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Sonntag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StundenFerientag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "StdFerientag",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Sollstundenplan",
+   "Rueckgabewert": "HTTP 200Array\u003cSollstundenplan\u003e",
+   "Beschreibung": "Gibt alle Sollstundenpläne zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Sollstundenplan/{SollstundenplanNr}",
+   "Rueckgabewert": "HTTP 200Sollstundenplan",
+   "Beschreibung": "Gibt einen Sollstundenplan anhand der SollstundenplanNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}
