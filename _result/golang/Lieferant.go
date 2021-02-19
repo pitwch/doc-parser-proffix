@@ -12,6 +12,7 @@ type Lieferant struct {
 	Einheit           Einheit   `json:Einheit`
 	Einkaufspreis     float64   `json:Einkaufspreis`
 	Nettopreis        float64   `json:Nettopreis`
+	Name              string    `json:Name`
 	Einstandspreis    float64   `json:Einstandspreis`
 	GtinStufe         string    `json:GtinStufe`
 	Hauptlieferant    bool      `json:Hauptlieferant`

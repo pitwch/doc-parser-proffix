@@ -79,6 +79,24 @@
    "Besonderes": "Der Datentyp \"Buchungszeile\" wird weiter unten beschrieben"
   },
   {
+   "Feld": "Belege",
+   "Datentyp": "Array\u003cBuchung\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegstopp",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StopJn",
+   "Besonderes": "Vergütungssperre"
+  },
+  {
+   "Feld": "StopBemerkung",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "StopBemerkung",
+   "Besonderes": " "
+  },
+  {
    "Feld": "BuchungszeileNr",
    "Datentyp": "Number (Int)",
    "NamePROFFIX": "LaufNr",
@@ -101,6 +119,12 @@
    "Datentyp": "Object\u003cBelegart\u003e",
    "NamePROFFIX": "BelegArtPRO",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Betraege",
+   "Datentyp": "Array\u003cObject {•BetragFW : Number (10,2)•BetragSW : Number (10,2)•Buchungstext : String (120)•Kostenart : Kostenart•Kostenstelle : Kostenstelle}",
+   "NamePROFFIX": " ",
+   "Besonderes": "Nach diesem Feld kann nicht gefiltert werden, beim Buchungstext werden Vorschläge von /PRO/Buchungstext angezeigt BetragFW ist zwingendWenn BetragSW angegeben wird, wird der angegebene Wert verwendet andernfalls wird der Wert andhand des Kurses berechnet"
   },
   {
    "Feld": "EsrNummer",
@@ -160,37 +184,37 @@
    "Feld": "SteuerbetragFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBetragFw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": " "
   },
   {
    "Feld": "SteuerbetragSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBetragSw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": "wird aus SteuerbetragFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerbetragFW wird nicht aus SteuerbetragSW ermittelt"
   },
   {
    "Feld": "SteuerbuchungFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBuchFw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": " "
   },
   {
    "Feld": "SteuerbuchungSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBuchSw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": "wird aus SteuerbuchungFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerbuchungFW wird nicht aus SteuerbuchungSW ermittelt"
   },
   {
    "Feld": "SteuerbetragSaldobesteuerungFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StSaldoFw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": " "
   },
   {
    "Feld": "SteuerbetragSaldobesteuerungSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StSaldoSw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": "wird aus SteuerbetragSaldobesteuerungFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerbetragSaldobesteuerungFW wird nicht aus SteuerbetragSaldobesteuerungSW ermittelt"
   },
   {
    "Feld": "Zahlungsdatum",
@@ -209,6 +233,12 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": " ",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Hauptbuchung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "HauptBuchung",
+   "Besonderes": "Kann nur gelesen werden 0 = Fibu-Buchung1 = Hauptbuchung (OP)2 = Kontierung3 = Zahlung"
   }
  ],
  "Methods": [
@@ -216,13 +246,13 @@
    "Endpunkt": "GET /KRE/Buchung",
    "Rueckgabewert": "HTTP 200Array\u003cBuchung\u003e",
    "Beschreibung": "Gibt alle Kreditorenbuchungen zurück",
-   "BenoetigteLizenz": "KRE"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /KRE/Buchung/{BuchungNr}",
    "Rueckgabewert": "HTTP 200Buchung",
    "Beschreibung": "Gibt eine Kreditorenbuchung anhand der Buchungsnummer zurück",
-   "BenoetigteLizenz": "KRE"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "POST /KRE/Buchung",
@@ -251,14 +281,20 @@
   {
    "Endpunkt": "GET /KRE/Buchung/Flat",
    "Rueckgabewert": "HTTP 200Array\u003cBuchung-Flat\u003e",
-   "Beschreibung": "Gibt alle Kreditorenbuchungen zurück, siehe Buchung-Flat",
+   "Beschreibung": "Gibt alle Kreditorenbuchungen zurück, siehe Buchung-Flat.Über dieses Endpunkt können Unterobjekte gefiltert werden!",
    "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /KRE/Buchung/{BuchungNr}/Flat",
    "Rueckgabewert": "HTTP 200Buchung-Flat",
-   "Beschreibung": "Gibt eine Kreditorenbuchung anhand der Kreditorenbuchungsnummer zurück, siehe Buchung-Flat",
+   "Beschreibung": "Gibt eine Kreditorenbuchung anhand der Kreditorenbuchungsnummer zurück, siehe Buchung-Flat. Über dieses Endpunkt können Unterobjekte gefiltert werden!",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /KRE/Buchung/zahlungerfassen",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Kreditorenbuchung als Zahlung an",
+   "BenoetigteLizenz": "KRE"
   }
  ],
  "Parameter": null

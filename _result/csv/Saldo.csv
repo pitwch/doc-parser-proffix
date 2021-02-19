@@ -1,5 +1,5 @@
-SaldoSW,"Number (8,4)",KtoSaldoSW," ","
+SaldoSW,"Number (8,4)",KtoSaldoSW,"wird aus SaldoFW ermittelt, muss i.d.R. nicht angegeben werden, SaldoFW wird nicht aus SaldoSW ermittelt","
 "
-SaldoSW,"Number (8,4)",KtoSaldoSW," ","
+SaldoSW,"Number (8,4)",KtoSaldoSW,"wird aus SaldoFW ermittelt, muss i.d.R. nicht angegeben werden, SaldoFW wird nicht aus SaldoSW ermittelt","
 ",SaldoFW,"Number (8,4)",KtoSaldoFW," ","
 "

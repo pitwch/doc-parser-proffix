@@ -4,7 +4,7 @@
    "Feld": "ESRNr",
    "Datentyp": "Number (Int)",
    "NamePROFFIX": "ESRNrAUF",
-   "Besonderes": " "
+   "Besonderes": "Wird auch für die QR-Rechnung verwendet"
   },
   {
    "Feld": "Bezeichnung",

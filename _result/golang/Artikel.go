@@ -103,4 +103,6 @@ type Artikel struct {
 	Basispreis5                    int                `json:Basispreis5`
 	BasispreisBewertung            int                `json:BasispreisBewertung`
 	Wiederbeschaffung              int                `json:Wiederbeschaffung`
+	Suchfeld                       string             `json:Suchfeld`
+	Ursprungsland                  Land               `json:Ursprungsland`
 }

@@ -5,15 +5,153 @@
    "Datentyp": "String",
    "NamePROFFIX": "StaffelCode",
    "Besonderes": " "
+  },
+  {
+   "Feld": "ArtikeltypNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "ANummer",
+   "Besonderes": "Die Nummer abhängig vom Artikeltyp."
+  },
+  {
+   "Feld": "Artikeltyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "ArtikelTyp",
+   "Besonderes": "0 = Alle 1 = Artikel 2 = Klasse3 = Gruppe4 = Untergruppe"
+  },
+  {
+   "Feld": "Assortierung",
+   "Datentyp": "Object\u003cAssortierung\u003e",
+   "NamePROFFIX": "AssortiertPRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeAbDokument",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "DokumentMenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeVerrAbDokument",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "DokumentMengeVerr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisAbDokument",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "DokumentPreis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalAbDokument",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "DokumentTotal",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisberechnungsformel",
+   "Datentyp": "Object\u003cPreisberechnungsformel\u003e",
+   "NamePROFFIX": "FormelNrPRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AdresstypNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "KNummer",
+   "Besonderes": "Die Nummer abhängig vom Adresstyp."
+  },
+  {
+   "Feld": "Adresstyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "KundenTyp",
+   "Besonderes": "0 = Alle1 = Adresse2 = Preisklase3 = Preisgruppe4 = Auftrag-Nr."
+  },
+  {
+   "Feld": "MengeVon",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "MengeVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Pauschale",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Pauschale",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preistyp",
+   "Datentyp": "Object\u003cPreistyp\u003e",
+   "NamePROFFIX": "PreisTypPRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Prozent",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Prozent",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rabatt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Rabatt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkauf",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Verkauf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Wert",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Wert",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zusatzartikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "Zusatzartikel",
+   "Besonderes": " "
   }
  ],
- "Methods": null,
- "Parameter": [
+ "Methods": [
   {
-   "Parameter": "noch keine Methoden vorhanden",
-   "Format": " ",
-   "Beschreibung": " ",
-   "VerhaltenOhneParameter": " "
+   "Endpunkt": "GET /PRE/Preisstaffel",
+   "Rueckgabewert": "HTTP 200Array\u003cPreisstaffel\u003e",
+   "Beschreibung": "Gibt alle Preisstaffeln zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Preisstaffel/{PreisstaffelNr}",
+   "Rueckgabewert": "HTTP 200Preisstaffel",
+   "Beschreibung": "Gibt eine Preisstaffel anhand der Preisstaffelnummer zurück",
+   "BenoetigteLizenz": "keine"
   }
- ]
+ ],
+ "Parameter": null
 }

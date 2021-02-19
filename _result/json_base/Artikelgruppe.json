@@ -31,6 +31,30 @@
    "Rueckgabewert": "HTTP 200Artikelgruppe",
    "Beschreibung": "Gibt eine Artikelgruppe anhand der ArtikelgruppeNr zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikelgruppe",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Artikelgruppe an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Artikelgruppe/{ArtikelgruppeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Artikelgruppe anhand der ArtikelgruppeNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Artikelgruppe/{ArtikelgruppeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Artikelgruppe anhand der ArtikelgruppeNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Artikelgruppe/{ArtikelgruppeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Artikelgruppe anhand der ArtikelgruppeNr",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": [

@@ -37,6 +37,12 @@
    "Besonderes": " "
   },
   {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
    "Feld": "LohnbewegungPositionNr",
    "Datentyp": "Number ()",
    "NamePROFFIX": "LaufNr",
@@ -70,6 +76,156 @@
    "Feld": "Betrag",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "Betrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anrede",
+   "Datentyp": "String",
+   "NamePROFFIX": "Anrede",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Name",
+   "Datentyp": "String",
+   "NamePROFFIX": "Name",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorname",
+   "Datentyp": "String",
+   "NamePROFFIX": "Vorname",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Strasse",
+   "Datentyp": "String",
+   "NamePROFFIX": "Strasse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Region",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "KantonPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile1",
+   "Datentyp": "String",
+   "NamePROFFIX": "Adresszeile1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile2",
+   "Datentyp": "String",
+   "NamePROFFIX": "Adresszeile2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile3",
+   "Datentyp": "String",
+   "NamePROFFIX": "Adresszeile3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile4",
+   "Datentyp": "String",
+   "NamePROFFIX": "Adresszeile4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresszeile5",
+   "Datentyp": "String",
+   "NamePROFFIX": "Adresszeile5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String",
+   "NamePROFFIX": "PLZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String",
+   "NamePROFFIX": "Ort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZPostfach",
+   "Datentyp": "String",
+   "NamePROFFIX": "PLZPostfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Postfach",
+   "Datentyp": "String",
+   "NamePROFFIX": "Postfach",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "LandPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Arbeitskanton",
+   "Datentyp": "String",
+   "NamePROFFIX": "Arbeitskanton",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Beschaeftigungsgrad",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "BeschGrad",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "HabenKonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Habenkonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SollKonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Sollkonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Unfallversicherungscode",
+   "Datentyp": "Object\u003cUnfallversicherungscode\u003e",
+   "NamePROFFIX": "UVGCodeLOH",
    "Besonderes": " "
   }
  ],

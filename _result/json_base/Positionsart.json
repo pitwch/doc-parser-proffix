@@ -71,6 +71,18 @@
    "Datentyp": "Number (5,2)",
    "NamePROFFIX": "StdPreis",
    "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigBis",
+   "Besonderes": " "
   }
  ],
  "Methods": [

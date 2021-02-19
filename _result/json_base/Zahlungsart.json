@@ -82,7 +82,7 @@
    "Feld": "Spesenregelung",
    "Datentyp": "Number (int)",
    "NamePROFFIX": "Spesen",
-   "Besonderes": "0 = Alle Spesen zu Lasten Auftragsgeber1 = Alle Spesen zu Lasten Begünstigter2 = Spesenteilung"
+   "Besonderes": "0 = Alle Spesen zu Lasten Auftragsgeber1 = Alle Spesen zu Lasten Begünstigter2 = Spesenteilung3 = Keine"
   },
   {
    "Feld": "SwiftNummer",

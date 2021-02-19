@@ -11,6 +11,12 @@
    "Datentyp": "String (40)",
    "NamePROFFIX": "Bezeichnung",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Klasse",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Klasse",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -25,6 +31,30 @@
    "Rueckgabewert": "HTTP 200Adressgruppe",
    "Beschreibung": "Gibt eine Adressgruppe anhand der Adressgruppennummer zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /ADR/Adressgruppe",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Adressgruppe an",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PUT /ADR/Adressgruppe/{AdressgruppeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Adressegruppe anhand der Adressgruppennummer",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PATCH /ADR/Adressgruppe/{AdressgruppeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Adressegruppe anhand der Adressgruppennummer",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "DELETE /ADR/Adressgruppe/{AdressgruppeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Adressegruppe anhand der Adressgruppennummer",
+   "BenoetigteLizenz": "ADR"
   }
  ],
  "Parameter": null

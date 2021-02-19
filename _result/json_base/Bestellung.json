@@ -592,7 +592,7 @@
    "Feld": "PreisSW",
    "Datentyp": "Number (10,4)",
    "NamePROFFIX": "PreisSw",
-   "Besonderes": " "
+   "Besonderes": "wird aus PreisFW ermittelt, muss i.d.R. nicht angegeben werden, PreisFW wird nicht aus PreisSW ermittelt"
   },
   {
    "Feld": "Rabatt1",
@@ -688,7 +688,7 @@
    "Feld": "TotalSW",
    "Datentyp": "Number (10,4)",
    "NamePROFFIX": "TotalPreisSw",
-   "Besonderes": " "
+   "Besonderes": "wird aus TotalFW ermittelt, muss i.d.R. nicht angegeben werden, TotalFW wird nicht aus TotalSW ermittelt"
   },
   {
    "Feld": "Verhaeltnis",
@@ -731,6 +731,12 @@
    "Datentyp": "String (8)",
    "NamePROFFIX": "WocheLief",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerbewegungen",
+   "Datentyp": "Array\u003cObject {•Typ : Number (Int)•Charge : Charge•Menge : Number (10,4)•SerieNr : String (50)•Lagerort : Lagerort•Lagerplatz : Lagerplatz•Zusatz : Object {oLieferungAm : String (Date)oReservierenAb : String (Date)oUngueltigAb : String (Date)oBemerkungen : String (∞)}}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden Ab Version 3.7.0 werden Typ \u0026 Zusatz unterstützt: Typ:0: Lagerbewegung (Standard wenn nichts angegeben)1: Rückstand2: Reservation Zusatz: •kann nur bei Typ 1=Rückstand oder 2=Reservation mitgegeben werden•Reservationen und Rückstände sind writeonly"
   },
   {
    "Feld": "Parameter",

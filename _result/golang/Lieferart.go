@@ -9,4 +9,5 @@ type Lieferart struct {
 	Kostenstelle Kostenstelle `json:Kostenstelle`
 	Kostenart    Kostenart    `json:Kostenart`
 	Inaktiv      bool         `json:Inaktiv`
+	Waehrung     Waehrung     `json:Waehrung`
 }

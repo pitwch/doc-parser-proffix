@@ -17,6 +17,30 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": "Inaktiv",
    "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Auslaufsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Auslaufsdatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Haltbarkeit",
+   "Datentyp": "Integer",
+   "NamePROFFIX": "Haltbarkeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Herstelldatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Herstelldatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "UrsprungsCharge",
+   "Datentyp": "Object\u003cCharge\u003e",
+   "NamePROFFIX": "UrsprungsCharge",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -31,6 +55,30 @@
    "Rueckgabewert": "HTTP 200Charge",
    "Beschreibung": "Gibt eine Charge anhand der Chargennummer zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Charge",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Charge an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Charge/{ChargeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Charge anhand der ChargeNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Charge/{ChargeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Charge anhand der ChargeNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Charge/{ChargeNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Charge anhand der ChargeNr",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": [

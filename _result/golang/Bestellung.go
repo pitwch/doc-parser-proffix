@@ -123,5 +123,6 @@ type Bestellung struct {
 	Wareneingangsliste             Wareneingangsliste `json:Wareneingangsliste`
 	WareneingangslisteRestErledigt bool               `json:WareneingangslisteRestErledigt`
 	TerminWocheBestaetigt          string             `json:TerminWocheBestaetigt`
+	Lagerbewegungen                string             `json:Lagerbewegungen`
 	Parameter                      string             `json:Parameter`
 }

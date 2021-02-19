@@ -65,6 +65,18 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": "Laufend",
    "Besonderes": "optional"
+  },
+  {
+   "Feld": "Verantwortlicher",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "Verantwortlicher",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Auftragsvolumen",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "AuftragsVol",
+   "Besonderes": "optional"
   }
  ],
  "Methods": [

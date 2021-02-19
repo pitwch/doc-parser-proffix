@@ -611,6 +611,18 @@
    "Datentyp": "Number (Int)",
    "NamePROFFIX": "Wiederbeschaffung",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Suchfeld",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "SuchIndex",
+   "Besonderes": "kann nicht beschrieben werden"
+  },
+  {
+   "Feld": "Ursprungsland",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "Ursprungsland",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -703,6 +715,24 @@
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Bucht eine Lagerverschiebung, siehe Lagerbewegungen",
    "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Sprache/{SpracheNr}",
+   "Rueckgabewert": "HTTP 200Artikeltext",
+   "Beschreibung": "Gibt die Bezeichnungen in der angegebenen Sprache eines Artikels zurück, siehe Artikeltext",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Preis/Verkauf/Adresse/{AdresseNr}/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Verkaufspreis anhand einer Adressnummer und einer Auftragsnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikel/{ArtikelNr}/Preis/Einkauf/Adresse/{AdresseNr}/Auftrag/{AuftragNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cPreis\u003e",
+   "Beschreibung": "Gibt den Einkaufspreis anhand einer Adressnummer und einer Auftragsnummer zurück, siehe Preis",
+   "BenoetigteLizenz": "keine"
   }
  ],
  "Parameter": [
@@ -710,6 +740,12 @@
    "Parameter": "geloescht",
    "Format": "String (yes, no, any)",
    "Beschreibung": "yes: Nur gelöschte Artikel werden ausgegebenno: Nur nicht gelöschte Artikel werden ausgegebenany: Alle Artikel werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "ohnevorgabe",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Artikel wird beim Speichern ohne PROFFIX-Vorgaben gespeichertno: Artikel wird beim Speichern mit PROFFIX-Vorgaben angereichert",
    "VerhaltenOhneParameter": "no"
   }
  ]

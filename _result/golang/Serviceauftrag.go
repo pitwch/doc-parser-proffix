@@ -14,6 +14,7 @@ type Serviceauftrag struct {
 	Datum                 string         `json:Datum`
 	Kontakt               Kontakt        `json:Kontakt`
 	Positionen            string         `json:Positionen`
+	Gesperrt              bool           `json:Gesperrt`
 	PositionNr            int            `json:PositionNr`
 	OriginalRapportNr     int            `json:OriginalRapportNr`
 	Installation          Position       `json:Installation`

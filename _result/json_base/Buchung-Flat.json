@@ -154,37 +154,37 @@
    "Feld": "SteuerbetragFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBetragFw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": " "
   },
   {
    "Feld": "SteuerbetragSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBetragSw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": "wird aus SteuerbetragFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerbetragFW wird nicht aus SteuerbetragSW ermittelt"
   },
   {
    "Feld": "SteuerbuchungFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBuchFw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": " "
   },
   {
    "Feld": "SteuerbuchungSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StBuchSw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": "wird aus SteuerbuchungFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerbuchungFW wird nicht aus SteuerbuchungSW ermittelt"
   },
   {
    "Feld": "SteuerbetragSaldobesteuerungFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StSaldoFw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": " "
   },
   {
    "Feld": "SteuerbetragSaldobesteuerungSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StSaldoSw",
-   "Besonderes": "Wird beim Speichern automatisch ermittelt, falls nicht explizit übergeben"
+   "Besonderes": "wird aus SteuerbetragSaldobesteuerungFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerbetragSaldobesteuerungFW wird nicht aus SteuerbetragSaldobesteuerungSW ermittelt"
   },
   {
    "Feld": "Zahlungsdatum",
@@ -214,7 +214,7 @@
    "Feld": "BetragSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "BetragSw",
-   "Besonderes": ""
+   "Besonderes": "wird aus BetragFW ermittelt, muss i.d.R. nicht angegeben werden, BetragFW wird nicht aus BetragSW ermittelt"
   },
   {
    "Feld": "Buchungstext",
@@ -233,6 +233,36 @@
    "Datentyp": "Object\u003cKostenstelle\u003e",
    "NamePROFFIX": "KstFIB",
    "Besonderes": ""
+  },
+  {
+   "Feld": "Belege",
+   "Datentyp": "Array\u003cBuchung\u003e",
+   "NamePROFFIX": "",
+   "Besonderes": ""
+  },
+  {
+   "Feld": "Belegstopp",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StopJn",
+   "Besonderes": "Vergütungssperre"
+  },
+  {
+   "Feld": "StopBemerkung",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "StopBemerkung",
+   "Besonderes": ""
+  },
+  {
+   "Feld": "Hauptbuchung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "HauptBuchung",
+   "Besonderes": "Kann nur gelesen werden 0 = Fibu-Buchung1 = Hauptbuchung (OP)2 = Kontierung3 = Zahlung"
+  },
+  {
+   "Feld": "IstErfassteBuchung",
+   "Datentyp": "String (yes, no, any)",
+   "NamePROFFIX": "yes: Nur von Benutzer erstellte Buchungen werden ausgegebenno: Nur von PROFFIX erstellte Buchungen werden ausgegebenany: Alle Buchung werden ausgegeben",
+   "Besonderes": "any"
   }
  ],
  "Methods": [

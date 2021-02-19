@@ -138,13 +138,13 @@
    "Endpunkt": "GET /STU/OffenerRapport",
    "Rueckgabewert": "HTTP 200Array\u003cOffenerRapport\u003e",
    "Beschreibung": "Gibt alle offenen Rapporte zurück",
-   "BenoetigteLizenz": "STU"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /STU/OffenerRapport/{OffenerRapportNr}",
    "Rueckgabewert": "HTTP 200OffenerRapport",
    "Beschreibung": "Gibt einen offenen Rapport anhand der OffenerRapportNr zurück",
-   "BenoetigteLizenz": "STU"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "POST /STU/OffenerRapport",

@@ -10,7 +10,7 @@
    "Feld": "Bezeichnung",
    "Datentyp": "String (50)",
    "NamePROFFIX": "Bezeichnung",
-   "Besonderes": " "
+   "Besonderes": "Zwingend"
   },
   {
    "Feld": "Anzeigen",
@@ -22,13 +22,13 @@
    "Feld": "Artikel",
    "Datentyp": "Object\u003cArtikel\u003e",
    "NamePROFFIX": "ArtikelNrLAG",
-   "Besonderes": " "
+   "Besonderes": "Zwingend"
   },
   {
    "Feld": "DateiNr",
    "Datentyp": "String (∞)",
    "NamePROFFIX": "Bild",
-   "Besonderes": "Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
   },
   {
    "Feld": "Hauptbild",
@@ -52,7 +52,7 @@
    "Feld": "Dateipfad",
    "Datentyp": "String (∞)",
    "NamePROFFIX": "Bild",
-   "Besonderes": " "
+   "Besonderes": "Readonly Deprecated ab Version 3.6.0, /PRO/Datei/{DateiNr}/Info verwenden"
   }
  ],
  "Methods": [
@@ -67,6 +67,30 @@
    "Rueckgabewert": "HTTP 200Artikelbild",
    "Beschreibung": "Gibt ein Artikelbild anhand der ArtikelbildNr zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikelbild",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Artikelbild an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Artikelbild/{ArtikelbildNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Artikelbild anhand der ArtikelbildNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Artikelbild/{ArtikelbildNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Artikelbild anhand der ArtikelbildNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Artikelbild/{ArtikelbildNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Artikelbild anhand der ArtikelbildNr",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": null

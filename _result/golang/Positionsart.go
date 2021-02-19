@@ -13,4 +13,6 @@ type Positionsart struct {
 	KeinRabatt      bool         `json:KeinRabatt`
 	Ferien          bool         `json:Ferien`
 	StdPreis        float64      `json:StdPreis`
+	GueltigVon      string       `json:GueltigVon`
+	GueltigBis      string       `json:GueltigBis`
 }

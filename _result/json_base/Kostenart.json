@@ -11,6 +11,24 @@
    "Datentyp": "String (80)",
    "NamePROFFIX": "Bezeichnung",
    "Besonderes": " "
+  },
+  {
+   "Feld": "BudgetCode",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "BudgetCode",
+   "Besonderes": "Dieser Schalter ist für das Budget. 0 = Jahr / 1 Monat / 2 Quartal / 3 Halbjahr"
+  },
+  {
+   "Feld": "Sperre",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Sperre",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verantwortlicher",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "Verant",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -25,6 +43,30 @@
    "Rueckgabewert": "HTTP 200Kostenart",
    "Beschreibung": "Gibt ein Kostenart anhand der Kostenartnummer zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /FIB/Kostenart",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Kostenart an",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "PUT /FIB/Kostenart/{KostenartNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Kostenart anhand der Kostenartnummer",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "PATCH /FIB/Kostenart/{KostenartNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Kostenart anhand der Kostenartnummer",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "DELETE /FIB/Kostenart/{KostenartNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Kostenart anhand der Kostenartnummer",
+   "BenoetigteLizenz": "FIB"
   }
  ],
  "Parameter": null

@@ -11,6 +11,42 @@
    "Datentyp": "String (50)",
    "NamePROFFIX": "Bezeichnung",
    "Besonderes": " "
+  },
+  {
+   "Feld": "BisBetrag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "BisBetrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Konto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KontoNrFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zuschlag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "Zuschlag",
+   "Besonderes": " "
   }
  ],
  "Methods": [

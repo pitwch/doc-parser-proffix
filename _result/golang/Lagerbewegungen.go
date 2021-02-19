@@ -11,4 +11,5 @@ type Lagerbewegungen struct {
 	Auftrag                Auftrag  `json:Auftrag`
 	Bemerkungen            string   `json:Bemerkungen`
 	LagerOrtPlatzAbArtikel bool     `json:LagerOrtPlatzAbArtikel`
+	Lagerbewegungen        string   `json:Lagerbewegungen`
 }

@@ -33,6 +33,7 @@ type Rapport struct {
 	Ueberzeit                 float64        `json:Ueberzeit`
 	StdPreis                  float64        `json:StdPreis`
 	Km                        float64        `json:Km`
+	Spesen                    string         `json:Spesen`
 	PeriodeLohn               string         `json:PeriodeLohn`
 	PreisFW                   float64        `json:PreisFW`
 	TotalFW                   float64        `json:TotalFW`
@@ -46,6 +47,7 @@ type Rapport struct {
 	Kostenart                 Kostenart      `json:Kostenart`
 	Kostenstelle              Kostenstelle   `json:Kostenstelle`
 	EmpfaengerAdr             Adresse        `json:EmpfaengerAdr`
+	Lagerbewegungen           string         `json:Lagerbewegungen`
 	Verrechnen                bool           `json:Verrechnen`
 	Steuercode                Steuercode     `json:Steuercode`
 	Verrechnet                bool           `json:Verrechnet`

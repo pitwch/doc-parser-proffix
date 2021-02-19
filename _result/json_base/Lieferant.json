@@ -67,6 +67,12 @@
    "Besonderes": " "
   },
   {
+   "Feld": "Name",
+   "Datentyp": "String (200)",
+   "NamePROFFIX": "Name",
+   "Besonderes": " "
+  },
+  {
    "Feld": "Einstandspreis",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "Einstandspreis",
@@ -127,6 +133,30 @@
    "Rueckgabewert": "HTTP 200Lieferant",
    "Beschreibung": "Gibt einen Lieferanten anhand der Lieferantennummer zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Lieferant",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Lieferanten an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Lieferant/{LieferantNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Lieferanten anhand der Lieferantennummer",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Lieferant/{LieferantNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Lieferanten anhand der Lieferantennummer",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Lieferant/{LieferantNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Lieferanten anhand der Lieferantennummer",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": null

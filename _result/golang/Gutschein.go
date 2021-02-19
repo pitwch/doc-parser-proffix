@@ -18,4 +18,9 @@ type Gutschein struct {
 	NurWebshop       bool        `json:NurWebshop`
 	Prozent          float64     `json:Prozent`
 	Waehrung         Waehrung    `json:Waehrung`
+	KeinRest         bool        `json:KeinRest`
+	RestBetrag       float64     `json:RestBetrag`
+	RestBuchungsart  Buchungsart `json:RestBuchungsart`
+	RestKonto        Konto       `json:RestKonto`
+	Teilbetrag       bool        `json:Teilbetrag`
 }

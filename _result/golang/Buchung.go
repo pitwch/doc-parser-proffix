@@ -14,10 +14,14 @@ type Buchung struct {
 	EsrPruefziffer                 string      `json:EsrPruefziffer`
 	Herkunft                       int         `json:Herkunft`
 	Buchungen                      string      `json:Buchungen`
+	Belege                         string      `json:Belege`
+	Belegstopp                     bool        `json:Belegstopp`
+	StopBemerkung                  string      `json:StopBemerkung`
 	BuchungszeileNr                int         `json:BuchungszeileNr`
 	Buchungsart                    Buchungsart `json:Buchungsart`
 	Auftrag                        Auftrag     `json:Auftrag`
 	Belegart                       Belegart    `json:Belegart`
+	Betraege                       string      `json:Betraege`
 	EsrNummer                      int         `json:EsrNummer`
 	EinzahlungName                 string      `json:EinzahlungName`
 	HabenKonto                     Konto       `json:HabenKonto`
@@ -36,4 +40,5 @@ type Buchung struct {
 	Zahlungsdatum                  string      `json:Zahlungsdatum`
 	IstSteuerbuchung               bool        `json:IstSteuerbuchung`
 	IstErfassteBuchung             bool        `json:IstErfassteBuchung`
+	Hauptbuchung                   int         `json:Hauptbuchung`
 }

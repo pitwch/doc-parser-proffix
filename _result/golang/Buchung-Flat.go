@@ -40,4 +40,9 @@ type BuchungFlat struct {
 	Buchungstext                   string       `json:Buchungstext`
 	Kostenart                      Kostenart    `json:Kostenart`
 	Kostenstelle                   Kostenstelle `json:Kostenstelle`
+	Belege                         string       `json:Belege`
+	Belegstopp                     bool         `json:Belegstopp`
+	StopBemerkung                  string       `json:StopBemerkung`
+	Hauptbuchung                   int          `json:Hauptbuchung`
+	IstErfassteBuchung             string       `json:IstErfassteBuchung`
 }

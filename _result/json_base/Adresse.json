@@ -8,7 +8,7 @@
   },
   {
    "Feld": "Name",
-   "Datentyp": "String (40)",
+   "Datentyp": "String (70)",
    "NamePROFFIX": "Name",
    "Besonderes": "Beinhaltet Firmenname bei Firmenadressen"
   },
@@ -20,7 +20,7 @@
   },
   {
    "Feld": "Strasse",
-   "Datentyp": "String (40)",
+   "Datentyp": "String (70)",
    "NamePROFFIX": "Strasse",
    "Besonderes": "optional"
   },
@@ -319,6 +319,228 @@
    "Besonderes": " "
   },
   {
+   "Feld": "GLN",
+   "Datentyp": "String(49)",
+   "NamePROFFIX": "EAN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DebitorenKondition",
+   "Datentyp": "Object\u003cKondition\u003e",
+   "NamePROFFIX": "DKondition",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DebitorenAuftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "DAuftragNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DebitorenKreditlimite",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "DKredLimite",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DebitorenMWSTID",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "DSteuerID",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DebitorenMWSTUID",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "DSteuerUID",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kleinmengenzuschlag",
+   "Datentyp": "Object\u003cZuschlag\u003e",
+   "NamePROFFIX": "ZuschlagAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ESRNummer",
+   "Datentyp": "Object\u003cESRNummer\u003e",
+   "NamePROFFIX": "ESRNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungssperre",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "BuchungsSperre",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Photo",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Photo",
+   "Besonderes": "Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+  },
+  {
+   "Feld": "LSV",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "LSV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DebitorenLieferart",
+   "Datentyp": "Object\u003cLieferart\u003e",
+   "NamePROFFIX": "LieferartPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenAufwandkonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KAufwandKto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenBuchungssperre",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KBuSperre",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KKoArt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKonditionen",
+   "Datentyp": "Object\u003cKondition\u003e",
+   "NamePROFFIX": "KKondition",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KKST",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKundenNrBeiLieferant",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KNummerLief",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenRabatt",
+   "Datentyp": "Number (7,8)",
+   "NamePROFFIX": "KRabatt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenSteuercodeVerwenden",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KreStCode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenMWSTIDNummer",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KSteuerID",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenUIDMWST",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KSteuerUID",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenWaehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "KWaehrung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenBelegVorErfassen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KVorerfassen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenEinkaufsSperre",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "EinkSperre",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenVerguetungsSperre",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "VergSperre",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenVerknuepfungMitBestellung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KBestellung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung1",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung2",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung3",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung4",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung5",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung6",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung6",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung7",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung7",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung8",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung8",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung9",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung9",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KreditorenKstAufteilung10",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "KKstAufteilung10",
+   "Besonderes": " "
+  },
+  {
    "Feld": "Parameter",
    "Datentyp": "Format",
    "NamePROFFIX": "Beschreibung",
@@ -341,7 +563,7 @@
   {
    "Endpunkt": "POST /ADR/Adresse",
    "Rueckgabewert": "HTTP 201",
-   "Beschreibung": "Legt eine neue Adresse an",
+   "Beschreibung": "Legt eine neue Adresse an *",
    "BenoetigteLizenz": "ADR"
   },
   {
@@ -368,6 +590,24 @@
    "Parameter": "geloescht",
    "Format": "String (yes, no, any)",
    "Beschreibung": "yes: Nur gelöschte Adressen werden ausgegebenno: Nur nicht gelöschte Adressen werden ausgegebenany: Alle Adressen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "umkreissuche",
+   "Format": "String (100)",
+   "Beschreibung": "Alle Adressen im Umkreis Radius eines Orts Längengrad/Breitengrad werden ausgegeben, muss im Format [Längengrad als Dezimalzahl (-180° - +180°)],[Breitengrad als Dezimalzahl (-90° - +90°)],[Radius in Metern] angegeben werden",
+   "VerhaltenOhneParameter": "Alle Adressen werden ausgegeben"
+  },
+  {
+   "Parameter": "suche",
+   "Format": "String (∞)",
+   "Beschreibung": "Suchfunktionalität über alle Adressen wie via Suchfeld in der PROFFIX Adressverwaltung",
+   "VerhaltenOhneParameter": "Alle Adressen werden ausgegeben"
+  },
+  {
+   "Parameter": "ohnevorgabe",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Adresse wird beim Speichern ohne PROFFIX-Vorgaben gespeichertno: Adresse wird beim Speichern mit PROFFIX-Vorgaben angereichert",
    "VerhaltenOhneParameter": "no"
   }
  ]

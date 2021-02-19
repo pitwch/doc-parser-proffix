@@ -11,6 +11,90 @@
    "Datentyp": "String (40)",
    "NamePROFFIX": "Bezeichnung",
    "Besonderes": " "
+  },
+  {
+   "Feld": "AuftragAlarm",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AuftragAlarm",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlarmFarbe",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "AlarmFarbe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlarmReihenfolge",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "AlarmReihenfolge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AnzeigenAls",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "AnzeigenAls",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Aufgabe",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Aufgabe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinkaufAlarm",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "EinkaufAlarm",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Erinnerung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "ErinnerungMin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Haupt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Haupt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kategorien",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Kategorien",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PrioritaetCRM",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PrioritaetCRM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Privat",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Privat",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StatusCRM",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "StatusCRM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Synchronisieren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Synchronisieren",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Termin",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Termin",
+   "Besonderes": " "
   }
  ],
  "Methods": [

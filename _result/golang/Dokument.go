@@ -152,6 +152,8 @@ type Dokument struct {
 	ZuschlagSteuercode              Steuercode      `json:ZuschlagSteuercode`
 	ZuschlagSW                      float64         `json:ZuschlagSW`
 	Positionen                      string          `json:Positionen`
+	Sprache                         Sprache         `json:Sprache`
+	DokumentpositionNr              int             `json:DokumentpositionNr`
 	PositionNr                      int             `json:PositionNr`
 	Artikel                         Artikel         `json:Artikel`
 	Auftrag                         Auftrag         `json:Auftrag`
@@ -163,6 +165,7 @@ type Dokument struct {
 	Bezeichnung5                    string          `json:Bezeichnung5`
 	Bild                            string          `json:Bild`
 	Dim2                            float64         `json:Dim2`
+	Lagerbewegungen                 string          `json:Lagerbewegungen`
 	Eingangsstempel                 string          `json:Eingangsstempel`
 	Lagereinheit                    Einheit         `json:Lagereinheit`
 	Rechnungseinheit                Einheit         `json:Rechnungseinheit`
@@ -206,8 +209,8 @@ type Dokument struct {
 	PreisdefinitionZusatzartikel    string          `json:PreisdefinitionZusatzartikel`
 	PreisFW                         float64         `json:PreisFW`
 	PreisSW                         float64         `json:PreisSW`
-	RabattSW                        float64         `json:RabattSW`
 	RabattFW                        float64         `json:RabattFW`
+	RabattProzent                   float64         `json:RabattProzent`
 	Rapport                         Rapport         `json:Rapport`
 	AutomatischRechnenVon           int             `json:AutomatischRechnenVon`
 	Rekapitulation                  bool            `json:Rekapitulation`
@@ -229,6 +232,7 @@ type Dokument struct {
 	Zusatzartikelreferenz           int             `json:Zusatzartikelreferenz`
 	Rechnen                         bool            `json:Rechnen`
 	GesamtrabattVerbuchungAufteilen bool            `json:GesamtrabattVerbuchungAufteilen`
+	DokumentVon                     Dokument        `json:DokumentVon`
 	BetragFW                        float64         `json:BetragFW`
 	BetragDW                        float64         `json:BetragDW`
 	BetragSW                        float64         `json:BetragSW`
@@ -241,6 +245,9 @@ type Dokument struct {
 	Konto                           Konto           `json:Konto`
 	Kurs                            float64         `json:Kurs`
 	Gutschein                       Gutschein       `json:Gutschein`
+	KeinRest                        bool            `json:KeinRest`
+	RestBuchungsart                 Buchungsart     `json:RestBuchungsart`
+	RestKonto                       Konto           `json:RestKonto`
 	BetragFW                        float64         `json:BetragFW`
 	BetragDW                        float64         `json:BetragDW`
 	BetragSW                        float64         `json:BetragSW`

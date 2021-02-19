@@ -79,6 +79,12 @@
    "Besonderes": "Der Datentyp \"Position\" wird weiter unten beschrieben"
   },
   {
+   "Feld": "Gesperrt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Gesperrt",
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden"
+  },
+  {
    "Feld": "PositionNr",
    "Datentyp": "Number (Int)",
    "NamePROFFIX": "PositionNrSRV",
@@ -258,79 +264,79 @@
    "Endpunkt": "GET /SRV/Serviceauftrag",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/{ServiceauftragNr}",
    "Rueckgabewert": "HTTP 200Serviceauftrag",
    "Beschreibung": "Gibt einen Serviceauftrag anhand der ServiceauftragNr zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/Auftrag/{AuftragNr}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der AuftragNr zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/Bezeichnung1/{Bezeichnung1}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der Bezeichnung1 zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/KonfigurationsID/{KonfigurationsID}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der KonfigurationsID zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/Kundenbestellreferenz/{Kundenbestellreferenz}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der Kundenbestellreferenz zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/Mitarbeiter/{MitarbeiterNr}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der MitarbeiterNr zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/Installation/{InstallationNr}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der InstallationsNr zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/AuftragProblem/{AuftragProblem}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand des AuftragProblem zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/ProduktNr/{ProduktNr}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der ProduktNr zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/Seriennummer/{Seriennummer)",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der Seriennummer zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/Standort/{StandortNr}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand der StandortNr zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /SRV/Serviceauftrag/Positionen/GeaendertAm/{GeaendertAm}",
    "Rueckgabewert": "HTTP 200Array\u003cServiceauftrag\u003e",
    "Beschreibung": "Gibt alle Serviceaufträge anhand GeaendertAm zurück",
-   "BenoetigteLizenz": "SRV"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "POST /SRV/Serviceauftrag",
@@ -363,6 +369,12 @@
    "Format": "String (\u003c, \u003e, \u003c=, \u003e=, ==, !=)",
    "Beschreibung": "Dieser Parameter gilt ausschliesslich für die Methode GET /SRV/Serviceauftrag/Positionen/GeaendertAm/{GeaendertAm} \u003c: Kleiner als\u003e: Grösser als\u003c=: Kleiner oder gleich als\u003e=: Grösser oder gleich als==: Gleich wie!=: Nicht gleich wie",
    "VerhaltenOhneParameter": "=="
+  },
+  {
+   "Parameter": "gesperrt",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gesperrte Serviceaufträge werden ausgegebenno: Nur nicht gesperrte Serviceaufträge werden ausgegebenany: Alle Serviceaufträge werden ausgegeben",
+   "VerhaltenOhneParameter": "any"
   }
  ]
 }

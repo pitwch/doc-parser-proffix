@@ -65,6 +65,24 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": " ",
    "Besonderes": "Ist true wenn es sich im ein Zusatzfeld handelt"
+  },
+  {
+   "Feld": "NichtKopieren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NoCopy",
+   "Besonderes": "Nur bei Zusatzfeld"
+  },
+  {
+   "Feld": "ZusatzfeldDatentyp",
+   "Datentyp": "String",
+   "NamePROFFIX": "ZColType",
+   "Besonderes": "Nur bei Zusatzfeld"
+  },
+  {
+   "Feld": "Pflicht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ColZwang",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -84,6 +102,12 @@
    "Endpunkt": "GET /PRO/Felddefinition/{Tabellenname}/{Feldname}",
    "Rueckgabewert": "HTTP 200Felddefinition",
    "Beschreibung": "Gibt eine Felddefinition zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Felddefinition/cacheloeschen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht den Cache der Felddefinitionen. Wird benötigt wenn ein Zusatzfeld nicht abgerufen werden kann, obwohl es existiert.",
    "BenoetigteLizenz": "keine"
   }
  ],

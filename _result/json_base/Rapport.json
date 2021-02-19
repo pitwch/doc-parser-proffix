@@ -193,6 +193,12 @@
    "Besonderes": "optional"
   },
   {
+   "Feld": "Spesen",
+   "Datentyp": "Array\u003cObject {•Spesenart : Spesenart•Betrag : Number (10,2)•Waehrung : Waehrung•Kurs : Number (10,6), wird beim Speichern von Währung übernommen•Text : String (∞), optional}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "max. 10 Einträge mit Spesenart oder 1 Eintrag ohne Spesenart,siehe Anmerkung unten,dieses Feld kann nicht gefiltert oder sortiert werden"
+  },
+  {
    "Feld": "PeriodeLohn",
    "Datentyp": "String (6)",
    "NamePROFFIX": "PeriodeLohn",
@@ -271,6 +277,12 @@
    "Besonderes": "optional, muss angegeben werden, wenn Artikel und Projekt ausgewählt wurde"
   },
   {
+   "Feld": "Lagerbewegungen",
+   "Datentyp": "Array\u003cObject {•Typ : Number (Int)•Charge : Charge•Menge : Number (10,4)•SerieNr : String (50)•Lagerort : Lagerort•Lagerplatz : Lagerplatz•Zusatz : Object {oLieferungAm : String (Date)oReservierenAb : String (Date)oUngueltigAb : String (Date)oBemerkungen : String (∞)}}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden Ab Version 3.7.0 werden Typ \u0026 Zusatz unterstützt: Typ:0: Lagerbewegung (Standard wenn nichts angegeben)1: Rückstand2: Reservation Zusatz: •kann nur bei Typ 1=Rückstand oder 2=Reservation mitgegeben werden"
+  },
+  {
    "Feld": "Verrechnen",
    "Datentyp": "Boolean",
    "NamePROFFIX": "Verrechnen",
@@ -324,13 +336,13 @@
    "Endpunkt": "GET /STU/Rapport",
    "Rueckgabewert": "HTTP 200Array\u003cRapport\u003e",
    "Beschreibung": "Gibt alle Rapporte zurück",
-   "BenoetigteLizenz": "STU"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /STU/Rapport/{RapportNr}",
    "Rueckgabewert": "HTTP 200Rapport",
    "Beschreibung": "Gibt ein Rapport anhand der Rapportnummer zurück",
-   "BenoetigteLizenz": "STU"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "POST /STU/Rapport",

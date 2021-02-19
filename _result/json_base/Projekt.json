@@ -23,6 +23,114 @@
    "Datentyp": "Array\u003cTeilleistung\u003e",
    "NamePROFFIX": " ",
    "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden"
+  },
+  {
+   "Feld": "Abrechnungsart",
+   "Datentyp": "Object\u003cAbrechnungsart\u003e",
+   "NamePROFFIX": "AbrechnungsartNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Archivierungsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "ArchDatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Archivierungsort",
+   "Datentyp": "String(40)",
+   "NamePROFFIX": "ArchOrt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftraggeber",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "Auftragsgeber",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gebaeudeart",
+   "Datentyp": "Object\u003cGebaeudeart\u003e",
+   "NamePROFFIX": "GebaeudeArtNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Intern",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Intern",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KontaktAuftragsgeber",
+   "Datentyp": "String(90)",
+   "NamePROFFIX": "KAuftragsgeber",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KontaktBauherr",
+   "Datentyp": "String(90)",
+   "NamePROFFIX": "KBauherr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KontaktRechnungsadresse",
+   "Datentyp": "String(90)",
+   "NamePROFFIX": "KRGAdresse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KontaktVersandadresse",
+   "Datentyp": "String(90)",
+   "NamePROFFIX": "KVAdresse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Projektstart",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Projektstart",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungsadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "RgAdresse",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Statusart",
+   "Datentyp": "Object\u003cStatusart\u003e",
+   "NamePROFFIX": "StatusArtNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Versandadresse",
+   "Datentyp": "Object\u003cAdresse",
+   "NamePROFFIX": "RgVersand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZurVerrechnungFreigeben",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Freigabe",
+   "Besonderes": " "
   }
  ],
  "Methods": [

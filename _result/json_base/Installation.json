@@ -204,13 +204,13 @@
    "Endpunkt": "GET /BAS/Installation",
    "Rueckgabewert": "HTTP 200Array\u003cInstallation\u003e",
    "Beschreibung": "Gibt alle Installationen zurück",
-   "BenoetigteLizenz": "BAS"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /BAS/Installation/{InstallationNr}",
    "Rueckgabewert": "HTTP 200Installation",
    "Beschreibung": "Gibt eine Installation anhand der InstallationNr zurück",
-   "BenoetigteLizenz": "BAS"
+   "BenoetigteLizenz": "keine"
   }
  ],
  "Parameter": [

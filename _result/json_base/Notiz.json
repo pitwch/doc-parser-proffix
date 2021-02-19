@@ -109,6 +109,30 @@
    "Rueckgabewert": "HTTP 200Notiz",
    "Beschreibung": "Gibt eine Notiz anhand der Notiznummer zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Notiz",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Notiz an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Notiz/{NotizNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Notiz anhand der NotizNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Notiz/{NotizNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Notiz anhand der NotizNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Notiz/{NotizNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Notiz anhand der NotizNr",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": null

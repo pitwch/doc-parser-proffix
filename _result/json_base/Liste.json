@@ -35,6 +35,30 @@
    "Datentyp": "Object\u003cDatenbank\u003e",
    "NamePROFFIX": "Datenbank",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Sortierungen",
+   "Datentyp": "Array\u003cObject {•Feldname : String•Bezeichnung : String•Standard : Boolean}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Selektionen",
+   "Datentyp": "Array\u003cObject {•Feldname : String•Bezeichnung : String•StandardWert : String•Operation : String•Feldtyp : String•Felddefinition : String•Zwingend : Boolean•Speichern : Boolean}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sortierungen",
+   "Datentyp": "Array\u003cObject {•Feldname : String•Absteigend : Boolean}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Selektionen",
+   "Datentyp": "Array\u003cObject {•Feldname : String•Wert : String•Operation : String}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -55,6 +79,102 @@
    "Rueckgabewert": "HTTP 201",
    "Beschreibung": "Generiert eine URL (im Location-Header) mit dem die Liste als Dokument abgerufen werden kannals Body mindestens ein leeres JSON Object senden = {}",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/Drucker/{DruckerNr}/drucken",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Druckt eine Liste mit angegebenem Drucker",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/Dokument/{DokumentNr}/zugferdgenerieren",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Generiert eine URL (im Location-Header) mit dem die Liste mit Zugferd als Dokument abgerufen werden kann",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/DMS/Dokument/{dokumentNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt vordefiniertes Auftragsdokument in DMS ab",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/DMS/Dokument/{dokumentNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt spezifisches Auftragsdokument in DMS ab",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/DMS/Bestellung/{bestellungNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt vordefiniertes Bestelldokument in DMS ab",
+   "BenoetigteLizenz": "EIN"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/DMS/Bestellung/{bestellungNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt spezifisches Bestelldokument in DMS ab",
+   "BenoetigteLizenz": "EIN"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/DMS/Rapport/{rapportdokumentNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt vordefiniertes Rapportdokument in DMS ab",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/DMS/Rapport/{rapportdokumentNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt spezifisches Rapportdokument in DMS ab",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/DMS/Serviceauftrag/{serviceauftragsdokumentNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt vordefiniertes Serviceauftragsdokument in DMS ab",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/DMS/Serviceauftrag/{serviceauftragsdokumentNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt spezifisches Serviceauftragsdokument in DMS ab",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/DMS/Aufgaben/{aufgabenNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt vordefiniertes Aufgabendokument in DMS ab",
+   "BenoetigteLizenz": "CRM"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/DMS/Aufgaben/{aufgabenNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt spezifisches Aufgabendokument in DMS ab",
+   "BenoetigteLizenz": "CRM"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/DMS/Lohnabrechnung/{lohnabrechnungNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt vordefiniertes Lohnabrechnungsdokument in DMS ab",
+   "BenoetigteLizenz": "LOH"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/DMS/Lohnabrechnung/{lohnabrechnungNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt spezifisches Lohnabrechnungsdokument in DMS ab",
+   "BenoetigteLizenz": "LOH"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/DMS/Buchung/{buchungNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt vordefiniertes Buchungsdokument in DMS ab",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "POST /PRO/Liste/{ListeNr}/DMS/Buchung/{buchungNr}/speichern",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt spezifisches Buchungsdokument in DMS ab",
+   "BenoetigteLizenz": "FIB"
   }
  ],
  "Parameter": [
@@ -63,6 +183,12 @@
    "Format": "String (pdf)",
    "Beschreibung": "pdf: Dokument wird im PDF-Format zurückgegeben",
    "VerhaltenOhneParameter": "pdf"
+  },
+  {
+   "Parameter": "anzahl",
+   "Format": "Number (Int)",
+   "Beschreibung": "Die Anzahl der Listen, die gedruckt werden sollen",
+   "VerhaltenOhneParameter": "1"
   }
  ]
 }

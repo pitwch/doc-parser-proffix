@@ -125,6 +125,12 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": " ",
    "Besonderes": "Datensatz ist gesperrt (also jünger als das Sperrdatum), nach diesem Feld kann nicht gefiltert werden"
+  },
+  {
+   "Feld": "Status",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Status",
+   "Besonderes": "-1 = Stunden0 = Stundenantrag (offen)"
   }
  ],
  "Methods": [
@@ -132,13 +138,13 @@
    "Endpunkt": "GET /ZEI/Stunden",
    "Rueckgabewert": "HTTP 200Array\u003cStunden\u003e",
    "Beschreibung": "Gibt alle Stunden zurück",
-   "BenoetigteLizenz": "ZEI"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /ZEI/Stunden/{StundenNr}",
    "Rueckgabewert": "HTTP 200Stunden",
    "Beschreibung": "Gibt ein Stundeneintrag anhand der Stundennummer zurück",
-   "BenoetigteLizenz": "ZEI"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "POST /ZEI/Stunden",
@@ -168,6 +174,12 @@
    "Endpunkt": "POST /ZEI/Stunden/zeitraumerfassen",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Legt mehrere Stundeneinträge an (siehe URL-Parameter)",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
+   "Endpunkt": "POST /ZEI/Stunden/Periode/{Periode}/abrechnen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löst die Stundenabrechnung aus",
    "BenoetigteLizenz": "ZEI"
   }
  ],
@@ -199,8 +211,8 @@
   {
    "Parameter": "mitarbeiter",
    "Format": "Number (int)",
-   "Beschreibung": "Gibt den Mitarbeiter für eine Zeitraumerfassung an",
-   "VerhaltenOhneParameter": "Eingeloggter Mitarbeiter"
+   "Beschreibung": "Gibt den Mitarbeiter für eine Zeitraumerfassung oder Stundenabrechnung an",
+   "VerhaltenOhneParameter": "Eingeloggter Mitarbeiter (bei Zeitraumerfassung)"
   },
   {
    "Parameter": "stundenart",

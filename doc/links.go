@@ -13,9 +13,7 @@ func GetDocLinks() (doclinks []model.DocLink) {
 	// On every a element which has href attribute call callback
 	c.OnHTML("a", func(e *colly.HTMLElement) {
 		link := e.Attr("href")
-
-		fullLink := "https://www.proffix.net/Portals/0/content/REST%20API/export/" + link
-
+		fullLink := "https://www.proffix.net/Portals/0/content/REST%20API/" + link
 		// Print link
 		if strings.HasSuffix(link, "html") {
 			doclinks = append(doclinks, model.DocLink{
@@ -32,7 +30,11 @@ func GetDocLinks() (doclinks []model.DocLink) {
 		log.Printf("Visiting %v", r.URL.String())
 	})
 
-	c.Visit("https://www.proffix.net/Portals/0/content/REST%20API/export/proffix_rest_api_entwicklerhandbuch_content.html")
+	err := c.Visit("https://www.proffix.net/Portals/0/content/REST%20API/proffix_rest_api_entwicklerhandbuch_content.html")
 
+	if err != nil {
+		log.Print(err)
+	}
+	log.Print(doclinks)
 	return doclinks
 }

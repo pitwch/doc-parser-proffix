@@ -19,6 +19,192 @@
    "Besonderes": " "
   },
   {
+   "Feld": "ArtikeldokumenteDrucken",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ArtikelDok",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Aktivitaet",
+   "Datentyp": "Object\u003cAufgabe\u003e",
+   "NamePROFFIX": "AufgabenNrCRM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AuftragEroeffnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AutoAuftrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AutomatischInstallieren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AutoBasis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AutomatischReservieren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AutoRes",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AutomatischZahlen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AutoZahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegart",
+   "Datentyp": "Object\u003cBelegart\u003e",
+   "NamePROFFIX": "BelegartPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungsart",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": "BuArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BuchungsartZahlung",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": "BuArtZahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstDebitorenbuchung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Debitorenbuchung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Hauptdokumenttyp",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Haupt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KontoZahlung",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "KontoZahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerabtrag",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Lagerabtrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste1",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste2",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste3",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste4",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste5",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste6",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste6",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste7",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste7",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste8",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste8",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste9",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste9",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liste10",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Liste10",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Negativ",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Negativ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RapportSpeichern",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Rapport",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Reihenfolge",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Reihenfolge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AktivitaetAnzeigen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ShowAktivitaet",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "FormularauswahlAnzeigen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ShowDialog",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZahlungSperren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "SperrZahlung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstTeilrechnung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Teilrechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Text",
+   "Datentyp": "Object\u003cText\u003e",
+   "NamePROFFIX": "TextAUF",
+   "Besonderes": " "
+  },
+  {
    "Feld": "Parameter",
    "Datentyp": "Format",
    "NamePROFFIX": "Beschreibung",

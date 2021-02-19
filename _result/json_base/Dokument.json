@@ -352,7 +352,7 @@
    "Feld": "PortoMWStSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "PortoMWStSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus PortoMWStFW ermittelt, muss i.d.R. nicht angegeben werden, PortoMWStFW wird nicht aus PortoMWStSW ermittelt"
   },
   {
    "Feld": "PortoSteuercode",
@@ -364,7 +364,7 @@
    "Feld": "PortoSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "PortoSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus PortoFW ermittelt, muss i.d.R. nicht angegeben werden, PortoFW wird nicht aus PortoSW ermittelt"
   },
   {
    "Feld": "Postfach",
@@ -628,31 +628,31 @@
    "Feld": "SteuerSW1",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerSW1",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuerFW1 ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW1 wird nicht aus SteuerSW1 ermittelt"
   },
   {
    "Feld": "SteuerSW2",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerSW2",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuerFW2 ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW2 wird nicht aus SteuerSW2 ermittelt"
   },
   {
    "Feld": "SteuerSW3",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerSW3",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuerFW3 ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW3 wird nicht aus SteuerSW3 ermittelt"
   },
   {
    "Feld": "SteuerSW4",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerSW4",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuerFW4 ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW4 wird nicht aus SteuerSW4 ermittelt"
   },
   {
    "Feld": "SteuerSW5",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerSW5",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuerFW5 ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW5 wird nicht aus SteuerSW5 ermittelt"
   },
   {
    "Feld": "Steuertext1",
@@ -718,31 +718,31 @@
    "Feld": "SteuertotalSW1",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerTotalSW1",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuertotalFW1 ermittelt, muss i.d.R. nicht angegeben werden, SteuertotalFW1 wird nicht aus SteuertotalSW1 ermittelt"
   },
   {
    "Feld": "SteuertotalSW2",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerTotalSW2",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuertotalFW2 ermittelt, muss i.d.R. nicht angegeben werden, SteuertotalFW2 wird nicht aus SteuertotalSW2 ermittelt"
   },
   {
    "Feld": "SteuertotalSW3",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerTotalSW3",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuertotalFW3 ermittelt, muss i.d.R. nicht angegeben werden, SteuertotalFW3 wird nicht aus SteuertotalSW3 ermittelt"
   },
   {
    "Feld": "SteuertotalSW4",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerTotalSW4",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuertotalFW4 ermittelt, muss i.d.R. nicht angegeben werden, SteuertotalFW4 wird nicht aus SteuertotalSW4 ermittelt"
   },
   {
    "Feld": "SteuertotalSW5",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerTotalSW5",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuertotalFW5 ermittelt, muss i.d.R. nicht angegeben werden, SteuertotalFW5 wird nicht aus SteuertotalSW5 ermittelt"
   },
   {
    "Feld": "Strasse",
@@ -760,7 +760,7 @@
    "Feld": "SubtotaldifferenzSW",
    "Datentyp": "Number (18,4)",
    "NamePROFFIX": "SubtotalDifferenzSw",
-   "Besonderes": " "
+   "Besonderes": "wird aus SubtotaldifferenzFW ermittelt, muss i.d.R. nicht angegeben werden, SubtotaldifferenzFW wird nicht aus SubtotaldifferenzSW ermittelt"
   },
   {
    "Feld": "TotalEinkaufspreisFW",
@@ -772,7 +772,7 @@
    "Feld": "TotalEinkaufspreisSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "TotalEPSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus TotalEinkaufspreisFW ermittelt, muss i.d.R. nicht angegeben werden, TotalEinkaufspreisFW wird nicht aus TotalEinkaufspreisSW ermittelt"
   },
   {
    "Feld": "TotalFW",
@@ -802,7 +802,7 @@
    "Feld": "TotalSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "TotalSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus TotalFW ermittelt, muss i.d.R. nicht angegeben werden, TotalFW wird nicht aus TotalSW ermittelt"
   },
   {
    "Feld": "UnserZeichen",
@@ -898,12 +898,24 @@
    "Feld": "ZuschlagSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "ZuschlagSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus ZuschlagFW ermittelt, muss i.d.R. nicht angegeben werden, ZuschlagFW wird nicht aus ZuschlagSW ermittelt"
   },
   {
    "Feld": "Positionen",
    "Datentyp": "Array\u003cPosition\u003e",
    "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentpositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
    "Besonderes": " "
   },
   {
@@ -934,7 +946,7 @@
    "Feld": "Bezeichnung1",
    "Datentyp": "String (100)",
    "NamePROFFIX": "Bezeichnung1",
-   "Besonderes": " "
+   "Besonderes": "dieses Feld kann nur für die Positionstypen 1, 2, 10, 12 \u0026 13 verwendet werden"
   },
   {
    "Feld": "Bezeichnung2",
@@ -973,6 +985,12 @@
    "Besonderes": " "
   },
   {
+   "Feld": "Lagerbewegungen",
+   "Datentyp": "Array\u003cObject {•Typ : Number (Int)•Charge : Charge•Menge : Number (10,4)•SerieNr : String (50)•Lagerort : Lagerort•Lagerplatz : Lagerplatz•Zusatz : Object {oLieferungAm : String (Date)oReservierenAb : String (Date)oUngueltigAb : String (Date)oBemerkungen : String (∞)}}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden Ab Version 3.7.0 werden Typ \u0026 Zusatz unterstützt: Typ:0: Lagerbewegung (Standard wenn nichts angegeben)1: Rückstand2: Reservation Zusatz: •kann nur bei Typ 1=Rückstand oder 2=Reservation mitgegeben werden•Reservationen und Rückstände sind writeonly•Reservationen und Rückstände können bei einer Umwandlung nicht mitgegeben werden"
+  },
+  {
    "Feld": "Eingangsstempel",
    "Datentyp": "String (250)",
    "NamePROFFIX": "Eingangsstempel",
@@ -1000,7 +1018,7 @@
    "Feld": "EinkaufspreisSW",
    "Datentyp": "Number (16,4)",
    "NamePROFFIX": "EinkaufSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus EinkaufspreisFW ermittelt, muss i.d.R. nicht angegeben werden, EinkaufspreisFW wird nicht aus EinkaufspreisSW ermittelt"
   },
   {
    "Feld": "Ertragskonto",
@@ -1198,7 +1216,7 @@
    "Feld": "Positionstyp",
    "Datentyp": "Number (Int)",
    "NamePROFFIX": "Positionsart",
-   "Besonderes": "Mögliche Werte sind:1 = Artikel2 = Freie Position3 = Text4 = Gesamtrabatt5 = Subtotal6 = Subtotal (danach auf 0 setzen)7 = Seitenumbruch8 = Teilrechnung (Dokumenttyp = RG)9 = Teilrechnung (Dokumenttyp = TR)10 = Occasions-Objekt11 = Bild12 = Gutschein (Gutschein != NULL)13 = Rapport (Positionsart != NULL) "
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden Mögliche Werte sind:1 = Artikel2 = Freie Position3 = Text4 = Gesamtrabatt5 = Subtotal6 = Subtotal (danach auf 0 setzen)7 = Seitenumbruch8 = Teilrechnung (Dokumenttyp = RG)9 = Teilrechnung (Dokumenttyp = TR)10 = Occasions-Objekt11 = Bild12 = Gutschein (Gutschein != NULL)13 = Rapport (Positionsart != NULL)"
   },
   {
    "Feld": "Preisdefinition",
@@ -1228,18 +1246,18 @@
    "Feld": "PreisSW",
    "Datentyp": "Number (16,4)",
    "NamePROFFIX": "PreisSW",
-   "Besonderes": " "
-  },
-  {
-   "Feld": "RabattSW",
-   "Datentyp": "Number (10,2)",
-   "NamePROFFIX": "Rabatt",
-   "Besonderes": " "
+   "Besonderes": "wird aus PreisFW ermittelt, muss i.d.R. nicht angegeben werden, PreisFW wird nicht aus PreisSW ermittelt"
   },
   {
    "Feld": "RabattFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "RabattFw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RabattProzent",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Rabatt",
    "Besonderes": " "
   },
   {
@@ -1288,7 +1306,7 @@
    "Feld": "SteuerSW",
    "Datentyp": "Number (22,8)",
    "NamePROFFIX": "SteuerSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuerFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW wird nicht aus SteuerSW ermittelt"
   },
   {
    "Feld": "Stuecklistenkopf",
@@ -1324,7 +1342,7 @@
    "Feld": "TotalInklusivSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "TotalInklSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus SteuerFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW wird nicht aus SteuerSW ermittelt"
   },
   {
    "Feld": "TotalOptional",
@@ -1336,7 +1354,7 @@
    "Feld": "TotalSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "TotalSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus TotalFW ermittelt, muss i.d.R. nicht angegeben werden, TotalFW wird nicht aus TotalSW ermittelt"
   },
   {
    "Feld": "Verpackungen",
@@ -1360,12 +1378,18 @@
    "Feld": "Rechnen",
    "Datentyp": "Boolean",
    "NamePROFFIX": " ",
-   "Besonderes": "GesamtrabettAutomatischRechnen / Subtotal von Anfang an rechnen"
+   "Besonderes": "GesamtrabattAutomatischRechnen / Subtotal von Anfang an rechnen"
   },
   {
    "Feld": "GesamtrabattVerbuchungAufteilen",
    "Datentyp": "Boolean",
    "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentVon",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokumentNrVon",
    "Besonderes": " "
   },
   {
@@ -1384,7 +1408,7 @@
    "Feld": "BetragSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "BetragSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus BetragFW ermittelt, muss i.d.R. nicht angegeben werden, BetragFW wird nicht aus BetragSW ermittelt"
   },
   {
    "Feld": "Buchung",
@@ -1441,6 +1465,24 @@
    "Besonderes": " "
   },
   {
+   "Feld": "KeinRest",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeinRest",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RestBuchungsart",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": "RestBuArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RestKonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "RestKontoNrFIB",
+   "Besonderes": " "
+  },
+  {
    "Feld": "BetragFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "Betrag",
@@ -1456,7 +1498,7 @@
    "Feld": "BetragSW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "BetragSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus BetragFW ermittelt, muss i.d.R. nicht angegeben werden, BetragFW wird nicht aus BetragSW ermittelt"
   },
   {
    "Feld": "Buchung",
@@ -1536,18 +1578,18 @@
    "Endpunkt": "GET /AUF/Dokument",
    "Rueckgabewert": "HTTP 200Array\u003cDokument\u003e",
    "Beschreibung": "Gibt alle Dokumente zurück",
-   "BenoetigteLizenz": "AUF"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /AUF/Dokument/{DokumentNr}",
    "Rueckgabewert": "HTTP 200Dokument",
    "Beschreibung": "Gibt ein Dokument anhand der DokumentNr zurück",
-   "BenoetigteLizenz": "AUF"
+   "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "POST /AUF/Dokument",
-   "Rueckgabewert": "HTTP 201",
-   "Beschreibung": "Legt ein neues Dokument an",
+   "Rueckgabewert": "HTTP 201Dokument",
+   "Beschreibung": "Legt ein neues Dokument an und gibt es zurück",
    "BenoetigteLizenz": "AUF"
   },
   {
@@ -1579,6 +1621,24 @@
    "Rueckgabewert": "HTTP 201",
    "Beschreibung": "Legt eine Teilrechnung (Dokument) an, welche mit dem Dokument mit der DokumentNr verknüpft ist",
    "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /AUF/Dokument/{DokumentNr}/entsperren",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Entsperrt ein Dokument anhand der DokumentNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /AUF/Dokument/{DokumentNr}/statusentfernen",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Entfernt den Dokumentstatus eines Dokuments anhand der DokumentNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /AUF/Dokument/sammelrechnungerstellen",
+   "Rueckgabewert": "HTTP 200Array\u003cSammelrechnungsdokumente\u003e",
+   "Beschreibung": "Erstellt eine Sammelrechnung",
+   "BenoetigteLizenz": "AUF"
   }
  ],
  "Parameter": [
@@ -1591,7 +1651,55 @@
   {
    "Parameter": "rueckstandBuchen",
    "Format": "String (no, auto)",
-   "Beschreibung": "no: Rückstände werden nicht gebuchtauto: Rückstände werden automatisch gebucht",
+   "Beschreibung": "no: Rückstände werden nicht gebuchtauto: Rückstände werden automatisch gebucht Dieser Parameter ist ausser Kraft, sobald Rückstände manuell mitgegeben werden.",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "keinDepot",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Beim Speichern werden die Depot-Positionen nicht hinzugefügtno: Beim Speichern werden die Depot-Positionen hinzugefügt",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "ohneNichtKopierenZusatzfelder",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Beim Abrufen werden die Zusatzfelder entfernt, die in der Zusatzfelddefinition \"NichtKopieren\" gesetzt habenno: Beim Abrufen werden alle Zusatzfelder zurückgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "nichtSpeichern",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Das Dokument wird nicht gespeichert. Hiermit kann die Dokumentberechnung (z.B. Total, Steuer, etc.) ausgeführt werden, um beispielsweise die Daten für eine Dokumentvorschau aufzubereiten.no: Das Dokument wird gespeichert",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "positionstyp",
+   "Format": "Number (Int)",
+   "Beschreibung": "Es wird nach Positionstyp gefiltert",
+   "VerhaltenOhneParameter": "Es wird nicht nach Positionstyp gefiltert"
+  },
+  {
+   "Parameter": "keinBestandPruefen",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Beim Schreiben oder umwandeln wird der Artikel-Bestand nicht geprüft, auch wenn Negativbestand deaktiviert ist. (benötigt für Kasse)no: Der Bestand des Artikels wird geprüft",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "kreditlimiteNichtPruefen",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Beim Schreiben oder umwandeln wird die Kreditlimite nicht geprüft, auch wenn diese überschritten ist.no: Die Kreditlimite wird geprüft",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "nurZusatzfelder",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Bei abgeschlossenen Dokumenten können Zusatzfelder noch geschrieben werdenno: Normales Verhalten",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "artikelZusatzfelderUebernehmen",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes:Wenn Zusatzfelder beim Artikel und in der Auftragsposition genau gleich heissen und auch den gleichen Datentyp haben, wird der Wert aus dem Artikel in die Auftragsposition übernommenno: Zusatzfelder werden nicht übernommen",
    "VerhaltenOhneParameter": "no"
   }
  ]

@@ -2,28 +2,94 @@
  "Fields": [
   {
    "Feld": "LagerortNr",
-   "Datentyp": "String (10)",
-   "NamePROFFIX": "LagerortLAG",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
    "Besonderes": " "
   },
   {
-   "Feld": "Bezeichnung",
-   "Datentyp": "String (40)",
-   "NamePROFFIX": "Bezeichnung",
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerOrtLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerplatz",
+   "Datentyp": "Object\u003cLagerplatz\u003e",
+   "NamePROFFIX": "LagerPlatzLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Einkauf",
+   "Datentyp": "Number (4,4)",
+   "NamePROFFIX": "Einkauf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Faktor",
+   "Datentyp": "Number (0,8)",
+   "NamePROFFIX": "Faktor",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "FaktorFix",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "FaktorFix",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis1",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis2",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis3",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis4",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis5",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
    "Besonderes": " "
   }
  ],
  "Methods": [
   {
-   "Endpunkt": "GET /LAG/Lagerort",
+   "Endpunkt": "GET /PRE/Lagerort",
    "Rueckgabewert": "HTTP 200Array\u003cLagerort\u003e",
    "Beschreibung": "Gibt alle Lagerorte zurück",
    "BenoetigteLizenz": "keine"
   },
   {
-   "Endpunkt": "GET /LAG/Lagerort/{LagerortNr}",
+   "Endpunkt": "GET /PRE/Lagerort/{LagerortNr}",
    "Rueckgabewert": "HTTP 200Lagerort",
-   "Beschreibung": "Gibt einen Lagerort anhand der Lagerortnummer zurück",
+   "Beschreibung": "Gibt einen Lagerort anhand der LagerortNr zurück",
    "BenoetigteLizenz": "keine"
   }
  ],

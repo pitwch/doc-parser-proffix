@@ -37,6 +37,30 @@
    "Rueckgabewert": "HTTP 200Artikelklasse",
    "Beschreibung": "Gibt eine Artikelklasse anhand der ArtikelklasseNr zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikelklasse",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Artikelklasse an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Artikelklasse/{ArtikelklasseNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Artikelklasse anhand der ArtikelklasseNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Artikelklasse/{ArtikelklasseNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Artikelklasse anhand der ArtikelklasseNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Artikelklasse/{ArtikelklasseNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Artikelklasse anhand der ArtikelklasseNr",
+   "BenoetigteLizenz": "LAG"
   }
  ],
  "Parameter": [

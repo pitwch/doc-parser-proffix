@@ -107,6 +107,12 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": "UmsatzJN",
    "Besonderes": "Wenn true wird diese Buchungsart zum Umsatz gerechnet"
+  },
+  {
+   "Feld": "BuchungsartenKonten",
+   "Datentyp": "Array\u003cObject {•HabenKonto : Konto•SollKonto : Konto•Hauptkonto : Boolean, Hauptkonto pro Währung}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "Diese Werte werden aus der Tabelle FIB_BuArtKonto ermittelt"
   }
  ],
  "Methods": [

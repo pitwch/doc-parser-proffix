@@ -47,6 +47,12 @@
    "Datentyp": "Boolean",
    "NamePROFFIX": "Inaktiv",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
   }
  ],
  "Methods": [

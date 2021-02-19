@@ -26,7 +26,7 @@
   },
   {
    "Feld": "Name",
-   "Datentyp": "String (40)",
+   "Datentyp": "String (70)",
    "NamePROFFIX": "Name",
    "Besonderes": " "
   },
@@ -38,7 +38,7 @@
   },
   {
    "Feld": "Strasse",
-   "Datentyp": "String (40)",
+   "Datentyp": "String (70)",
    "NamePROFFIX": "Strasse",
    "Besonderes": "optional"
   },
@@ -185,6 +185,30 @@
    "Datentyp": "String (80)",
    "NamePROFFIX": "Briefanrede",
    "Besonderes": " "
+  },
+  {
+   "Feld": "Abteilung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Abteilung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Funktion",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Funktion",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geburtsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GeburtsDatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Photo",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Photo",
+   "Besonderes": "Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
   }
  ],
  "Methods": [

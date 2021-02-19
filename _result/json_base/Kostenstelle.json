@@ -11,6 +11,48 @@
    "Datentyp": "String (80)",
    "NamePROFFIX": "Bezeichnung",
    "Besonderes": " "
+  },
+  {
+   "Feld": "BudgetCode",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "BudgetCode",
+   "Besonderes": "Dieser Schalter ist für das Budget. 0 = Jahr / 1 Monat / 2 Quartal / 3 Halbjahr"
+  },
+  {
+   "Feld": "Kostenstellengruppe",
+   "Datentyp": "Object\u003cKostenstellengruppe\u003e",
+   "NamePROFFIX": "KstGruppeFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstellenklasse",
+   "Datentyp": "Object\u003cKostenstellenklasse\u003e",
+   "NamePROFFIX": "KstKlasseFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstellenuntergruppe",
+   "Datentyp": "Object\u003cKostenstellenuntergruppe\u003e",
+   "NamePROFFIX": "KstUGruppeFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kumulation",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KummKst",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sperre",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Sperre",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verantwortlicher",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "Verant",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -25,6 +67,30 @@
    "Rueckgabewert": "HTTP 200Kostenstelle",
    "Beschreibung": "Gibt ein Kostenstelle anhand der Kostenstellennummer zurück",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /FIB/Kostenstelle",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Kostenstelle an",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "PUT /FIB/Kostenstelle/{KostenstelleNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Kostenstelle anhand der Kostenstellennummer",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "PATCH /FIB/Kostenstelle/{KostenstelleNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Kostenstelle anhand der Kostenstellennummer",
+   "BenoetigteLizenz": "FIB"
+  },
+  {
+   "Endpunkt": "DELETE /FIB/Kostenstelle/{KostenstelleNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Kostenstelle anhand der Kostenstellennummer",
+   "BenoetigteLizenz": "FIB"
   }
  ],
  "Parameter": null

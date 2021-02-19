@@ -107,6 +107,66 @@
    "Datentyp": "String (150)",
    "NamePROFFIX": "ADUser",
    "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "IstAdmin",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Admin",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "BemerkungenBenutzer",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "EmailAbsender",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "EmailAbsender",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "EmailAbsenderName",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "EmailAbsenderName",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "Lieferart",
+   "Datentyp": "Object\u003cLieferart\u003e",
+   "NamePROFFIX": "LieferartPRO",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Sprache",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar0 = deutsch, 1 = englisch, 2 = französisch, 3 = italienisch"
+  },
+  {
+   "Feld": "UnserZ",
+   "Datentyp": "String(50)",
+   "NamePROFFIX": "UnserZ",
+   "Besonderes": "aus der Tabelle PRO_Benutzer,ist nicht schreibbar"
+  },
+  {
+   "Feld": "IstBenutzer",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": "nach diesem Feld kann nicht gefiltert werden, URL Parameter verwenden"
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
   }
  ],
  "Methods": [
@@ -159,6 +219,12 @@
    "Format": "String (50)",
    "Beschreibung": "Es werden nur die Mitarbeiter mit der entsprechenden BadgeID zurückgegeben",
    "VerhaltenOhneParameter": "Alle Mitarbeiter werden zurückgegeben"
+  },
+  {
+   "Parameter": "istbenutzer",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur Mitarbeiter die einen Benutzer haben werden ausgegebenno:  Nur Mitarbeiter die keinen einen Benutzer haben werden ausgegebenany: Alle Mitarbeiter werden ausgegeben",
+   "VerhaltenOhneParameter": "any"
   }
  ]
 }

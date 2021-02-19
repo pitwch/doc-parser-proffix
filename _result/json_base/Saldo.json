@@ -4,7 +4,7 @@
    "Feld": "SaldoSW",
    "Datentyp": "Number (8,4)",
    "NamePROFFIX": "KtoSaldoSW",
-   "Besonderes": " "
+   "Besonderes": "wird aus SaldoFW ermittelt, muss i.d.R. nicht angegeben werden, SaldoFW wird nicht aus SaldoSW ermittelt"
   },
   {
    "Feld": "SaldoFW",

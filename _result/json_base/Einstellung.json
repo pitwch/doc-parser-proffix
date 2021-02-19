@@ -19,6 +19,12 @@
    "Rueckgabewert": "HTTP 200Einstellung",
    "Beschreibung": "Gibt eine einzelne Einstellung zurückModul bezieht sich auf den Modulnamen in PROFFIX (z.B. pxFibu, pxLager)",
    "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PUT /PRO/Einstellung/{Modul}/{Section}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Setzt einzelne Einstellung in PROFFIX (momentan nur für StdSperre verfügbar, das Datum muss im Format yyy-MM-dd übergeben werden)",
+   "BenoetigteLizenz": " "
   }
  ],
  "Parameter": [

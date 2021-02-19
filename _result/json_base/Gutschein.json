@@ -4,7 +4,7 @@
    "Feld": "GutscheinNr",
    "Datentyp": "String (30)",
    "NamePROFFIX": "GutscheinNrAUF",
-   "Besonderes": "Zwingend"
+   "Besonderes": " "
   },
   {
    "Feld": "Bezeichnung",
@@ -101,6 +101,36 @@
    "Datentyp": "Object\u003cWaehrung\u003e",
    "NamePROFFIX": "WaehrungPRO",
    "Besonderes": " "
+  },
+  {
+   "Feld": "KeinRest",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeinRest",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RestBetrag",
+   "Datentyp": "Number (6,2)",
+   "NamePROFFIX": "RestBetrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RestBuchungsart",
+   "Datentyp": "Object\u003cBuchungsart\u003e",
+   "NamePROFFIX": "RestBuArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RestKonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "RestKontoNrFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Teilbetrag",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Teilbetrag",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -138,6 +168,12 @@
    "Endpunkt": "DELETE /AUF/Gutschein/{GutscheinNr}",
    "Rueckgabewert": "HTTP 204",
    "Beschreibung": "Löscht einen Gutschein anhand der GutscheinNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /AUF/Gutschein/gutscheinnrgenerieren",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Generiert eine neue Gutscheinnummer, siehe GutscheinNr",
    "BenoetigteLizenz": "AUF"
   }
  ],

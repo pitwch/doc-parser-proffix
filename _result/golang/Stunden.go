@@ -22,4 +22,5 @@ type Stunden struct {
 	Kuerzung      bool        `json:Kuerzung`
 	KuerzungMonat bool        `json:KuerzungMonat`
 	Gesperrt      bool        `json:Gesperrt`
+	Status        int         `json:Status`
 }

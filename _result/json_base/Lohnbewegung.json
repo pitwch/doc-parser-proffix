@@ -61,6 +61,12 @@
    "Besonderes": " "
   },
   {
+   "Feld": "Buchungsbewegungen",
+   "Datentyp": "Array\u003cObject {•Sollkonto : Konto•Habenkonto : Konto•Kostenstelle : Kostenstelle•Kostenart : Kostenart•Prozent : Number (10,2), Wird auf 2 Nachkommastellen gerundet}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "1-10 Buchungsbewegungen"
+  },
+  {
    "Feld": "Menge",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "Menge",

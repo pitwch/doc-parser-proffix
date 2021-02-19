@@ -23,6 +23,72 @@
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "Vorgabezeit",
    "Besonderes": "Vorgabewert beim Erfassen neuer Stunden"
+  },
+  {
+   "Feld": "Stundenantrag",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Stundenantrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ferien",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Ferien",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstStundenPausen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StdPausen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstStundenKuerzungen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StdRegeln",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KeineStundenabrechnung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KeineStdAbrechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "InOutlookKalenderSpeichern",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Outlook",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LohnperiodePlus1",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "LohnperiodePlus",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lohnart",
+   "Datentyp": "Object\u003cLohnart\u003e",
+   "NamePROFFIX": "LohnartLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "FarbeKalender",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "FarbeKalender",
+   "Besonderes": " "
   }
  ],
  "Methods": [

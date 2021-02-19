@@ -19,4 +19,14 @@ type Mitarbeiter struct {
 	Funktion                       Funktion        `json:Funktion`
 	Sollstundenplan                Sollstundenplan `json:Sollstundenplan`
 	ADUser                         string          `json:ADUser`
+	IstAdmin                       bool            `json:IstAdmin`
+	BemerkungenBenutzer            string          `json:BemerkungenBenutzer`
+	EmailAbsender                  string          `json:EmailAbsender`
+	EmailAbsenderName              string          `json:EmailAbsenderName`
+	Lieferart                      Lieferart       `json:Lieferart`
+	Lagerort                       Lagerort        `json:Lagerort`
+	Sprache                        int             `json:Sprache`
+	UnserZ                         string          `json:UnserZ`
+	IstBenutzer                    bool            `json:IstBenutzer`
+	Parameter                      string          `json:Parameter`
 }

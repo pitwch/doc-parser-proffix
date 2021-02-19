@@ -19,4 +19,5 @@ type Buchungsart struct {
 	Steuercode               Steuercode  `json:Steuercode`
 	SteuerRueckbuchung       bool        `json:SteuerRueckbuchung`
 	UmsatzBuchung            bool        `json:UmsatzBuchung`
+	BuchungsartenKonten      bool        `json:BuchungsartenKonten`
 }
