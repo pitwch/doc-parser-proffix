@@ -1,0 +1,43 @@
+{
+ "Fields": [
+  {
+   "Feld": "PlanobjektstatusNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "StatusPlanobjekteNrRES",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Farbe",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Farbe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Fixiert",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Fixiert",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /RES/Planobjektstatus",
+   "Rueckgabewert": "HTTP 200Array\u003cPlanobjektstatus\u003e",
+   "Beschreibung": "Gibt alle Planobjektstatus zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /RES/Planobjektstatus/{PlanobjektstatusNr}",
+   "Rueckgabewert": "HTTP 200Planobjektstatus",
+   "Beschreibung": "Gibt einen Planobjektstatus anhand der PlanobjektstatusNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

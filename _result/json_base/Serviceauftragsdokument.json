@@ -1,0 +1,103 @@
+{
+ "Fields": [
+  {
+   "Feld": "ServiceauftragsdokumentNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "DokumentNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Serviceauftrag",
+   "Datentyp": "Object\u003cServiceauftrag\u003e",
+   "NamePROFFIX": "AuftragNrSRV",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "DateiNr",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "DateiName",
+   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumentgruppe",
+   "Datentyp": "String (240)",
+   "NamePROFFIX": "DokGruppe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Drucken",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Drucken",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Modul",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ServiceauftragspositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /SRV/Serviceauftragsdokument",
+   "Rueckgabewert": "HTTP 200Array\u003cServiceauftragsdokument\u003e",
+   "Beschreibung": "Gibt alle Serviceauftragsdokumente zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /SRV/Serviceauftragsdokument/{ServiceauftragsdokumentNr}",
+   "Rueckgabewert": "HTTP 200Serviceauftragsdokument",
+   "Beschreibung": "Gibt ein Serviceauftragsdokument anhand der ServiceauftragsdokumentNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /SRV/Serviceauftragsdokument",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Serviceauftragsdokument an",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
+   "Endpunkt": "PUT /SRV/Serviceauftragsdokument/{ServiceauftragsdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Serviceauftragsdokument anhand der ServiceauftragsdokumentNr",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
+   "Endpunkt": "PATCH /SRV/Serviceauftragsdokument/{ServiceauftragsdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Serviceauftragsdokument anhand der ServiceauftragsdokumentNr",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
+   "Endpunkt": "DELETE /SRV/Serviceauftragsdokument/{ServiceauftragsdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Serviceauftragsdokument anhand der ServiceauftragsdokumentNr",
+   "BenoetigteLizenz": "SRV"
+  }
+ ],
+ "Parameter": null
+}

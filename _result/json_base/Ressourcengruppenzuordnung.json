@@ -1,0 +1,37 @@
+{
+ "Fields": [
+  {
+   "Feld": "RessourcengruppenzuordnungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ressourcengruppe",
+   "Datentyp": "Object\u003cRessourcengruppe\u003e",
+   "NamePROFFIX": "RessourcenGrpRES",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Ressource",
+   "Datentyp": "Object\u003cRessource\u003e",
+   "NamePROFFIX": "RessourcenNrRES",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /RES/Ressourcengruppenzuordnung",
+   "Rueckgabewert": "HTTP 200Array\u003cRessourcengruppenzuordnung\u003e",
+   "Beschreibung": "Gibt alle Ressourcengruppenzuordnungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /RES/Ressourcengruppenzuordnung/{RessourcengruppenzuordnungNr}",
+   "Rueckgabewert": "HTTP 200Ressourcengruppenzuordnung",
+   "Beschreibung": "Gibt eine Ressourcengruppenzuordnung anhand der RessourcengruppenzuordnungNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "RessourcengruppeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RessourcenGrpRES",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /RES/Ressourcengruppe",
+   "Rueckgabewert": "HTTP 200Array\u003cRessourcengruppe\u003e",
+   "Beschreibung": "Gibt alle Ressourcengruppen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /RES/Ressourcengruppe/{RessourcengruppeNr}",
+   "Rueckgabewert": "HTTP 200Ressourcengruppe",
+   "Beschreibung": "Gibt eine Ressourcengruppe anhand der RessourcengruppeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

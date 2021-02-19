@@ -1,0 +1,194 @@
+{
+ "Fields": [
+  {
+   "Feld": "RueckstandReservationNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anzahl",
+   "Datentyp": "Number (4,4)",
+   "NamePROFFIX": "Anzahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel ",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkung",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BemerkungRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "BemerkungRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellmenge",
+   "Datentyp": "Number (4,4)",
+   "NamePROFFIX": "Bestellt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellung",
+   "Datentyp": "Object\u003cBestellung\u003e",
+   "NamePROFFIX": "BestellNrEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Charge",
+   "Datentyp": "Object\u003cCharge\u003e",
+   "NamePROFFIX": "ChargeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokument",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokumentNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentpositionNr",
+   "Datentyp": "Object\u003cDokumentposition\u003e",
+   "NamePROFFIX": "PositionNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ErstelltAm",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "ErstelltAm",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ErstelltVon",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "ErstelltVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GeaendertAm",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GeaendertAm",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GeaendertVon",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "GeaendertVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GtinStufe",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "GTIN-Stufe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerplatz",
+   "Datentyp": "Object\u003cLagerplatz\u003e",
+   "NamePROFFIX": "LagerplatzLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liefertermin",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Lieferung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (4,4)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ReservierenAb",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Reservieren",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Typ",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RTyp",
+   "Besonderes": "Reservation = 1Rueckstand = 2"
+  },
+  {
+   "Feld": "UngueltigAb",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Ungueltig",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verarbeitet",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Verarbeitet",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verpackungen",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Verpackungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Woche",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Woche",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /AUF/RueckstandReservation",
+   "Rueckgabewert": "HTTP 200Array\u003cRuekstandReservation\u003e",
+   "Beschreibung": "Gibt alle Rückstand Reservationen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /AUF/RueckstandReservation/{RueckstandReservationNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cRuekstandReservation\u003e",
+   "Beschreibung": "Gibt eine spezifische Rückstand Reservation zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /AUF/RueckstandReservation/liefern",
+   "Rueckgabewert": "HTTP 200RueckstandReservation",
+   "Beschreibung": "Erstellt ein Dokument und macht einen Lagerabtrag",
+   "BenoetigteLizenz": "AUF"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "verarbeitet",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur verarbeitete RückstandReservationen werden ausgegebenno: Nur nicht verarbeitete RückstandReservationen werden ausgegebenany: Alle RückstandReservationen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

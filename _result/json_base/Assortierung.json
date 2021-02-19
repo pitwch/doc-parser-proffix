@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "AssortierungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "AssortiertPRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Darf nicht leer sein"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Assortierung",
+   "Rueckgabewert": "HTTP 200Array\u003cAssortierung\u003e",
+   "Beschreibung": "Gibt alle Assortierungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Assortierung/{AssortierungNr}",
+   "Rueckgabewert": "HTTP 200Assortierung",
+   "Beschreibung": "Gibt eine Assortierung anhand der Assortierungsnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

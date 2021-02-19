@@ -1,0 +1,85 @@
+{
+ "Fields": [
+  {
+   "Feld": "ArtikelpreisNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelklasse",
+   "Datentyp": "Object\u003cArtikelklasse\u003e",
+   "NamePROFFIX": "GruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelgruppe",
+   "Datentyp": "Object\u003cArtikelgruppe\u003e",
+   "NamePROFFIX": "KlasseLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikeluntergruppe",
+   "Datentyp": "Object\u003cArtikeluntergruppe\u003e",
+   "NamePROFFIX": "UntergruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisliste",
+   "Datentyp": "Object\u003cPreisliste\u003e",
+   "NamePROFFIX": "PreislistePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis1",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis2",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis3",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis4",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis5",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkauf5",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Artikelpreis",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikelpreis\u003e",
+   "Beschreibung": "Gibt alle Artikelpreis zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Artikelpreis/{ArtikelpreisNr}",
+   "Rueckgabewert": "HTTP 200Artikelpreis",
+   "Beschreibung": "Gibt einen Artikelpreis anhand der ArtikelpreisNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,0 +1,43 @@
+{
+ "Fields": [
+  {
+   "Feld": "FeiertagNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String(40)",
+   "NamePROFFIX": "Ort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Stunden",
+   "Datentyp": "Number(6,2)",
+   "NamePROFFIX": "Stunden",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Feiertag",
+   "Rueckgabewert": "HTTP 200Array\u003cFeiertag\u003e",
+   "Beschreibung": "Gibt alle Feiertage zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Feiertag/{FeiertagNr}",
+   "Rueckgabewert": "HTTP 200Feiertag",
+   "Beschreibung": "Gibt eine Feiertag anhand der FeiertagNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,0 +1,43 @@
+{
+ "Fields": [
+  {
+   "Feld": "SteuercodeTextNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/SteuercodeText",
+   "Rueckgabewert": "HTTP 200Array\u003cSteuercodeText\u003e",
+   "Beschreibung": "Gibt alle SteuercodeTexte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/SteuercodeText/{SteuercodeTextNr}",
+   "Rueckgabewert": "HTTP 200SteuercodeText",
+   "Beschreibung": "Gibt einen SteuercodeText anhand der SteuercodeTextnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

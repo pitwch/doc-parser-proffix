@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "KostenstellenklasseNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "KstKlasseFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/Kostenstellenklasse",
+   "Rueckgabewert": "HTTP 200Array\u003cKostenstellenklasse\u003e",
+   "Beschreibung": "Gibt alle Kostenstellenklassen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /FIB/Kostenstellenklasse/{KostenstellenklasseNr}",
+   "Rueckgabewert": "HTTP 200Kostenstellenklasse",
+   "Beschreibung": "Gibt eine Kostenstellenklasse anhand der Kostenstellenklassennummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

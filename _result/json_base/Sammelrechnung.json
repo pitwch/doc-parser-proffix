@@ -1,0 +1,109 @@
+{
+ "Fields": [
+  {
+   "Feld": "Dokumente",
+   "Datentyp": "Array\u003cNumber (Int)\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "Die Dokumentnummern der zu verrechnenden Lieferscheine Die Dokumente müssen aktuell sein und mindestens einen Lieferschein enthalten. Neben einem Lieferschein können auch Teilrechnungen verwendet werden. Die Beträge der Teilrechnungen dürfen allerdings die Beträge der Lieferscheine nicht überschreiten. Beispiele: GET /AUF/Dokument?fields=DokumentNr\u0026aktuell=yes\u0026filter=Dokumenttyp=='LS',Datum\u003e=d'2019-01-01',Datum\u003c=d'2020-01-01'GET /AUF/Dokument?fields=DokumentNr\u0026aktuell=yes\u0026filter=Dokumenttyp=='LS',Adresse==1GET /AUF/Dokument?fields=DokumentNr\u0026aktuell=yes\u0026filter=Dokumenttyp=='LS',Auftrag=='1'GET /AUF/Dokument?fields=DokumentNr\u0026aktuell=yes\u0026filter=Dokumenttyp=='LS',Dokumentstatus=='E'"
+  },
+  {
+   "Feld": "Dokumenttyp",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "UnserZeichen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Referenztext",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kondition",
+   "Datentyp": "Object\u003cKondition\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinzelnVerrechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AuftragNrNichtBeruecksichtigen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AktivitaetenAufErledigtSetzen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RechnungsadressenZusammenfuehren",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "FusstextUebernehmen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Startdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferschein",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "Der verrechnete Lieferschein"
+  },
+  {
+   "Feld": "Rechnung",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "Die Rechnung, in welcher der Lieferschein verrechnet wurde"
+  },
+  {
+   "Feld": "Fehler",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": " ",
+   "Besonderes": "Enthält nur eine Meldung, wenn keine Rechnung für diesen Lieferschein erstellt werden konnte"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "POST /AUF/Dokument/sammelrechnungerstellen",
+   "Rueckgabewert": "HTTP 200Array\u003cSammelrechnungsdokumente\u003e",
+   "Beschreibung": "Erstellt eine Sammelrechnung",
+   "BenoetigteLizenz": "AUF"
+  }
+ ],
+ "Parameter": null
+}

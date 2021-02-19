@@ -1,0 +1,133 @@
+{
+ "Fields": [
+  {
+   "Feld": "AuftragNotizNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlarmDatumBis",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "AlarmDatumBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlarmDatumVon",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "AlarmDatumVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AuftragNotizArt",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "AufNotizArtPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AuftragNr",
+   "Datentyp": "String (25)",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ErstelltAm",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "ErstelltAm",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ErstelltVon",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "ErstelltVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Exportiert",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Exportiert",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geaendert",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Geaendert",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GeaendertAm",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "GeaendertAm",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GeaendertVon",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "GeaendertVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ImportNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "ImportNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KontaktNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "KontaktNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MitarbeiterNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Notiz",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Notiz",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NotizRTF",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "NotizRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OutlookID",
+   "Datentyp": "String (240)",
+   "NamePROFFIX": "OutlookID",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Termin",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Termin",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/AuftragNotiz",
+   "Rueckgabewert": "HTTP 200Array\u003cAuftragNotiz\u003e",
+   "Beschreibung": "Gibt alle AuftragNotizen zurück",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "GET /PRO/AuftragNotiz/{AuftragNotizNr}",
+   "Rueckgabewert": "HTTP 200AuftragNotiz",
+   "Beschreibung": "Gibt eine AuftragNotiz anhand der AuftragNotizNr zurück",
+   "BenoetigteLizenz": "AUF"
+  }
+ ],
+ "Parameter": null
+}

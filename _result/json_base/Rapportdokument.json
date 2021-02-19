@@ -1,0 +1,91 @@
+{
+ "Fields": [
+  {
+   "Feld": "RapportdokumentNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "DokNrRapport",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rapport",
+   "Datentyp": "Object\u003cRapport\u003e",
+   "NamePROFFIX": "RapportNrSTU",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "DateiNr",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "DateiName",
+   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumentgruppe",
+   "Datentyp": "String (240)",
+   "NamePROFFIX": "DokGruppe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Modul",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Rapportdokument",
+   "Rueckgabewert": "HTTP 200Array\u003cRapportdokument\u003e",
+   "Beschreibung": "Gibt alle Rapportdokumente zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Rapportdokument/{RapportdokumentNr}",
+   "Rueckgabewert": "HTTP 200Rapportdokument",
+   "Beschreibung": "Gibt ein Rapportdokument anhand der RapportdokumentNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /STU/Rapportdokument",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Rapportdokument an",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "PUT /STU/Rapportdokument/{RapportdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Rapportdokument anhand der RapportdokumentNr",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "PATCH /STU/Rapportdokument/{RapportdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Rapportdokument anhand der RapportdokumentNr",
+   "BenoetigteLizenz": "STU"
+  },
+  {
+   "Endpunkt": "DELETE /STU/Rapportdokument/{RapportdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Rapportdokument anhand der RapportdokumentNr",
+   "BenoetigteLizenz": "STU"
+  }
+ ],
+ "Parameter": null
+}

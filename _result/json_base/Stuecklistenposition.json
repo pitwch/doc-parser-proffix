@@ -1,0 +1,97 @@
+{
+ "Fields": [
+  {
+   "Feld": "StuecklistenpositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BemerkungenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "BemerkungRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerabtrag",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Lagerabtrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NichtAnzeigen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NichtAnzeigen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NichtBestellen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NichtBestellen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisUebernehmen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Preis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisSW",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "PreisSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StuecklisteArtikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "StlNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anzahl",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Anzahl",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Stuecklistenposition",
+   "Rueckgabewert": "HTTP 200Array\u003cStuecklistenpostion\u003e",
+   "Beschreibung": "Gibt alle Stuecklistenpositionen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Stuecklistenposition/{StuecklistenpositionNr}",
+   "Rueckgabewert": "HTTP 200Stuecklistenposition",
+   "Beschreibung": "Gibt eine Stuecklistenposition anhand der Stuecklistennummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

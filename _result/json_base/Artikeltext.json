@@ -1,0 +1,91 @@
+{
+ "Fields": [
+  {
+   "Feld": "ArtikeltextNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": "Zwingend"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Artikeltext",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikeltext\u003e",
+   "Beschreibung": "Gibt alle Artikeltexte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikeltext/{ArtikeltextNr}",
+   "Rueckgabewert": "HTTP 200Artikeltext",
+   "Beschreibung": "Gibt einen Artikeltext anhand der ArtikeltextNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikeltext",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Artikeltext an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Artikeltext/{ArtikeltextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Artikeltext anhand der ArtikeltextNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Artikeltext/{ArtikeltextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Artikeltext anhand der ArtikeltextNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Artikeltext/{ArtikeltextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Artikeltext anhand der ArtikeltextNr",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": null
+}

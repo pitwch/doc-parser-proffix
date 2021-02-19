@@ -1,0 +1,19 @@
+{
+ "Fields": [
+  {
+   "Feld": "GutscheinNr",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "POST /AUF/Gutschein/gutscheinnrgenerieren",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Generiert eine neue Gutscheinnummer",
+   "BenoetigteLizenz": "AUF"
+  }
+ ],
+ "Parameter": null
+}

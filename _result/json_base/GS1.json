@@ -1,0 +1,86 @@
+{
+ "Fields": [
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Feld  ",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "Feld  ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Feldtyp",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Feldtyp",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gs1SatzLAG",
+   "Datentyp": "String (25)",
+   "NamePROFFIX": "Gs1SatzLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gtin",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Gtin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WertNummer",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "WertNummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WertString",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "WertString",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WertStringIT",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "WertStringIT",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WertStringFR",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "WertStringFR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "WertStringEN",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "WertStringEN",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/GS1",
+   "Rueckgabewert": "HTTP 200Array\u003cGS1\u003e",
+   "Beschreibung": "Gibt alle GS1-Werte zurück",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "GET /LAG/GS1/{gs1Nr}",
+   "Rueckgabewert": "HTTP 200GS1",
+   "Beschreibung": "Gibt einen GS1-Wert anhand der GS1Nr zurück",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "gs1Nr",
+   "Format": "Number (int)",
+   "Beschreibung": "LaufNr",
+   "VerhaltenOhneParameter": " "
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "Fields": [
+  {
+   "Feld": "DokumentverknuepfungNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentAktuell",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokNrAktuell",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumenttypAktuell",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": "DokTypAktuell",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokument",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokumentNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumenttyp",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": "DokTypAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentSchlussrechnung",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "SchlussDokNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumenttypSchlussrechnung",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": "SchlussDokTyp",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentLieferscheinSammelrechnung",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokNrSammLS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DokumentRechnungSammelrechnung",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokNrSammRG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /AUF/Dokumentverknuepfung",
+   "Rueckgabewert": "HTTP 200Array\u003cDokumentverknuepfung\u003e",
+   "Beschreibung": "Gibt alle Dokumentverknuepfung zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /AUF/Dokumentverknuepfung/{DokumentverknuepfungNr}",
+   "Rueckgabewert": "HTTP 200Dokumentverknuepfung",
+   "Beschreibung": "Gibt eine Dokumentverknuepfung anhand der DokumentverknuepfungNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "inaktiv",
+   "Format": "String",
+   "Beschreibung": " ",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

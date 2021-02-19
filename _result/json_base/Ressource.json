@@ -1,0 +1,170 @@
+{
+ "Fields": [
+  {
+   "Feld": "RessourceNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RessourcenNrRES",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anzahl",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Anzahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Aufgabe",
+   "Datentyp": "Object\u003cAufgabe\u003e",
+   "NamePROFFIX": "AufgabenNrCRM",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Einheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ertragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Ertragskonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Eskalation",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Eskalation",
+   "Besonderes": "in Minuten"
+  },
+  {
+   "Feld": "Planobjektfarbe",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "FarbePlanobjekte",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Geloescht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mindestdauer",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Mindestdauer",
+   "Besonderes": "in Minuten"
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Nachlaufzeit",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Nachlaufzeit",
+   "Besonderes": "in Minuten"
+  },
+  {
+   "Feld": "Installation",
+   "Datentyp": "Object\u003cInstallation\u003e",
+   "NamePROFFIX": "PosNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preiseinheit",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "PreisEinheit",
+   "Besonderes": "Zahl + n (Minuten), h (Stunden), d (Tage), m (Monate), y (Jahre), z.B. 3n oder 10h"
+  },
+  {
+   "Feld": "PreisFW",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "PreisFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisSW",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "PreisSW",
+   "Besonderes": "wird aus PreisFW ermittelt, muss i.d.R. nicht angegeben werden, PreisFW wird nicht aus PreisSW ermittelt"
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verrechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Verrechnen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vorlaufzeit",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Vorlaufzeit",
+   "Besonderes": "in Minuten"
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /RES/Ressource",
+   "Rueckgabewert": "HTTP 200Array\u003cRessource\u003e",
+   "Beschreibung": "Gibt alle Ressourcen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /RES/Ressource/{RessourceNr}",
+   "Rueckgabewert": "HTTP 200Ressource",
+   "Beschreibung": "Gibt eine Ressource anhand der RessourceNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Ressourcen werden ausgegebenno: Nur nicht gelöschte Ressourcen werden ausgegebenany: Alle Ressourcen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

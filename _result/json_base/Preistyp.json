@@ -1,0 +1,86 @@
+{
+ "Fields": [
+  {
+   "Feld": "PreistypNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PreisTypPRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikeltyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "ArtikelTyp",
+   "Besonderes": "0 = Alle 1 = Artikel 2 = Klasse3 = Gruppe4 = Untergruppe"
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Darf nicht leer sein"
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Inaktiv",
+   "Besonderes": "Kann nicht gefiltert werden, URL-Parameter verwenden"
+  },
+  {
+   "Feld": "Kundentyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "KundenTyp",
+   "Besonderes": "0 = Alle1 = Adresse2 = Preisklasse3 = Preisgruppe4 = Auftrag-Nr."
+  },
+  {
+   "Feld": "Lager",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Lager",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Nullen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Nullen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Reihenfolge",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Reihenfolge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ShopPreis",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ShopPreis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZPreise",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ZPreise",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Preistyp",
+   "Rueckgabewert": "HTTP 200Array\u003cPreistyp\u003e",
+   "Beschreibung": "Gibt alle Preistypen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Preistyp/{PreistypNr}",
+   "Rueckgabewert": "HTTP 200Preistyp",
+   "Beschreibung": "Gibt einen Preistyp anhand der Preistypnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "geloescht",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur gelöschte Preistypen werden ausgegebenno: Nur nicht gelöschte Preistypen werden ausgegebenany: Alle Preistypen werden ausgegeben",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

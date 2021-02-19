@@ -1,0 +1,109 @@
+{
+ "Fields": [
+  {
+   "Feld": "SSCCNummerNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Dokument",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokumentNrAUF",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Gewicht",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Gewicht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GtinStufe",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "GtinStufe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Haltbarkeitsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Haltbarkeitsdatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "MengePalette",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "MengePalette",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Paketnummer",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "Paketnummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNr",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "SSCCNummer",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "SSCCNummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SSCCOriginal",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "SSCCOriginal",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Tara",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Tara",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verpackungen",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Verpackungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZuVerkaufenBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "ZuVerkaufenBis",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /EDO/SSCCNummer",
+   "Rueckgabewert": "HTTP 200Array\u003cSSCCNummer\u003e",
+   "Beschreibung": "Gibt alle SSCC-Nummern zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /EDO/SSCCNummer/{SSCCNummerNr}",
+   "Rueckgabewert": "HTTP 200SSCCNummer",
+   "Beschreibung": "Gibt eine SSCC-Nummer anhand der SSCCNummerNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

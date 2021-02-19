@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "KostenstellengruppeNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "KstGruppeFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/Kostenstellengruppe",
+   "Rueckgabewert": "HTTP 200Array\u003cKostenstellengruppe\u003e",
+   "Beschreibung": "Gibt alle Kostenstellengruppen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /FIB/Kostenstellengruppe/{KostenstellengruppeNr}",
+   "Rueckgabewert": "HTTP 200Kostenstellengruppe",
+   "Beschreibung": "Gibt eine Kostenstellengruppe anhand der Kostenstellengruppennummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

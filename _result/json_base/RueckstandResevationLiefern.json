@@ -1,0 +1,91 @@
+{
+ "Fields": [
+  {
+   "Feld": "AktivitaetenAufErledigtSetzen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "AktivitaetenAufErledigtSetzen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Belegdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Belegdatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumenttyp",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": "DokTypAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinzelnLiefern",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "EinzelnLiefern",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RueckstandReservation",
+   "Datentyp": "Array\u003cDokumenttyp\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Startdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Startdatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "UnserZeichen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "UnserZeichen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerbewegungen",
+   "Datentyp": "Object\u003cLagerbewegungen\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RueckstandReservation",
+   "Datentyp": "Object\u003cRueckstandReservation\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Fehler",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Fehler",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferschein",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": "DokumentNrLS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RueckstandReservationen",
+   "Datentyp": "Array\u003cDokumenttyp\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "POST /AUF/RueckstandReservation/liefern",
+   "Rueckgabewert": "HTTP 200RueckstandReservation",
+   "Beschreibung": "Erstellt ein Dokument und macht einen Lagerabtrag",
+   "BenoetigteLizenz": "AUF"
+  }
+ ],
+ "Parameter": null
+}

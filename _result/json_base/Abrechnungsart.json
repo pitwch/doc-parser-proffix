@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "AbrechnungsartNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "AbrechnungsartNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Abrechnungsart",
+   "Rueckgabewert": "HTTP 200Array\u003cAbrechnungsart\u003e",
+   "Beschreibung": "Gibt alle Abrechnungsarten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Abrechnungsart/{AbrechnungsartNr}",
+   "Rueckgabewert": "HTTP 200Abrechnungsart",
+   "Beschreibung": "Gibt eine Abrechnungsart anhand der Abrechnungsartnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

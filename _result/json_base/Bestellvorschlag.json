@@ -1,0 +1,145 @@
+{
+ "Fields": [
+  {
+   "Feld": "BestellvorschlagNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellpunkt",
+   "Datentyp": "Number (12,4)",
+   "NamePROFFIX": "Bestellpunkt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellrhythmus",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Bestellrhythmus",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellvorschlag",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Bestellvorschlag",
+   "Besonderes": "-1 = Keiner1 = Bedarf2 = Verbrauch Bestellrhythmus3 = Menge4 = Verbrauch Bestellpunkt5 = Immer bestellen"
+  },
+  {
+   "Feld": "Artikelgruppe",
+   "Datentyp": "Object\u003cArtikelgruppe\u003e",
+   "NamePROFFIX": "GruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelklasse",
+   "Datentyp": "Object\u003cArtikelklasse\u003e",
+   "NamePROFFIX": "KlasseLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "LieferAdress",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferantadresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "LieferantNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Minimalbestand",
+   "Datentyp": "Number (12,4)",
+   "NamePROFFIX": "Minimum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Maximalbestand",
+   "Datentyp": "Number (12,4)",
+   "NamePROFFIX": "Maximum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mindestbestellmenge",
+   "Datentyp": "Number (12,4)",
+   "NamePROFFIX": "MinBestellmenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Optimalbestellmenge",
+   "Datentyp": "Number (12,4)",
+   "NamePROFFIX": "OptBestellmenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sicherheitstage",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Sicherheitstage",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikeluntergruppe",
+   "Datentyp": "Object\u003cArtikeluntergruppe\u003e",
+   "NamePROFFIX": "UntergruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Wiederbeschaffung",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Wiederbeschaffung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Bestellvorschlag",
+   "Rueckgabewert": "HTTP 200Array\u003cBestellvorschlag\u003e",
+   "Beschreibung": "Gibt alle Bestellvorschläge zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Bestellvorschlag/{BestellvorschlagNr}",
+   "Rueckgabewert": "HTTP 200Bestellvorschlag",
+   "Beschreibung": "Gibt einen Bestellvorschlag anhand der Bestellvorschlagnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Bestellvorschlag",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Bestellvorschlag an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Bestellvorschlag/{BestellvorschlagNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Bestellvorschlag anhand der Bestellvorschlagnummer",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Bestellvorschlag/{BestellvorschlagNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Bestellvorschlag anhand der Bestellvorschlagnummer",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Bestellvorschlag/{BestellvorschlagNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Bestellvorschlag anhand der Bestellvorschlagnummer",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": null
+}

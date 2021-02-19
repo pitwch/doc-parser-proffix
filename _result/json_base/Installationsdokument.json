@@ -1,0 +1,97 @@
+{
+ "Fields": [
+  {
+   "Feld": "InstallationsdokumentNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "DokumentNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Installation",
+   "Datentyp": "Object\u003cInstallation\u003e",
+   "NamePROFFIX": "PositionNrBAS",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "DateiNr",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "DateiName",
+   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumentgruppe",
+   "Datentyp": "String (240)",
+   "NamePROFFIX": "DokGruppe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Drucken",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Drucken",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Modul",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /BAS/Installationsdokument",
+   "Rueckgabewert": "HTTP 200Array\u003cInstallationsdokument\u003e",
+   "Beschreibung": "Gibt alle Installationsdokumente zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /BAS/Installationsdokument/{InstallationsdokumentNr}",
+   "Rueckgabewert": "HTTP 200Installationsdokument",
+   "Beschreibung": "Gibt ein Installationsdokument anhand der InstallationsdokumentNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /BAS/Installationsdokument",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Installationsdokument an",
+   "BenoetigteLizenz": "BAS"
+  },
+  {
+   "Endpunkt": "PUT /BAS/Installationsdokument/{InstallationsdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Installationsdokument anhand der InstallationsdokumentNr",
+   "BenoetigteLizenz": "BAS"
+  },
+  {
+   "Endpunkt": "PATCH /BAS/Installationsdokument/{InstallationsdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Installationsdokument anhand der InstallationsdokumentNr",
+   "BenoetigteLizenz": "BAS"
+  },
+  {
+   "Endpunkt": "DELETE /BAS/Installationsdokument/{InstallationsdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Installationsdokument anhand der InstallationsdokumentNr",
+   "BenoetigteLizenz": "BAS"
+  }
+ ],
+ "Parameter": null
+}

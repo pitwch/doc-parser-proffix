@@ -1,0 +1,73 @@
+{
+ "Fields": [
+  {
+   "Feld": "AdresseLinkNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Preisgruppe",
+   "Datentyp": "Object\u003cPreisgruppe\u003e",
+   "NamePROFFIX": "PGruppePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisklasse",
+   "Datentyp": "Object\u003cPreisklasse\u003e",
+   "NamePROFFIX": "PKlassePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisliste",
+   "Datentyp": "Object\u003cPreisliste\u003e",
+   "NamePROFFIX": "PreislistePRE",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/AdresseLink",
+   "Rueckgabewert": "HTTP 200Array\u003cAdresseLink\u003e",
+   "Beschreibung": "Gibt alle AdresseLink zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/AdresseLink/{AdresseLinkNr}",
+   "Rueckgabewert": "HTTP 200AdresseLink",
+   "Beschreibung": "Gibt einen AdresseLink anhand der AdresseLinkNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRE/AdresseLink",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen AdresseLink an",
+   "BenoetigteLizenz": "PRE"
+  },
+  {
+   "Endpunkt": "PUT /PRE/AdresseLink/{AdresseLinkNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen AdresseLink anhand der AdresseLinkNr",
+   "BenoetigteLizenz": "PRE"
+  },
+  {
+   "Endpunkt": "PATCH /PRE/AdresseLink/{AdresseLinkNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen AdresseLink anhand der AdresseLinkNr",
+   "BenoetigteLizenz": "PRE"
+  },
+  {
+   "Endpunkt": "DELETE /PRE/AdresseLink/{AdresseLinkNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen AdresseLink anhand der AdresseLinkNr",
+   "BenoetigteLizenz": "PRE"
+  }
+ ],
+ "Parameter": null
+}

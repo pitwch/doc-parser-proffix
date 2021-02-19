@@ -1,0 +1,103 @@
+{
+ "Fields": [
+  {
+   "Feld": "BenutzerNr",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "BenutzerPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Passwort",
+   "Datentyp": "String (200)",
+   "NamePROFFIX": "Passwort",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ADUser",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "ADUser",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstAdmin",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Admin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EmailAbsender",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "EmailAbsender",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EmailAbsenderName",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "EmailAbsenderName",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferart",
+   "Datentyp": "Object\u003cLieferart\u003e",
+   "NamePROFFIX": "LieferartPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Sprache",
+   "Besonderes": "0 = deutsch, 1 = englisch, 2 = französisch, 3 = italienisch"
+  },
+  {
+   "Feld": "UnserZ",
+   "Datentyp": "String(50)",
+   "NamePROFFIX": "UnserZ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstBenutzer",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": "nach diesem Feld kann nicht gefiltert werden, URL Parameter verwenden"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "POST /PRO/Mitarbeiter/{MitarbeiterNr}/Benutzer",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen Benutzer anhand der Mitarbeiternummer an",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PUT /PRO/Mitarbeiter/{MitarbeiterNr}/Benutzer",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Benutzer anhand der Mitarbeiternummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PATCH /PRO/Mitarbeiter/{MitarbeiterNr}/Benutzer",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen Benutzer anhand der Mitarbeiternummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "DELETE /PRO/Mitarbeiter/{MitarbeiterNr}/Benutzer",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen Benutzer anhand der Mitarbeiternummer",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

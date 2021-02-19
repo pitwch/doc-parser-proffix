@@ -1,0 +1,176 @@
+{
+ "Fields": [
+  {
+   "Feld": "PlanobjektNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PlanobjektNrRES",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": "Zwingend, sobald eine Ressource verrechnet wird"
+  },
+  {
+   "Feld": "Aufgabe",
+   "Datentyp": "Object\u003cAufgabe\u003e",
+   "NamePROFFIX": "AufgabenNrCRM",
+   "Besonderes": "Readonly"
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Serviceauftrag",
+   "Datentyp": "Object\u003cServiceauftrag\u003e",
+   "NamePROFFIX": "AuftragNrSRV",
+   "Besonderes": "Readonly"
+  },
+  {
+   "Feld": "Beginn",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Beginn",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Rechnungsdatum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "DokDatum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokument",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokNrAUF",
+   "Besonderes": "Readonly"
+  },
+  {
+   "Feld": "Ende",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Ende",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Farbe",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Farbe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ganztaegig",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Ganztaegig",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "KontaktNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "PlanobjektgruppenNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PlanobjektGruppe",
+   "Besonderes": "Readonly"
+  },
+  {
+   "Feld": "ServiceauftragspositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": "Readonly"
+  },
+  {
+   "Feld": "Ressource",
+   "Datentyp": "Object\u003cRessource\u003e",
+   "NamePROFFIX": "RessourcenNrRES",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Planobjektstatus",
+   "Datentyp": "Object\u003cPlanobjektstatus\u003e",
+   "NamePROFFIX": "StatusPlanobjekteNrRES",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Planobjektgruppe",
+   "Datentyp": "Array\u003cObject {•PlanobjektNr : Number (Int)•Menge : Number (Int)•Ressource : Object\u003cRessource\u003e}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "Pro Eintrag wird ein Planobjekt erstellt oder aktualisiert. Nicht mehr vorhandene Planobjekte werden gelöscht. Die unsichtbaren Felder werden vom Hauptplanobjekt übernommen."
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /RES/Planobjekt",
+   "Rueckgabewert": "HTTP 200Array\u003cPlanobjekt\u003e",
+   "Beschreibung": "Gibt alle Planobjekte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /RES/Planobjekt/{PlanobjektNr}",
+   "Rueckgabewert": "HTTP 200Planobjekt",
+   "Beschreibung": "Gibt ein Planobjekt anhand der PlanobjektNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /RES/Planobjekt",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein oder mehrere neue Planobjekte an, je nach dem ob Einträge im Array Planobjektgruppe vorhanden sind",
+   "BenoetigteLizenz": "RES"
+  },
+  {
+   "Endpunkt": "PUT /RES/Planobjekt/{PlanobjektNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Planobjekt anhand der PlanobjektNr",
+   "BenoetigteLizenz": "RES"
+  },
+  {
+   "Endpunkt": "PATCH /RES/Planobjekt/{PlanobjektNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Planobjekt anhand der PlanobjektNr",
+   "BenoetigteLizenz": "RES"
+  },
+  {
+   "Endpunkt": "DELETE /RES/Planobjekt/{PlanobjektNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Planobjekt anhand der PlanobjektNr",
+   "BenoetigteLizenz": "RES"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "loescheGruppe",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Alle Planobjekte derselben Planobjektgruppe werden gelöschtno: Nur das Planobjekt mit der übergebenen PlanobjektNr wird gelöscht",
+   "VerhaltenOhneParameter": "no"
+  }
+ ]
+}

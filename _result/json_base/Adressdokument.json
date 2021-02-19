@@ -1,0 +1,97 @@
+{
+ "Fields": [
+  {
+   "Feld": "AdressdokumentNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "DokumentNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "DateiNr",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "DateiName",
+   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumentgruppe",
+   "Datentyp": "String (240)",
+   "NamePROFFIX": "DokGruppe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kontakt",
+   "Datentyp": "Object\u003cKontakt\u003e",
+   "NamePROFFIX": "KontaktNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Modul",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /ADR/Adressdokument",
+   "Rueckgabewert": "HTTP 200Array\u003cAdressdokument\u003e",
+   "Beschreibung": "Gibt alle Adressdokumente zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /ADR/Adressdokument/{AdressdokumentNr}",
+   "Rueckgabewert": "HTTP 200Adressdokument",
+   "Beschreibung": "Gibt ein Adressdokument anhand der AdressdokumentNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /ADR/Adressdokument",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Adressdokument an",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PUT /ADR/Adressdokument/{AdressdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Adressdokument anhand der AdressdokumentNr",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "PATCH /ADR/Adressdokument/{AdressdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Adressdokument anhand der AdressdokumentNr",
+   "BenoetigteLizenz": "ADR"
+  },
+  {
+   "Endpunkt": "DELETE /ADR/Adressdokument/{AdressdokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Adressdokument anhand der AdressdokumentNr",
+   "BenoetigteLizenz": "ADR"
+  }
+ ],
+ "Parameter": null
+}

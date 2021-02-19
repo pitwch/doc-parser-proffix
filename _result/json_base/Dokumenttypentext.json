@@ -1,0 +1,49 @@
+{
+ "Fields": [
+  {
+   "Feld": "DokumenttypentextNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumenttyp",
+   "Datentyp": "Object\u003cDokumenttyp\u003e",
+   "NamePROFFIX": "DokTypAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Text",
+   "Datentyp": "Object\u003cText\u003e",
+   "NamePROFFIX": "TextAUF",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /AUF/Dokumenttypentext",
+   "Rueckgabewert": "HTTP 200Array\u003cDokumenttypentext\u003e",
+   "Beschreibung": "Gibt alle Dokumenttypentexte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /AUF/Dokumenttypentext/{DokumenttypentextNr}",
+   "Rueckgabewert": "HTTP 200Dokumenttypentext",
+   "Beschreibung": "Gibt einen Dokumenttypentext anhand der DokumenttypentextNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

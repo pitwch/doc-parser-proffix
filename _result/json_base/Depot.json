@@ -1,0 +1,67 @@
+{
+ "Fields": [
+  {
+   "Feld": "DepotNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DepotArtikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "DepotArtikel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Einheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Haupt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Haupt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Inhalt",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Inhalt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PaletteAnzahl",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "PaletteAnzahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PaletteArtikel",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "PaletteArtikel",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Depot",
+   "Rueckgabewert": "HTTP 200Array\u003cDepot\u003e",
+   "Beschreibung": "Gibt alle Depots zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Depot/{DepotNr}",
+   "Rueckgabewert": "HTTP 200Depot",
+   "Beschreibung": "Gibt eine Depot anhand der Depotnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

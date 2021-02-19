@@ -1,0 +1,55 @@
+{
+ "Fields": [
+  {
+   "Feld": "OrtschaftNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GemeindeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "GemeindeNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Region",
+   "Datentyp": "Object\u003cRegion\u003e",
+   "NamePROFFIX": "KantonPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Land",
+   "Datentyp": "Object\u003cLand\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PLZ",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "SADCode",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Ort",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "CodePost",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Ortschaft",
+   "Rueckgabewert": "HTTP 200Array\u003cOrtschaft\u003e",
+   "Beschreibung": "Gibt alle Ortschaften zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Ortschaft/{OrtschaftNr}",
+   "Rueckgabewert": "HTTP 200Ortschaft",
+   "Beschreibung": "Gibt eine Ortschaft anhand der Ortschaftsnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

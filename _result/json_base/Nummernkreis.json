@@ -1,0 +1,43 @@
+{
+ "Fields": [
+  {
+   "Feld": "NummernkreisNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "NrKreis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NrVon",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "NrVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NrBis",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "NrBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NrAktuell  ",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "NrAktuell  ",
+   "Besonderes": "Zeigt die Nummer für das nächste Dokument des Nummernkreises an Achtung: Darf nur zur Info bzw. zu Überwachungszwecken verwendet werden, um prüfen zu können, ob die Range vergrössert werden muss!"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Nummernkreis",
+   "Rueckgabewert": "HTTP 200Array\u003cNummernkreis\u003e",
+   "Beschreibung": "Gibt alle Nummernkreise zurück",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "GET /PRO/Nummernkreis/{NummernkreisNr}",
+   "Rueckgabewert": "HTTP 200Nummernkreis",
+   "Beschreibung": "Gibt einen Nummernkreis anhand des Nummernkreises zurück",
+   "BenoetigteLizenz": "AUF"
+  }
+ ],
+ "Parameter": null
+}

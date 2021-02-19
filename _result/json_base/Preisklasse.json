@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "PreisklasseNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PKlassePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Preisklasse",
+   "Rueckgabewert": "HTTP 200Array\u003cPreisklasse\u003e",
+   "Beschreibung": "Gibt alle Preisklassen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Preisklasse/{PreisklasseNr}",
+   "Rueckgabewert": "HTTP 200Preisklasse",
+   "Beschreibung": "Gibt einen Preisklasse anhand der PreisklasseNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

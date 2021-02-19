@@ -1,0 +1,175 @@
+{
+ "Fields": [
+  {
+   "Feld": "ArtikelstatistikNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Beleg",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Beleg",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkung",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bestellung",
+   "Datentyp": "Object\u003cBestellung\u003e",
+   "NamePROFFIX": "BestellNrEIN",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Charge",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "ChargeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim1",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Laenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim2",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Breite",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim3",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Tiefe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokument",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "Dokument",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Einheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinheitRechnung",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitRechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerort",
+   "Datentyp": "Object\u003cLagerort\u003e",
+   "NamePROFFIX": "LagerortLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerplatz",
+   "Datentyp": "Object\u003cLagerplatz\u003e",
+   "NamePROFFIX": "LagerplatzLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeAus",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "MengeAus",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeEin",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "MengeEin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeVerr",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "MengeVerr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Installation",
+   "Datentyp": "Object\u003cInstallation\u003e",
+   "NamePROFFIX": "PositionNrBAS",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Preis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rahmenvertrag",
+   "Datentyp": "Object\u003cRahmenvertrag\u003e",
+   "NamePROFFIX": "RVertragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SerieNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "SerieNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Typ",
+   "Datentyp": "String (1)",
+   "NamePROFFIX": "Typ",
+   "Besonderes": "A = AusgangE = EingangV = VerschiebungI = Inventar."
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Artikelstatistik",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikelstatistik\u003e",
+   "Beschreibung": "Gibt alle Artikelstatistiken zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikelstatistik/{ArtikelstatistikNr}",
+   "Rueckgabewert": "HTTP 200Artikelstatistik",
+   "Beschreibung": "Gibt einen Artikelstatistik anhand der Artikelstatistiknummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

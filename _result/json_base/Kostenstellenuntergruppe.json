@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "KostenstellenuntergruppeNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "KstUGruppeFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (80)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/Kostenstellenuntergruppe",
+   "Rueckgabewert": "HTTP 200Array\u003cKostenstellenuntergruppe\u003e",
+   "Beschreibung": "Gibt alle Kostenstellenuntergruppen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /FIB/Kostenstellenuntergruppe/{KostenstellenuntergruppeNr}",
+   "Rueckgabewert": "HTTP 200Kostenstellenuntergruppe",
+   "Beschreibung": "Gibt eine Kostenstellenuntergruppe anhand der Kostenstellenuntergruppennummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

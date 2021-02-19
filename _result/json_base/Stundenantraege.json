@@ -1,0 +1,121 @@
+{
+ "Fields": [
+  {
+   "Feld": "StundenNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "StundenNrZEI",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Stundenart",
+   "Datentyp": "Object\u003cStundenart\u003e",
+   "NamePROFFIX": "StundenartZEI",
+   "Besonderes": "optional, wenn leer wird Stundenart vom Mitarbeiter übernommen"
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "StartZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "StartZeit",
+   "Besonderes": "Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"
+  },
+  {
+   "Feld": "EndZeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "EndZeit",
+   "Besonderes": "Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"
+  },
+  {
+   "Feld": "Stunden",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Stunden",
+   "Besonderes": "Je nach Erfassung-Art (\"ZeitErfassen\" in der Stundenart) optional"
+  },
+  {
+   "Feld": "Pause",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Pause",
+   "Besonderes": "optional, in Minutennur wenn \"ZeitErfassen\" in der Stundenart aktiviert ist"
+  },
+  {
+   "Feld": "KaWo",
+   "Datentyp": "String (2)",
+   "NamePROFFIX": "KaWo",
+   "Besonderes": "optional, wird beim Speichern automatisch jedesmal überschrieben"
+  },
+  {
+   "Feld": "Quelle",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Quelle",
+   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Einstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": "Optional"
+  },
+  {
+   "Feld": "Longitude",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Longitude",
+   "Besonderes": "optional, gibt den Längengrad beim Einstempeln an"
+  },
+  {
+   "Feld": "Latitude",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Latitude",
+   "Besonderes": "optional, gibt den Breitengrad"
+  },
+  {
+   "Feld": "Accuracy",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Accuracy",
+   "Besonderes": "optional, gibt die Genauigkeit der Positionsbestimmung in Metern beim Einstempeln an"
+  },
+  {
+   "Feld": "Status",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Status",
+   "Besonderes": "0 = Offener Antrag1 = Genehmigt2 = Abgelehnt"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /ZEI/Stundenantraege",
+   "Rueckgabewert": "HTTP 200Array\u003cStundenantraege\u003e",
+   "Beschreibung": "Gibt alle Stundenantraege meiner Mitarbeiter zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /ZEI/Stundenantraege/{StundenNr}",
+   "Rueckgabewert": "HTTP 200Stundenantraege",
+   "Beschreibung": "Gibt ein Stundeneintrag anhand der Stundennummer zurück. Nur möglich für meine Mitarbeiter.",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /ZEI/Stundenantraege/{StundenNr}/genehmigen",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Genehmigt den entsprechenden Antrag",
+   "BenoetigteLizenz": "ZEI"
+  },
+  {
+   "Endpunkt": "POST /ZEI/Stundenantraege/{StundenNr}/ablehnen",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Lehnt den entsprechenden Antrag ab",
+   "BenoetigteLizenz": "ZEI"
+  }
+ ],
+ "Parameter": null
+}

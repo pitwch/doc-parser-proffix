@@ -1,0 +1,43 @@
+{
+ "Fields": [
+  {
+   "Feld": "PreisberechnungsformelNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "FormelNrPRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Darf nicht leer sein"
+  },
+  {
+   "Feld": "Runden",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Runden",
+   "Besonderes": "0 = nicht runden 1 = 5er-Rundung 2 = 10er-Rundung 3 = runden auf ganze Einheit.4 = 3. Stelle-Rundung 5 = 4. Stelle-Rundung"
+  },
+  {
+   "Feld": "RundenTyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RundenTyp",
+   "Besonderes": "0 = mathematisch1 = aufrunden2 = abrunden."
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Preisberechnungsformel",
+   "Rueckgabewert": "HTTP 200Array\u003cPreisberechnungsformel\u003e",
+   "Beschreibung": "Gibt alle Preisberechnungsformeln zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Preisberechnungsformel/{PreisberechnungsformelNr}",
+   "Rueckgabewert": "HTTP 200Preisberechnungsformel",
+   "Beschreibung": "Gibt eine Preisberechnungsformel anhand der Preisberechnungsformelnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

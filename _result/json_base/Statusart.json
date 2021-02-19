@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "StatusartNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "StatusArtNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Statusart",
+   "Rueckgabewert": "HTTP 200Array\u003cStatusart\u003e",
+   "Beschreibung": "Gibt alle Statusarten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Statusart/{StatusartNr}",
+   "Rueckgabewert": "HTTP 200Statusart",
+   "Beschreibung": "Gibt eine Statusart anhand der Statusartnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,0 +1,55 @@
+{
+ "Fields": [
+  {
+   "Feld": "PreislisteNr",
+   "Datentyp": "String (10)",
+   "NamePROFFIX": "PreislistePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Netto",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Netto",
+   "Besonderes": "Preisliste mit Nettopreise (Staffel werden nicht berücksichtigt)."
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "WaehrungPRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Preisliste",
+   "Rueckgabewert": "HTTP 200Array\u003cPreisliste\u003e",
+   "Beschreibung": "Gibt alle Preisliste zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Preisliste/{PreislisteNr}",
+   "Rueckgabewert": "HTTP 200Preisliste",
+   "Beschreibung": "Gibt einen Preisliste anhand der PreislisteNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,0 +1,37 @@
+{
+ "Fields": [
+  {
+   "Feld": "AnredeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Anrede",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Anrede",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "BriefanredeDefinition",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "BriefanredeDef",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Anrede",
+   "Rueckgabewert": "HTTP 200Array\u003cAnrede\u003e",
+   "Beschreibung": "Gibt alle Anreden zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Anrede/{AnredeNr}",
+   "Rueckgabewert": "HTTP 200Anrede",
+   "Beschreibung": "Gibt eine Anrede anhand der AnredeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

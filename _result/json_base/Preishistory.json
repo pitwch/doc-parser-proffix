@@ -1,0 +1,73 @@
+{
+ "Fields": [
+  {
+   "Feld": "ArtikelpreisNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlteWaehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "AlteWaehrung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlterPreis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "AlterPreis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NeueWaehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "NeueWaehrung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NeuerPreis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "NeuerPreis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisliste",
+   "Datentyp": "Object\u003cPreisliste\u003e",
+   "NamePROFFIX": "PreislistePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preistype",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Preistyp",
+   "Besonderes": "0 = Einkauf1 = Verkauf1 2 = Verkauf2 etc."
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Preishistory",
+   "Rueckgabewert": "HTTP 200Array\u003cPreishistory\u003e",
+   "Beschreibung": "Gibt alle Preishistory zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Preishistory/{PreishistoryNr}",
+   "Rueckgabewert": "HTTP 200Preishistory",
+   "Beschreibung": "Gibt eine Preishistory anhand der PreishistoryNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

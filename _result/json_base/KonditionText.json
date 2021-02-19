@@ -1,0 +1,67 @@
+{
+ "Fields": [
+  {
+   "Feld": "KonditionTextNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Benutzer",
+   "Datentyp": "Object\u003cKondition\u003e",
+   "NamePROFFIX": "KonditionPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/KonditionText",
+   "Rueckgabewert": "HTTP 200 Array\u003cKonditionText\u003e",
+   "Beschreibung": "Gibt alle KonditionTexte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/KonditionText/{KonditionTextNr}",
+   "Rueckgabewert": "HTTP 200 KonditionText",
+   "Beschreibung": "Gibt einen KonditionText anhand seiner KonditionTextnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/KonditionText",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neu KonditionText an",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PUT /PRO/KonditionText/{KonditionTextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen KonditionText anhand der KonditionTextnummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PATCH /PRO/KonditionText/{KonditionTextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen KonditionText anhand der KonditionTextnummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "DELETE /PRO/KonditionText/{KonditionTextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen KonditionText anhand der KonditionTextnummer",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

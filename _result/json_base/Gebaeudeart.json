@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "GebaeudeartNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "GebaeudeArtNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /STU/Gebaeudeart",
+   "Rueckgabewert": "HTTP 200Array\u003cGebaeudeart\u003e",
+   "Beschreibung": "Gibt alle Gebaeudearten zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /STU/Gebaeudeart/{GebaeudeartNr}",
+   "Rueckgabewert": "HTTP 200Gebaeudeart",
+   "Beschreibung": "Gibt eine Gebaeudeart anhand der Gebaeudeartnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

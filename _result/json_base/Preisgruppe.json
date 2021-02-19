@@ -1,0 +1,31 @@
+{
+ "Fields": [
+  {
+   "Feld": "PreisgruppeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PGruppePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/Preisgruppe",
+   "Rueckgabewert": "HTTP 200Array\u003cPreisgruppe\u003e",
+   "Beschreibung": "Gibt alle Preisgruppen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/Preisgruppe/{PreisgruppeNr}",
+   "Rueckgabewert": "HTTP 200Preisgruppe",
+   "Beschreibung": "Gibt einen Preisgruppe anhand der PreisgruppeNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

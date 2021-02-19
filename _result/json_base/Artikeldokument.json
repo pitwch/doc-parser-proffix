@@ -1,0 +1,97 @@
+{
+ "Fields": [
+  {
+   "Feld": "ArtikeldokumentNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "DokumentNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Bemerkungen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "DateiNr",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "DateiName",
+   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumentgruppe",
+   "Datentyp": "String (240)",
+   "NamePROFFIX": "DokGruppe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Drucken",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Drucken",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Modul",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Artikeldokument",
+   "Rueckgabewert": "HTTP 200Array\u003cArtikeldokument\u003e",
+   "Beschreibung": "Gibt alle Artikeldokumente zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Artikeldokument/{ArtikeldokumentNr}",
+   "Rueckgabewert": "HTTP 200Artikeldokument",
+   "Beschreibung": "Gibt ein Artikeldokument anhand der ArtikeldokumentNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Artikeldokument",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Artikeldokument an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Artikeldokument/{ArtikeldokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Artikeldokument anhand der ArtikeldokumentNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Artikeldokument/{ArtikeldokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Artikeldokument anhand der ArtikeldokumentNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Artikeldokument/{ArtikeldokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Artikeldokument anhand der ArtikeldokumentNr",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": null
+}

@@ -1,0 +1,85 @@
+{
+ "Fields": [
+  {
+   "Feld": "BerechtigungNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Benutzergruppe",
+   "Datentyp": "Object\u003cBenutzergruppe\u003e",
+   "NamePROFFIX": "GruppeUSE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Benutzer",
+   "Datentyp": "Object\u003cBenutzer\u003e",
+   "NamePROFFIX": "BenutzerPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "String (20)",
+   "NamePROFFIX": "Modul",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Form",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Form",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menu",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Menu",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Recht",
+   "Datentyp": "String (1)",
+   "NamePROFFIX": "Recht",
+   "Besonderes": "\"S\" für Lese-/Schreibrechte\"L\" für Leserechte\"K\" für keine Rechte oder Berechtigung nicht vorhanden\"G\" für Gruppe die Gruppenberechtigung      (Nur mit Benutzerberechtigung möglich)"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/Berechtigung",
+   "Rueckgabewert": "HTTP 200Array\u003cBerechtigung\u003e",
+   "Beschreibung": "Gibt alle Berechtigungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/Berechtigung/{BerechtigungNr}",
+   "Rueckgabewert": "HTTP 200Berechtigung",
+   "Beschreibung": "Gibt eine Berechtigung anhand seiner Berechtigungsnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/Berechtigung",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neu Berechtigung an",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PUT /PRO/Berechtigung/{BerechtigungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Berechtigung anhand der Berechtigungsnummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PATCH /PRO/Berechtigung/{BerechtigungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Berechtigung anhand der Berechtigungsnummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "DELETE /PRO/Berechtigung/{BerechtigungNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Berechtigung anhand der Berechtigungsnummer",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

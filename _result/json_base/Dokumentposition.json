@@ -1,0 +1,536 @@
+{
+ "Fields": [
+  {
+   "Feld": "DokumentpositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokument",
+   "Datentyp": "Object\u003cDokument\u003e",
+   "NamePROFFIX": "DokumentNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auftrag",
+   "Datentyp": "Object\u003cAuftrag\u003e",
+   "NamePROFFIX": "AuftragNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Serviceauftrag",
+   "Datentyp": "Object\u003cServiceauftrag\u003e",
+   "NamePROFFIX": "AuftragNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": "dieses Feld kann nur für die Positionstypen 1, 2, 10, 12 \u0026 13 verwendet werden"
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bild",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Bild",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim2",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Breite",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerbewegungen",
+   "Datentyp": "Array\u003cObject {•Typ : Number (Int)•Charge : Charge•Menge : Number (10,4)•SerieNr : String (50)•Lagerort : Lagerort•Lagerplatz : Lagerplatz•Zusatz : Object {oLieferungAm : String (Date)oReservierenAb : String (Date)oUngueltigAb : String (Date)oBemerkungen : String (∞)}}\u003e",
+   "NamePROFFIX": " ",
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden Typ:0: Lagerbewegung (Standard wenn nichts angegeben)1: Rückstand2: Reservation Zusatz: •kann nur bei Typ 1=Rückstand oder 2=Reservation mitgegeben werden•Reservationen und Rückstände sind writeonly•Reservationen und Rückstände können bei einer Umwandlung nicht mitgegeben werden"
+  },
+  {
+   "Feld": "Eingangsstempel",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "Eingangsstempel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagereinheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnungseinheit",
+   "Datentyp": "Object\u003cEinheit\u003e",
+   "NamePROFFIX": "EinheitRechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinkaufspreisFW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "EinkaufFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EinkaufspreisSW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "EinkaufSW",
+   "Besonderes": "wird aus EinkaufspreisFW ermittelt, muss i.d.R. nicht angegeben werden, EinkaufspreisFW wird nicht aus EinkaufspreisSW ermittelt"
+  },
+  {
+   "Feld": "Ertragskonto",
+   "Datentyp": "Object\u003cKonto\u003e",
+   "NamePROFFIX": "Ertragskonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gebinde",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Gebinde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gewicht",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Gewicht",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GtinStufe",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "GtinStufe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Gutschein",
+   "Datentyp": "Object\u003cGutschein\u003e",
+   "NamePROFFIX": "GutscheinNrAUF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Inhalt",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Inhalt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstOption",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "IsOption",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kundenbestellnummer",
+   "Datentyp": "String (35)",
+   "NamePROFFIX": "KBestellNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kundenbestellposition",
+   "Datentyp": "String (6)",
+   "NamePROFFIX": "KBestellPos",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenart",
+   "Datentyp": "Object\u003cKostenart\u003e",
+   "NamePROFFIX": "KoArtFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kostenstelle",
+   "Datentyp": "Object\u003cKostenstelle\u003e",
+   "NamePROFFIX": "KstFIB",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim1",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Laenge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lagerpreis",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Lagerpreis",
+   "Besonderes": "optional, wird über Preisabfrage ermittelt Mögliche Werte sind:0 = manueller Preis1...5 = Verkaufspreis 1...56 = Preis über PreismodulWenn \"PreisFW\" überschrieben wird, muss 0 (manueller Preis) übergeben werden"
+  },
+  {
+   "Feld": "Lieferant",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "Lieferant",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Liefertermin",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Liefertermin",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Marge",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Marge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Menge",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Menge",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeOptional",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "MengeOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeVerr",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "MengeVerr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "MengeVerrOptional",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "MengeVerrOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OccasionsObjektVerkauf",
+   "Datentyp": "Object\u003cOccasionsobjekt\u003e",
+   "NamePROFFIX": "MObjektNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OccasionsObjektAnkauf",
+   "Datentyp": "Object\u003cOccasionsobjekt\u003e",
+   "NamePROFFIX": "MObjektNrAnkauf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OccasionsObjektSerienummer",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "MObjektSerNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NichtAnzeigen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NichtAnzeigen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ExterneNotizen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenExt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ExterneNotizenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenExtRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "InterneNotizen",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenInt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "InterneNotizenRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizenIntRTF",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Optional",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Optional",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionsart",
+   "Datentyp": "Object\u003cPositionsart\u003e",
+   "NamePROFFIX": "PosArtSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Kundeninstallationen",
+   "Datentyp": "Array\u003cInstallation\u003e",
+   "NamePROFFIX": "PositionenBasis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ServiceauftragspositionNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Positionstyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Positionsart",
+   "Besonderes": "dieses Feld kann nicht gefiltert oder sortiert werden Mögliche Werte sind:1 = Artikel2 = Freie Position3 = Text4 = Gesamtrabatt5 = Subtotal6 = Subtotal (danach auf 0 setzen)7 = Seitenumbruch8 = Teilrechnung (Dokumenttyp = RG)9 = Teilrechnung (Dokumenttyp = TR)10 = Occasions-Objekt11 = Bild12 = Gutschein (Gutschein != NULL)13 = Rapport (Positionsart != NULL)"
+  },
+  {
+   "Feld": "Preisdefinition",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "PreisDef",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisdefinitionOptional",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "PreisDefOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisdefinitionZusatzartikel",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "PreisDefZusatz",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisFW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "PreisFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "PreisSW",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "PreisSW",
+   "Besonderes": "wird aus PreisFW ermittelt, muss i.d.R. nicht angegeben werden, PreisFW wird nicht aus PreisSW ermittelt"
+  },
+  {
+   "Feld": "RabattFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "RabattFw",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RabattProzent",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Rabatt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rapport",
+   "Datentyp": "Object\u003cRapport\u003e",
+   "NamePROFFIX": "RapportNrSTU",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AutomatischRechnenVon",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "RechnenTyp",
+   "Besonderes": "Mögliche Werte sind:0 = Nicht automatisch rechnen1 = Letzte Position2 = Letztes Subtotal3 = Subtotal"
+  },
+  {
+   "Feld": "Rekapitulation",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Rekap",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "RueckstandMenge",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "Rueckstand",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Steuercode",
+   "Datentyp": "Object\u003cSteuercode\u003e",
+   "NamePROFFIX": "StCodePRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Leistungsverwaltungstyp",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "StdPosArt",
+   "Besonderes": "Mögliche Werte sind:1 = Normale Position2 = Überzeit-Position3 = Km4-13 = Spesen (siehe Spesenaufteilung in der Leistungsverwaltung)"
+  },
+  {
+   "Feld": "SteuerFW",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SteuerSW",
+   "Datentyp": "Number (22,8)",
+   "NamePROFFIX": "SteuerSW",
+   "Besonderes": "wird aus SteuerFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW wird nicht aus SteuerSW ermittelt"
+  },
+  {
+   "Feld": "Stuecklistenkopf",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "StlKopf",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Subtotalbezeichnungen",
+   "Datentyp": "Array\u003cString\u003e",
+   "NamePROFFIX": "SubtotalDef",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dim3",
+   "Datentyp": "Number (16,4)",
+   "NamePROFFIX": "Tiefe",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalInklusivFW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalInklFW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalInklusivSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalInklSW",
+   "Besonderes": "wird aus SteuerFW ermittelt, muss i.d.R. nicht angegeben werden, SteuerFW wird nicht aus SteuerSW ermittelt"
+  },
+  {
+   "Feld": "TotalOptional",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalOpt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TotalSW",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "TotalSW",
+   "Besonderes": "wird aus TotalFW ermittelt, muss i.d.R. nicht angegeben werden, TotalFW wird nicht aus TotalSW ermittelt"
+  },
+  {
+   "Feld": "Verpackungen",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Verpackungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Vertreter",
+   "Datentyp": "Object\u003cVertreter\u003e",
+   "NamePROFFIX": "VertreterPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zusatzartikelreferenz",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Zusatzartikel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Rechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": "GesamtrabattAutomatischRechnen / Subtotal von Anfang an rechnen"
+  },
+  {
+   "Feld": "GesamtrabattVerbuchungAufteilen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": " ",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Parameter",
+   "Datentyp": "Format",
+   "NamePROFFIX": "Beschreibung",
+   "Besonderes": "Verhalten ohne Parameter"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /AUF/Dokumentposition",
+   "Rueckgabewert": "HTTP 200Array\u003cDokumentposition\u003e",
+   "Beschreibung": "Gibt alle Dokumentpositionen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /AUF/Dokumentposition/{DokumentpositionNr}",
+   "Rueckgabewert": "HTTP 200Dokumentposition",
+   "Beschreibung": "Gibt eine Dokumentposition anhand der DokumentpositionNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": [
+  {
+   "Parameter": "aktuell",
+   "Format": "String (yes, no, any)",
+   "Beschreibung": "yes: Nur aktuelle Dokumentpositionen werden ausgegebenno: Nur nicht aktuelle Dokumentpositionen werden ausgegebenany: Alle Dokumentpositionen werden ausgegeben",
+   "VerhaltenOhneParameter": "any"
+  },
+  {
+   "Parameter": "ohneNichtKopierenZusatzfelder",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Beim Abrufen werden die Zusatzfelder entfernt, die in der Zusatzfelddefinition \"NichtKopieren\" gesetzt habenno: Beim Abrufen werden alle Zusatzfelder zurückgegeben",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "positionstyp",
+   "Format": "Number (Int)",
+   "Beschreibung": "Es wird nach Positionstyp gefiltert",
+   "VerhaltenOhneParameter": "Es wird nicht nach Positionstyp gefiltert"
+  },
+  {
+   "Parameter": "dokumenttyp",
+   "Format": "String (∞)",
+   "Beschreibung": "Es wird nach dem angegebenen Dokumenttyp des Unterobjekts Dokument gefiltert. (z.B. \"RG\")",
+   "VerhaltenOhneParameter": "Es wird nicht nach Dokumenttyp gefiltert"
+  },
+  {
+   "Parameter": "adresse",
+   "Format": "Number (Int)",
+   "Beschreibung": "Es wird nach der angegebenen AdressNr gefiltert",
+   "VerhaltenOhneParameter": "Es wird nicht nach Adresse gefiltert"
+  }
+ ]
+}

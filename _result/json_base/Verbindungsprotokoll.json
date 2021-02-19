@@ -1,0 +1,85 @@
+{
+ "Fields": [
+  {
+   "Feld": "VerbindungsprotokollNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Archivdaten",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Archivdaten",
+   "Besonderes": "Archivdaten abholen"
+  },
+  {
+   "Feld": "Bank",
+   "Datentyp": "Object\u003cBank\u003e",
+   "NamePROFFIX": "BankNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datei",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Datei",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)\u003e",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EsrAbholen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "EsrAbholen",
+   "Besonderes": "ESR/BESR abholen"
+  },
+  {
+   "Feld": "KontoBestand",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "KontoBestand",
+   "Besonderes": "Kontostände aktualisieren"
+  },
+  {
+   "Feld": "Meldung",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Meldung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "SitzungId",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "SitzungIdFIB",
+   "Besonderes": "Nummer der Stizung mit der Bank."
+  },
+  {
+   "Feld": "Typ",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Typ",
+   "Besonderes": "Meldung = 0Warnung = 1Fehler = 2MT940Import = 3Camt053Import = 4 "
+  },
+  {
+   "Feld": "Zeit",
+   "Datentyp": "String (Time)",
+   "NamePROFFIX": "Zeit",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/Verbindungsprotokoll",
+   "Rueckgabewert": "HTTP 200Array\u003cVerbindungsprotokoll\u003e",
+   "Beschreibung": "Gibt alle Verbindungsprotokolle zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /FIB/Verbindungsprotokoll/{VerbindungsprotokollNr}",
+   "Rueckgabewert": "HTTP 200Verbindungsprotokoll",
+   "Beschreibung": "Gibt ein Verbindungsprotokoll anhand der Verbindungsprotokollnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

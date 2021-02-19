@@ -1,0 +1,85 @@
+{
+ "Fields": [
+  {
+   "Feld": "AdresseGruppeLinkNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": "Zwingend"
+  },
+  {
+   "Feld": "Artikelklasse",
+   "Datentyp": "Object\u003cArtikelklasse\u003e",
+   "NamePROFFIX": "KlasseLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikelgruppe",
+   "Datentyp": "Object\u003cArtikelgruppe\u003e",
+   "NamePROFFIX": "GruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Artikeluntergruppe",
+   "Datentyp": "Object\u003cArtikeluntergruppe\u003e",
+   "NamePROFFIX": "UntergruppeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisgruppe",
+   "Datentyp": "Object\u003cPreisgruppe\u003e",
+   "NamePROFFIX": "PGruppePRE",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Preisklasse",
+   "Datentyp": "Object\u003cPreisklasse\u003e",
+   "NamePROFFIX": "PKlassePRE",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRE/AdresseGruppeLink",
+   "Rueckgabewert": "HTTP 200Array\u003cAdresseGruppeLink\u003e",
+   "Beschreibung": "Gibt alle AdresseGruppeLink zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRE/AdresseGruppeLink/{AdresseGruppeLinkNr}",
+   "Rueckgabewert": "HTTP 200AdresseGruppeLink",
+   "Beschreibung": "Gibt einen AdresseGruppeLink anhand der AdresseGruppeLinkNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRE/AdresseGruppeLink",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt einen neuen AdresseGruppeLink an",
+   "BenoetigteLizenz": "PRE"
+  },
+  {
+   "Endpunkt": "PUT /PRE/AdresseGruppeLink/{AdresseGruppeLinkNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen AdresseGruppeLink anhand der AdresseGruppeLinkNr",
+   "BenoetigteLizenz": "PRE"
+  },
+  {
+   "Endpunkt": "PATCH /PRE/AdresseGruppeLink/{AdresseGruppeLinkNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen AdresseGruppeLink anhand der AdresseGruppeLinkNr",
+   "BenoetigteLizenz": "PRE"
+  },
+  {
+   "Endpunkt": "DELETE /PRE/AdresseGruppeLink/{AdresseGruppeLinkNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen AdresseGruppeLink anhand der AdresseGruppeLinkNr",
+   "BenoetigteLizenz": "PRE"
+  }
+ ],
+ "Parameter": null
+}
