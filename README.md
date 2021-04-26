@@ -8,7 +8,7 @@
 ## Zweck
 Das Tool parst sämtliche Tabellen der PROFFIX REST-API Dokumentation und macht daraus standardisierte JSON - Files / Modelle.
 
-Darauf aufbauend lassen sich komplette Modelle für entsprechende Sprachen erstellen.
+Daraus lassen sich komplette Modelle für entsprechende Sprachen erstellen.
 
 ## Nutzung
 
