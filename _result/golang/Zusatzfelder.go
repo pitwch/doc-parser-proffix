@@ -1,5 +1,4 @@
 package golang
-
 type Zusatzfelder struct {
-	Zusatzfelder map[string]interface{} `json:Zusatzfelder`
+	Zusatzfelder	{[key:string]: value:any}	`json:"Zusatzfelder"`
 }

@@ -30,7 +30,7 @@ func GetDocLinks() (doclinks []model.DocLink) {
 		log.Printf("Visiting %v", r.URL.String())
 	})
 
-	err := c.Visit("https://www.proffix.net/Portals/0/content/REST%20API/proffix_rest_api_entwicklerhandbuch_content.html")
+	err := c.Visit("https://www.proffix.net/Portals/0/content/REST%20API/hmcontent.html")
 
 	if err != nil {
 		log.Print(err)

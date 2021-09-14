@@ -2,6 +2,7 @@ package generator
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/pitw/doc-parser-proffix/model"
 	"io/ioutil"
 	"log"
@@ -43,8 +44,8 @@ func BuildGoStruct(path string, name string) (err error) {
 	mod += "type " + cleanName + " struct {\n"
 
 	for _, d := range doc.Fields {
-		mod += "\t" + d.Feld + "\t" + fixDatatype(d.Datentyp) + "\t" + "`json:" + d.Feld + "`" + "\n"
-
+		tmpFld := fmt.Sprintf(`"%v"`, strings.TrimSpace(d.Feld))
+		mod += "\t" + strings.TrimSpace(d.Feld) + "\t" + fixDatatype(d.Datentyp) + "\t" + "`json:" + tmpFld + "`" + "\n"
 	}
 	mod += "}"
 
