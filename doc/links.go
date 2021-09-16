@@ -38,3 +38,7 @@ func GetDocLinks() (doclinks []model.DocLink) {
 	log.Print(doclinks)
 	return doclinks
 }
+
+func CreateDocsAll()(docsAll model.DocsAll) {
+	return docsAll
+}

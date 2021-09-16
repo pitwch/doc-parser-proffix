@@ -1,11 +1,16 @@
 package model
 
+type DocsAll struct {
+	Entities    []DocLink
+}
 type DocLink struct {
 	Name string
 	Link string
 	Doc  Doc
 }
 type Doc struct {
+	TableName string
+	PrimaryKey string
 	Fields    []DocFields
 	Methods   []DocMethods
 	Parameter []DocParameter

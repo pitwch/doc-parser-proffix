@@ -3,6 +3,7 @@ package table
 import (
 	"github.com/gocolly/colly"
 	"github.com/pitw/doc-parser-proffix/model"
+	"log"
 	"strings"
 )
 
@@ -12,6 +13,35 @@ func TableToStrings(link string) (parsed model.Doc) {
 	doc := model.Doc{}
 	// On every a element which has href attribute do callback
 	d.OnHTML("#innerdiv", func(e *colly.HTMLElement) {
+
+	    e.ForEach("p", func(_ int, et *colly.HTMLElement) {
+			var tmpTableName = ""
+			
+			tmpTableName = et.Text
+			
+			if strings.HasPrefix(et.Text, "ADR_") ||
+				strings.HasPrefix(et.Text, "AUF_") ||
+				strings.HasPrefix(et.Text, "BAS_") ||
+				strings.HasPrefix(et.Text, "CRM_") ||
+				strings.HasPrefix(et.Text, "DEB_") ||
+				strings.HasPrefix(et.Text, "EDO_") ||
+				strings.HasPrefix(et.Text, "EIN_") ||
+				strings.HasPrefix(et.Text, "FIB_") ||
+				strings.HasPrefix(et.Text, "KRE_") ||
+				strings.HasPrefix(et.Text, "LAG_") ||
+				strings.HasPrefix(et.Text, "LOH_") ||
+				strings.HasPrefix(et.Text, "PRE_") ||
+				strings.HasPrefix(et.Text, "PRO_") ||
+				strings.HasPrefix(et.Text, "RES_") ||
+				strings.HasPrefix(et.Text, "SRV_") ||
+				strings.HasPrefix(et.Text, "STU_") ||
+				strings.HasPrefix(et.Text, "ZEI_") {
+
+				log.Printf("Table %v", tmpTableName)
+							
+				doc.TableName = tmpTableName;
+			}
+		})
 
 		e.ForEach("tr", func(_ int, el *colly.HTMLElement) {
 
@@ -63,6 +93,10 @@ func TableToStrings(link string) (parsed model.Doc) {
 							NamePROFFIX: tmpString[2],
 							Besonderes:  tmpString[3],
 						})
+						
+						if len(doc.PrimaryKey) == 0 {						
+							doc.PrimaryKey = tmpString[0]
+						}
 					}
 				} else {
 					doc.Parameter = append(doc.Parameter, model.DocParameter{
