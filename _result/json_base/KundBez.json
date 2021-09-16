@@ -1,0 +1,117 @@
+{
+ "TableName": "LAG_KundBez",
+ "PrimaryKey": "KundBezNr",
+ "Fields": [
+  {
+   "Feld": "KundBezNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AdressNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ArikelNrKunde",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "ArtikelNrKunde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ArtikelNrLager",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Barcode",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "BarcodeKunde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung1",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung1",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung2",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung3",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung3",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung4",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung4",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung5",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung5",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "EAN",
+   "Datentyp": "String (30)",
+   "NamePROFFIX": "EANKunde",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "TrustBox",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "TrustBox",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verkaufspreis",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Verkaufspreis",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/KundBez",
+   "Rueckgabewert": "HTTP 200",
+   "Beschreibung": "Gibt alle KundBez zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/KundBez/{KundBezNr}",
+   "Rueckgabewert": "HTTP 200",
+   "Beschreibung": "Gibt eine KundBez anhand der KundBezNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/KundBez/{KundBezNr}",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Erstellt eine KundBez",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/KundBez/{KundBezNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Updaten der KundBez anhand der KundBezNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/KundBez/{KundBezNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine KundBez anhand der KundBezNr",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": null
+}

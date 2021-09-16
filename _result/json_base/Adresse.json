@@ -1,4 +1,6 @@
 {
+ "TableName": "ADR_Adressen",
+ "PrimaryKey": "AdressNr",
  "Fields": [
   {
    "Feld": "AdressNr",
@@ -130,13 +132,13 @@
    "Feld": "Longitude",
    "Datentyp": "Number (7,8)",
    "NamePROFFIX": "Longitude",
-   "Besonderes": "optional"
+   "Besonderes": "optional, kann NULL sein"
   },
   {
    "Feld": "Latitude",
    "Datentyp": "Number (7,8)",
    "NamePROFFIX": "Latitude",
-   "Besonderes": "optional"
+   "Besonderes": "optional, kann NULL sein"
   },
   {
    "Feld": "DebitorenSteuercode",
@@ -595,19 +597,19 @@
   {
    "Parameter": "umkreissuche",
    "Format": "String (100)",
-   "Beschreibung": "Alle Adressen im Umkreis Radius eines Orts Längengrad/Breitengrad werden ausgegeben, muss im Format [Längengrad als Dezimalzahl (-180° - +180°)],[Breitengrad als Dezimalzahl (-90° - +90°)],[Radius in Metern] angegeben werden",
+   "Beschreibung": "Alle Adressen im Umkreis Radius eines Orts Längengrad/Breitengrad werden ausgegeben, muss im Format [Längengrad als Dezimalzahl (-180° - +180°)],[Breitengrad als Dezimalzahl (-90° - +90°)],[Radius in Metern] angegeben werden. Der Wert kann NULL sein",
    "VerhaltenOhneParameter": "Alle Adressen werden ausgegeben"
   },
   {
    "Parameter": "suche",
    "Format": "String (∞)",
-   "Beschreibung": "Suchfunktionalität über alle Adressen wie via Suchfeld in der PROFFIX Adressverwaltung",
+   "Beschreibung": "Suchfunktionalität über alle Adressen wie via Suchfeld in der Proffix Adressverwaltung",
    "VerhaltenOhneParameter": "Alle Adressen werden ausgegeben"
   },
   {
    "Parameter": "ohnevorgabe",
    "Format": "String (yes, no)",
-   "Beschreibung": "yes: Adresse wird beim Speichern ohne PROFFIX-Vorgaben gespeichertno: Adresse wird beim Speichern mit PROFFIX-Vorgaben angereichert",
+   "Beschreibung": "yes: Adresse wird beim Speichern ohne Proffix-Vorgaben gespeichertno: Adresse wird beim Speichern mit Proffix-Vorgaben angereichert",
    "VerhaltenOhneParameter": "no"
   }
  ]

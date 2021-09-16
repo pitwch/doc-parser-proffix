@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_BestellvorschlagLO",
+ "PrimaryKey": "BestellvorschlagNr",
  "Fields": [
   {
    "Feld": "BestellvorschlagNr",

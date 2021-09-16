@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "RTF",
  "Fields": [
   {
    "Feld": "RTF",

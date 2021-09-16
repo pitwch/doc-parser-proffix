@@ -1,5 +1,5 @@
 package golang
 
 type GutscheinNr struct {
-	GutscheinNr string `json:GutscheinNr`
+	GutscheinNr string `json:"GutscheinNr"`
 }

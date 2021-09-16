@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Feiertage",
+ "PrimaryKey": "FeiertagNr",
  "Fields": [
   {
    "Feld": "FeiertagNr",

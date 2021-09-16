@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Chargen",
+ "PrimaryKey": "ChargeNr",
  "Fields": [
   {
    "Feld": "ChargeNr",

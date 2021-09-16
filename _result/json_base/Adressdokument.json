@@ -1,4 +1,6 @@
 {
+ "TableName": "ADR_Dokumente",
+ "PrimaryKey": "AdressdokumentNr",
  "Fields": [
   {
    "Feld": "AdressdokumentNr",

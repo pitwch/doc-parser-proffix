@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_Zivilstaende",
+ "PrimaryKey": "ZivilstandNr",
  "Fields": [
   {
    "Feld": "ZivilstandNr",

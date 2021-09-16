@@ -1,4 +1,6 @@
 {
+ "TableName": "SRV_Services",
+ "PrimaryKey": "ServiceauftragNr",
  "Fields": [
   {
    "Feld": "ServiceauftragNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "PRE_Preistypen",
+ "PrimaryKey": "PreistypNr",
  "Fields": [
   {
    "Feld": "PreistypNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "ADR_Gruppen",
+ "PrimaryKey": "AdressgruppeNr",
  "Fields": [
   {
    "Feld": "AdressgruppeNr",

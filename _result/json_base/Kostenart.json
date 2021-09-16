@@ -1,4 +1,6 @@
 {
+ "TableName": "FIB_Kostenart",
+ "PrimaryKey": "KostenartNr",
  "Fields": [
   {
    "Feld": "KostenartNr",

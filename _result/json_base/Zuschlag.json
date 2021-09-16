@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_Zuschlaege",
+ "PrimaryKey": "ZuschlagNr",
  "Fields": [
   {
    "Feld": "ZuschlagNr",

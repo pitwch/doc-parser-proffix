@@ -1,0 +1,33 @@
+{
+ "TableName": "LOH_BVGCodes",
+ "PrimaryKey": "BVGCodeNr",
+ "Fields": [
+  {
+   "Feld": "BVGCodeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "BVGCodeLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/BVGCode",
+   "Rueckgabewert": "HTTP 200Array\u003cBVGCode\u003e",
+   "Beschreibung": "Gibt alle BVGCodes zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/BVGCode/{BVGCodeNr}",
+   "Rueckgabewert": "HTTP 200BVGCode",
+   "Beschreibung": "Gibt einen BVGCode anhand der BVGCode-Nr. zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

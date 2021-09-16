@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Optionen",
+ "PrimaryKey": "ArtikeloptionNr",
  "Fields": [
   {
    "Feld": "ArtikeloptionNr",

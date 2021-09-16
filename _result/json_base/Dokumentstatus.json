@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_Dokumentstatus",
+ "PrimaryKey": "DokumentstatusNr",
  "Fields": [
   {
    "Feld": "DokumentstatusNr",

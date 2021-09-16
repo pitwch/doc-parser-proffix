@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Auftraege",
+ "PrimaryKey": "AuftragNr",
  "Fields": [
   {
    "Feld": "AuftragNr",

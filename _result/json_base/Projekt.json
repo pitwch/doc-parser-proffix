@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_Projekte",
+ "PrimaryKey": "ProjektNr",
  "Fields": [
   {
    "Feld": "ProjektNr",
@@ -16,7 +18,7 @@
    "Feld": "Adresse",
    "Datentyp": "Object\u003cAdresse\u003e",
    "NamePROFFIX": "AdressNrADR",
-   "Besonderes": "Wird in PROFFIX \"Bauherr\" genannt"
+   "Besonderes": "Wird in Proffix \"Bauherr\" genannt"
   },
   {
    "Feld": "Teilleistungen",

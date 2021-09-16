@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"github.com/pitw/doc-parser-proffix/doc"
 	"github.com/pitw/doc-parser-proffix/generator"
-	"github.com/pitw/doc-parser-proffix/table"
 	"github.com/pitw/doc-parser-proffix/model"
+	"github.com/pitw/doc-parser-proffix/table"
 	"io/ioutil"
 	"log"
 	"strconv"
@@ -43,10 +43,10 @@ func createModels() {
 }
 
 func createBaseJson() {
-	
+
 	// Object with all entities
 	allDocs := doc.CreateDocsAll()
-	
+
 	//Collect links
 	doclinks := doc.GetDocLinks()
 	for _, y := range doclinks {
@@ -70,20 +70,20 @@ func createBaseJson() {
 				if err != nil {
 					log.Fatal("Cannot write to File ", err)
 				}
-				
+
 				// Add entity to object
 				allDocs.Entities = append(allDocs.Entities, model.DocLink{
 					Name: y.Name,
 					Link: y.Link,
-					Doc: mod,
+					Doc:  mod,
 				})
 			}
 		}
 	}
-	
+
 	// Serialize object with all entities
 	allDocsJson, err := json.MarshalIndent(allDocs, "", " ")
-	
+
 	// Write JSON aof all entities to file "_AllEntities.json"
 	err = ioutil.WriteFile(basePath+"_AllEntities.json", allDocsJson, 0644)
 	if err != nil {

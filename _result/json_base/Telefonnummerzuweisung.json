@@ -1,4 +1,6 @@
 {
+ "TableName": "CRM_TelNummern",
+ "PrimaryKey": "TelefonNr",
  "Fields": [
   {
    "Feld": "TelefonNr",

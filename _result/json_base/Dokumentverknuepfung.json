@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_DokLink",
+ "PrimaryKey": "DokumentverknuepfungNr",
  "Fields": [
   {
    "Feld": "DokumentverknuepfungNr",

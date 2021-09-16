@@ -1,4 +1,6 @@
 {
+ "TableName": "FIB_Verbindungsprotokolle",
+ "PrimaryKey": "VerbindungsprotokollNr",
  "Fields": [
   {
    "Feld": "VerbindungsprotokollNr",

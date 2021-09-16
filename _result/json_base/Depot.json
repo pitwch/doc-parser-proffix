@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Depot",
+ "PrimaryKey": "DepotNr",
  "Fields": [
   {
    "Feld": "DepotNr",

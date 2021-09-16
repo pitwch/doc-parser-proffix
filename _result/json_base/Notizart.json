@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Notizarten",
+ "PrimaryKey": "NotizartNr",
  "Fields": [
   {
    "Feld": "NotizartNr",

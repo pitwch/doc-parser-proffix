@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "Rapporte",
  "Fields": [
   {
    "Feld": "Rapporte",

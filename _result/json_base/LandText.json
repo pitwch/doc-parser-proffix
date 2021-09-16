@@ -1,0 +1,39 @@
+{
+ "TableName": "PRO_LaenderText",
+ "PrimaryKey": "LandNr",
+ "Fields": [
+  {
+   "Feld": "LandNr",
+   "Datentyp": "String (5)",
+   "NamePROFFIX": "LandPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (60)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Sprache",
+   "Datentyp": "String (4)",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/LandText",
+   "Rueckgabewert": "HTTP 200Array\u003cLand\u003e",
+   "Beschreibung": "Gibt alle LanderTexte zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/LandText/{LandNr}",
+   "Rueckgabewert": "HTTP 200Land",
+   "Beschreibung": "Gibt ein LandText anhand der Landnummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

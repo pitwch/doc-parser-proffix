@@ -1,4 +1,6 @@
 {
+ "TableName": "EIN_BestellTypen",
+ "PrimaryKey": "BestelltypNr",
  "Fields": [
   {
    "Feld": "BestelltypNr",

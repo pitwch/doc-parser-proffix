@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Konditionen",
+ "PrimaryKey": "KonditionNr",
  "Fields": [
   {
    "Feld": "KonditionNr",

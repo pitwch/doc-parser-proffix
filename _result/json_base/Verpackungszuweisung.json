@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_VerpackungenLink",
+ "PrimaryKey": "VerpackungszuweisungNr",
  "Fields": [
   {
    "Feld": "VerpackungszuweisungNr",

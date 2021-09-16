@@ -1,4 +1,6 @@
 {
+ "TableName": "RES_StatusPlanobjekte",
+ "PrimaryKey": "PlanobjektstatusNr",
  "Fields": [
   {
    "Feld": "PlanobjektstatusNr",

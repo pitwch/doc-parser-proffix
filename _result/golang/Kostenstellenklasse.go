@@ -1,6 +1,6 @@
 package golang
 
 type Kostenstellenklasse struct {
-	KostenstellenklasseNr string `json:KostenstellenklasseNr`
-	Bezeichnung           string `json:Bezeichnung`
+	KostenstellenklasseNr string `json:"KostenstellenklasseNr"`
+	Bezeichnung           string `json:"Bezeichnung"`
 }

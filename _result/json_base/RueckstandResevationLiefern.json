@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "AktivitaetenAufErledigtSetzen",
  "Fields": [
   {
    "Feld": "AktivitaetenAufErledigtSetzen",

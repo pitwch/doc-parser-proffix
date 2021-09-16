@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Statistik",
+ "PrimaryKey": "ArtikelstatistikNr",
  "Fields": [
   {
    "Feld": "ArtikelstatistikNr",

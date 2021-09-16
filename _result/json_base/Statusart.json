@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_StatusArten",
+ "PrimaryKey": "StatusartNr",
  "Fields": [
   {
    "Feld": "StatusartNr",

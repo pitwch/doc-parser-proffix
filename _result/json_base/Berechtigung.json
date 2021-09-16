@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "BerechtigungNr",
  "Fields": [
   {
    "Feld": "BerechtigungNr",

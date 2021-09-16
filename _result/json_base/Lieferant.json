@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Lieferanten",
+ "PrimaryKey": "LieferantNr",
  "Fields": [
   {
    "Feld": "LieferantNr",

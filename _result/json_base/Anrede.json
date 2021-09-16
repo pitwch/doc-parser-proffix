@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Briefanreden",
+ "PrimaryKey": "AnredeNr",
  "Fields": [
   {
    "Feld": "AnredeNr",

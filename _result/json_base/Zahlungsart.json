@@ -1,4 +1,6 @@
 {
+ "TableName": "ADR_Zahlungsarten",
+ "PrimaryKey": "ZahlungsartNr",
  "Fields": [
   {
    "Feld": "ZahlungsartNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_Margenobjekte",
+ "PrimaryKey": "OccasionsobjektNr",
  "Fields": [
   {
    "Feld": "OccasionsobjektNr",

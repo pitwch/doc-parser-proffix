@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Untergruppen",
+ "PrimaryKey": "ArtikeluntergruppeNr",
  "Fields": [
   {
    "Feld": "ArtikeluntergruppeNr",

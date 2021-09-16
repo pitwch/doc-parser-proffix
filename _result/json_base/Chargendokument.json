@@ -1,0 +1,87 @@
+{
+ "TableName": "LAG_Chargedokument",
+ "PrimaryKey": "DokumentNr",
+ "Fields": [
+  {
+   "Feld": "DokumentNr",
+   "Datentyp": "Integer",
+   "NamePROFFIX": "DokumentNrLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ChargeNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "ChargeLAG",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bemerkung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bemerkungen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DateiNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "DateiName",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Dokumentgruppe",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "DokGruppe",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LAG/Chargedokument",
+   "Rueckgabewert": "HTTP 200Array\u003cChargedokument\u003e",
+   "Beschreibung": "Gibt alle Chargendokumente zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LAG/Chargedokument/{DokumentNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cChargedokument\u003e",
+   "Beschreibung": "Gibt eine Chargendokument anhand der DokumentNr zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /LAG/Chargedokument",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt ein neues Chargendokument an",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PUT /LAG/Chargedokument/{DokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Chargendokument anhand der DokumentNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "PATCH /LAG/Chargedokument/{DokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert ein Chargendokument anhand der DokumentNr",
+   "BenoetigteLizenz": "LAG"
+  },
+  {
+   "Endpunkt": "DELETE /LAG/Chargedokument/{DokumentNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht ein Chargendokument anhand der DokumentNr",
+   "BenoetigteLizenz": "LAG"
+  }
+ ],
+ "Parameter": null
+}

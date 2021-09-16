@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Gs1Werte",
+ "PrimaryKey": "Artikel",
  "Fields": [
   {
    "Feld": "Artikel",
@@ -7,9 +9,9 @@
    "Besonderes": " "
   },
   {
-   "Feld": "Feld  ",
+   "Feld": "Feld  ",
    "Datentyp": "String (250)",
-   "NamePROFFIX": "Feld  ",
+   "NamePROFFIX": "Feld  ",
    "Besonderes": " "
   },
   {

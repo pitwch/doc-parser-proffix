@@ -1,4 +1,6 @@
 {
+ "TableName": "EDO_SSCCNummern",
+ "PrimaryKey": "SSCCNummerNr",
  "Fields": [
   {
    "Feld": "SSCCNummerNr",

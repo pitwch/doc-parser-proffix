@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Waehrungen",
+ "PrimaryKey": "WaehrungNr",
  "Fields": [
   {
    "Feld": "WaehrungNr",

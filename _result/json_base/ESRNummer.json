@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_ESRNr",
+ "PrimaryKey": "ESRNr",
  "Fields": [
   {
    "Feld": "ESRNr",

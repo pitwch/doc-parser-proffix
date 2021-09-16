@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Vertreter",
+ "PrimaryKey": "VertreterNr",
  "Fields": [
   {
    "Feld": "VertreterNr",

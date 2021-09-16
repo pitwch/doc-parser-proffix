@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_StdPlanHis",
+ "PrimaryKey": "SollstundenplanHistoryNr",
  "Fields": [
   {
    "Feld": "SollstundenplanHistoryNr",

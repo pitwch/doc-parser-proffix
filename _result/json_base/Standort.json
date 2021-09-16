@@ -1,4 +1,6 @@
 {
+ "TableName": "BAS_Standorte",
+ "PrimaryKey": "StandortNr",
  "Fields": [
   {
    "Feld": "StandortNr",

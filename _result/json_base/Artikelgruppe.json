@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Gruppen",
+ "PrimaryKey": "ArtikelgruppeNr",
  "Fields": [
   {
    "Feld": "ArtikelgruppeNr",

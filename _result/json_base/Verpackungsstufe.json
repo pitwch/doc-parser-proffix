@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Verpackungsstufen",
+ "PrimaryKey": "VerpackungsstufeNr",
  "Fields": [
   {
    "Feld": "VerpackungsstufeNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Rahmenvertraege",
+ "PrimaryKey": "RahmenvertragNr",
  "Fields": [
   {
    "Feld": "RahmenvertragNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Dokumente",
+ "PrimaryKey": "ArtikeldokumentNr",
  "Fields": [
   {
    "Feld": "ArtikeldokumentNr",

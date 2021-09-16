@@ -1,4 +1,6 @@
 {
+ "TableName": "ADR_Kontakte",
+ "PrimaryKey": "KontaktNr",
  "Fields": [
   {
    "Feld": "KontaktNr",

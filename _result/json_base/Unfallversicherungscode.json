@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_UVGCodes",
+ "PrimaryKey": "UnfallversicherungscodeNr",
  "Fields": [
   {
    "Feld": "UnfallversicherungscodeNr",

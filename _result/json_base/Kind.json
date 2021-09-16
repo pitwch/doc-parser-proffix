@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_Kinder",
+ "PrimaryKey": "KindNr",
  "Fields": [
   {
    "Feld": "KindNr",
@@ -100,6 +102,18 @@
    "Feld": "Kinderzulage2Bis",
    "Datentyp": "String (Date)",
    "NamePROFFIX": "Zulage2Bis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "QSTAbzugsberechtigtVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "QstVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "QSTAbzugsberechtigtBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "QstBis",
    "Besonderes": " "
   }
  ],

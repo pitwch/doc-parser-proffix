@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_Kinderzulagen",
+ "PrimaryKey": "KinderzulageNr",
  "Fields": [
   {
    "Feld": "KinderzulageNr",

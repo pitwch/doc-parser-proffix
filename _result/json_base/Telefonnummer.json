@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "TelefonNr",
  "Fields": [
   {
    "Feld": "TelefonNr",

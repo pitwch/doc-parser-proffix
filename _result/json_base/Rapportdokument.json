@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_RapporteDok",
+ "PrimaryKey": "RapportdokumentNr",
  "Fields": [
   {
    "Feld": "RapportdokumentNr",

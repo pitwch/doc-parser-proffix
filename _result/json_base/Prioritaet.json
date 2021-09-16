@@ -1,4 +1,6 @@
 {
+ "TableName": "BAS_Prioritaeten",
+ "PrimaryKey": "PrioritaetNr",
  "Fields": [
   {
    "Feld": "PrioritaetNr",

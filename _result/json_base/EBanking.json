@@ -1,0 +1,201 @@
+{
+ "TableName": "FIB_CCBewegungen",
+ "PrimaryKey": "EBankingNr",
+ "Fields": [
+  {
+   "Feld": "EBankingNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Auszugsnummer",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Auszugsnummer",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BankBuchungNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "BankBuchungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bank",
+   "Datentyp": "Object\u003cBank\u003e",
+   "NamePROFFIX": "BankNrPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BelegBild",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "BelegBild",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Betrag",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Betrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BetragSW",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "BetragSW",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BuchungNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "BuchungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchungstext",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Buchungstext",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "OpKonto",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "OpKonto",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Status",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "Status",
+   "Besonderes": "Offen = 0Buchung = 1Erledigt = 2Kreditoren_Verguetung = 3Lohn_Verguetung = 4"
+  },
+  {
+   "Feld": "Saldo",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Saldo",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Valuta",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "Valuta",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Waehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "Waehrung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zahlungsgrund",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Zahlungsgrund",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Zahlungsgrund2",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "Zahlungsgrund2",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "ZeitBuchungNr",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "ZeitBuchungNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Taxen",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "Taxen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstEsr",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "IstEsr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstEs",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "IstEs",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IsoMsgId",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "IsoMsgId",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IsoPmtInfId",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "IsoPmtInfId",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DetailBetrag",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "DetailBetrag",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DetailKurs",
+   "Datentyp": "Number (10,4)",
+   "NamePROFFIX": "DetailKurs",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "DetailWaehrung",
+   "Datentyp": "Object\u003cWaehrung\u003e",
+   "NamePROFFIX": "DetailWaehrung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IsoAcctSvcrRef",
+   "Datentyp": "String (140)",
+   "NamePROFFIX": "IsoAcctSvcrRef",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IstCamt",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "IstCamt",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "IsoEndToEndId",
+   "Datentyp": "String (250)",
+   "NamePROFFIX": "IsoEndToEndId",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /FIB/EBanking",
+   "Rueckgabewert": "HTTP 200Array\u003cEbanking\u003e",
+   "Beschreibung": "Gibt alle EBanking-Einträge zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /FIB/EBanking/{EBankingNr}",
+   "Rueckgabewert": "HTTP 200EBanking",
+   "Beschreibung": "Gibt eine EBanking-Zeile anhand der EBankingnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PUT /FIB/EBanking/{EBankingNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Setzt eine EBanking-Zeile auf erledigt anhand der EBankingnummer. Sonst werden keine Daten gespeichert. Für den PUT braucht es nicht das ganze Objekt, es reicht die Ebankingnummer.",
+   "BenoetigteLizenz": "FIB"
+  }
+ ],
+ "Parameter": null
+}

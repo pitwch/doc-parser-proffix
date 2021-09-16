@@ -1,6 +1,6 @@
 package golang
 
 type Kostenstellenuntergruppe struct {
-	KostenstellenuntergruppeNr string `json:KostenstellenuntergruppeNr`
-	Bezeichnung                string `json:Bezeichnung`
+	KostenstellenuntergruppeNr string `json:"KostenstellenuntergruppeNr"`
+	Bezeichnung                string `json:"Bezeichnung"`
 }

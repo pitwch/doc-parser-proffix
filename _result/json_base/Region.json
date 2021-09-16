@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Kantone",
+ "PrimaryKey": "RegionNr",
  "Fields": [
   {
    "Feld": "RegionNr",

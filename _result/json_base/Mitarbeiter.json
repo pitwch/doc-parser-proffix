@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Mitarbeiter und weitere Mitarbeiter-Tabellen (STU_Mitarbeiter, ZEI_Mitarbeiter, PRO_Benutzer)",
+ "PrimaryKey": "MitarbeiterNr",
  "Fields": [
   {
    "Feld": "MitarbeiterNr",
@@ -82,13 +84,13 @@
    "Feld": "Austrittsdatum",
    "Datentyp": "String (Date)",
    "NamePROFFIX": "Austrittsdatum",
-   "Besonderes": "optional"
+   "Besonderes": "optional, kann NULL sein"
   },
   {
    "Feld": "Eintrittsdatum",
    "Datentyp": "String (Date)",
    "NamePROFFIX": "Eintrittsdatum",
-   "Besonderes": "optional"
+   "Besonderes": "optional, kann NULL sein"
   },
   {
    "Feld": "Funktion",

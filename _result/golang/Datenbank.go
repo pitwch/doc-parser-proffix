@@ -1,5 +1,5 @@
 package golang
 
 type Datenbank struct {
-	Parameter string `json:Parameter`
+	Parameter string `json:"Parameter"`
 }

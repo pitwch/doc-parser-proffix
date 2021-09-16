@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_DokumentPos",
+ "PrimaryKey": "DokumentpositionNr",
  "Fields": [
   {
    "Feld": "DokumentpositionNr",
@@ -334,7 +336,7 @@
    "Feld": "PreisFW",
    "Datentyp": "Number (16,4)",
    "NamePROFFIX": "PreisFW",
-   "Besonderes": " "
+   "Besonderes": "kann NULL sein"
   },
   {
    "Feld": "PreisSW",

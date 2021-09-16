@@ -1,4 +1,6 @@
 {
+ "TableName": "PRE_Assortierungen",
+ "PrimaryKey": "AssortierungNr",
  "Fields": [
   {
    "Feld": "AssortierungNr",

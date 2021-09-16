@@ -1,4 +1,6 @@
 {
+ "TableName": "ADR_Kommunikation",
+ "PrimaryKey": "KommunikationNr",
  "Fields": [
   {
    "Feld": "KommunikationNr",

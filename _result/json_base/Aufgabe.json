@@ -1,4 +1,6 @@
 {
+ "TableName": "CRM_Aufgaben",
+ "PrimaryKey": "AufgabeNr",
  "Fields": [
   {
    "Feld": "AufgabeNr",

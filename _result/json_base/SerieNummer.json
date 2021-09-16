@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_SerieNummern",
+ "PrimaryKey": "SerieNummerNr",
  "Fields": [
   {
    "Feld": "SerieNummerNr",

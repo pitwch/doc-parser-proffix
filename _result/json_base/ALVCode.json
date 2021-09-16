@@ -1,0 +1,33 @@
+{
+ "TableName": "LOH_ALVCodes",
+ "PrimaryKey": "ALVCodeNr",
+ "Fields": [
+  {
+   "Feld": "ALVCodeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "ALVCodeLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/ALVCode",
+   "Rueckgabewert": "HTTP 200Array\u003cALVCode\u003e",
+   "Beschreibung": "Gibt alle ALVCodes zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/ALVCode/{ALVCodeNr}",
+   "Rueckgabewert": "HTTP 200ALVCode",
+   "Beschreibung": "Gibt einen ALVCode anhand der ALVCode-Nr. zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

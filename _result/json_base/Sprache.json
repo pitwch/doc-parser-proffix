@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Sprachen",
+ "PrimaryKey": "SpracheNr",
  "Fields": [
   {
    "Feld": "SpracheNr",

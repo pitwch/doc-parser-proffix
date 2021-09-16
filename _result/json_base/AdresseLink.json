@@ -1,4 +1,6 @@
 {
+ "TableName": "PRE_AdressenLink",
+ "PrimaryKey": "AdresseLinkNr",
  "Fields": [
   {
    "Feld": "AdresseLinkNr",

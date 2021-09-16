@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "Parameter",
  "Fields": [
   {
    "Feld": "Parameter",

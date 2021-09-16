@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_DokTypenText",
+ "PrimaryKey": "DokumenttypentextNr",
  "Fields": [
   {
    "Feld": "DokumenttypentextNr",

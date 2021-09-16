@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "BuchungNr",
  "Fields": [
   {
    "Feld": "BuchungNr",
@@ -82,7 +84,7 @@
    "Feld": "Herkunft",
    "Datentyp": "Number (Int)",
    "NamePROFFIX": " ",
-   "Besonderes": "Wird aus mehreren Feldern in der PROFFIX Datenbank ermittelt (IstAuftrag, IstLagerbuchung, IstLohn, IstProvision)0 = FIBU1 = Auftrag2 = Lager3 = Lohn4 = Provision"
+   "Besonderes": "Wird aus mehreren Feldern in der Proffix Datenbank ermittelt (IstAuftrag, IstLagerbuchung, IstLohn, IstProvision)0 = FIBU1 = Auftrag2 = Lager3 = Lohn4 = Provision"
   },
   {
    "Feld": "Auftrag",
@@ -261,7 +263,7 @@
   {
    "Feld": "IstErfassteBuchung",
    "Datentyp": "String (yes, no, any)",
-   "NamePROFFIX": "yes: Nur von Benutzer erstellte Buchungen werden ausgegebenno: Nur von PROFFIX erstellte Buchungen werden ausgegebenany: Alle Buchung werden ausgegeben",
+   "NamePROFFIX": "yes: Nur von Benutzer erstellte Buchungen werden ausgegebenno: Nur von Proffix erstellte Buchungen werden ausgegebenany: Alle Buchung werden ausgegeben",
    "Besonderes": "any"
   }
  ],

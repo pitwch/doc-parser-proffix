@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "ListeNr",
  "Fields": [
   {
    "Feld": "ListeNr",
@@ -52,13 +54,13 @@
    "Feld": "Sortierungen",
    "Datentyp": "Array\u003cObject {•Feldname : String•Absteigend : Boolean}\u003e",
    "NamePROFFIX": " ",
-   "Besonderes": " "
+   "Besonderes": "Sortierungen, welche nicht existieren und trotzdem mitgegeben werden, werden ignoriert."
   },
   {
    "Feld": "Selektionen",
    "Datentyp": "Array\u003cObject {•Feldname : String•Wert : String•Operation : String}\u003e",
    "NamePROFFIX": " ",
-   "Besonderes": " "
+   "Besonderes": "Selektionen, welche nicht existieren und trotzdem mitgegeben werden, werden ignoriert."
   }
  ],
  "Methods": [
@@ -181,11 +183,17 @@
   {
    "Parameter": "typ",
    "Format": "String (pdf)",
-   "Beschreibung": "pdf: Dokument wird im PDF-Format zurückgegeben",
+   "Beschreibung": "pdf: Dokument wird im PDF-Format zurückgegebenpdfa: Dokument wird im PDF/A-3-Format zurückgegeben",
    "VerhaltenOhneParameter": "pdf"
   },
   {
    "Parameter": "anzahl",
+   "Format": "Number (Int)",
+   "Beschreibung": "Die Anzahl der Listen (Etikette), die gedruckt werden sollen",
+   "VerhaltenOhneParameter": "1"
+  },
+  {
+   "Parameter": "kopien",
    "Format": "Number (Int)",
    "Beschreibung": "Die Anzahl der Listen, die gedruckt werden sollen",
    "VerhaltenOhneParameter": "1"

@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_GebaeudeArten",
+ "PrimaryKey": "GebaeudeartNr",
  "Fields": [
   {
    "Feld": "GebaeudeartNr",

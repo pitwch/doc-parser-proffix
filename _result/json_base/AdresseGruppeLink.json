@@ -1,4 +1,6 @@
 {
+ "TableName": "PRE_AdrGrpLink",
+ "PrimaryKey": "AdresseGruppeLinkNr",
  "Fields": [
   {
    "Feld": "AdresseGruppeLinkNr",

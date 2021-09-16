@@ -1,4 +1,6 @@
 {
+ "TableName": "BAS_Vertragstypen",
+ "PrimaryKey": "VertragstypNr",
  "Fields": [
   {
    "Feld": "VertragstypNr",

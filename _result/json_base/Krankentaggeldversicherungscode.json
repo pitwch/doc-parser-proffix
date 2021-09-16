@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_KTGCodes",
+ "PrimaryKey": "KrankentaggeldversicherungscodeNr",
  "Fields": [
   {
    "Feld": "KrankentaggeldversicherungscodeNr",

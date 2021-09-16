@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "GeschaeftsjahrVon",
  "Fields": [
   {
    "Feld": "GeschaeftsjahrVon",

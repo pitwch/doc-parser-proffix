@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_Rueckstand",
+ "PrimaryKey": "RueckstandReservationNr",
  "Fields": [
   {
    "Feld": "RueckstandReservationNr",

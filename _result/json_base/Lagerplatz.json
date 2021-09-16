@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Lagerplaetze",
+ "PrimaryKey": "LagerplatzNr",
  "Fields": [
   {
    "Feld": "LagerplatzNr",

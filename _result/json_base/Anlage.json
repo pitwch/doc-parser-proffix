@@ -1,4 +1,6 @@
 {
+ "TableName": "BAS_Anlagen",
+ "PrimaryKey": "AnlageNr",
  "Fields": [
   {
    "Feld": "AnlageNr",

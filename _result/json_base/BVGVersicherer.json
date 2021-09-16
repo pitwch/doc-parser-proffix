@@ -1,0 +1,69 @@
+{
+ "TableName": "LOH_BVGVersicherer",
+ "PrimaryKey": "BVGVersichererNr",
+ "Fields": [
+  {
+   "Feld": "BVGVersichererNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "BVGVersNrLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Adresse",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrADR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BVGCodes",
+   "Datentyp": "String (255)",
+   "NamePROFFIX": "BVGCodes",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "GueltigAb",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "GueltigAb",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "KundenNr",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "KundenNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "VersichererNr",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "VersichererNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "VertragsNr",
+   "Datentyp": "String (40)",
+   "NamePROFFIX": "VertragsNr",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/BVGVersicherer",
+   "Rueckgabewert": "HTTP 200Array\u003cBVGVersicherer\u003e",
+   "Beschreibung": "Gibt alle BVGVersicherer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/BVGVersicherer/{BVGVersichererNr}",
+   "Rueckgabewert": "HTTP 200BVGVersicherer",
+   "Beschreibung": "Gibt einen BVGVersicherer anhand der BVGVersicherer-Nr. zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

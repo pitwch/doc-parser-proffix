@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_NrKreis",
+ "PrimaryKey": "NummernkreisNr",
  "Fields": [
   {
    "Feld": "NummernkreisNr",
@@ -19,9 +21,9 @@
    "Besonderes": " "
   },
   {
-   "Feld": "NrAktuell  ",
+   "Feld": "NrAktuell  ",
    "Datentyp": "Number (int)",
-   "NamePROFFIX": "NrAktuell  ",
+   "NamePROFFIX": "NrAktuell  ",
    "Besonderes": "Zeigt die Nummer für das nächste Dokument des Nummernkreises an Achtung: Darf nur zur Info bzw. zu Überwachungszwecken verwendet werden, um prüfen zu können, ob die Range vergrössert werden muss!"
   }
  ],

@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_TeilUGruppen",
+ "PrimaryKey": "TeilleistungsuntergruppeNr",
  "Fields": [
   {
    "Feld": "TeilleistungsuntergruppeNr",

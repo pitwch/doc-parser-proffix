@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Banken",
+ "PrimaryKey": "BankNr",
  "Fields": [
   {
    "Feld": "BankNr",

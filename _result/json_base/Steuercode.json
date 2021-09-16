@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Steuercodes",
+ "PrimaryKey": "SteuercodeNr",
  "Fields": [
   {
    "Feld": "SteuercodeNr",

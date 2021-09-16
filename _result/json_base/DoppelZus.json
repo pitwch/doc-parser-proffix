@@ -1,0 +1,39 @@
+{
+ "TableName": "ADR_DoppelZus",
+ "PrimaryKey": "DoppelZusNr",
+ "Fields": [
+  {
+   "Feld": "DoppelZusNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AdresseNeu",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrNeu",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AdresseAlt",
+   "Datentyp": "Object\u003cAdresse\u003e",
+   "NamePROFFIX": "AdressNrAlt",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /ADR/DoppelZus",
+   "Rueckgabewert": "HTTP 200Array\u003cDoppelZus\u003e",
+   "Beschreibung": "Gibt alle zusammengeführten Adressen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /ADR/DoppelZus/{DoppelZusNr}",
+   "Rueckgabewert": "HTTP 200DoppelZus",
+   "Beschreibung": "Gibt eine zusammengeführte Adresse anhand der DoppelZusNummer zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

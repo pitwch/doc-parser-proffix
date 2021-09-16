@@ -1,5 +1,5 @@
 package golang
 
 type Buchungstext struct {
-	Bezeichnung string `json:Bezeichnung`
+	Bezeichnung string `json:"Bezeichnung"`
 }

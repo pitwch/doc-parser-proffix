@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Bilder",
+ "PrimaryKey": "ArtikelbildNr",
  "Fields": [
   {
    "Feld": "ArtikelbildNr",
@@ -28,7 +30,7 @@
    "Feld": "DateiNr",
    "Datentyp": "String (∞)",
    "NamePROFFIX": "Bild",
-   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei."
+   "Besonderes": "Zwingend Wird jedes Mal neu generiert und wird in PRO/Datei benötigt. Der Download erfolgt über PRO/Datei. Folgende Dateitypen werden unterstützt:\"bmp\",\"gif\",\"jpg\",\"jpeg\",\"png\",\"emf\",\"wmf\",\"tif\",\"tiff\""
   },
   {
    "Feld": "Hauptbild",

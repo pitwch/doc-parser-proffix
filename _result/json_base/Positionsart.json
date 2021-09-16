@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_Positionsarten",
+ "PrimaryKey": "PositionsartNr",
  "Fields": [
   {
    "Feld": "PositionsartNr",
@@ -82,6 +84,66 @@
    "Feld": "GueltigBis",
    "Datentyp": "String (Date)",
    "NamePROFFIX": "GueltigBis",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Minimalzeit",
+   "Datentyp": "Number (5,2)",
+   "NamePROFFIX": "Minimalzeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Runden",
+   "Datentyp": "Number (10,2)",
+   "NamePROFFIX": "RundenVerr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lohnart",
+   "Datentyp": "Object\u003cLohnart\u003e",
+   "NamePROFFIX": "Lohnart",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LohnartÜberzeit",
+   "Datentyp": "Object\u003cLohnart\u003e",
+   "NamePROFFIX": "LohnartUeberzeit",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LohnartKm",
+   "Datentyp": "Object\u003cLohnart\u003e",
+   "NamePROFFIX": "LohnartKm",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "LohnartSpesen",
+   "Datentyp": "Object\u003cLohnart\u003e",
+   "NamePROFFIX": "LohnartSpesen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Stundenabrechnung",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "StdAbrechnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Verrechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Verrechnen",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NichtZuVerrIstStundenRechnen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NichtSR",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "NichtZusammenziehen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "NichtZus",
    "Besonderes": " "
   }
  ],

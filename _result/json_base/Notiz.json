@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Notizen",
+ "PrimaryKey": "NotizNr",
  "Fields": [
   {
    "Feld": "NotizNr",

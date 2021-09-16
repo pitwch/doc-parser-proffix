@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Benutzer",
+ "PrimaryKey": "BenutzerNr",
  "Fields": [
   {
    "Feld": "BenutzerNr",

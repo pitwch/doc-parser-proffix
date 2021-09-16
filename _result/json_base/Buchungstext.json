@@ -1,10 +1,12 @@
 {
+ "TableName": "PRO_Buchungstexte",
+ "PrimaryKey": "Bezeichnung",
  "Fields": [
   {
    "Feld": "Bezeichnung",
    "Datentyp": "String (120)",
    "NamePROFFIX": "Bezeichnung",
-   "Besonderes": "Kein Primärschlüssel, ermöglicht nur den Zugriff auf die in PROFFIX für das Autocomplete zwischengespeicherten Buchungstexte"
+   "Besonderes": "Kein Primärschlüssel, ermöglicht nur den Zugriff auf die in Proffix für das Autocomplete zwischengespeicherten Buchungstexte"
   }
  ],
  "Methods": [

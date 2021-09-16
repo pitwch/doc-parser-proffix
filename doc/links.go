@@ -39,6 +39,6 @@ func GetDocLinks() (doclinks []model.DocLink) {
 	return doclinks
 }
 
-func CreateDocsAll()(docsAll model.DocsAll) {
+func CreateDocsAll() (docsAll model.DocsAll) {
 	return docsAll
 }

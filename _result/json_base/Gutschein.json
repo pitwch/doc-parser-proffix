@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_Gutscheine",
+ "PrimaryKey": "GutscheinNr",
  "Fields": [
   {
    "Feld": "GutscheinNr",

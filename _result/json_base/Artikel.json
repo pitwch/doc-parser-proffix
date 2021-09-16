@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Artikel",
+ "PrimaryKey": "ArtikelNr",
  "Fields": [
   {
    "Feld": "ArtikelNr",
@@ -623,6 +625,18 @@
    "Datentyp": "Object\u003cLand\u003e",
    "NamePROFFIX": "Ursprungsland",
    "Besonderes": " "
+  },
+  {
+   "Feld": "TarifNr",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "TarifNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Tarifschlüssel",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Tarifschluessel",
+   "Besonderes": " "
   }
  ],
  "Methods": [
@@ -745,7 +759,13 @@
   {
    "Parameter": "ohnevorgabe",
    "Format": "String (yes, no)",
-   "Beschreibung": "yes: Artikel wird beim Speichern ohne PROFFIX-Vorgaben gespeichertno: Artikel wird beim Speichern mit PROFFIX-Vorgaben angereichert",
+   "Beschreibung": "yes: Artikel wird beim Speichern ohne Proffix-Vorgaben gespeichertno: Artikel wird beim Speichern mit Proffix-Vorgaben angereichert",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "berechnen",
+   "Format": "String (yes, no)",
+   "Beschreibung": "yes: Die Preise werden neu kalkuliertno: Die Preise werden nicht kalkuliert",
    "VerhaltenOhneParameter": "no"
   }
  ]

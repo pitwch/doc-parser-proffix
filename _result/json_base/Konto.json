@@ -1,4 +1,6 @@
 {
+ "TableName": "FIB_Konto",
+ "PrimaryKey": "KontoNr",
  "Fields": [
   {
    "Feld": "KontoNr",

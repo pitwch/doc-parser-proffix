@@ -1,4 +1,6 @@
 {
+ "TableName": "BAS_Installationsdokument",
+ "PrimaryKey": "InstallationsdokumentNr",
  "Fields": [
   {
    "Feld": "InstallationsdokumentNr",

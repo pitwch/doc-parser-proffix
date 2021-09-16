@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Ortschaften",
+ "PrimaryKey": "OrtschaftNr",
  "Fields": [
   {
    "Feld": "OrtschaftNr",

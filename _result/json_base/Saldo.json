@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "SaldoSW",
  "Fields": [
   {
    "Feld": "SaldoSW",

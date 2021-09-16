@@ -1,0 +1,69 @@
+{
+ "TableName": "PRO_LieferartText",
+ "PrimaryKey": "LieferartTextNr",
+ "Fields": [
+  {
+   "Feld": "LieferartTextNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Lieferart",
+   "Datentyp": "String (100)",
+   "NamePROFFIX": "LieferartTextPRO",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Modul",
+   "Datentyp": "Object\u003cSprache\u003e",
+   "NamePROFFIX": "SprachePRO",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /PRO/LieferartText",
+   "Rueckgabewert": "HTTP 200 Array\u003cLieferartText\u003e",
+   "Beschreibung": "Gibt alle LieferartText zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /PRO/LieferartText/{LieferartTextNr}",
+   "Rueckgabewert": "HTTP 200 LieferartText",
+   "Beschreibung": "Gibt einen LieferartText anhand seiner LieferartTextnummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /PRO/LieferartText",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neu LieferartText an",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PUT /PRO/LieferartText/{LieferartTextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen LieferartText anhand der LieferartTextnummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "PATCH /PRO/LieferartText/{LieferartTextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert einen LieferartText anhand der LieferartTextnummer",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "DELETE /PRO/LieferartText/{LieferartTextNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht einen LieferartText anhand der LieferartTextnummer",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

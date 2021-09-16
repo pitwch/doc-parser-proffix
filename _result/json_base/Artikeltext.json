@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_ArtikelText",
+ "PrimaryKey": "ArtikeltextNr",
  "Fields": [
   {
    "Feld": "ArtikeltextNr",

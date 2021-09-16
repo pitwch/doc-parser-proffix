@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_UVGZCodes",
+ "PrimaryKey": "UnfallzusatzversicherungscodeNr",
  "Fields": [
   {
    "Feld": "UnfallzusatzversicherungscodeNr",

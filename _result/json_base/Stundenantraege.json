@@ -1,4 +1,6 @@
 {
+ "TableName": "ZEI_Stundenantraege",
+ "PrimaryKey": "StundenNr",
  "Fields": [
   {
    "Feld": "StundenNr",
@@ -58,7 +60,7 @@
    "Feld": "Quelle",
    "Datentyp": "String (50)",
    "NamePROFFIX": "Quelle",
-   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Einstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
+   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Einstempelns an (ist in Proffix sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
   },
   {
    "Feld": "Bemerkungen",

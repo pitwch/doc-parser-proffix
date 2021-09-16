@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_StdPlan",
+ "PrimaryKey": "SollstundenplanNr",
  "Fields": [
   {
    "Feld": "SollstundenplanNr",

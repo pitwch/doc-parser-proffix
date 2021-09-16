@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_AuftragNotizen",
+ "PrimaryKey": "AuftragNotizNr",
  "Fields": [
   {
    "Feld": "AuftragNotizNr",
@@ -126,6 +128,30 @@
    "Endpunkt": "GET /PRO/AuftragNotiz/{AuftragNotizNr}",
    "Rueckgabewert": "HTTP 200AuftragNotiz",
    "Beschreibung": "Gibt eine AuftragNotiz anhand der AuftragNotizNr zurück",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "POST /PRO/AuftragNotiz",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine AuftragNotiz an",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "PUT /PRO/AuftragNotiz/{AuftragNotizNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine AuftragNotiz anhand der AuftragNotizNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "PATCH /PRO/AuftragNotiz/{AuftragNotizNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine AuftragNotiz anhand der AuftragNotizNr",
+   "BenoetigteLizenz": "AUF"
+  },
+  {
+   "Endpunkt": "DELETE /PRO/AuftragNotiz/{AuftragNotizNr}",
+   "Rueckgabewert": " ",
+   "Beschreibung": "Löscht eine AuftragNotiz anhand der AuftragNotizNr",
    "BenoetigteLizenz": "AUF"
   }
  ],

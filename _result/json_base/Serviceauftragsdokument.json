@@ -1,4 +1,6 @@
 {
+ "TableName": "SRV_Dokumente",
+ "PrimaryKey": "ServiceauftragsdokumentNr",
  "Fields": [
   {
    "Feld": "ServiceauftragsdokumentNr",

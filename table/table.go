@@ -14,11 +14,11 @@ func TableToStrings(link string) (parsed model.Doc) {
 	// On every a element which has href attribute do callback
 	d.OnHTML("#innerdiv", func(e *colly.HTMLElement) {
 
-	    e.ForEach("p", func(_ int, et *colly.HTMLElement) {
+		e.ForEach("p", func(_ int, et *colly.HTMLElement) {
 			var tmpTableName = ""
-			
+
 			tmpTableName = et.Text
-			
+
 			if strings.HasPrefix(et.Text, "ADR_") ||
 				strings.HasPrefix(et.Text, "AUF_") ||
 				strings.HasPrefix(et.Text, "BAS_") ||
@@ -38,8 +38,8 @@ func TableToStrings(link string) (parsed model.Doc) {
 				strings.HasPrefix(et.Text, "ZEI_") {
 
 				log.Printf("Table %v", tmpTableName)
-							
-				doc.TableName = tmpTableName;
+
+				doc.TableName = tmpTableName
 			}
 		})
 
@@ -93,8 +93,8 @@ func TableToStrings(link string) (parsed model.Doc) {
 							NamePROFFIX: tmpString[2],
 							Besonderes:  tmpString[3],
 						})
-						
-						if len(doc.PrimaryKey) == 0 {						
+
+						if len(doc.PrimaryKey) == 0 {
 							doc.PrimaryKey = tmpString[0]
 						}
 					}

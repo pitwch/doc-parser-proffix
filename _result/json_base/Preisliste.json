@@ -1,4 +1,6 @@
 {
+ "TableName": "PRE_Preislisten",
+ "PrimaryKey": "PreislisteNr",
  "Fields": [
   {
    "Feld": "PreislisteNr",

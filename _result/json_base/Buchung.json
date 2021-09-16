@@ -1,4 +1,6 @@
 {
+ "TableName": "FIB_Buchungen",
+ "PrimaryKey": "BuchungNr",
  "Fields": [
   {
    "Feld": "BuchungNr",
@@ -70,7 +72,7 @@
    "Feld": "Herkunft",
    "Datentyp": "Number (Int)",
    "NamePROFFIX": " ",
-   "Besonderes": "Wird aus mehreren Feldern in der PROFFIX Datenbank ermittelt (IstAuftrag, IstLagerbuchung, IstLohn, IstProvision)0 = FIBU1 = Auftrag2 = Lager3 = Lohn4 = Provision"
+   "Besonderes": "Wird aus mehreren Feldern in der Proffix Datenbank ermittelt (IstAuftrag, IstLagerbuchung, IstLohn, IstProvision)0 = FIBU1 = Auftrag2 = Lager3 = Lohn4 = Provision"
   },
   {
    "Feld": "Buchungen",

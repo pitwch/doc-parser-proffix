@@ -1,0 +1,111 @@
+{
+ "TableName": "SRV_Notizen",
+ "PrimaryKey": "NotizNr",
+ "Fields": [
+  {
+   "Feld": "NotizNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "LaufNr",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Serviceauftrag",
+   "Datentyp": "Object\u003cServiceauftrag\u003e",
+   "NamePROFFIX": "AuftragNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Mitarbeiter",
+   "Datentyp": "Object\u003cMitarbeiter\u003e",
+   "NamePROFFIX": "MitNrPRO",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Notizart",
+   "Datentyp": "Object\u003cNotizart\u003e",
+   "NamePROFFIX": "NotizArtSRV",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Position",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Intern",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "Intern",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Datum",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Datum",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Termin",
+   "Datentyp": "String (DateTime)",
+   "NamePROFFIX": "Termin",
+   "Besonderes": "optional"
+  },
+  {
+   "Feld": "Notiz",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "Notiz",
+   "Besonderes": "das Feld \"NotizRTF\" darf nur die RTF-Version dieses Felds enthalten oder muss leer sein"
+  },
+  {
+   "Feld": "NotizRTF",
+   "Datentyp": "String (∞)",
+   "NamePROFFIX": "NotizRTF",
+   "Besonderes": "optional, wenn RTF übergeben wird, muss im Feld \"Notiz\" der Inhalt als Plain-Text stehen und darf nicht leer übergeben werden"
+  },
+  {
+   "Feld": "AlarmDatumVon",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "AlarmDatumVon",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "AlarmDatumBis",
+   "Datentyp": "String (Date)",
+   "NamePROFFIX": "AlarmDatumBis",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /SRV/ServiceauftragNotiz",
+   "Rueckgabewert": "HTTP 200Array\u003cNotiz\u003e",
+   "Beschreibung": "Gibt alle Notizen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /SRV/ServiceauftragNotiz/{NotizNr}",
+   "Rueckgabewert": "HTTP 200Array\u003cNotiz\u003e",
+   "Beschreibung": "Gibt eine Notiz anhand der Notiznummer zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "POST /SRV/ServiceauftragNotiz",
+   "Rueckgabewert": "HTTP 201",
+   "Beschreibung": "Legt eine neue Notiz an",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
+   "Endpunkt": "PUT /SRV/ServiceauftragNotiz/{NotizNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Aktualisiert eine Notiz anhand der Notiznummer",
+   "BenoetigteLizenz": "SRV"
+  },
+  {
+   "Endpunkt": "DELETE /SRV/ServiceauftragNotiz/{NotizNr}",
+   "Rueckgabewert": "HTTP 204",
+   "Beschreibung": "Löscht eine Notiz anhand der Notiznummer",
+   "BenoetigteLizenz": "SRV"
+  }
+ ],
+ "Parameter": null
+}

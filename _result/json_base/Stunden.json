@@ -1,4 +1,6 @@
 {
+ "TableName": "ZEI_Stunden",
+ "PrimaryKey": "StundenNr",
  "Fields": [
   {
    "Feld": "StundenNr",
@@ -58,13 +60,13 @@
    "Feld": "Quelle",
    "Datentyp": "String (50)",
    "NamePROFFIX": "Quelle",
-   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Einstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
+   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Einstempelns an (ist in Proffix sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
   },
   {
    "Feld": "QuelleStop",
    "Datentyp": "String (50)",
    "NamePROFFIX": "QuelleStop",
-   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Ausstempelns an (ist in PROFFIX sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
+   "Besonderes": "optional, gibt die Quelle des Zeitstempels während des Ausstempelns an (ist in Proffix sichtbar), kann grundsätzlich eine beliebige Zeichenfolge sein, sollte jedoch pro Client konstant bleiben, damit nachvollziehbar ist, was den Stempel-Eintrag erstellt hat"
   },
   {
    "Feld": "Bemerkungen",
@@ -76,13 +78,13 @@
    "Feld": "Longitude",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "Longitude",
-   "Besonderes": "optional, gibt den Längengrad beim Einstempeln an"
+   "Besonderes": "optional, gibt den Längengrad beim Einstempeln an, kann NULL sein"
   },
   {
    "Feld": "Latitude",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "Latitude",
-   "Besonderes": "optional, gibt den Breitengrad"
+   "Besonderes": "optional, gibt den Breitengrad, kann NULL sein"
   },
   {
    "Feld": "Accuracy",

@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Laender",
+ "PrimaryKey": "LandNr",
  "Fields": [
   {
    "Feld": "LandNr",

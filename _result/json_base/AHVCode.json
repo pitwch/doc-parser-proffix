@@ -1,0 +1,33 @@
+{
+ "TableName": "LOH_AHVCodes",
+ "PrimaryKey": "AHVCodeNr",
+ "Fields": [
+  {
+   "Feld": "AHVCodeNr",
+   "Datentyp": "Number (Int)",
+   "NamePROFFIX": "AHVCodeLOH",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Bezeichnung",
+   "Datentyp": "String (50)",
+   "NamePROFFIX": "Bezeichnung",
+   "Besonderes": " "
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /LOH/AHVCode",
+   "Rueckgabewert": "HTTP 200Array\u003cAHVCode\u003e",
+   "Beschreibung": "Gibt alle AHVCodes zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /LOH/AHVCode/{AHVCodeNr}",
+   "Rueckgabewert": "HTTP 200AHVCode",
+   "Beschreibung": "Gibt einen AHVCode anhand der AHVCode-Nr. zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

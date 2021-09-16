@@ -1,4 +1,6 @@
 {
+ "TableName": "ZEI_Stundenarten",
+ "PrimaryKey": "StundenartNr",
  "Fields": [
   {
    "Feld": "StundenartNr",

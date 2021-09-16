@@ -1,4 +1,6 @@
 {
+ "TableName": "FIB_BuArt und FIB_BuArtKonto",
+ "PrimaryKey": "BuchungsartNr",
  "Fields": [
   {
    "Feld": "BuchungsartNr",

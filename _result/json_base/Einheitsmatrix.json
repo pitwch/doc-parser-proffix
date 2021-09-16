@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_EinheitsMatrix",
+ "PrimaryKey": "EinheitLager",
  "Fields": [
   {
    "Feld": "EinheitLager",

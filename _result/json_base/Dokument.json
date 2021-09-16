@@ -1,4 +1,6 @@
 {
+ "TableName": "AUF_Dokumente",
+ "PrimaryKey": "DokumentNr",
  "Fields": [
   {
    "Feld": "DokumentNr",
@@ -328,7 +330,7 @@
    "Feld": "PortoFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "PortoFW",
-   "Besonderes": " "
+   "Besonderes": "Kann nur angegeben werden, wenn eine Lieferart gesetzt ist, kann NULL sein"
   },
   {
    "Feld": "PortoKostenart",
@@ -913,6 +915,12 @@
    "Besonderes": " "
   },
   {
+   "Feld": "Buchungstext",
+   "Datentyp": "String (150)",
+   "NamePROFFIX": "Buchungstext",
+   "Besonderes": " "
+  },
+  {
    "Feld": "DokumentpositionNr",
    "Datentyp": "Number (Int)",
    "NamePROFFIX": "LaufNr",
@@ -1240,7 +1248,7 @@
    "Feld": "PreisFW",
    "Datentyp": "Number (16,4)",
    "NamePROFFIX": "PreisFW",
-   "Besonderes": " "
+   "Besonderes": "kann NULL sein"
   },
   {
    "Feld": "PreisSW",
@@ -1679,12 +1687,6 @@
    "VerhaltenOhneParameter": "Es wird nicht nach Positionstyp gefiltert"
   },
   {
-   "Parameter": "keinBestandPruefen",
-   "Format": "String (yes, no)",
-   "Beschreibung": "yes: Beim Schreiben oder umwandeln wird der Artikel-Bestand nicht geprüft, auch wenn Negativbestand deaktiviert ist. (benötigt für Kasse)no: Der Bestand des Artikels wird geprüft",
-   "VerhaltenOhneParameter": "no"
-  },
-  {
    "Parameter": "kreditlimiteNichtPruefen",
    "Format": "String (yes, no)",
    "Beschreibung": "yes: Beim Schreiben oder umwandeln wird die Kreditlimite nicht geprüft, auch wenn diese überschritten ist.no: Die Kreditlimite wird geprüft",
@@ -1700,6 +1702,12 @@
    "Parameter": "artikelZusatzfelderUebernehmen",
    "Format": "String (yes, no)",
    "Beschreibung": "yes:Wenn Zusatzfelder beim Artikel und in der Auftragsposition genau gleich heissen und auch den gleichen Datentyp haben, wird der Wert aus dem Artikel in die Auftragsposition übernommenno: Zusatzfelder werden nicht übernommen",
+   "VerhaltenOhneParameter": "no"
+  },
+  {
+   "Parameter": "preiseBerechnen",
+   "Format": "String (yes, no)",
+   "Beschreibung": "Kann nur beim umwandeln eingesetzt werdenyes:Der Preis bei den Positionen werden alle neu berechnet, auch wenn der Wert mitgegeben wirdno: Preise werden nur neu berechnet, wenn sie nicht mitgegeben werden",
    "VerhaltenOhneParameter": "no"
   }
  ]

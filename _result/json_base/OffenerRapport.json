@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_RapporteOffen",
+ "PrimaryKey": "OffenerRapportNr",
  "Fields": [
   {
    "Feld": "OffenerRapportNr",

@@ -1,6 +1,6 @@
 package golang
 
 type Preisklasse struct {
-	PreisklasseNr int    `json:PreisklasseNr`
-	Bezeichnung   string `json:Bezeichnung`
+	PreisklasseNr int    `json:"PreisklasseNr"`
+	Bezeichnung   string `json:"Bezeichnung"`
 }

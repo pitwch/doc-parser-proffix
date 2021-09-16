@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Hersteller",
+ "PrimaryKey": "HerstellerNr",
  "Fields": [
   {
    "Feld": "HerstellerNr",

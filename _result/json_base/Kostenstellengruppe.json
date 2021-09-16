@@ -1,4 +1,6 @@
 {
+ "TableName": "FIB_KstGruppe",
+ "PrimaryKey": "KostenstellengruppeNr",
  "Fields": [
   {
    "Feld": "KostenstellengruppeNr",

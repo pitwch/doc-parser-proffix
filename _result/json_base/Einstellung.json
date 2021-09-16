@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "Modul",
  "Fields": [
   {
    "Feld": "Modul",
@@ -11,19 +13,19 @@
   {
    "Endpunkt": "GET /PRO/Einstellung/{Modul}",
    "Rueckgabewert": "HTTP 200Array\u003cEinstellung\u003e",
-   "Beschreibung": "Gibt alle Einstellungen eines Moduls zurückModul bezieht sich auf den Modulnamen in PROFFIX (z.B. pxFibu, pxLager)",
+   "Beschreibung": "Gibt alle Einstellungen eines Moduls zurückModul bezieht sich auf den Modulnamen in Proffix (z.B. pxFibu, pxLager)",
    "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "GET /PRO/Einstellung/{Modul}/{Section}",
    "Rueckgabewert": "HTTP 200Einstellung",
-   "Beschreibung": "Gibt eine einzelne Einstellung zurückModul bezieht sich auf den Modulnamen in PROFFIX (z.B. pxFibu, pxLager)",
+   "Beschreibung": "Gibt eine einzelne Einstellung zurückModul bezieht sich auf den Modulnamen in Proffix (z.B. pxFibu, pxLager)",
    "BenoetigteLizenz": "keine"
   },
   {
    "Endpunkt": "PUT /PRO/Einstellung/{Modul}/{Section}",
    "Rueckgabewert": "HTTP 204",
-   "Beschreibung": "Setzt einzelne Einstellung in PROFFIX (momentan nur für StdSperre verfügbar, das Datum muss im Format yyy-MM-dd übergeben werden)",
+   "Beschreibung": "Setzt einzelne Einstellung in Proffix (momentan nur für StdSperre verfügbar, das Datum muss im Format yyy-MM-dd übergeben werden)",
    "BenoetigteLizenz": " "
   }
  ],
@@ -31,13 +33,13 @@
   {
    "Parameter": "plain",
    "Format": "String (yes, no)",
-   "Beschreibung": "Dieser Parameter wird ab Version 2.0.0 nicht mehr berücksichtigt.yes: Einstellung wird unverändert aus der PROFFIX-Datenbank als String zurückgegebenno: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt ist",
+   "Beschreibung": "Dieser Parameter wird ab Version 2.0.0 nicht mehr berücksichtigt.yes: Einstellung wird unverändert aus der Proffix-Datenbank als String zurückgegebenno: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt ist",
    "VerhaltenOhneParameter": "no"
   },
   {
    "Parameter": "beauty",
    "Format": "String (yes, no)",
-   "Beschreibung": "yes: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt istno: Einstellung wird unverändert aus der PROFFIX-Datenbank als String zurückgegeben",
+   "Beschreibung": "yes: Einstellung wird in einen anderen Datentyp umgewandelt, wenn diese unter \"Speziell behandelte Einstellungen\" aufgeführt istno: Einstellung wird unverändert aus der Proffix-Datenbank als String zurückgegeben",
    "VerhaltenOhneParameter": "no"
   },
   {
@@ -50,7 +52,7 @@
    "Parameter": "pxStunden",
    "Format": "DefRapportMobile",
    "Beschreibung": "Array\u003cString\u003e",
-   "VerhaltenOhneParameter": "Alle in diesem Array angegebenen Felder werden in der Rapporteingabe der PROFFIX Leistungserfassung mobile angezeigt"
+   "VerhaltenOhneParameter": "Alle in diesem Array angegebenen Felder werden in der Rapporteingabe der Proffix Leistungserfassung mobile angezeigt"
   },
   {
    "Parameter": "pxStunden",

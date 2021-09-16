@@ -1,4 +1,6 @@
 {
+ "TableName": "PRE_Formeln",
+ "PrimaryKey": "PreisberechnungsformelNr",
  "Fields": [
   {
    "Feld": "PreisberechnungsformelNr",

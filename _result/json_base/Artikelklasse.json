@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Klassen",
+ "PrimaryKey": "ArtikelklasseNr",
  "Fields": [
   {
    "Feld": "ArtikelklasseNr",

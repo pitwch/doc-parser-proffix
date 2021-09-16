@@ -1,4 +1,6 @@
 {
+ "TableName": "SRV_Status",
+ "PrimaryKey": "StatusNr",
  "Fields": [
   {
    "Feld": "StatusNr",

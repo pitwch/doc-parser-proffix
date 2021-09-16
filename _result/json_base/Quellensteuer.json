@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_Quellensteuer",
+ "PrimaryKey": "QuellensteuerNr",
  "Fields": [
   {
    "Feld": "QuellensteuerNr",

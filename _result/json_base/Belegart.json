@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_BelegArten",
+ "PrimaryKey": "BelegartNr",
  "Fields": [
   {
    "Feld": "BelegartNr",

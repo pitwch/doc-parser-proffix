@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_TeilTypen",
+ "PrimaryKey": "TeilleistungstypNr",
  "Fields": [
   {
    "Feld": "TeilleistungstypNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "RES_RessourcenGrp",
+ "PrimaryKey": "RessourcengruppeNr",
  "Fields": [
   {
    "Feld": "RessourcengruppeNr",

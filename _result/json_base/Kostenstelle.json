@@ -1,4 +1,6 @@
 {
+ "TableName": "FIB_Kostenstelle",
+ "PrimaryKey": "KostenstelleNr",
  "Fields": [
   {
    "Feld": "KostenstelleNr",

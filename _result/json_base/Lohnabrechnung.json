@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_Lohnabrechnung",
+ "PrimaryKey": "LohnabrechnungNr",
  "Fields": [
   {
    "Feld": "LohnabrechnungNr",

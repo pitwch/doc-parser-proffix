@@ -1,4 +1,6 @@
 {
+ "TableName": "LOH_Lohnarten",
+ "PrimaryKey": "LohnartNr",
  "Fields": [
   {
    "Feld": "LohnartNr",

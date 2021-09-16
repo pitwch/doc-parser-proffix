@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Lieferarten",
+ "PrimaryKey": "LieferartNr",
  "Fields": [
   {
    "Feld": "LieferartNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "EIN_Wareneinganslisten",
+ "PrimaryKey": "WareneingangslisteNr",
  "Fields": [
   {
    "Feld": "WareneingangslisteNr",

@@ -1,0 +1,75 @@
+{
+ "TableName": "SRV_Bereitstellungen",
+ "PrimaryKey": "BereitstellungNr",
+ "Fields": [
+  {
+   "Feld": "BereitstellungNr",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "BereitstellungNrSRV",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BereitstellungAufInstallation",
+   "Datentyp": "Object\u003cInstallation\u003e",
+   "NamePROFFIX": "PositionNrSRV",
+   "Besonderes": "Bereitstellung für Installation. Entweder für die Installation oder für einen Artikel (BereitstellungAufArtikel)"
+  },
+  {
+   "Feld": "BereitstellungAufArtikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "ArtikelNrLAG",
+   "Besonderes": "Bereitstellung für Artikel. Entweder für einen Artikel oder für eine Installation (BereitstellungAufInstallation)"
+  },
+  {
+   "Feld": "BereitstPosArt",
+   "Datentyp": "Object\u003cPositionsart\u003e",
+   "NamePROFFIX": "PositionsArt",
+   "Besonderes": "Positionsart für die Bereitstellung. Entweder kann ein Artikel oder eine Positionsart angegeben werden."
+  },
+  {
+   "Feld": "Artikel",
+   "Datentyp": "Object\u003cArtikel\u003e",
+   "NamePROFFIX": "BereitstArtikelNr",
+   "Besonderes": "Artikel für die Bereitstellung. Entweder kann ein Artikel oder eine Positionsart angegeben werden."
+  },
+  {
+   "Feld": "Anzahl",
+   "Datentyp": "Number (8,4)",
+   "NamePROFFIX": "Anzahl",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Buchen",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "BuchenStapel",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "Geloescht",
+   "Datentyp": "Boolean",
+   "NamePROFFIX": "Inaktiv",
+   "Besonderes": " "
+  },
+  {
+   "Feld": "BuchenPer",
+   "Datentyp": "Number (int)",
+   "NamePROFFIX": "DatumBuchen",
+   "Besonderes": "1 = Datum2 = Startdatum3 = Enddatum"
+  }
+ ],
+ "Methods": [
+  {
+   "Endpunkt": "GET /SRV/Bereitstellung",
+   "Rueckgabewert": "HTTP 200Array\u003cBereitstellung\u003e",
+   "Beschreibung": "Gibt alle Bereitstellungen zurück",
+   "BenoetigteLizenz": "keine"
+  },
+  {
+   "Endpunkt": "GET /SRV/Bereitstellung/{BereitstellungNr}",
+   "Rueckgabewert": "HTTP 200Bereitstellung",
+   "Beschreibung": "Gibt eine Bereitstellung anhand der BereitstellungNr zurück",
+   "BenoetigteLizenz": "keine"
+  }
+ ],
+ "Parameter": null
+}

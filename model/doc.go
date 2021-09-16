@@ -1,7 +1,7 @@
 package model
 
 type DocsAll struct {
-	Entities    []DocLink
+	Entities []DocLink
 }
 type DocLink struct {
 	Name string
@@ -9,11 +9,11 @@ type DocLink struct {
 	Doc  Doc
 }
 type Doc struct {
-	TableName string
+	TableName  string
 	PrimaryKey string
-	Fields    []DocFields
-	Methods   []DocMethods
-	Parameter []DocParameter
+	Fields     []DocFields
+	Methods    []DocMethods
+	Parameter  []DocParameter
 }
 type DocFields struct {
 	Feld        string

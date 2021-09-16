@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_Abrechnungsarten",
+ "PrimaryKey": "AbrechnungsartNr",
  "Fields": [
   {
    "Feld": "AbrechnungsartNr",

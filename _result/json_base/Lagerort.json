@@ -1,4 +1,6 @@
 {
+ "TableName": "PRE_Lagerorte",
+ "PrimaryKey": "LagerortNr",
  "Fields": [
   {
    "Feld": "LagerortNr",

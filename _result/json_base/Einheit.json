@@ -1,4 +1,6 @@
 {
+ "TableName": "PRO_Einheiten",
+ "PrimaryKey": "EinheitNr",
  "Fields": [
   {
    "Feld": "EinheitNr",

@@ -1,4 +1,6 @@
 {
+ "TableName": "RES_RessourcenGrpLink",
+ "PrimaryKey": "RessourcengruppenzuordnungNr",
  "Fields": [
   {
    "Feld": "RessourcengruppenzuordnungNr",

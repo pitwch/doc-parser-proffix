@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_Rapporte",
+ "PrimaryKey": "RapportNr",
  "Fields": [
   {
    "Feld": "RapportNr",
@@ -148,7 +150,7 @@
    "Feld": "StundenVerr",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "StundenVerr",
-   "Besonderes": "optional, in Stunden, wenn leer werden Stunden übernommen"
+   "Besonderes": "optional, in Stunden, wenn leer werden Stunden übernommen, kann NULL sein"
   },
   {
    "Feld": "Pause",
@@ -208,7 +210,7 @@
    "Feld": "PreisFW",
    "Datentyp": "Number (10,2)",
    "NamePROFFIX": "PreisFW",
-   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werdenwenn Preis überschrieben wird, muss \"Lagerpreis\" auf 0 (manueller Preis) gesetzt werden"
+   "Besonderes": "nur wenn Artikel ausgewählt ist,sollte vom Artikel vorgeschlagen werdenwenn Preis überschrieben wird, muss \"Lagerpreis\" auf 0 (manueller Preis) gesetzt werden, kann NULL sein"
   },
   {
    "Feld": "TotalFW",

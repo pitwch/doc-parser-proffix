@@ -1,4 +1,6 @@
 {
+ "TableName": "",
+ "PrimaryKey": "Bezeichnung",
  "Fields": [
   {
    "Feld": "Bezeichnung",

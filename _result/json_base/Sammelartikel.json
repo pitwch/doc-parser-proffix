@@ -1,4 +1,6 @@
 {
+ "TableName": "LAG_Sammelartikel",
+ "PrimaryKey": "SammelartikelNr",
  "Fields": [
   {
    "Feld": "SammelartikelNr",

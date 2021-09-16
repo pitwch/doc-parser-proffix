@@ -1,4 +1,6 @@
 {
+ "TableName": "STU_Spesenarten",
+ "PrimaryKey": "SpesenartNr",
  "Fields": [
   {
    "Feld": "SpesenartNr",
